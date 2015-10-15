@@ -12,4 +12,8 @@ start: stop
 stop:
 	@docker rm -vf style-guide ||:
 
-.PHONY: all build run start stop
+push:
+	docker tag -f style-guide dockerhub.zanox.com:5000/styleguide
+	docker push dockerhub.zanox.com:5000/styleguide
+
+.PHONY: all build run start stop push
