@@ -1,3 +1,4 @@
+version ?= latest
 all: build
 
 build:
@@ -13,7 +14,7 @@ stop:
 	@docker rm -vf style-guide ||:
 
 push:
-	docker tag -f style-guide dockerhub.zanox.com:5000/styleguide
-	docker push dockerhub.zanox.com:5000/styleguide
+	docker tag -f style-guide dockerhub.zanox.com:5000/styleguide:$(version)
+	docker push dockerhub.zanox.com:5000/styleguide:$(version)
 
 .PHONY: all build run start stop push
