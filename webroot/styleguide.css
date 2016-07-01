@@ -1,0 +1,26 @@
+
+  body {
+      position: relative;
+      font-family: 'Open Sans', verdana, Arial, serif;
+  }
+  .affix {
+      top: 20px;
+      position: fixed;
+  }
+
+  .header {
+    margin: 40px 0 200px;
+  }
+ /* .header h1{
+    margin-bottom: 40px;
+  }*/
+
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 14px;
+  }
