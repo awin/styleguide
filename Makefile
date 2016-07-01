@@ -8,7 +8,7 @@ run:
 	docker run --rm -it style-guide bash
 
 start: stop
-	docker run -d --name style-guide -p 80:80 style-guide
+	docker run -d --name style-guide -p 80:80 -p 8080:8080 style-guide
 
 stop:
 	@docker rm -vf style-guide ||:
