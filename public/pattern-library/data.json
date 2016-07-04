@@ -44,6 +44,20 @@
             }
         ]
     },
-    "groups": [],
+    "groups": [
+        {
+            "name": "branding",
+            "title": "Branding",
+            "components": [
+                {
+                    "group": "branding",
+                    "name": "primary-palette",
+                    "title": "Primary Colour Palette",
+                    "type": "colors",
+                    "colors": []
+                }
+            ]
+        }
+    ],
     "version": "1.5.10"
 }
