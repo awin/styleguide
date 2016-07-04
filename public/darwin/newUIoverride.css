@@ -40,7 +40,7 @@ body {
 
 #container {
     background-color: #ffffff;
-    box-shadow: 0, 0, 6px, 3px, #d1d1d1;
+    box-shadow: 0 0 6px #d1d1d1;
     min-width: 1200px;
     max-width: 90%;
     min-height: 100%;
