@@ -8,9 +8,10 @@
     <title>Darwin Theme</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fontAwesome.css">
     <!-- <link rel="stylesheet" href="bootstrap.css"> -->
     <link rel="stylesheet" href="newUIoverride.css">
+    <link rel="stylesheet" href="pattern.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,7 +21,7 @@
     <![endif]-->
   </head>
   <body>
-  	<div id="container">
+    <div id="container">
 <!--         <div class="header">
             <nav class="navbar navbar-default">
                 <a class="navbar-brand" href="#">
@@ -52,36 +53,29 @@
         </ol> -->
         <div id="content">
             <div class="boxLtGrey">
-<!--                 <div class="container-fluid">
-                    <div class="row">
-                        <a href="#" class="btn"><i class="fa fa-plus-circle icon-green"></i> Create New
-                        </a>
-                    </div>
-                </div> -->
-                      
                 <div class="row page-header">
-                    <h1>Page Title</h1>
+                    <h1>Typography</h1>
                 </div>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
-                            <h2 class="text-normal">Typography</h2>
-                            
                             <h1 class="special">h1 - Special. Verdana 18px bold</h1>
                             <h1>h1 - Normal. Verdana 14px bold</h1>
                             <h2>h2. Verdana 12px</h2>
                             <h3>h3, h4 and h5. Verdana 11px </h3>
                             <h6>h6. Verdana 10px</h6>
-
-
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="boxLtGrey">
+                <div class="row page-header">
+                    <h1>Form Elements</h1>
                 </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
-                            <h2 class="text-normal">Form</h2>
-                             
+                            <h2>Form</h2> 
                         </div>
                         <div class="col-lg-8 col-md-8">
                             <form action="" class="form-horizontal">
@@ -166,40 +160,39 @@
                                         </select>
                                     </div>
                                 </div>
-                                <h2 class="text-normal">Form Feedback</h2>
-                                
+                                <h2>Form Feedback</h2>
                                 <div class="form-group has-warning">
                                     <label for="" class="control-label col-lg-4 col-md-4">Warning message for form field</label>
                                     <div class="col-lg-8 col-md-8">
                                         <input type="text" name="" class="form-control" />
-                                        <p class="help-block"><i class="fa fa-alert"></i> This is a warning message.</p>
+                                        <p class="help-block"><i class="fa fa-alert"></i> This is an warning message.</p>
                                     </div>
                                 </div>
                                 <div class="form-group has-error">
                                     <label for="" class="control-label col-lg-4 col-md-4">Error message for form field</label>
                                     <div class="col-lg-8 col-md-8">
                                         <input type="text" name="" class="form-control" />
-                                        <p class="help-block"><i class="fa fa-alert"></i> This is a warning message.</p>
+                                        <p class="help-block"><i class="fa fa-alert"></i> This is an error message.</p>
                                     </div>
                                 </div>
                                 <div class="form-group has-disabled">
                                     <label for="" class="control-label col-lg-4 col-md-4">Disabled form group</label>
                                     <div class="col-lg-8 col-md-8">
-                                        <input type="text" name="" class="form-control" />
+                                        <input type="text" name="" class="form-control" placeholder="This field is disabled" disabled="disabled" />
                                     </div>
                                 </div>
-                                <div class="form-group has-disabled">
+                                <div class="form-group">
                                     <label for="" class="control-label col-lg-4 col-md-4">Form field with info message</label>
                                     <div class="col-lg-8 col-md-8">
                                         <input type="text" name="" class="form-control" />
-                                        <p class="alert alert-warning">This is an information inside form groupd</p>
+                                        <p class="alert alert-warning"><i class="fa fa-exclamation-triangle"></i> This is an warning information inside form group</p>
                                     </div>
                                 </div>
-                                <div class="form-group has-disabled">
-                                    <label for="" class="control-label col-lg-4 col-md-4">Form field with info message</label>
+                                <div class="form-group">
+                                    <label for="" class="control-label col-lg-4 col-md-4">Form field with important info message</label>
                                     <div class="col-lg-8 col-md-8">
                                         <input type="text" name="" class="form-control" />
-                                        <p class="alert alert-info">This is an information inside form groupd</p>
+                                        <p class="alert alert-info">This is an important information inside form group</p>
                                     </div>
                                 </div>
                             </form>
@@ -209,14 +202,47 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="boxLtGrey">
                 <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <h2 class="text-normal">Buttons</h2>
-                        
+                    <div class="row page-header">
+                        <h1>Buttons</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <button class="btn btn-default">Default Button</button>
+                            <button class="btn btn-disabled">Success Button</button>
+                            <button class="btn btn-link">Link Button</button>
+                        </div>
                     </div>
                 </div>
-
+            </div>
+            <div class="boxLtGrey">
+                <div class="container-fluid">
+                    <div class="row page-header">
+                        <h1>Feedback Messages</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <p class="alert alert-info"><i class="fa fa-info-circle"></i> Info message</p>
+                            <p class="alert alert-warning"><i class="fa fa-exclamation-triangle"></i> Warning message</p>
+                            <p class="alert alert-danger"><i class="fa fa-exclamation-triangle"></i> Error message</p>
+                            <p class="alert alert-success"><i class="fa fa-check-circle" aria-hidden="true"></i> Success message</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxLtGrey">
+                <div class="container-fluid">
+                    <div class="row page-header">
+                        <h1>Single Column Layout</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <h2>Single Column Layout</h2>
+                            <p>Paragraph</p>
+                        </div>
+                    </div>
                 </div>
             </div> 
         </div>
