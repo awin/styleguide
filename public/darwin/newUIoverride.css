@@ -111,10 +111,8 @@ body {
 
 .row-dark {
   background-color: #e5e5e5;
-  margin-bottom: 20px;
-  padding: 10px 0 20px;
+  padding: 10px 0 40px;
   border-top: 1px solid #d6d6d6;
-  border-bottom: 1px solid #d6d6d6;
 }
 
 .row:before,
@@ -872,7 +870,7 @@ table form h2, form h2 {
   margin-bottom: 20px;
 }
 
-.page-header {
+.page-header, .row-widget .widget .header {
   border-bottom: 1px solid #d6d6d6;
   height: 38px;
   line-height: 38px;
@@ -913,6 +911,7 @@ table form h2, form h2 {
 .option-menu {
   float: right;
   position: relative;
+  margin-right: -10px;
 }
 
 .option-menu a {
@@ -922,10 +921,11 @@ table form h2, form h2 {
 .page-header .option-menu:hover > a,
 .table-filters .option-menu:hover > a {
   background-color: #f5f5f5;
-  border-bottom: 1px solid #d6d6d6;
+  
 }
 
 .option-menu ul {
+  border-top: 1px solid #d6d6d6;
   display: none;
   position: absolute;
   right: 0;
@@ -933,11 +933,11 @@ table form h2, form h2 {
 }
 
 .page-header .option-menu ul {
-  top: 38px;
+  top: 37px;
 }
 
 .table-filters .option-menu ul {
-  top: 37px;
+  top: 36px;
 }
 
 .option-menu:hover ul {
@@ -1009,7 +1009,7 @@ ol ol {
 
 .list-unstyled {
   padding-left: 0;
-  list-style: none;
+  list-style: none; 
 }
 
 .list-inline {
@@ -1107,7 +1107,8 @@ th, td {
 }
 
 .table thead > tr > th {
-  vertical-align: bottom;
+  vertical-align: middle;
+  background-color: #e5e5e5;
 }
 
 .table caption + thead tr:first-child th,
@@ -1180,7 +1181,7 @@ table th[class^="col-"] {
   float: none;
 }
 
-table td input[type="checkbox"], table td input[type="radio"] {
+table th input[type="checkbox"], table th input[type="radio"], table td input[type="checkbox"], table td input[type="radio"] {
   font-size: 14px;
 }
 
@@ -1592,6 +1593,16 @@ input[type="search"] {
   width: 1%;
   white-space: nowrap;
   vertical-align: middle;
+}
+
+.input-group-btn .btn-default {
+  height: 32px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group-btn .btn-default .fa-search {
+  color: #ffffff;
 }
 
 .input-group-addon {
@@ -2022,7 +2033,7 @@ select[multiple].input-lg {
   line-height: 1.6em;
   font-size: 14px;
   color: #f90;
-}
+} 
 
 .input-file {
   width: 0.1px;
@@ -2571,6 +2582,7 @@ body > .select2-container {
     margin-right: 5px;
     margin-top: 5px;
     padding: 0 5px;
+    white-space: normal;
 }
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
   float: right;
@@ -2578,9 +2590,9 @@ body > .select2-container {
   margin-right: 0;
 }
 
-.input-group .select2-container {
+/*.input-group .select2-container {
   display: inline;
-}
+}*/
 
 .input-group .select {
   margin-left: -10px;
@@ -2798,35 +2810,6 @@ Navigation, tabs
   max-width: none;
 }
 
-/*
-Styles from Ad-media
-
-.nav-tabs {
-  border-bottom: 1px solid #dddddd;
-}
-.nav-tabs > li {
-  float: left;
-  margin-bottom: -1px;
-}
-.nav-tabs > li > a {
-  margin-right: 2px;
-  line-height: 1.42857143;
-  border: 1px solid transparent;
-  border-radius: 4px 4px 0 0;
-  color: #444;
-}
-.nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #dddddd;
-}
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
-  color: #ff7e00;
-  border-bottom: 1px solid #ff7e00;
-  cursor: default;
-  font-weight: bold;
-}*/
-
 .nav-tabs {
   margin-bottom: 0;
 }
@@ -2948,11 +2931,19 @@ Styles from Ad-media
   cursor: default;
 }
 
+.nav-pills {
+  border-bottom: 1px solid #d6d6d6;
+}
 .nav-pills > li {
   float: left;
+  margin-bottom: -1px;
 }
 .nav-pills > li > a {
-  border-radius: 4px;
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  color: #444;
 }
 .nav-pills > li + li {
   margin-left: 2px;
@@ -2960,8 +2951,11 @@ Styles from Ad-media
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: #ffffff;
-  background-color: #337ab7;
+  color: #ff7e00;
+  border-bottom: 1px solid #ff7e00;
+  cursor: default;
+  font-weight: bold;
+  background: none;
 }
 .nav-stacked > li {
   float: none;
@@ -3056,8 +3050,9 @@ Widgets
 .widget {
     background-color: #f1f1f1;
     border: 1px solid #d6d6d6;
-    overflow: auto;
     margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
 }
 
 .boxLtGrey .widget .header {
@@ -3068,7 +3063,6 @@ Widgets
   margin: 0;
   border: 0;
   padding: 8px;
-  background-color: #e5e5e5;
 }
 
 .widget .footer {
@@ -3111,15 +3105,14 @@ Filters
 ---------------------------------------------------------------------------- */
 .row-filters-horizontal {
   background-color: #ffffff;
-  border-bottom: 1px solid #d6d6d6;
-  margin-top: -10px;
+  border: 1px solid #d6d6d6;
   padding: 10px 5px;
+  margin: 10px;
 }
 .row-filters-horizontal [class*=col] {
   padding: 0 5px;
 }
 .row-filters-horizontal label.control-label {
-  widows: 100%;
   font-weight: bold;
 }
 
@@ -3305,12 +3298,12 @@ form .tooltip.right {
   white-space: normal;
   background-color: #fff;
   -webkit-background-clip: padding-box;
-          background-clip: padding-box;
+  background-clip: padding-box;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, .2);
   border-radius: 6px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 
   line-break: auto;
 }
@@ -3471,6 +3464,79 @@ ol.progress-list.uncompletedPage {
 }
 
 /* ----------------------------------------------------------------------------
+Widgets
+---------------------------------------------------------------------------- */
+
+.row-widget {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.wrapper-widget {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.search-widget {
+  margin-bottom: 10px;
+}
+
+.widget {
+    background-color: #f1f1f1;
+    border: 1px solid #d6d6d6;
+    margin-bottom: 10px;
+}
+
+.widget .header {
+  background-color: #e5e5e5;
+  height: 38px;
+  line-height: 38px;
+}
+
+.row-widget .widget .header {
+  margin-bottom: 0;
+}
+
+.widget .header h2 {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0;
+  border-bottom: none;
+  font-weight: bold;
+}
+
+.widget .footer {
+  background-color: #f1f1f1;
+  padding: 8px;
+}
+
+.widget .footer a {
+  margin-left: 10px;
+  font-size: 11px;
+}
+
+.widget table,
+.widget .list-group {
+  margin-bottom: 0;
+}
+
+.widget .list-group-item:first-child,
+.widget .list-group-item:first-child {
+  border-radius: 0;
+  border-top: 0;
+}
+
+.widget table tr:first-child,
+.widget table tr:first-child td {
+  border-top: 0;
+}
+
+.widget table tr:last-child,
+.widget table tr:last-child td {
+  border-bottom: 0;
+}
+
+/* ----------------------------------------------------------------------------
 General styling
 ---------------------------------------------------------------------------- */
 #providerContainer {
@@ -3503,7 +3569,6 @@ Extra styling
   background-color: #ffffff;
   border-top: 1px dashed #d6d6d6;
   border-bottom: 1px dashed #d6d6d6;
-  font-family: "Courier New";
   font-weight: normal;
   overflow-y: auto;
   padding: 10px;
@@ -3512,12 +3577,24 @@ Extra styling
   height: auto;
   color: #444;
   min-height: 61px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 .copy-code-placeholder a, .copy-code-placeholder a:visited {
   color: #444;
 }
 .copy-code-placeholder a:hover {
   color: #ff9900;
+}
+.img-logo {
+  margin-bottom: 10px;
 }
 .img-logo img {
   border: 1px solid #d6d6d6;
@@ -3574,6 +3651,10 @@ table.margin-zero td input {
   cursor: pointer;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 /* ----------------------------------------------------------------------------
 Temporary classes used to support darwin existing markup
 ---------------------------------------------------------------------------- */
@@ -3616,7 +3697,7 @@ Temporary classes used to support darwin existing markup
 .pagination li {
   font-size: 11px;
   padding: 3px 5px;
-  height: 22px;
+  height: 22px;    
   display: inline;
   margin-right: 2px;
 }
@@ -3645,7 +3726,7 @@ Temporary classes used to support darwin existing markup
 .pagination li.active a {
   color: #444;
 }
-.pagination li.active {
+.pagination li.active {    
   border: 1px solid #d6d6d6;
   background-color: #f5f5f5;
 }
@@ -3656,7 +3737,7 @@ Temporary classes used to support darwin existing markup
 
 /* Form tooltip for link builder page */
 
-#linkBuilderform .guideContainer {
+#linkBuilderform .guideContainer, #batchFormContainer .guideContainer {
   left: 102%;
   display: block;
   position: absolute;
@@ -3670,13 +3751,13 @@ Temporary classes used to support darwin existing markup
   font-size: 10px;
 }
 
-#linkBuilderform .guideContainer .guideArrow {
+#linkBuilderform .guideContainer .guideArrow, #batchFormContainer .guideContainer .guideArrow {
   display:block;
   height: 9px;
   width: 9px;
   position: absolute;
   top: 9px;
-  left: -9px;
+  left: -10px;
   background: transparent url(http://images.affiliatewindow.com/common/tooltip_arrow_left.png) center center no-repeat;
 }
 
@@ -3689,14 +3770,15 @@ div.tooltipLeft:hover, div.tooltipCenter:hover, div.tooltipRight:hover {
 div.tooltipRight {
   float: right;
   height: 10px;
+  margin-left: 5px;
   position: relative;
 }
 
 div.tooltipRight:hover span.tooltipRightContent {
   display: inline;
-  position: relative;
-  top: 5px;
-  right: 10px;
+  position: absolute;
+  top: 8px;
+  right: 25px;
 }
 
 div.tooltipRight span.tooltipRightArrow {
@@ -3762,6 +3844,11 @@ table th div.tooltipLeft:hover span.tooltipLeftArrow {
   left: -10px;
 }
 
+.page-header .header .tooltipRight, .widget .header .tooltipRight, .header .tooltipRight {
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
 #creative-preview-image {
   height: auto;
   width: auto;
@@ -3805,4 +3892,12 @@ table th div.tooltipLeft:hover span.tooltipLeftArrow {
 
 .creative-form-is-hidden {
   display:none;
+}
+
+.table-striped>tbody>tr.creative-hidden>td {
+  background-color: #d8d4da;
+}
+
+td.creative-status {
+  text-transform: capitalize;
 }

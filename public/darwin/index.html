@@ -1,231 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>AW Style Guide</title>
+  <title>AW Interface Style Guide</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,700,600italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styleguide.css">
   <link rel="stylesheet" href="newUIoverride.css">
 </head>
 <body data-spy="scroll" data-target="#aw-scrollspy" data-offset="15" class="scrollspy">
-    <nav class="navbar navbar-default" role="banner">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="/" class="navbar-brand">AW Style Guide</a>
-            </div>
-            <nav class="collapse navbar-collapse" role="navigation">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#sec"></a>
-                    </li>
-                    <li>
-                        <a href="darwin-theme.html">UI Styles/Patterns</a>
-                    </li>
-                    <li>
-                        <a href="#sec">Micro Copy</a>
-                    </li>
-                    <li>
-                        <a href="#sec">About</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </nav>
+  <div class="container">
+    <div class="row">
+      <div class="sg-lhs">
+        <h1 class="logo text-normal">AW Interface Style Guide</h1>
+        <nav id="aw-scrollspy">
+          <ul class="nav navbar nav-default" data-spy="affix" data-offset-top="70">
+            <li> <a href="#grid-system">Grid System</a></li>
+            <li> <a href="#typography">Typography</a></li>
+            <li> <a href="#navigation">Navigation</a></li>
+            <li> <a href="#form-elements">Form Elements</a></li>
+            <li> <a href="#lists">Lists</a></li>
+            <li> <a href="#tables">Tables</a></li>
+            <li> <a href="#dialogs">Dialogs</a></li>
+            <li> <a href="#feedback">Feedback</a></li>
+            <li> <a href="#icons">Icons</a></li>
+            <li> <a href="#stats-data">Stats/Data</a></li>
+            <li> <a href="#misc">Misc</a></li>
+            <li> <a href="#helper-classes">Helper Classes</a></li>
+          </ul>
+        </nav>
+      </div>
 
-<div class="container">
-  <div class="row">
-    <nav class="col-sm-3" id="aw-scrollspy">
-      <ul class="nav navbar nav-default" data-spy="affix" data-offset-top="70">
-        <li> <a href="#grid-system">Grid System</a></li>
-        <li> <a href="#typography">Typography</a></li>
-        <li> <a href="#navigation">Navigation</a></li>
-        <li> <a href="#form-elements">Form Elements</a></li>
-        <li> <a href="#lists">Lists</a></li>
-        <li> <a href="#tables">Tables</a></li>
-        <li> <a href="#dialogs">Dialogs</a></li>
-        <li> <a href="#feedback">Feedback</a></li>
-        <li> <a href="#icons">Icons</a></li>
-        <li> <a href="#stats-data">Stats/Data</a></li>
-        <li> <a href="#misc">Misc</a></li>
-        <li> <a href="#helper-classes">Helper Classes</a></li>
-      </ul>
-    </nav>
-    <div class="col-sm-9">
-      <div id="grid-system">    
-        <h1>Grid System</h1>
-        <ul class="nav navbar navbar-default">
+      <div class="sg-rhs">
+
+      <!-- Grid ************************************************************************************ -->
+        <div id="grid-system" class="sg-header">    
+          <h1>Grid System</h1>
+          <ul class="nav navbar navbar-default">
             <li><a data-toggle="tab" href="#grid-sizes">Home</a></li>
             <li><a data-toggle="tab" href="#grid-gutter">Menu 1</a></li>
             <li><a data-toggle="tab" href="#responsive-grid">Menu 2</a></li>
-        </ul>
-        <div id="grid-sizes">
+          </ul>
+          <div id="grid-sizes">
             <h2>Grid Sizes</h2>
             <p>Some content.</p>
-        </div>
-        <div id="grid-gutter">
+          </div>
+          <div id="grid-gutter">
             <h3>Menu 1</h3>
             <p>Some content in menu 1.</p>
-        </div>
-        <div id="responsive-grid">
+          </div>
+          <div id="responsive-grid">
             <h3>Menu 2</h3>
             <p>Some content in menu 2.</p>
+          </div>
         </div>
-      </div>
-      <div id="typography" class="header"> 
-        <h1>Typography</h1><ul class="nav nav-pills">
-  <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
-  <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
-  <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
-</ul>
 
-<div class="tab-content">
-  <div id="home" class="tab-pane fade in active">
-    <h3>HOME</h3>
-    <p>Some content.</p>
-  </div>
-  <div id="menu1" class="tab-pane fade">
-    <h3>Menu 1</h3>
-    <p>Some content in menu 1.</p>
-  </div>
-  <div id="menu2" class="tab-pane fade">
-    <h3>Menu 2</h3>
-    <p>Some content in menu 2.</p>
-  </div>
-</div>
-      </div>        
-      <div id="navigation" class="header">
+
+<!-- Typography ************************************************************************************ -->
+        <div id="typography" class="sg-header"> 
+          <h1>Typography</h1>
+          <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+            <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
+            <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+              <h3>HOME</h3>
+              <p>Some content.</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+              <h3>Menu 1</h3>
+              <p>Some content in menu 1.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+              <h3>Menu 2</h3>
+              <p>Some content in menu 2.</p>
+            </div>
+          </div>
+          </div>
+
+<!-- Navigation ************************************************************************************ -->     
+      <div id="navigation" class="sg-header">
         <h1>Navigation</h1>
         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
       </div>
-      <div id="form-elements" class="header">
+
+
+<!-- Form ****************************************************************************************** -->
+      <div id="form-elements" class="sg-header">
         <h1>Form Elements</h1>
-        <div class="row">
-        <div class="col-lg-8 col-sm-8">
-    <form class="form-horizontal">
-
-        <div class="form-group">
-            <label for="" class="control-label col-lg-4 col-md-4">Label</label>
-            <div class="radio-group col-lg-8 col-md-8">
-                <label class="radio-inline col-lg-3 col-md-3">
-                    <input type="radio" name="inlineRadioOptions"> Radio label
-                </label>
-                <label class="radio-inline col-lg-4 col-md-4">
-                    <input type="radio"> Radio label
-                </label>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label class="control-label col-lg-4 col-md-4">File upload button</label>
-            <div class="col-lg-8 col-md-8">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Browse input placeholder">
-                    <input type="file" files name="file" id="file" class="input-file" />
-                    <label for="file" class="input-group-addon btn-browse">Browse</label>
-                </div>
-                <p class="text-light text-right">Small text under form element</p>
-            </div>
-        </div>
-        <h2 class="text-normal">
-            Form Section Heading
-        </h2>
-        <hr>
-
-        <div class="form-group">
-            <label for="name" class="control-label col-lg-4 col-md-4">Input field</label>
-            <div class="col-lg-8 col-md-8">
-                <input name="name" type="text" class="form-control" placeholder="Input field placeholder">
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label for="description" class="control-label col-lg-4 col-md-4"><?= $this->translate('merchant.admedia.form.description'); ?></label>
-            <div class="col-lg-8 col-md-8">
-                <textarea class="form-control" name="description" ng-model="imageAdMediaItem.description" id="" cols="30" rows="5" class="form-control" placeholder="<?= $this->translate('merchant.admedia.form.description.placeholder'); ?>"></textarea>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label for="advertiserTags" class="control-label col-lg-4 col-md-4"><?= $this->translate('merchant.admedia.form.advertiserTags'); ?></label>
-            <div class="col-lg-8 col-md-8">
-                <select class="form-control" name="advertiserTags" id="advertiserTags" ng-options="option.name for option in data.advertiserTags track by option.id" ng-model="imageAdMediaItem.advertiserTags" multiple>
-            </select>
-            </div>
-        </div>
-
-        <div class="form-group" ng-class="{'has-error': (imageForm.targetUrl.$touched || imageForm.$submitted) && !imageForm.targetUrl.$valid}">
-            <label for="targetUrl" class="control-label col-lg-4 col-md-4"><?= $this->translate('merchant.admedia.form.clickthroughUrl'); ?></label>
-            <div class="col-lg-8 col-md-8">
-                <input name="targetUrl" ng-model="imageAdMediaItem.targetUrl" required ng-maxlength="500" value="http://www.affiliatewindow.com" type="url" class="form-control" placeholder="<?= $this->translate('merchant.admedia.form.clickthroughUrl.placeholder'); ?>">
-
-                <div ng-messages="imageForm.targetUrl.$error" ng-show="imageForm.targetUrl.$touched || imageForm.$submitted">
-                    <div ng-messages-include="error_messages"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label for="altText" class="control-label col-lg-4 col-md-4"><?= $this->translate('merchant.admedia.form.altText'); ?></label>
-            <div class="col-lg-8 col-md-8">
-                <input name="altText" ng-model="imageAdMediaItem.altText" type="text" class="form-control" placeholder="<?= $this->translate('merchant.admedia.form.altText.placeholder'); ?>">
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label for="location" class="control-label col-lg-4 col-md-4"><?= $this->translate('merchant.admedia.form.locationUrl'); ?></label>
-            <div class="col-lg-8 col-md-8">
-                <input name="location" ng-model="imageAdMediaItem.location" value="http://www.affiliatewindow.com" type="text" class="form-control" placeholder="<?= $this->translate('merchant.admedia.form.locationUrl.placeholder'); ?>">
-            </div>
-        </div>
-
-        <div class="form-group text-right">
-            <div class="col-lg-12 col-md-12">
-                <button class="btn btn-link text-red"><?= $this->translate('merchant.admedia.form.button.cancel'); ?></button>
-                <button type="submit" class="btn btn-default"><?= $this->translate('merchant.admedia.form.button.save'); ?></button>
-            </div>
-        </div>
-    </form>
-</div>
-</div>
       </div>      
-      <div id="lists" class="header">
+      <div id="lists" class="sg-header">
         <h1>Lists</h1>
         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
       </div>
-      <div id="tables" class="header">    
+      <div id="tables" class="sg-header">    
         <h1>Tables</h1>
         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
       </div>
-      <div id="dialogs" class="header">
+      <div id="dialogs" class="sg-header">
         <h1>Dialogs</h1>
         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
       </div>
-      <div id="feedback" class="header">
+      <div id="feedback" class="sg-header">
         <h1>Feedback</h1>
         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
       </div>
-      <div id="icons" class="header">
+      <div id="icons" class="sg-header">
         <h1>Icons</h1>
         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
       </div>
-      <div id="stats-data" class="header">
+      <div id="stats-data" class="sg-header">
         <h1>Stats/Data</h1>
         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
       </div>
-      <div id="misc" class="header">
+      <div id="misc" class="sg-header">
         <h1>Misc</h1>
         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
       </div>
-      <div id="helper-classes" class="header">
+      <div id="helper-classes" class="sg-header">
         <h1>Helper Classes</h1>
         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
       </div>
@@ -233,34 +128,34 @@
   </div>
 </div>
 
-    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script>
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
 
-    var $body   = $(document.body);
-    var navHeight = $('.navbar').outerHeight(true) + 40;
+  var $body   = $(document.body);
+  var navHeight = $('.navbar').outerHeight(true) + 40;
 
-    $body.scrollspy({
-      target: '#aw-scrollspy',
-      offset: navHeight
-    });
-
-
-    $(function() {
-      $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html, body').animate({
-              scrollTop: target.offset().top - 20
-          }, 500);
-            return false;
-        }
-    }
-});
+  $body.scrollspy({
+    target: '#aw-scrollspy',
+    offset: navHeight
   });
-    </script>
+
+
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top - 20
+          }, 500);
+          return false;
+        }
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
