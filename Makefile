@@ -20,4 +20,15 @@ push:
 	docker tag -f style-guide dockerhub.zanox.com:5000/styleguide:$(version)
 	docker push dockerhub.zanox.com:5000/styleguide:$(version)
 
-.PHONY: all build run start stop push exec
+rsync:
+	rsync -e "docker exec -i" --blocking-io -avz --delete \
+		--no-perms --no-owner --no-group \
+		--exclude-from=".dockerignore" \
+		--exclude-from=".gitignore" \
+		--checksum \
+		--no-times \
+		--itemize-changes \
+		. style-guide:/usr/share/nginx/html/
+
+
+.PHONY: all build run start stop push exec rsync
