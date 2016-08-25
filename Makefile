@@ -28,7 +28,7 @@ rsync:
 		--checksum \
 		--no-times \
 		--itemize-changes \
-		. style-guide:/usr/share/nginx/html/
+		public/ style-guide:/usr/share/nginx/html/
 
 
 .PHONY: all build run start stop push exec rsync
