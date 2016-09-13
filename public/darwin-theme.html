@@ -358,7 +358,7 @@
             <div class="boxLtGrey">
                 <div class="container-fluid">
                     <div class="row page-header">
-                        <h1>Horizontal Search Filters</h1>
+                        <h1>Horizontal Search and Reporting Filters</h1>
                     </div>
                     <div class="row row-filters-horizontal">
                         <div class="col-lg-4 col-sm-4 col-xs-12">
@@ -388,7 +388,9 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-2 col-xs-12">
+
+                        <div class="col-lg-4 col-sm-4 col-xs-12">
+
                             <label for="" class="control-label">Single Publisher Selector</label>
                             <select name="" id="" class="form-control"></select>
 
@@ -402,6 +404,244 @@
                             <input type="text" id="endDate" class="form-control hasDatepicker" placeholder="Start Date">
                         </div>
                     </div>
+
+
+
+<div id="horizontal_filters"></div>
+
+       <div class="row row-filters-horizontal">
+        <div class="form-horizontal">
+        <div class="row row-eq-height">
+            <div class="col-lg-3">
+                    <div class="form-group">
+                        <label for="" class="control-label">Period</label>
+                        <select name="" id="" class="form-control">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="control-label">From</label>
+                        <input type="text" class="form-control hasDatepicker" autocomplete="off" value="13/09/2016" id="end" name="end">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="control-label">To</label>
+                        <input type="text" class="form-control hasDatepicker" autocomplete="off" value="13/09/2016" id="end" name="end">
+                    </div>
+                
+            </div>
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="" class="control-label">Based on</label>
+                    <select name="" id="" class="form-control">
+                        <option value="">Transaction ...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="" class="control-label">Payment Status</label>
+                    <select name="" id="" class="form-control">
+                        <option value="">something ...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="" class="control-label">Transaction Status</label>
+                    <select name="" id="" class="form-control">
+                        <option value="">something ...</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="" class="control-label">Region</label>
+                    <select name="" id="" class="form-control">
+                        <option value="">United Kingdom</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="" class="control-label">Advertiser Filter</label>
+                    <button class="selectorButton btn-filter form-control" type="button"><span class="txt">Select Here</span><i class="fa fa-list selectorNb"></i></button>
+                </div>
+                <div class="form-group">
+                    <label for="" class="control-label">Amended only</label>
+                    <div class="checkbox"> <input type="checkbox"></div>
+                </div>
+            </div>
+            <div class="col-lg-3 filter-btn-container">
+                <div class="form-group">
+                    <label for="" class="control-label">Search for</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="" class="control-label">In</label>
+                    <select name="" id="" class="form-control">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <button class="btn btn-default">Generate Report</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row row-filters-horizontal">
+        <div class="form-horizontal">
+        <div class="row row-eq-height">
+            <div class="col-lg-3">
+                    <div class="form-group">
+                        <label for="" class="control-label">Period</label>
+                        <select name="" id="" class="form-control">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="control-label">From</label>
+                        <input type="text" class="form-control hasDatepicker" autocomplete="off" value="13/09/2016" id="end" name="end">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="control-label">To</label>
+                        <input type="text" class="form-control hasDatepicker" autocomplete="off" value="13/09/2016" id="end" name="end">
+                    </div>
+                
+            </div>
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="" class="control-label">Based on</label>
+                    <select name="" id="" class="form-control">
+                        <option value="">Transaction ...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="" class="control-label">Transaction Status</label>
+                    <select name="" id="" class="form-control">
+                        <option value="">something ...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="" class="control-label">Amended only</label>
+                    <div class="checkbox"> <input type="checkbox"></div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                    <div class="form-group">
+                        <label for="" class="control-label">Region</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">United Kingdom</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="control-label">Publisher Filter</label>
+                        <button class="selectorButton btn-filter form-control" type="button"><span class="txt">Select Here</span><i class="fa fa-list selectorNb"></i></button>
+                    </div>
+            </div>
+            <div class="col-lg-3 filter-btn-container">
+                <div class="form-group">
+                    <label for="" class="control-label">Search for</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="" class="control-label">In</label>
+                    <select name="" id="" class="form-control">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <button class="btn btn-default">Generate Report</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-filters-horizontal">
+        <div class="form-horizontal">
+        <div class="row row-eq-height">
+            <div class="col-lg-3">
+                    <div class="form-group">
+                        <label for="" class="control-label">A From</label>
+                        <input type="text" class="form-control hasDatepicker" autocomplete="off" value="13/09/2016" id="end" name="end">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="control-label">A To</label>
+                        <input type="text" class="form-control hasDatepicker" autocomplete="off" value="13/09/2016" id="end" name="end">
+                    </div>
+                
+            </div>
+            <div class="col-lg-3">
+                    <div class="form-group">
+                        <label for="" class="control-label">B From</label>
+                        <input type="text" class="form-control hasDatepicker" autocomplete="off" value="13/09/2016" id="end" name="end">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="control-label">B To</label>
+                        <input type="text" class="form-control hasDatepicker" autocomplete="off" value="13/09/2016" id="end" name="end">
+                    </div>
+                
+            </div>
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="" class="control-label">Based on</label>
+                    <select name="" id="" class="form-control">
+                        <option value="">Transaction ...</option>
+                    </select>
+                </div>
+                    <div class="form-group">
+                        <label for="" class="control-label">Publisher Filter</label>
+                        <button class="selectorButton btn-filter form-control" type="button"><span class="txt">Select Here</span><i class="fa fa-list selectorNb"></i></button>
+                    </div>
+            </div>
+            <div class="col-lg-3 filter-btn-container">
+                <button class="btn btn-default">Generate Report</button>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row row-filters-horizontal">
+        <div class="form-horizontal">
+        <div class="row row-eq-height">
+            <div class="col-lg-3">
+                    <div class="form-group">
+                        <label for="" class="control-label">Period</label>
+                        <select name="" id="" class="form-control">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="control-label">Filter by Click Ref</label>
+                        <input type="text" class="form-control">
+                    </div>
+                
+            </div>
+            <div class="col-lg-3">
+                    <div class="form-group">
+                        <label for="" class="control-label">From</label>
+                        <input type="text" class="form-control hasDatepicker" autocomplete="off" value="13/09/2016" id="end" name="end">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="control-label">To</label>
+                        <input type="text" class="form-control hasDatepicker" autocomplete="off" value="13/09/2016" id="end" name="end">
+                    </div>
+                
+            </div>
+            <div class="col-lg-3">
+                    <div class="form-group">
+                        <label for="" class="control-label">Region</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">United Kingdom</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="control-label">Advertiser Filter</label>
+                        <button class="selectorButton btn-filter form-control" type="button"><span class="txt">Select Here</span><i class="fa fa-list selectorNb"></i></button>
+                    </div>
+            </div>
+            <div class="col-lg-3 filter-btn-container">
+                <button class="btn btn-default">Generate Report</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
                 </div>
             </div>
         </div>
