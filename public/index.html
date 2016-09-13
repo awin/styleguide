@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AW Interface Style Guide</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,700,600italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="newUIoverride.css">
+</head>
+<body data-spy="scroll" data-target="#aw-scrollspy" data-offset="15" class="scrollspy">
+  <div class="container">
+    <div class="row">
+      <div class="sg-lhs">
+        <h1 class="logo text-normal">AW Interface Style Guide</h1>
+        <nav id="aw-scrollspy">
+          <ul class="nav navbar nav-default" data-spy="affix" data-offset-top="70">
+            <li> <a href="#grid-system">Grid System</a></li>
+            <li> <a href="#typography">Typography</a></li>
+            <li> <a href="#navigation">Navigation</a></li>
+            <li> <a href="#form-elements">Form Elements</a></li>
+            <li> <a href="#lists">Lists</a></li>
+            <li> <a href="#tables">Tables</a></li>
+            <li> <a href="#dialogs">Dialogs</a></li>
+            <li> <a href="#feedback">Feedback</a></li>
+            <li> <a href="#icons">Icons</a></li>
+            <li> <a href="#stats-data">Stats/Data</a></li>
+            <li> <a href="#misc">Misc</a></li>
+            <li> <a href="#helper-classes">Helper Classes</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="sg-rhs">
+
+      <!-- Grid ************************************************************************************ -->
+        <div id="grid-system" class="sg-header">    
+          <h1>Grid System</h1>
+          <ul class="nav navbar navbar-default">
+            <li><a data-toggle="tab" href="#grid-sizes">Home</a></li>
+            <li><a data-toggle="tab" href="#grid-gutter">Menu 1</a></li>
+            <li><a data-toggle="tab" href="#responsive-grid">Menu 2</a></li>
+          </ul>
+          <div id="grid-sizes">
+            <h2>Grid Sizes</h2>
+            <p>Some content.</p>
+          </div>
+          <div id="grid-gutter">
+            <h3>Menu 1</h3>
+            <p>Some content in menu 1.</p>
+          </div>
+          <div id="responsive-grid">
+            <h3>Menu 2</h3>
+            <p>Some content in menu 2.</p>
+          </div>
+        </div>
+
+
+<!-- Typography ************************************************************************************ -->
+        <div id="typography" class="sg-header"> 
+          <h1>Typography</h1>
+          <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+            <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
+            <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+              <h3>HOME</h3>
+              <p>Some content.</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+              <h3>Menu 1</h3>
+              <p>Some content in menu 1.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+              <h3>Menu 2</h3>
+              <p>Some content in menu 2.</p>
+            </div>
+          </div>
+          </div>
+
+<!-- Navigation ************************************************************************************ -->     
+      <div id="navigation" class="sg-header">
+        <h1>Navigation</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+
+
+<!-- Form ****************************************************************************************** -->
+      <div id="form-elements" class="sg-header">
+        <h1>Form Elements</h1>
+      </div>      
+      <div id="lists" class="sg-header">
+        <h1>Lists</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="tables" class="sg-header">    
+        <h1>Tables</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="dialogs" class="sg-header">
+        <h1>Dialogs</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="feedback" class="sg-header">
+        <h1>Feedback</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="icons" class="sg-header">
+        <h1>Icons</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="stats-data" class="sg-header">
+        <h1>Stats/Data</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="misc" class="sg-header">
+        <h1>Misc</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="helper-classes" class="sg-header">
+        <h1>Helper Classes</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+
+  var $body   = $(document.body);
+  var navHeight = $('.navbar').outerHeight(true) + 40;
+
+  $body.scrollspy({
+    target: '#aw-scrollspy',
+    offset: navHeight
+  });
+
+
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top - 20
+          }, 500);
+          return false;
+        }
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

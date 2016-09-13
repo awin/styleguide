@@ -1,0 +1,43 @@
+
+  body {
+      position: relative;
+      font-family: 'Open Sans', verdana, Arial, serif;
+      background-color: #23282c;
+  }
+  .affix {
+      top: 20px;
+      position: fixed;
+  }
+
+  .header {
+    margin: 40px 0 200px;
+  }
+  .sg-lhs {
+    background: #23282c;
+    width: 25%;
+    float: left;
+    padding: 20px;
+  }
+  .sg-rhs {
+    background: #f1f1f1;
+    width: 75%;
+    float: left;
+    padding: 50px;
+  }
+  .sg-lhs h1.logo {
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+  .sg-header h1 {
+    font-size: 22px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 14px;
+  }
