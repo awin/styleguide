@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="fontAwesome.css">
+    <link rel="stylesheet" href="font-awesome.css">
     <link rel="stylesheet" href="newUIoverride.css">
     <link rel="stylesheet" href="pattern.css">
 
@@ -22,6 +23,7 @@
   <body>
     <div id="container">
         <div id="content">
+            <a href="index.html"> << Markup guide</a><br><br>
             <div class="boxLtGrey">
                 <div class="container-fluid">
                     <div class="row page-header">
@@ -37,35 +39,35 @@
             </div>
 
             <div class="container-fluid">
-                <div class="row row-widget">
-                    <div class="col-lg-4 col-sm-4 wrapper-widget">
-                        <div class="widget">
+                <div class="row row-columns">
+                    <div class="col-lg-4 col-sm-4 wrapper-column">
+                        <div class="column">
                             <div class="header">
                                 <h2>Layout Two Column (Left Column)</h2>
                             </div>
                             <div class="col-lg-12 col-sm-12 col-xs-12">
-                                <h3>Heading inside widget</h3>
-                                <p>Widget paragraph</p>
+                                <h3>Heading inside column</h3>
+                                <p>column paragraph</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-sm-8 wrapper-widget">
-                        <div class="widget">
+                    <div class="col-lg-8 col-sm-8 wrapper-column">
+                        <div class="column">
                             <div class="header">
                                 <h2>Layout Two Column (Right Column)</h2>
                             </div>
                             <table class="table table-striped">
                                 <tr>
-                                    <td>Widget Table td</td>
-                                    <td>Widget Table td</td>
+                                    <td>column Table td</td>
+                                    <td>column Table td</td>
                                 </tr>
                                 <tr>
-                                    <td>Widget Table td</td>
-                                    <td>Widget Table td</td>
+                                    <td>column Table td</td>
+                                    <td>column Table td</td>
                                 </tr>
                                 <tr>
-                                    <td>Widget Table td</td>
-                                    <td>Widget Table td</td>
+                                    <td>column Table td</td>
+                                    <td>column Table td</td>
                                 </tr>
                             </table>
                         </div>
@@ -90,7 +92,7 @@
             </div>
             <div class="container-fluid">
                 <ul class="nav nav-tabs">
-                    <li id="active" class="selected">
+                    <li class="selected">
                         <a href="">Active Tab</a>
                     </li>
                     <li>
@@ -130,7 +132,7 @@
                     </div>
                     <div class="row">
                         <div class="table-filters">
-                            <div class="col-lg-12 col-sm-12 text-right">
+                            <div class="col-lg-12 text-right">
                                 <p>Rows per page: </p>
                                 <select>
                                     <option value="">10</option>
@@ -140,8 +142,76 @@
                                     <option value="">400</option>
                                 </select>
                                 <p>Showing 4401 - 4800 of 13867 </p>
-                                <div class="option-menu">
-                                    <a href=""><i class="fa fa-floppy-o"></i> Download</a>
+                                <a href=""><i class="fa fa-file-excel-o"></i> Link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Table Header</th>
+                                    <th class="col-lg-4">Table Header 4 Columns</th>
+                                    <th>Table Header </th>
+                                    <th>Table Header</th>
+                                    <th>Table Header</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                            <h2>Table Filter with Dropdown</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="table-filters">
+                            <div class="col-lg-12 text-right">
+                                <p>Rows per page: </p>
+                                <select>
+                                    <option value="">10</option>
+                                    <option value="">25</option>
+                                    <option value="">50</option>
+                                    <option value="">100</option>
+                                    <option value="">400</option>
+                                </select>
+                                <p>Showing 4401 - 4800 of 13867 </p>
+                                <div href="" class="option-menu">
+                                    <a href="">Options</a>
+                                    <ul>
+                                        <li><a href="">Option 1</a></li>
+                                        <li><a href="">Option 2</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +285,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="" class="control-label col-lg-4 col-sm-4">
-                                        Inline radio buttons
+                                        Inline Radio Buttons
                                     </label>
                                     <div class="radio-group col-lg-8 col-sm-8">
                                         <label class="radio-inline col-lg-3 col-sm-3">
@@ -227,21 +297,29 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label for="" class="control-label col-lg-4 col-sm-4">Checkbox</label>
+                                    <div class="col-lg-8 col-sm-8">
+                                        <div class="checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <label for="" class="control-label col-lg-4 col-sm-4">
-                                        Inline checkboxes
+                                        Inline Checkboxes
                                     </label>
-                                    <div class="radio-group col-lg-8 col-sm-8">
-                                        <label class="radio-inline col-lg-3 col-sm-3">
-                                            <input type="radio" name="inlineRadioOptions" value="yes">Yes
+                                    <div class="checkbox-group col-lg-8 col-sm-8">
+                                        <label class="checkbox-inline col-lg-3 col-sm-3">
+                                            <input type="checkbox"> Checkbox 1
                                         </label>
-                                        <label class="radio-inline col-lg-4 col-sm-4">
-                                            <input type="radio" name="inlineRadioOptions" value="no">No
+                                        <label class="checkbox-inline col-lg-4 col-sm-4">
+                                            <input type="checkbox"> Checkbox 2
                                         </label>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="" class="control-label col-lg-4 col-sm-4">
-                                        Stacked radio buttons
+                                        Stacked Radio Buttons
                                     </label>
                                     <div class="col-lg-8 col-sm-8">
                                         <div class="radio">
@@ -268,7 +346,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="" class="control-label col-lg-4 col-sm-4">Text area</label>
+                                    <label for="" class="control-label col-lg-4 col-sm-4">Text Feild</label>
                                     <div class="col-lg-8 col-sm-8">
                                         <input type="text" name="" class="form-control" />
                                     </div>
@@ -283,23 +361,35 @@
                                         </select>
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <label for="" class="control-label col-lg-4 col-sm-4">On Off Switch</label>
+                                    <div class="col-lg-8 col-sm-8">
+                                        <div class="onoffswitch">
+                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                <span class="onoffswitch-inner"></span>
+                                                <span class="onoffswitch-switch"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
                                 <h2>Form Feedback</h2>
                                 <div class="form-group has-warning">
-                                    <label for="" class="control-label col-lg-4 col-sm-4">Warning message for form field</label>
+                                    <label for="" class="control-label col-lg-4 col-sm-4">Warning Message</label>
                                     <div class="col-lg-8 col-sm-8">
                                         <input type="text" name="" class="form-control" />
                                         <p class="help-block"><i class="fa fa-alert"></i> This is an warning message.</p>
                                     </div>
                                 </div>
                                 <div class="form-group has-error">
-                                    <label for="" class="control-label col-lg-4 col-sm-4">Error message for form field</label>
+                                    <label for="" class="control-label col-lg-4 col-sm-4">Error Message</label>
                                     <div class="col-lg-8 col-sm-8">
                                         <input type="text" name="" class="form-control" />
                                         <p class="help-block"><i class="fa fa-alert"></i> This is an error message.</p>
                                     </div>
                                 </div>
                                 <div class="form-group has-disabled">
-                                    <label for="" class="control-label col-lg-4 col-sm-4">Disabled form group</label>
+                                    <label for="" class="control-label col-lg-4 col-sm-4">Disabled Form Group</label>
                                     <div class="col-lg-8 col-sm-8">
                                         <input type="text" name="" class="form-control" placeholder="This field is disabled" disabled="disabled" />
                                     </div>
@@ -355,6 +445,50 @@
                     </div>
                 </div>
             </div>
+
+
+            <!--Icons -->
+
+            <div class="boxLtGrey">
+                <div class="container-fluid">
+                    <div class="row page-header">
+                        <h1>Icons</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                            <h2>My Creative</h2>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <tr>
+                                    <td><span class="creative-icon"><i class="fa fa-envelope"></i></span> Email Template</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="creative-icon"><i class="fa fa-search"></i></span>  Search Widget</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="creative-icon"><i class="fa fa-html5"></i></span> HTML5 Banner</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="creative-icon"><i class="fa fa-refresh"></i></span> Dynamic Banner</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="creative-icon"><i class="fa fa-hand-o-up"></i></span> Text Link</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="creative-icon"><i class="fa fa-th-list"></i></span> Form</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="creative-icon"><i class="fa fa-ellipsis-h"></i></span> Other</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Horizontal filters -->
             <div class="boxLtGrey">
                 <div class="container-fluid">
                     <div class="row page-header">
@@ -457,8 +591,8 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="" class="control-label">Advertiser Filter</label>
-                    <button class="selectorButton btn-filter form-control" type="button"><span class="txt">Select Here</span><i class="fa fa-list selectorNb"></i></button>
+                    <label for="" class="control-label">Advertiser</label>
+                    <button class="selectorButton btn-filter form-control" type="button"><span class="txt">0 Selected</span><i class="fa fa-list selectorNb"></i></button>
                 </div>
                 <div class="form-group">
                     <label for="" class="control-label">Amended only</label>
@@ -530,8 +664,8 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="" class="control-label">Publisher Filter</label>
-                        <button class="selectorButton btn-filter form-control" type="button"><span class="txt">Select Here</span><i class="fa fa-list selectorNb"></i></button>
+                        <label for="" class="control-label">Publisher</label>
+                        <button class="selectorButton btn-filter form-control" type="button"><span class="txt">0 Selected</span><i class="fa fa-list selectorNb"></i></button>
                     </div>
             </div>
             <div class="col-lg-3 filter-btn-container">
@@ -577,18 +711,22 @@
                 
             </div>
             <div class="col-lg-3">
+                    <div class="form-group">
+                        <label for="" class="control-label">Publisher</label>
+                        <button class="selectorButton btn-filter form-control" type="button"><span class="txt">0 Selected</span><i class="fa fa-list selectorNb"></i></button>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="control-label">Publisher  Tags</label>
+                        <button class="selectorButton btn-filter form-control" type="button"><span class="txt">0 Selected</span><i class="fa fa-list selectorNb"></i></button>
+                    </div>
+            </div>
+            <div class="col-lg-3 filter-btn-container">
                 <div class="form-group">
                     <label for="" class="control-label">Based on</label>
                     <select name="" id="" class="form-control">
                         <option value="">Transaction ...</option>
                     </select>
                 </div>
-                    <div class="form-group">
-                        <label for="" class="control-label">Publisher Filter</label>
-                        <button class="selectorButton btn-filter form-control" type="button"><span class="txt">Select Here</span><i class="fa fa-list selectorNb"></i></button>
-                    </div>
-            </div>
-            <div class="col-lg-3 filter-btn-container">
                 <button class="btn btn-default">Generate Report</button>
             </div>
             </div>
@@ -632,7 +770,7 @@
                     </div>
                     <div class="form-group">
                         <label for="" class="control-label">Advertiser Filter</label>
-                        <button class="selectorButton btn-filter form-control" type="button"><span class="txt">Select Here</span><i class="fa fa-list selectorNb"></i></button>
+                        <button class="selectorButton btn-filter form-control" type="button"><span class="txt">0 Selected</span><i class="fa fa-list selectorNb"></i></button>
                     </div>
             </div>
             <div class="col-lg-3 filter-btn-container">

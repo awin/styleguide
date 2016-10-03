@@ -1,43 +1,90 @@
 
-  body {
+  html, body {
       position: relative;
       font-family: 'Open Sans', verdana, Arial, serif;
-      background-color: #23282c;
+      background-color: #f1f1f1;
+  }
+  nav {
+    width: 285px;
   }
   .affix {
       top: 20px;
       position: fixed;
+      width: 275px;
   }
 
-  .header {
-    margin: 40px 0 200px;
-  }
   .sg-lhs {
     background: #23282c;
-    width: 25%;
+    width: 300px;
     float: left;
-    padding: 20px;
+    padding: 20px 0;
   }
   .sg-rhs {
-    background: #f1f1f1;
     width: 75%;
     float: left;
     padding: 50px;
+    overflow: hidden;
   }
   .sg-lhs h1.logo {
     color: #fff;
     font-size: 18px;
     font-weight: normal;
-    margin-bottom: 50px;
+    padding-left: 20px;
 }
-  .sg-header h1 {
-    font-size: 22px;
-    margin-top: 80px;
+  h1.sg {
+    font-size: 42px;
+    margin-top: 150px;
     margin-bottom: 20px;
+    font-weight: normal;
   }
-  h2 {
-    font-size: 18px;
+  h2.sg {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+    font-weight: normal;
+    border:none;
   }
-  h3 {
+  h3.sg {
     font-size: 14px;
   }
+
+  h1.first-heading {
+  margin-top: 20px;
+}
+  .tag {
+    color: #008;
+}
+
+.pln {
+    color: #000;
+}
+.atn {
+    color: #606;
+}
+.pun, .opn, .clo {
+    color: #660;
+}
+.atv {
+    color: #080;
+}
+pre {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.nav {
+  margin-right: 0;
+}
+
+.nav > li > a {
+  font-size: 12px;
+}
+.nav > li > a:hover {
+  background-color: rgba(255,255,255,.5);
+}
+
+.sg-description {
+  font-size: 14px;
+}

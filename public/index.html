@@ -6,123 +6,1021 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,700,600italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="styleguide.css">
   <link rel="stylesheet" href="newUIoverride.css">
+  <link rel="stylesheet" href="styleguide.css">
 </head>
 <body data-spy="scroll" data-target="#aw-scrollspy" data-offset="15" class="scrollspy">
-  <div class="container">
-    <div class="row">
+  <div class="container-fluid">
+    <div class="row row-eq-height">
       <div class="sg-lhs">
-        <h1 class="logo text-normal">AW Interface Style Guide</h1>
+        <h1 class="logo text-normal">AW Interface Style Guide V 1.0</h1>
         <nav id="aw-scrollspy">
           <ul class="nav navbar nav-default" data-spy="affix" data-offset-top="70">
+            <li> <a href="#intro">Introduction</a></li>
             <li> <a href="#grid-system">Grid System</a></li>
             <li> <a href="#typography">Typography</a></li>
+            <li> <a href="#headers">Headers</a></li>
             <li> <a href="#navigation">Navigation</a></li>
+            <li> <a href="#tables">Table</a></li>
+            <li> <a href="#filters">Filters</a></li>
             <li> <a href="#form-elements">Form Elements</a></li>
-            <li> <a href="#lists">Lists</a></li>
-            <li> <a href="#tables">Tables</a></li>
-            <li> <a href="#dialogs">Dialogs</a></li>
             <li> <a href="#feedback">Feedback</a></li>
+            <li> <a href="#lists">Lists</a></li>
+            <li> <a href="#dialogs">Dialogs</a></li>
             <li> <a href="#icons">Icons</a></li>
             <li> <a href="#stats-data">Stats/Data</a></li>
             <li> <a href="#misc">Misc</a></li>
             <li> <a href="#helper-classes">Helper Classes</a></li>
+            <hr>
+            <li><a href="darwin-theme.html">Examples</a></li>
           </ul>
         </nav>
       </div>
 
       <div class="sg-rhs">
 
-      <!-- Grid ************************************************************************************ -->
-        <div id="grid-system" class="sg-header">    
-          <h1>Grid System</h1>
-          <ul class="nav navbar navbar-default">
-            <li><a data-toggle="tab" href="#grid-sizes">Home</a></li>
-            <li><a data-toggle="tab" href="#grid-gutter">Menu 1</a></li>
-            <li><a data-toggle="tab" href="#responsive-grid">Menu 2</a></li>
-          </ul>
-          <div id="grid-sizes">
-            <h2>Grid Sizes</h2>
-            <p>Some content.</p>
-          </div>
-          <div id="grid-gutter">
-            <h3>Menu 1</h3>
-            <p>Some content in menu 1.</p>
-          </div>
-          <div id="responsive-grid">
-            <h3>Menu 2</h3>
-            <p>Some content in menu 2.</p>
-          </div>
-        </div>
+<!-- Grid and main containers ************************************************************************************ -->
+<div id="intro" class="sg-header">
+  <h1 class="sg first-heading">Introduction</h1>
+</div>
+<div class="sg-description">
+<p>This is a reference guide for standard HTML markup and styles for our interface. </p>
+<p>Few tips to consider when adding page are as follow:</p>
+<ul>
+  <li>Avoid generating markup using PHP or JS</li>
+  <li>Use "newUIoverride.css" for all new projects</li>
+  <li>Use existing template for components where possible</li>
+  <li>In suggested markup there might be some extra wrappers that may not be required in certain cases. You can ignore these on need to need basis</li>
+  <li>If you need any help with styling please contact  <a href="mailto:UserExperience@affiliatewindow.com>">UserExperience@affiliatewindow.com</a></li>
+</ul>
+
+<div id="grid-system" class="sg-header">    
+  <h1 class="sg">Grid System</h1>
+</div>
+<h2 class="sg">Single Column Layout</h2>
+<div class="boxLtGrey">
+ <div class="container-fluid">
+    <div class="row page-header">
+       <h1>Layout Single Column</h1>
+    </div>
+    <div class="row">
+       <div class="col-lg-12 col-sm-12">
+          <h2>Layout Single Column </h2>
+          <p>Paragraph</p>
+       </div>
+    </div>
+ </div>
+</div>
+
+
+<div class="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+  <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"boxLtGrey"</span><span class="tag">&gt;</span><span class="pln">
+     </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"container-fluid"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row page-header"</span><span class="tag">&gt;</span><span class="pln">
+           </span><span class="tag">&lt;h1&gt;</span><span class="pln">Layout Single Column</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span><span class="pln">
+           </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-12 col-sm-12"</span><span class="tag">&gt;</span><span class="pln">
+              </span><span class="tag">&lt;h2&gt;</span><span class="pln">Layout Single Column </span><span class="tag">&lt;/h2&gt;</span><span class="pln">
+              </span><span class="tag">&lt;p&gt;</span><span class="pln">Paragraph</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+           </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+     </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+<h2 class="sg">Two Column Layout</h2>
+<div class="row row-columns">
+   <div class="col-lg-8  wrapper-column">
+      <div class="column">
+         <div class="header">
+            <h2>Column Title</h2>
+         </div>
+         <table class="table table-striped">
+            <tbody>
+               <tr>
+                  <td>Table data</td>
+                  <td>Table data</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
+   <div class="col-lg-4 wrapper-column">
+      <div class="column">
+         <div class="header">
+            <h2>Column Title</h2>
+         </div>
+         <table class="table table-striped">
+            <tbody>
+               <tr>
+                  <td>Table data</td>
+                  <td>Table data</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
+</div>
+
+<div class="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row row-column"</span><span class="tag">&gt;</span><span class="pln">
+       </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-8  wrapper-column"</span><span class="tag">&gt;</span><span class="pln">
+          </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"column"</span><span class="tag">&gt;</span><span class="pln">
+             </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"header"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;h2&gt;</span><span class="pln">Column Title</span><span class="tag">&lt;/h2&gt;</span><span class="pln">
+             </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+             </span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"table table-striped"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;tbody&gt;</span><span class="pln">
+                   </span><span class="tag">&lt;tr&gt;</span><span class="pln">
+                      </span><span class="tag">&lt;td&gt;</span><span class="pln">Table data</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+                      </span><span class="tag">&lt;td&gt;</span><span class="pln">Table data</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+                   </span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+                </span><span class="tag">&lt;/tbody&gt;</span><span class="pln">
+             </span><span class="tag">&lt;/table&gt;</span><span class="pln">
+          </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+       </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+       </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-4 wrapper-column"</span><span class="tag">&gt;</span><span class="pln">
+          </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"column"</span><span class="tag">&gt;</span><span class="pln">
+             </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"header"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;h2&gt;</span><span class="pln">Column Title</span><span class="tag">&lt;/h2&gt;</span><span class="pln">
+             </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+             </span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"table table-striped"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;tbody&gt;</span><span class="pln">
+                   </span><span class="tag">&lt;tr&gt;</span><span class="pln">
+                      </span><span class="tag">&lt;td&gt;</span><span class="pln">Table data</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+                      </span><span class="tag">&lt;td&gt;</span><span class="pln">Table data</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+                   </span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+                </span><span class="tag">&lt;/tbody&gt;</span><span class="pln">
+             </span><span class="tag">&lt;/table&gt;</span><span class="pln">
+          </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+       </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
 
 
 <!-- Typography ************************************************************************************ -->
-        <div id="typography" class="sg-header"> 
-          <h1>Typography</h1>
-          <ul class="nav nav-pills">
-            <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
-            <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
-            <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
-          </ul>
-          <div class="tab-content">
-            <div id="home" class="tab-pane fade in active">
-              <h3>HOME</h3>
-              <p>Some content.</p>
-            </div>
-            <div id="menu1" class="tab-pane fade">
-              <h3>Menu 1</h3>
-              <p>Some content in menu 1.</p>
-            </div>
-            <div id="menu2" class="tab-pane fade">
-              <h3>Menu 2</h3>
-              <p>Some content in menu 2.</p>
-            </div>
-          </div>
-          </div>
+<div id="typography" class="sg-header"> 
+  <h1 class="sg">Typography</h1>
+</div>
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;h1</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"special"</span><span class="tag">&gt;</span><span class="pln">h1 - Special. Verdana 18px bold</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+    </span><span class="tag">&lt;h1&gt;</span><span class="pln">h1 - Normal. Verdana 14px bold</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+    </span><span class="tag">&lt;h2&gt;</span><span class="pln">h2. Verdana 12px</span><span class="tag">&lt;/h2&gt;</span><span class="pln">
+    </span><span class="tag">&lt;h3&gt;</span><span class="pln">h3, h4 and h5. Verdana 11px </span><span class="tag">&lt;/h3&gt;</span><span class="pln">
+    </span><span class="tag">&lt;h6&gt;</span><span class="pln">h6. Verdana 10px</span><span class="tag">&lt;/h6&gt;</span>
+  </pre>
+
+
+<!-- Header -->
+<div id="headers" class="sg-header">
+    <h1 class="sg">Headers</h1>
+</div>
+<h2 class="sg">Page Header</h2>
+<div class="row page-header">
+    <h1>Page Title</h1>
+</div>
+
+
+<div class="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row page-header"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;h1&gt;</span><span class="pln">Page Title</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+<h2 class="sg">Page Header with Link</h2>
+
+<div class="row page-header">
+   <h1>Page Title</h1>
+   <a href="" title="Link title">
+   <i class="CSS class for icon if required" aria-hidden="true"></i> Link</a>
+</div>
+
+<div id="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row page-header"</span><span class="tag">&gt;</span><span class="pln">
+       </span><span class="tag">&lt;h1&gt;</span><span class="pln">My Offers</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+       </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"Link title"</span><span class="tag">&gt;</span><span class="pln">
+       </span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"CSS class for icon if required"</span><span class="pln"> </span><span class="atn">aria-hidden</span><span class="pun">=</span><span class="atv">"true"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln"> Link</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+<h2 class="sg">Page Header with Dropdown</h2>
 
 <!-- Navigation ************************************************************************************ -->     
-      <div id="navigation" class="sg-header">
-        <h1>Navigation</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-      </div>
+<div id="navigation" class="sg-header">
+  <h1 class="sg">Navigation</h1>
+</div>
+<h2 class="sg">Tabs</h2>
 
+<ul class="nav nav-tabs">
+    <li class="selected">
+        <a href="">Active Tab</a>
+    </li>
+    <li>
+        <a href="">Tab 2</a>
+    </li>
+    <li>
+        <a href="">Tab 3</a>
+    </li>
+</ul>
+
+<div class="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav nav-tabs"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"selected"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Active Tab</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+        </span><span class="tag">&lt;li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Tab 2</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+        </span><span class="tag">&lt;li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Tab 3</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/ul&gt;</span>
+  </pre>
+</div>
+
+<h2 class="sg">Sub Tabs</h2>
+
+<div class="row">
+  <div class="col-lg-12 col-sm-12">
+      <ul class="nav nav-pills">
+          <li class="active">
+              <a href="">Sub Tab</a>
+          <li>
+              <a href="">Sub Tab</a>
+          </li>
+          </li>
+      </ul>
+  </div>
+</div>
+
+
+
+<div class="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-12 col-sm-12"</span><span class="tag">&gt;</span><span class="pln">
+          </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav nav-pills"</span><span class="tag">&gt;</span><span class="pln">
+              </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;</span><span class="pln">
+                  </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Sub Tab</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+              </span><span class="tag">&lt;li&gt;</span><span class="pln">
+                  </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Sub Tab</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+              </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+              </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+          </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+      </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+
+
+<!--Table -->
+<div id="tables" class="sg-header">    
+  <h1 class="sg">Tables</h1>
+</div>
+
+<div class="table-responsive">
+   <table class="table table-striped">
+      <thead>
+         <tr>
+            <th>Table header</th>
+            <th>Table header</th>
+         </tr>
+      </thead>
+      <tbody>
+        <tr>
+         <td>Table data</td>
+         <td>Table data</td>
+        </tr>
+        <tr>
+         <td>Table data</td>
+         <td>Table data</td>
+        </tr>
+        <tr>
+         <td>Table data</td>
+         <td>Table data</td>
+        </tr>
+      </tbody>
+   </table>
+</div>
+
+<div id="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"table-responsive"</span><span class="tag">&gt;</span><span class="pln">
+     </span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"table table-striped"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;thead&gt;</span><span class="pln">
+           </span><span class="tag">&lt;tr&gt;</span><span class="pln">
+              </span><span class="tag">&lt;th&gt;</span><span class="pln">Table header</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+              </span><span class="tag">&lt;th&gt;</span><span class="pln">Table header</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+           </span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/thead&gt;</span><span class="pln">
+        </span><span class="tag">&lt;tbody&gt;</span><span class="pln">
+           </span><span class="tag">&lt;tr&gt;</span><span class="pln">
+              </span><span class="tag">&lt;td&gt;</span><span class="pln">Table data</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+              </span><span class="tag">&lt;td&gt;</span><span class="pln">Table data</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+           </span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+           </span><span class="tag">&lt;tr&gt;</span><span class="pln">
+              </span><span class="tag">&lt;td&gt;</span><span class="pln">Table data</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+              </span><span class="tag">&lt;td&gt;</span><span class="pln">Table data</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+           </span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+           </span><span class="tag">&lt;tr&gt;</span><span class="pln">
+              </span><span class="tag">&lt;td&gt;</span><span class="pln">Table data</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+              </span><span class="tag">&lt;td&gt;</span><span class="pln">Table data</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+           </span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/tbody&gt;</span><span class="pln">
+     </span><span class="tag">&lt;/table&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+
+<!-- Filters -->
+
+<div id="filters" class="sg-header">
+  <h1 class="sg">Filters</h1>
+</div>
+<h2 class="sg">Table filter with number of pages selector</h2>
+
+<div class="row">
+    <div class="table-filters">
+        <div class="col-lg-12 col-sm-12 text-right">
+            <p>Rows per page: </p>
+            <select>
+                <option value="">10</option>
+                <option value="">25</option>
+                <option value="">50</option>
+                <option value="">100</option>
+                <option value="">400</option>
+            </select>
+            <p>Showing 4401 - 4800 of 13867 </p>
+        </div>
+    </div>
+</div>
+
+<div class="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"table-filters"</span><span class="tag">&gt;</span><span class="pln">
+          </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-12 col-sm-12 text-right"</span><span class="tag">&gt;</span><span class="pln">
+              </span><span class="tag">&lt;p&gt;</span><span class="pln">Rows per page: </span><span class="tag">&lt;/p&gt;</span><span class="pln">
+              </span><span class="tag">&lt;select&gt;</span><span class="pln">
+                  </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">10</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+                  </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">25</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+                  </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">50</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+                  </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">100</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+                  </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">400</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+              </span><span class="tag">&lt;/select&gt;</span><span class="pln">
+              </span><span class="tag">&lt;p&gt;</span><span class="pln">Showing 4401 - 4800 of 13867 </span><span class="tag">&lt;/p&gt;</span><span class="pln">
+          </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+      </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+<h2 class="sg">Table Filter with Title</h2>
+<h2 class="sg">Table Filter with Link</h2>
+
+<div class="row">
+   <div class="table-filters">
+      <div class="col-lg-12 text-right">
+         <p>Rows per page: </p>
+         <select>
+            <option value="">10</option>
+            <option value="">25</option>
+            <option value="">50</option>
+            <option value="">100</option>
+            <option value="">400</option>
+         </select>
+         <p>Showing 4401 - 4800 of 13867 </p>
+         <a href=""><i class="fa fa-file-excel-o"></i> Link</a>
+      </div>
+   </div>
+</div>
+
+
+
+<div id="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span><span class="pln">
+     </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"table-filters"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-12 text-right"</span><span class="tag">&gt;</span><span class="pln">
+           </span><span class="tag">&lt;p&gt;</span><span class="pln">Rows per page: </span><span class="tag">&lt;/p&gt;</span><span class="pln">
+           </span><span class="tag">&lt;select&gt;</span><span class="pln">
+              </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">10</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+              </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">25</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+              </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">50</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+              </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">100</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+              </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">400</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+           </span><span class="tag">&lt;/select&gt;</span><span class="pln">
+           </span><span class="tag">&lt;p&gt;</span><span class="pln">Showing 4401 - 4800 of 13867 </span><span class="tag">&lt;/p&gt;</span><span class="pln">
+           </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"fa fa-file-excel-o"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln"> Link</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+     </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+<h2 class="sg">Table Filter with Dropdown</h2>
+<div class="row">
+    <div class="table-filters">
+        <div class="col-lg-12 text-right">
+            <p>Rows per page: </p>
+            <select>
+                <option value="">10</option>
+                <option value="">25</option>
+                <option value="">50</option>
+                <option value="">100</option>
+                <option value="">400</option>
+            </select>
+            <p>Showing 4401 - 4800 of 13867 </p>
+            <div href="" class="option-menu">
+                <a href="">Options</a>
+                <ul>
+                    <li><a href="">Option 1</a></li>
+                    <li><a href="">Option 2</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span><span class="pln">
+       </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"table-filters"</span><span class="tag">&gt;</span><span class="pln">
+          </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-12 text-right"</span><span class="tag">&gt;</span><span class="pln">
+             </span><span class="tag">&lt;p&gt;</span><span class="pln">Rows per page: </span><span class="tag">&lt;/p&gt;</span><span class="pln">
+             </span><span class="tag">&lt;select&gt;</span><span class="pln">
+                </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">10</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+                </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">25</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+                </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">50</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+                </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">100</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+                </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">400</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+             </span><span class="tag">&lt;/select&gt;</span><span class="pln">
+             </span><span class="tag">&lt;p&gt;</span><span class="pln">Showing 4401 - 4800 of 13867 </span><span class="tag">&lt;/p&gt;</span><span class="pln">
+             </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"option-menu"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Options</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+                </span><span class="tag">&lt;ul&gt;</span><span class="pln">
+                   </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Option 1</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+                   </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Option 2</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+                </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+             </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+          </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+       </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
 
 <!-- Form ****************************************************************************************** -->
-      <div id="form-elements" class="sg-header">
-        <h1>Form Elements</h1>
-      </div>      
+<div id="form-elements" class="sg-header">
+  <h1 class="sg">Form Elements</h1>
+</div>
+<h2 class="sg">Layout</h2>
+
+<div id="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"container"</span><span class="tag">&gt;</span><span class="pln">
+       </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span><span class="pln">
+          </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-8 col-sm-8"</span><span class="tag">&gt;</span><span class="pln">
+             </span><span class="tag">&lt;form</span><span class="pln"> </span><span class="atn">action</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-horizontal"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+                   </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-label col-lg-4 col-sm-4"</span><span class="tag">&gt;</span><span class="pln">
+                   Form Label
+                   </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+                   </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-8 col-sm-8"</span><span class="tag">&gt;</span><span class="pln">
+                      Space for form element
+                   </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+                </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+             </span><span class="tag">&lt;/form&gt;</span><span class="pln">
+          </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+       </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+<h2 class="sg">File Upload</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-sm-8">
+            <form action="" class="form-horizontal">
+                <div class="form-group">
+                  <label class="control-label col-lg-4 col-sm-4">File upload</label>
+                  <div class="col-lg-8 col-sm-8">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Choose file to upload">
+                        <input type="file" files name="file" id="file" class="input-file" />
+                        <label for="file" class="input-group-addon btn-browse">Browse</label>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+<div class="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-label col-lg-4 col-sm-4"</span><span class="tag">&gt;</span><span class="pln">File upload</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-8 col-sm-8"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-group"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">placeholder</span><span class="pun">=</span><span class="atv">"Choose file to upload"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"file"</span><span class="pln"> </span><span class="atn">files</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"file"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"file"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-file"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+                </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"file"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-group-addon btn-browse"</span><span class="tag">&gt;</span><span class="pln">Browse</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+            </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-light text-right"</span><span class="tag">&gt;</span><span class="pln">Maximum size 500kb.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+            <h2 class="sg">Inline Radio Buttons</h2>
+              <div class="form-group">
+                  <label for="" class="control-label col-lg-4 col-sm-4">
+                  Inline Radio Buttons
+                  </label>
+                  <div class="radio-group col-lg-8 col-sm-8">
+                      <label class="radio-inline col-lg-3 col-sm-3">
+                      <input type="radio" name="inlineRadioOptions" value="yes">Yes
+                      </label>
+                      <label class="radio-inline col-lg-4 col-sm-4">
+                      <input type="radio" name="inlineRadioOptions" value="no">No
+                      </label>
+                  </div>
+              </div>
+
+
+<div class="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-label col-lg-4 col-sm-4"</span><span class="tag">&gt;</span><span class="pln">
+        Inline Radio Buttons
+        </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"radio-group col-lg-8 col-sm-8"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"radio-inline col-lg-3 col-sm-3"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"inlineRadioOptions"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"yes"</span><span class="tag">&gt;</span><span class="pln">Yes
+            </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+            </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"radio-inline col-lg-4 col-sm-4"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"inlineRadioOptions"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"no"</span><span class="tag">&gt;</span><span class="pln">No
+            </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+<h2 class="sg">Stacked Radio Buttons</h2>
+
+              <div class="form-group">
+                  <label for="" class="control-label col-lg-4 col-sm-4">
+                  Stacked Radio Buttons
+                  </label>
+                  <div class="col-lg-8 col-sm-8">
+                      <div class="radio">
+                          <label for="">
+                          <input type="radio" name="optionsRadios" id="" value="">Option one
+                          </label>  
+                      </div>
+                      <div class="radio">
+                          <label for="">
+                          <input type="radio" name="optionsRadios" id="" value="">Option two
+                          </label>
+                      </div>
+                      <div class="radio">
+                          <label for="">
+                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="">Option three
+                          </label>
+                      </div>
+                  </div>
+              </div>
+
+
+
+<div class="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-label col-lg-4 col-sm-4"</span><span class="tag">&gt;</span><span class="pln">
+        Stacked Radio Buttons
+        </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-8 col-sm-8"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"radio"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"option1"</span><span class="tag">&gt;</span><span class="pln">Option one
+                </span><span class="tag">&lt;/label&gt;</span><span class="pln">  
+            </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"radio"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"option2"</span><span class="tag">&gt;</span><span class="pln">Option two
+                </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"radio"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"option2"</span><span class="tag">&gt;</span><span class="pln">Option three
+                </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+
+
+            <h2 class="sg">Checkbox</h2>
+              <div class="form-group">
+                  <label for="" class="control-label col-lg-4 col-sm-4">Checkbox</label>
+                  <div class="col-lg-8 col-sm-8">
+                      <div class="checkbox">
+                          <input type="checkbox">
+                      </div>
+                  </div>
+              </div>
+
+
+
+<div class="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-label col-lg-4 col-sm-4"</span><span class="tag">&gt;</span><span class="pln">Checkbox</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-8 col-sm-8"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+
+<h2 class="sg">Inline Checkboxes</h2>
+<div class="form-group">
+    <label for="" class="control-label col-lg-4 col-sm-4">
+        Inline Checkboxes
+    </label>
+    <div class="checkbox-group col-lg-8 col-sm-8">
+        <label class="checkbox-inline col-lg-3 col-sm-3">
+            <input type="checkbox"> Checkbox 1
+        </label>
+        <label class="checkbox-inline col-lg-4 col-sm-4">
+            <input type="checkbox"> Checkbox 2
+        </label>
+    </div>
+</div>
+
+<div id="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+       </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-label col-lg-4 col-sm-4"</span><span class="tag">&gt;</span><span class="pln">
+       Inline Checkboxes
+       </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+       </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"checkbox-group col-lg-8 col-sm-8"</span><span class="tag">&gt;</span><span class="pln">
+          </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"checkbox-inline col-lg-3 col-sm-3"</span><span class="tag">&gt;</span><span class="pln">
+          </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="tag">&gt;</span><span class="pln"> Checkbox 1
+          </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+          </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"checkbox-inline col-lg-4 col-sm-4"</span><span class="tag">&gt;</span><span class="pln">
+          </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="tag">&gt;</span><span class="pln"> Checkbox 2
+          </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+       </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+                <h2 class="sg">Stacked Checkboxes</h2>
+
+                <div class="form-group">
+                    <label for="" class="control-label col-lg-4 col-sm-4">Checkbox</label>
+                    <div class="col-lg-8 col-sm-8">
+                        <div class="checkbox">
+                            <label for=""><input type="checkbox"> Checkbox 1</label>
+                        </div>
+                        <div class="checkbox">
+                            <label for=""><input type="checkbox">Checkbox 2</label>
+                        </div>
+                        <div class="checkbox disabled">
+                            <label><input type="checkbox" disabled>Disabled Checkbox</label>
+                        </div>
+                    </div>
+                </div>
+
+<div id="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+       </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-label col-lg-4 col-sm-4"</span><span class="tag">&gt;</span><span class="pln">Checkbox</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+       </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-8 col-sm-8"</span><span class="tag">&gt;</span><span class="pln">
+          </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="tag">&gt;</span><span class="pln">
+             </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="tag">&gt;</span><span class="pln"> Checkbox 1</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+          </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+          </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="tag">&gt;</span><span class="pln">
+             </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="tag">&gt;</span><span class="pln">Checkbox 2</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+          </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+          </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"checkbox disabled"</span><span class="tag">&gt;</span><span class="pln">
+             </span><span class="tag">&lt;label&gt;&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">disabled</span><span class="tag">&gt;</span><span class="pln">Disabled Checkbox</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+          </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+       </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+<h2 class="sg">Text Field</h2>
+
+<div class="form-group">
+    <label for="" class="control-label col-lg-4 col-sm-4">Text Feild</label>
+    <div class="col-lg-8 col-sm-8">
+        <input type="text" name="" class="form-control" />
+    </div>
+</div>
+
+
+<div class="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-label col-lg-4 col-sm-4"</span><span class="tag">&gt;</span><span class="pln">Text Feild</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-8 col-sm-8"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+      <h2 class="sg">Text Area</h2>
+
+      <div class="form-group">
+          <label for="" class="control-label col-lg-4 col-sm-4">Text area</label>
+          <div class="col-lg-8 col-sm-8">
+              <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+          </div>
+      </div>
+
+
+
+<div class="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-label col-lg-4 col-sm-4"</span><span class="tag">&gt;</span><span class="pln">Text area</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-8 col-sm-8"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;textarea</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">cols</span><span class="pun">=</span><span class="atv">"30"</span><span class="pln"> </span><span class="atn">rows</span><span class="pun">=</span><span class="atv">"10"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="tag">&gt;&lt;/textarea&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+            <h2 class="sg">Select</h2>
+            <div class="form-group">
+                <label for="" class="control-label col-lg-4 col-sm-4">Select</label>
+                <div class="col-lg-8 col-sm-8">
+                    <select class="form-control">
+                        <option value="">One two three</option>
+                        <option value="">Three four five</option>
+                        <option value="">Six seven eight</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+
+<div class="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-label col-lg-4 col-sm-4"</span><span class="tag">&gt;</span><span class="pln">Select</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-8 col-sm-8"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;select</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">One two three</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+                </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Three four five</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+                </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Six seven eight</span><span class="tag">&lt;/option&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/select&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+
+            <h2 class="sg">Select2 Single</h2>
+
+            <h2 class="sg">Select2 Multiple</h2>
+
+            <h2 class="sg">Disabled Form Group</h2>
+
+            <div class="form-group has-disabled">
+                <label for="" class="control-label col-lg-4 col-sm-4">Disabled Form Group</label>
+                <div class="col-lg-8 col-sm-8">
+                    <input type="text" name="" class="form-control" placeholder="This field is disabled" disabled="disabled" />
+                </div>
+            </div>
+
+
+
+<div class="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group has-disabled"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-label col-lg-4 col-sm-4"</span><span class="tag">&gt;</span><span class="pln">Disabled Form Group</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-8 col-sm-8"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">placeholder</span><span class="pun">=</span><span class="atv">"This field is disabled"</span><span class="pln"> </span><span class="atn">disabled</span><span class="pun">=</span><span class="atv">"disabled"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+            <h2 class="sg">Form Element Error</h2>
+            <div class="form-group has-error">
+                <label for="" class="control-label col-lg-4 col-sm-4">Error Message</label>
+                <div class="col-lg-8 col-sm-8">
+                    <input type="text" name="" class="form-control" />
+                    <p class="help-block"><i class="fa fa-alert"></i> This is an error message.</p>
+                </div>
+            </div>
+
+
+
+
+<div class="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group has-error"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-label col-lg-4 col-sm-4"</span><span class="tag">&gt;</span><span class="pln">Error Message</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-8 col-sm-8"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+            </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"help-block"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"fa fa-alert"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln"> This is an error message.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+            <h2 class="sg">Form Element Warning</h2>
+
+            <div class="form-group has-warning">
+                <label for="" class="control-label col-lg-4 col-sm-4">Warning Message</label>
+                <div class="col-lg-8 col-sm-8">
+                    <input type="text" name="" class="form-control" />
+                    <p class="help-block"><i class="fa fa-alert"></i> This is an warning message.</p>
+                </div>
+            </div>
+
+
+
+<div class="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group has-warning"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-label col-lg-4 col-sm-4"</span><span class="tag">&gt;</span><span class="pln">Warning Message</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-8 col-sm-8"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+            </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"help-block"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"fa fa-alert"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln"> This is an warning message.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+            <h2 class="sg">Form Element with Warning Message</h2>
+            <div class="form-group">
+                <label for="" class="control-label col-lg-4 col-sm-4">Form field with info message</label>
+                <div class="col-lg-8 col-sm-8">
+                    <input name="" class="form-control" type="text">
+                    <p class="alert alert-warning"><i class="fa fa-exclamation-triangle"></i> This is a warning information inside form group</p>
+                </div>
+            </div>
+
+<div id="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+       </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-label col-lg-4 col-sm-4"</span><span class="tag">&gt;</span>
+           <span class="pln">Form field with warning message</span>
+       <span class="tag">&lt;/label&gt;</span><span class="pln">
+       </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-8 col-sm-8"</span><span class="tag">&gt;</span><span class="pln">
+          </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="tag">&gt;</span><span class="pln">
+          </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"alert alert-warning"</span><span class="tag">&gt;</span><span class="pln">
+             </span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"fa fa-exclamation-triangle"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln"> Warning information inside form group
+          </span><span class="tag">&lt;/p&gt;</span><span class="pln">
+       </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+            <h2 class="sg">Form Element with Info Message</h2>
+
+            <div class="form-group">
+                <label for="" class="control-label col-lg-4 col-sm-4">Form field with important info message</label>
+                <div class="col-lg-8 col-sm-8">
+                    <input name="" class="form-control" type="text">
+                    <p class="alert alert-info"><i class="fa fa-info-circle" aria-hidden="true"></i> This is an important information inside form group</p>
+                </div>
+            </div>
+
+<div id="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+       </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-label col-lg-4 col-sm-4"</span><span class="tag">&gt;</span>
+           <span class="pln">Form field with information message</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+       </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-8 col-sm-8"</span><span class="tag">&gt;</span><span class="pln">
+          </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="tag">&gt;</span><span class="pln">
+          </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"alert alert-warning"</span><span class="tag">&gt;</span><span class="pln">
+             </span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"fa fa-exclamation-triangle"</span><span class="tag">&gt;&lt;/i&gt;</span>
+            <span class="pln"> This is an warning information inside form group
+          </span><span class="tag">&lt;/p&gt;</span><span class="pln">
+       </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+    <h2 class="sg">Buttons</h2>
+
+    <button class="btn btn-link">Link Button</button> 
+    <button class="btn btn-disabled">Disabled Button</button> 
+    <button class="btn btn-default">Default Button</button>
+
+<div id="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-12 col-sm-12 tex-right"</span><span class="tag">&gt;</span><span class="pln">
+       </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-link"</span><span class="tag">&gt;</span><span class="pln">Link Button</span><span class="tag">&lt;/button&gt;</span><span class="pln">
+       </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-disabled"</span><span class="tag">&gt;</span><span class="pln">Disabled Button</span><span class="tag">&lt;/button&gt;</span><span class="pln">
+       </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-default"</span><span class="tag">&gt;</span><span class="pln">Default Button</span><span class="tag">&lt;/button&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+            <h2 class="sg">On Off Switch</h2>
+
+<div class="form-group">
+    <label for="" class="control-label col-lg-4 col-sm-4">On Off Switch</label>
+    <div class="col-lg-8 col-sm-8">
+        <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+    </div>
+</div>
+
+
+<div id="htmlOutputWrapper">
+  <pre class="htmlOutput html prettyprint">
+    <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+       </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-label col-lg-4 col-sm-4"</span><span class="tag">&gt;</span><span class="pln">On Off Switch</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+       </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-lg-8 col-sm-8"</span><span class="tag">&gt;</span><span class="pln">
+          </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"onoffswitch"</span><span class="tag">&gt;</span><span class="pln">
+             </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"onoffswitch"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"onoffswitch-checkbox"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"myonoffswitch"</span><span class="pln"> </span><span class="atn">checked</span><span class="tag">&gt;</span><span class="pln">
+             </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"onoffswitch-label"</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"myonoffswitch"</span><span class="tag">&gt;</span><span class="pln">
+             </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"onoffswitch-inner"</span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln">
+             </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"onoffswitch-switch"</span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln">
+             </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+          </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+       </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span>
+  </pre>
+</div>
+
+          </form>
+        </div>
+    </div>
+</div>
+
+
+<div id="feedback" class="sg-header">
+    <h1 class="sg">Feedback</h1>
+    <h2 class="sg">Info Message</h2>
+    <p class="alert alert-info"><i class="fa fa-info-circle"></i> Info message</p>
+    <h2 class="sg">Warning Message</h2>
+    <p class="alert alert-warning"><i class="fa fa-exclamation-triangle"></i> Warning message</p>
+    <h2 class="sg">Error Message</h2>
+    <p class="alert alert-danger"><i class="fa fa-exclamation-triangle"></i> Error message</p>
+    <h2 class="sg">Success Message</h2>
+    <p class="alert alert-success"><i class="fa fa-check-circle" aria-hidden="true"></i> Success message</p>
+</div>
       <div id="lists" class="sg-header">
-        <h1>Lists</h1>
+        <h1 class="sg">Lists</h1>
         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
       </div>
-      <div id="tables" class="sg-header">    
-        <h1>Tables</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-      </div>
+
       <div id="dialogs" class="sg-header">
-        <h1>Dialogs</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-      </div>
-      <div id="feedback" class="sg-header">
-        <h1>Feedback</h1>
+        <h1 class="sg">Dialogs</h1>
         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
       </div>
       <div id="icons" class="sg-header">
-        <h1>Icons</h1>
+        <h1 class="sg">Icons</h1>
         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
       </div>
       <div id="stats-data" class="sg-header">
-        <h1>Stats/Data</h1>
+        <h1 class="sg">Stats/Data</h1>
         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
       </div>
       <div id="misc" class="sg-header">
-        <h1>Misc</h1>
+        <h1 class="sg">Misc</h1>
         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
       </div>
       <div id="helper-classes" class="sg-header">
-        <h1>Helper Classes</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+        <h1 class="sg">Helper Classes</h1>
+        <h2 class="sg">Text Helpers classes</h2>
+        <h3 class="sg">.text-right</h3>
+        <h3 class="sg">.text-left</h3>
+        <h3 class="sg">.text-wrap</h3>
       </div>
     </div>
   </div>
