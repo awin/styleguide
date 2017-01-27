@@ -17,8 +17,8 @@ exec:
 	docker exec -it style-guide bash
 
 push:
-	docker tag -f style-guide dockerhub.zanox.com:5000/styleguide:$(version)
-	docker push dockerhub.zanox.com:5000/styleguide:$(version)
+	docker tag -f style-guide registry.zanox.com/styleguide:$(version)
+	docker push registry.zanox.com/styleguide:$(version)
 
 rsync:
 	rsync -e "docker exec -i" --blocking-io -avz --delete \
