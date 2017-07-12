@@ -16,6 +16,9 @@ stop:
 exec:
 	docker exec -it style-guide bash
 
+logs:
+	docker logs -f style-guide
+
 push:
 	docker tag -f style-guide registry.zanox.com/styleguide:$(version)
 	docker push registry.zanox.com/styleguide:$(version)
@@ -28,7 +31,8 @@ rsync:
 		--checksum \
 		--no-times \
 		--itemize-changes \
-		public/ style-guide:/usr/share/nginx/html/
+		public/ style-guide:/application/public
+	docker exec style-guide gulp
 
 
-.PHONY: all build run start stop push exec rsync
+.PHONY: all build run start stop push exec rsync gulp logs

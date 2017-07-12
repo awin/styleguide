@@ -1,9 +1,18 @@
-FROM nginx
+FROM registry.zanox.com/asset-crusher
 
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -yqq \
-    rsync && \
-    apt-get clean && rm -r /var/lib/apt/lists/*
+# Install gulp requirements
+COPY package.json ./
+RUN npm install
 
-COPY public /usr/share/nginx/html
-COPY docker/default.conf /etc/nginx/conf.d/default.conf
-COPY docker/healthcheck.conf /etc/nginx/conf.d/
+# Copy all sources
+COPY public ./public
+
+# Run gulp
+COPY gulpfile.js ./
+RUN gulp
+
+# Copy over webserver configuration
+COPY docker/default.conf /etc/nginx/sites-available/default
+COPY docker/healthcheck.conf /etc/nginx/sites-enabled/healthcheck
+# Test nginx config
+RUN nginx -t
