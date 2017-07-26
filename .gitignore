@@ -2,4 +2,4 @@
 public/styleguide.sublime-project
 public/styleguide.sublime-workspace
 node_modules
-public/minified
+public/dist
