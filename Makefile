@@ -2,40 +2,42 @@ version ?= latest
 all: build
 
 build:
-	docker build -t style-guide -f docker/Dockerfile .
+	docker build -t registry.zanox.com/styleguide -f docker/Dockerfile .
 
 run:
-	docker run --rm -it style-guide bash
+	docker run --rm -it registry.zanox.com/styleguide bash
 
 start: stop
-	docker run -d --name style-guide -p 80:80 -p 8080:8080 style-guide
+	docker run -d --name styleguide \
+		-p 80:80 -p 8080:8080 \
+		registry.zanox.com/styleguide
 
 stop:
-	@docker rm -vf style-guide ||:
+	@docker rm -vf styleguide ||:
 
 exec:
-	docker exec -it style-guide bash
+	docker exec -it styleguide bash
 
 logs:
-	docker logs -f style-guide
+	docker logs -f styleguide
 
 push:
-	docker tag -f style-guide registry.zanox.com/styleguide:$(version)
+	docker tag registry.zanox.com/styleguide registry.zanox.com/styleguide:$(version)
 	docker push registry.zanox.com/styleguide:$(version)
 
 clean:
 	-rm -r bower_components node_modules public/dist public/fonts
 
 rsync:
-	rsync -e "docker exec -i" --blocking-io -avz --delete \
+	@rsync -e "docker exec -i" --blocking-io -avz --delete \
 		--no-perms --no-owner --no-group \
 		--exclude-from=".dockerignore" \
 		--exclude-from=".gitignore" \
 		--checksum \
 		--no-times \
 		--itemize-changes \
-		public/ style-guide:/application/public
-	docker exec style-guide gulp
+		public/ styleguide:/application/public
+	@docker exec styleguide gulp
 
 
-.PHONY: all build run start stop push clean exec rsync gulp logs
+.PHONY: all build run start stop push clean exec rsync logs
