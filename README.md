@@ -1,20 +1,19 @@
-# Style Guide
+Style Guide
+===========
 
-## Installation instructions
+Official Style guide for all Awin projects. Serves as a reference for
+Development by providing a markup pattern library for common UI elements.
 
-Standard `make` to build, `make start` to start, `make stop` to stop
+Developmnet Lifecycle
+=====================
 
-## Deployment
+Test your work locally with standard makefile workflow: `make` to build, `make
+start` to host, `make run` to poke in a fresh container, `make exec` to poke
+into a running one.
 
 This project is automatically built and deployed with Jenkins
 
 Here are the [Build Job](https://jenkins.zanox.com/job/INTERNAL-styleguide_1-Build/) and [Deploy Job](https://jenkins.zanox.com/job/INTERNAL-styleguide_4-Office).
-
-The project is deployed on the following servers
-
-```
-z-lhr1-docker-002
-```
 
 License
 =======
