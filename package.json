@@ -14,7 +14,7 @@
   "contributors": [
     "Yarek Tyshchenko <yarek.tyshchenko@awin.com>"
   ],
-  "license": "UNLICENSED",
+  "license": "BSD-3-Clause",
   "private": true,
   "bugs": {
     "url": "https://github.com/zanox/styleGuide/issues"
