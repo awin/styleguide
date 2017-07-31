@@ -2,22 +2,20 @@
   html, body {
       position: relative;
       font-family: 'Open Sans', verdana, Arial, serif;
-      background-color: #f1f1f1;
+      background-color: #ffffff;
+      margin:0;
   }
-  nav {
-    width: 285px;
-  }
+
   .affix {
       top: 20px;
       position: fixed;
-      width: 275px;
   }
 
   .sg-lhs {
-    background: #23282c;
-    width: 300px;
-    float: left;
-    padding: 20px 0;
+  background: #f9f9f9;
+  float: left;
+  padding: 20px 0;
+  border-right: 1px solid #efefef;
   }
   .sg-rhs {
     width: 75%;
@@ -26,10 +24,9 @@
     overflow: hidden;
   }
   .sg-lhs h1.logo {
-    color: #fff;
     font-size: 18px;
-    font-weight: normal;
-    padding-left: 20px;
+    font-weight: bold;
+    padding-left: 10px;
 }
   h1.sg {
     font-size: 42px;
@@ -74,17 +71,22 @@ pre {
     margin-left: 20px;
     margin-right: 20px;
 }
-.nav {
+.sg-lhs .nav {
   margin-right: 0;
 }
 
-.nav > li > a {
-  font-size: 12px;
+.sg-lhs .nav > li > a {
+    font-size: 12px;
+    color: #ff6600;
 }
-.nav > li > a:hover {
-  background-color: rgba(255,255,255,.5);
+.sg-lhs .nav > li > a:hover {
+    background-color: rgba(255,255,255,.5);
 }
 
 .sg-description {
   font-size: 14px;
+}
+
+.sg-rhs pre.prettyprint {
+    background-color: transparent;
 }
