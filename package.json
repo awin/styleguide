@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/zanox/styleGuide#readme",
   "dependencies": {
+    "bower": "^1.8.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.6.0",
     "gulp-concat": "^2.6.1",

@@ -1,0 +1,14 @@
+{
+  "name": "styleguide",
+  "description": "Style Guide",
+  "main": "public/dist/awin.css",
+  "authors": [
+    "Yarek Tyshchenko <yarek.tyshchenko@awin.com>"
+  ],
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/zanox/styleGuide",
+  "private": true,
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}

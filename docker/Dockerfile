@@ -1,8 +1,9 @@
 FROM registry.zanox.com/asset-crusher
 
 # Install gulp requirements
-COPY package.json ./
-RUN npm install
+COPY package.json bower.json ./
+RUN npm install && \
+    ./node_modules/bower/bin/bower install --allow-root
 
 # Copy all sources
 COPY public ./public

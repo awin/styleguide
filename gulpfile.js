@@ -4,8 +4,14 @@ let cleanCSS = require('gulp-clean-css');
 let sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('default',() => {
+    // Assets
+    gulp.src('./bower_components/font-awesome/fonts/*')
+        .pipe(gulp.dest('public/fonts'));
     // CSS
-    gulp.src('./public/css/*.css')
+    gulp.src([
+            './bower_components/font-awesome/css/font-awesome.css',
+            './public/css/*.css'
+        ])
         .pipe(sourcemaps.init())
         .pipe(cleanCSS({level: { 1: {
             tidySelectors: false // controls selectors optimizing; defaults to `true`,
@@ -15,9 +21,6 @@ gulp.task('default',() => {
         .pipe(gulp.dest('./public/dist/'));
     // JS
     gulp.src('./public/js/*.js')
-       .pipe(concat('awin.js'))
-       .pipe(gulp.dest('./public/dist'));
-    // Copy over fonts
-    gulp.src('./public/assets/**/*')
-        .pipe(gulp.dest('./public/dist/assets'));
+        .pipe(concat('awin.js'))
+        .pipe(gulp.dest('./public/dist'));
 });

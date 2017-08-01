@@ -23,6 +23,9 @@ push:
 	docker tag -f style-guide registry.zanox.com/styleguide:$(version)
 	docker push registry.zanox.com/styleguide:$(version)
 
+clean:
+	-rm -r bower_components node_modules public/dist public/fonts
+
 rsync:
 	rsync -e "docker exec -i" --blocking-io -avz --delete \
 		--no-perms --no-owner --no-group \
@@ -35,4 +38,4 @@ rsync:
 	docker exec style-guide gulp
 
 
-.PHONY: all build run start stop push exec rsync gulp logs
+.PHONY: all build run start stop push clean exec rsync gulp logs
