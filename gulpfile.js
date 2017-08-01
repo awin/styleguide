@@ -17,4 +17,7 @@ gulp.task('default',() => {
     gulp.src('./public/js/*.js')
        .pipe(concat('awin.js'))
        .pipe(gulp.dest('./public/dist'));
+    // Copy over fonts
+    gulp.src('./public/assets/**/*')
+        .pipe(gulp.dest('./public/dist/assets'));
 });
