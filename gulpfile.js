@@ -3,11 +3,14 @@ let concat = require('gulp-concat');
 let cleanCSS = require('gulp-clean-css');
 let sourcemaps = require('gulp-sourcemaps');
 
-gulp.task('default',() => {
-    // Assets
+gulp.task('default', ['fonts', 'css', 'js']);
+
+gulp.task('fonts', () => {
     gulp.src('./bower_components/font-awesome/fonts/*')
         .pipe(gulp.dest('public/fonts'));
-    // CSS
+})
+
+gulp.task('css', () => {
     gulp.src([
             './bower_components/font-awesome/css/font-awesome.css',
             './public/css/*.css'
@@ -19,7 +22,9 @@ gulp.task('default',() => {
         .pipe(concat('awin.css'))
         .pipe(sourcemaps.write('.', {includeContent: true}))
         .pipe(gulp.dest('./public/dist/'));
-    // JS
+});
+
+gulp.task('js', () => {
     gulp.src([
             './bower_components/bootstrap/dist/js/bootstrap.js',
             './bower_components/jquery/dist/jquery.js',
