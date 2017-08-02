@@ -9,6 +9,7 @@
   "homepage": "https://github.com/zanox/styleGuide",
   "private": true,
   "dependencies": {
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "bootstrap": "^3.3.7"
   }
 }
