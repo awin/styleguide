@@ -3,8 +3,14 @@ let concat = require('gulp-concat');
 let cleanCSS = require('gulp-clean-css');
 let sourcemaps = require('gulp-sourcemaps');
 let uglify = require('gulp-uglify');
+let clean = require('gulp-clean');
 
 gulp.task('default', ['fonts', 'css', 'js']);
+
+gulp.task('clean', () => {
+    return gulp.src(['./public/dist', './public/fonts'])
+        .pipe(clean());
+});
 
 gulp.task('fonts', () => {
     return gulp.src('./bower_components/font-awesome/fonts/*')
