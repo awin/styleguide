@@ -20,7 +20,11 @@ gulp.task('default',() => {
         .pipe(sourcemaps.write('.', {includeContent: true}))
         .pipe(gulp.dest('./public/dist/'));
     // JS
-    gulp.src('./public/js/*.js')
+    gulp.src([
+            './bower_components/bootstrap/dist/js/bootstrap.js',
+            './bower_components/jquery/dist/jquery.js',
+            './public/js/*.js',
+        ])
         .pipe(concat('awin.js'))
         .pipe(gulp.dest('./public/dist'));
 });
