@@ -11,6 +11,8 @@ Test your work locally with standard makefile workflow: `make` to build, `make
 start` to host, `make run` to poke in a fresh container, `make exec` to poke
 into a running one.
 
+source files are placed in `src/css` and `src/js`. Gulp copies them to `public/css` and `public/js`, then minifies them and places the final result into `public/dist`. The full URL for loading the main CSS file is `//styleguide.awin.com/dist/awin.css`
+
 This project is automatically built and deployed with Jenkins
 
 Here are the [Build Job](https://jenkins.zanox.com/job/INTERNAL-styleguide_1-Build/) and [Deploy Job](https://jenkins.zanox.com/job/INTERNAL-styleguide_4-Office).

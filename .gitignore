@@ -2,5 +2,7 @@
 node_modules
 bower_components
 public/dist
+public/css
+public/js
 public/fonts
 .idea/
