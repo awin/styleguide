@@ -15,6 +15,7 @@ RUN npm install && \
 
 # Copy all sources
 COPY public ./public
+COPY src ./src
 COPY gulpfile.js ./
 RUN gulp
 
