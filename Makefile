@@ -26,7 +26,7 @@ push:
 	docker push registry.zanox.com/styleguide:$(version)
 
 clean:
-	-rm -r bower_components node_modules public/dist public/fonts
+	-rm -r bower_components node_modules public/dist public/fonts public/css public/js
 
 rsync:
 	@rsync -e "docker exec -i" --blocking-io -avz --delete \
