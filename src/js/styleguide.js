@@ -1,7 +1,7 @@
 /* activate sidebar */
-$('#sidebar').affix({
+$('.nav-sg').affix({
   offset: {
-    top: 235
+    top: 400
   }
 });
 
@@ -10,7 +10,7 @@ var $body   = $(document.body);
 var navHeight = $('.navbar').outerHeight(true) + 10;
 
 $body.scrollspy({
-  target: '#leftCol',
+  target: '.sg-rhs',
   offset: navHeight
 });
 

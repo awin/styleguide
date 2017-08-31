@@ -1,69 +1,81 @@
+html, body {
+    position: relative;
+    font-family: 'Open Sans', verdana, Arial, serif;
+    background-color: #ffffff;
+    margin: 0;
+}
 
-  html, body {
-      position: relative;
-      font-family: 'Open Sans', verdana, Arial, serif;
-      background-color: #ffffff;
-      margin:0;
-  }
+.sg-title-header {
+    background-color: #f1f1f1;
+}
 
-  .affix {
-      top: 20px;
-      position: fixed;
-  }
+.affix {
+    top: 100px;
+    position: fixed;
+    width: 100%;
+}
 
-  .sg-lhs {
-  background: #f9f9f9;
-  float: left;
-  padding: 20px 0;
-  border-right: 1px solid #efefef;
-  }
-  .sg-rhs {
-    width: 75%;
+#aw-scrollspy {
+    width: 250px;
+}
+
+.sg-lhs {
+    width: 80%;
     float: left;
     padding: 50px;
     overflow: hidden;
-  }
-  .sg-lhs h1.logo {
-    font-size: 18px;
-    font-weight: bold;
-    padding-left: 10px;
 }
-  h1.sg {
+
+.sg-rhs {
+    float: right;
+    padding: 20px 0;
+    width: 249px;
+    right: 0;
+}
+
+h1.sg {
     font-size: 42px;
     margin-top: 150px;
     margin-bottom: 20px;
     font-weight: normal;
-  }
-  h2.sg {
+}
+
+h2.sg {
     font-size: 24px;
     font-weight: bold;
     margin-top: 40px;
     font-weight: normal;
-    border:none;
-  }
-  h3.sg {
-    font-size: 14px;
-  }
-
-  h1.first-heading {
-  margin-top: 20px;
+    border: none;
 }
-  .tag {
+
+h3.sg {
+    font-size: 14px;
+}
+
+h1.first-heading {
+    margin-top: 20px;
+}
+
+.tag {
     color: #008;
 }
 
 .pln {
     color: #000;
 }
+
 .atn {
     color: #606;
 }
+
 .pun, .opn, .clo {
     color: #660;
 }
+
 .atv {
     color: #080;
 }
+
 pre {
     font-size: 16px;
     line-height: 22px;
@@ -71,22 +83,27 @@ pre {
     margin-left: 20px;
     margin-right: 20px;
 }
-.sg-lhs .nav {
-  margin-right: 0;
+
+.sg-lhs .nav-sg {
+    margin-right: 0;
+    width: 250px;
 }
 
-.sg-lhs .nav > li > a {
+.sg-lhs .nav-sg > li > a {
     font-size: 12px;
     color: #ff6600;
 }
-.sg-lhs .nav > li > a:hover {
-    background-color: rgba(255,255,255,.5);
+
+.sg-lhs .nav-sg > li > a:hover {
+    background-color: rgba(255, 255, 255, .5);
 }
 
 .sg-description {
-  font-size: 14px;
+    font-size: 14px;
 }
 
-.sg-rhs pre.prettyprint {
+.sg-lhs pre.prettyprint {
     background-color: transparent;
+    margin-left: 0;
+    margin-right: 0;
 }
