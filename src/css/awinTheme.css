@@ -274,6 +274,12 @@ body.bg-white {
 
 .row-eq-height {
   display: flex;
+  clear: both;
+}
+@media (max-width: 480px) {
+  .row-eq-height {
+    display: block;
+  }
 }
 
 .container {
@@ -948,7 +954,7 @@ body.bg-white {
 Typography, headings
 ---------------------------------------------------------------------------- */
 
-.page-header, .widget .header {
+.page-header, .row-widget, .widget .header {
   border-bottom: 1px solid #dedede;
   height: 54px;
   line-height: 60px;
@@ -1288,6 +1294,19 @@ a.bg-danger:focus {
   background-color: #e4b9b9;
 }
 
+.badge.bg-success {
+  color: #fff;
+  background-color: #3c763d;
+}
+.badge.bg-warning {
+  color: #fff;
+  background-color: #fcf8e3;
+}
+.badge.bg-danger  {
+  color: #fff;
+  background-color: #a94442;
+}
+
 /* ---------------------------------------------------------------------------- 
 Tables
 ---------------------------------------------------------------------------- */
@@ -1308,6 +1327,17 @@ th, td {
 .table {
   width: 100%;
   margin-bottom: 20px;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.table-responsive.table-bordered {
+  border: 0;
 }
 
 .table thead > tr > th,
@@ -1384,28 +1414,6 @@ table.text-right tbody > tr > td.text-center {
 .table thead:first-child tr:first-child td {
   border-top: 0;
 }
-
-th.sortable span.sortAscending {
-    background: transparent url("https://images.awin.com/common/arrow_up_medium.gif") right 6px no-repeat;
-}
-
-th.sortable span.sortDescending {
-    background: transparent url("https://images.awin.com/common/arrow_down_medium.gif") right 6px no-repeat;
-}
-
-th.sortable span.sortAscending,
-th.sortable span.sortDescending {
-    padding-right: 15px;
-    position: relative;
-}
-
-/*th.sortable span.sortAscending:before,
-th.sortable span.sortDescending:before {
-  content: "\f0d8";
-  font-size: 2.6em;
-  color: #fff;
-  top: 9px;
-}*/
 
 .table tbody + tbody {
   border-top: 2px solid #dddddd;
@@ -1674,6 +1682,23 @@ table [class*='col'] {
   padding-right: 20px;
 }
 
+/* Table sorting */
+
+th.sortable span.sortAscending:after, th.sortable span.sortDescending:after {
+  font-family: FontAwesome;
+  font-size: 12px;
+  color: #f60;
+  margin-left: 5px;
+}
+
+th.sortable span.sortAscending:after {
+  content: "\f0d8";
+}
+
+th.sortable span.sortDescending:after {
+  content: "\f0d7";
+}
+
 /* ----------------------------------------------------------------------------
 Flags
 ---------------------------------------------------------------------------- */
@@ -1761,7 +1786,19 @@ Flags
 .flag_fr {
   background-position: 0 -252px;
 }
-
+.flag_pt {
+  background-position: 0 -266px;
+}
+.flag_ru {
+  background-position: 0 -280px;
+}
+}
+.flag_cz {
+  background-position: 0 -294px;
+}
+.flag_hu {
+  background-position: 0 -308px;
+}
 
 /* ----------------------------------------------------------------------------
 Report Tables
@@ -1775,35 +1812,28 @@ Report Tables
   margin-left: 4px;
 }*/
 
-table tbody td.expand a.toggle,
-table tr:hover tbody td a.toggle,
-table tr thead td.expand a.toggle,
-table th.toggleAll a.toggle {
-    background: url(http://images.awin.com/common/plus.gif) 50% 50% no-repeat;
-    display: block;
-    overflow: hidden;
-    text-indent: -10000px;
-    padding:0 0 0 10px;
-    line-height: 1.4em;
-    text-align: left;
-}
-
 table.reportTable tr.expanded {
     display:none;
 }
+table th.toggleAll a.toggle:before, .table thead th.toggleAll a.expanded:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    color: #f60;
+}
 
-table tr.expanded td.compact a.toggle, .table thead th.toggleAll a.expanded {
-    background: url(http://images.awin.com/common/minus.gif) 50% 50% no-repeat;
-    display: block;
-    overflow: hidden;
-    text-indent: -10000px;
-    padding:0 0 0 10px;
-    line-height: 1.4em;
-    text-align: left;
+table th.toggleAll a.toggle:before {
+    content: "\f105";
+}
+
+.table thead th.toggleAll a.expanded:before {
+    content: "\f107";
 }
 
 table tr.expanded td {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 table th.toggleAll {
@@ -1867,10 +1897,15 @@ table tr.pageTotals td.bonus, th.bonus {
     background: #fff;
 }
 
-.table tbody tr:hover .assists_no, .table tbody tr:hover .first_assist_no,
-.table tbody tr:hover [data-column="assists_no"], .table tbody tr:hover [data-column="first_assist_no"] {
-    background: url(https://images.awin.com/common/icons/16x16/pie_chart_bw.png) 97% 50% no-repeat;
+.table tbody tr:hover .assists_no:after,
+.table tbody tr:hover .first_assist_no:after,
+.table tbody tr:hover [data-column="first_assist_no"]:after {
+    font-family: FontAwesome;
+    content: '\f200';
+    float: right;
+    font-size: 12px;
     color: #f60;
+    margin-right: -15px;
 }
 
 table tr.light td.approved,
@@ -2024,7 +2059,7 @@ select:hover, select.form-control:hover {
 }
 
 select.form-control.disabled:hover, input.form-control.disabled:hover, textarea.form-control.disabled:hover {
-  color: #e5e5e5;
+  color: #999999;
 }
 
 select option {
@@ -2033,7 +2068,7 @@ select option {
 
 select[disabled], select.disabled,
 select[disabled]:hover, select.disabled:hover {
-    background: #eeeeee url("https://images.awin.com/common/arrow_dropdown_disabled.png") no-repeat scroll 97% center;
+    background: #eeeeee url("https://images.awin.com/common/arrow_dropdown_disabled.png") no-repeat scroll right center;
     color: #999999;
     cursor: not-allowed;
 }
@@ -2797,14 +2832,22 @@ select[multiple].input-lg {
   position: relative;
 }
 
-.btn-caret:before {
-  bottom: -15px;
-  color: #e5e5e5;
+.btn-caret:before, .btn-caret:after {
   content: "\f0d8";
   font-family: Fontawesome;
-  font-size: 24px;
-  left: 47%;
+  font-size: 27px;
+  right: 50%;
   position: absolute;
+}
+
+.btn-caret:before {
+  bottom: -11px;
+  color: #dedede;
+}
+
+.btn-caret:after {
+  bottom: -12px;
+  color: #f9f9f9;
 }
 
 .btn-xs {
@@ -2856,7 +2899,8 @@ fieldset[disabled] .btn-link {
 }
 
 .close:hover,
-.close:focus {
+.close:focus,
+.table tr:hover .tag .close {
   color: #000000;
   text-decoration: none;
   cursor: pointer;
@@ -3155,7 +3199,7 @@ ul.errors, .errorMessage {
 }
 
 .has-disabled .select2-angular-single .select2-container .select2-choice .select2-arrow {
-  background: #eeeeee url("https://images.awin.com/common/arrow_dropdown_disabled.png") no-repeat scroll center center !important;
+  background: #eeeeee url("https://images.awin.com/awin-interface/icons/arrow-down-disabled.png") no-repeat scroll center center !important;
 }
 
 .has-disabled .fa,
@@ -3425,7 +3469,7 @@ body > .select2-container {
   opacity: 100;
 }
 
-.select2-angular .close {
+.select2-angular .close, .tag .close {
   font-size: 14px;
   line-height: inherit;
   font-weight: normal;
@@ -4712,10 +4756,7 @@ Filters
 ---------------------------------------------------------------------------- */
 
 .filters {
-  overflow: hidden;
-  padding: 10px 0;
-  margin-bottom: 10px;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .filters .col-lg-8,
@@ -4725,8 +4766,7 @@ Filters
 }
 
 .row-filters-horizontal {
-  padding: 10px 10px;
-  margin: 20px 0;
+  padding: 0 10px 10px;
 }
 .row-filters-horizontal [class*=col] {
   padding: 0 10px;
@@ -4749,7 +4789,7 @@ Badges
 
 .badge {
     display: inline-block;
-    min-width: 20px;
+    min-width: 10px;
     min-height: 20px;
     padding: 3px 7px;
     font-size: 12px;
@@ -5459,6 +5499,7 @@ input.hasDatepicker:hover {
 .ui-datepicker .ui-datepicker-next:hover {
   color: #f60;
   cursor: pointer;
+  opacity: .7;
 }
 
 .ui-datepicker .ui-datepicker-prev {
@@ -5471,9 +5512,11 @@ input.hasDatepicker:hover {
 }
 .ui-datepicker .ui-datepicker-prev:before {
   content: "\f053";
+  color: #f60;
 }
 .ui-datepicker .ui-datepicker-next:before {
   content: "\f054";
+  color: #f60;
 }
 .ui-datepicker-month, .ui-datepicker-year {
     border: 1px solid #dddbdb;
@@ -5759,11 +5802,12 @@ td.device_name .device-target:hover .device-tooltip {
   -webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.2);
   -moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 0.2);
   box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.2);
-  width: 320px;
+  min-width: 320px;
   padding: 12px;
   margin: 5px;
   margin-left: 45px;
   top: 0.3em;
+  left: 100%;
   transform: translate(0, -50%);
   z-index: 21;
   text-align: left;
@@ -5807,7 +5851,7 @@ td.device_name .device-target:hover .device-tooltip {
 }
 
 .progress-tooltip-left {
-  right: 45px;
+  right: -335px;
 }
 
 .progress-tooltip-left:after,
@@ -6096,17 +6140,17 @@ List progress
 }
 
 .list-progress li.text-success:before {
-  content: "\f058";
+  content: "\f00c";
   color: #6caf47;
 }
 
 .list-progress li.text-warning:before {
-  content: "\f06a";
+  content: "\f111";
   color: #c09853;
 }
 
 .list-progress li.text-danger:before {
-  content: "\f057";
+  content: "\f00d";
   color: #b94a48;
 }
 
@@ -6134,8 +6178,6 @@ ol.progress-list h5 {
 ol.progress-list li {
     padding-left: 10px;
     padding-top: 3px;
-    max-height: 48px;
-    overflow: hidden;
 }
 ol.progress-list p {
     font-size: 10px;
@@ -6285,10 +6327,15 @@ Autocomplete styles
 Extra styling
 ---------------------------------------------------------------------------- */
 .border-dashed {
-  border: 1px dashed #eee;
+  border: 1px dashed #ddd;
   margin-bottom: -10px;
   padding: 5px;
 }
+
+.table .fa-scissors {
+  color: #999;
+}
+
 .voucher-code {
   padding-bottom: 10px;
 }
@@ -6598,6 +6645,9 @@ input.view-mode {
   overflow-x: auto;
 }
 
+.enable-resize {
+  resize: both;
+}
 
 /* ----------------------------------------------------------------------------
 Temporary classes used to support darwin existing markup
@@ -6652,11 +6702,6 @@ img.ui-datepicker-trigger {
   color: #369;
 }
 
-/* Payment pogrogress tooltip for transaction report */
-td.payment_progress .progress-tooltip {
-  margin-left: 99px;
-}
-
 /* Up and down arrow images publisher performance comparison */
 .reportTable tbody tr td img {
   vertical-align: middle;
@@ -6676,7 +6721,7 @@ td.payment_progress .progress-tooltip {
 /* Pagination: My Offers (adv), */
 
 .pagination {
-  padding: 20px;
+  padding: 20px 15px;
   text-align: center;
 }
 .paginationButton, .pagination li {
@@ -6710,8 +6755,29 @@ td.payment_progress .progress-tooltip {
   cursor: default;
 }
 
+.pagination .goToPage span#currentPage, .pagination li.active,
+.pagination .goToPage span#currentPage a, .pagination li.active a, .pagination li.disabled a {
+  background-color: #fff;
+  color: #f60;
+  cursor: default;
+}
+
 .pagination .goToPage span#currentPage, .pagination li.active {
   border: 1px solid #f60;
+}
+
+.pagination span#pagLastPage, .pagination span#pagNextPage, .pagination span#pagPreviousPage, .pagination span#pagFirstPage {
+    border: none;
+}
+
+.pagination .fa-angle-right, .btn-link .fa-angle-right {
+  font-size: 17px;
+  margin-left: 5px;
+}
+
+.pagination .fa-angle-left, .btn-link .fa-angle-left {
+  font-size: 17px;
+  margin-right: 5px;
 }
 
 /* Pagination (angularDirectory.css): Add manual commission / Opportunities; */
@@ -7713,38 +7779,16 @@ td.paymentStatus {
   position: relative;
 }
 
-/* Not sure what does this do. Commenting out for now.
-
-td span.confirmed:before, td span.pending:before, td span.declined:before {
-    content: "\f111";
-    font-family: "FontAwesome";
-    font-size: 16px;
-    left: -15px;
-    position: absolute;
-    top: 30%;
-}
-td span.declined:before {
-  color: #b41831;
-}
-
-td span.confirmed:before {
-  color: #00964b;
-}
-
-td span.pending:before {
-    color: #fab418;
-}*/
-
 table .fa {
   font-size: 14px;
   margin-left: 5px;
   color: #f60;
   opacity: .8;
 }
-.fa-arrow-circle-down, .fa-arrow-down {
+.fa-arrow-down {
   color: rgba(222,8,51,1) !important;
 }
-.fa-arrow-circle-up, .fa-arrow-up {
+.fa-arrow-up {
   color: rgba(0,150,75,1) !important;
 }
 table .fa-arrows-h, .fa-arrows-h {
@@ -8206,7 +8250,8 @@ button.ui-dialog-titlebar-close {
 }
 
 .modal .cancel-button {
-  margin-top: 20px;
+  margin-top: 18px;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -8299,7 +8344,7 @@ button.ui-dialog-titlebar-close {
 }
 
 .email-form .ng-valid.ng-dirty {
-    border-color: #3C6F1F;
+    border-color: #3c763d;
 }
 
 .email-form .bottomSection input {
@@ -8484,27 +8529,43 @@ div#directoryRefineby .header, #directoryRefineby .header h3 {
 }
 
 #directoryRefineby h3, div#directoryRefineby .header {
-    border-bottom: 1px solid #dedede;
+    border-bottom: 1px solid #eeeeee;
     border-top: 1px solid #fff;
     margin-bottom: 0;
     font-size: 15px;
 }
 
 #directoryRefineby h3 span {
-    background: url(http://images.awin.com/common/arrow_large.gif) 14px 10px no-repeat;
     display: block;
     min-height: 17px;
-    padding: 8px 10px 8px 30px;
-    font-size: 15px;
-    font-weight: 600;
+    padding: 10px;
+    font-size: 14px;
 }
 
-#directoryRefineby h3 span.expanded {
-    background: url(http://images.awin.com/common/arrow_down_large.gif) 10px 13px no-repeat;
+#directoryRefineby h3 span:before, #directoryRefineby h3 span.expanded:before,
+#directoryRefineby .header h3:before, #directoryRefineby .header h3.expanded:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #f60;
+    margin-right: 8px;
+    width: 8px;
+}
+
+#directoryRefineby h3 span:before,
+#directoryRefineby .header h3:before {
+    content: "\f105";
+}
+
+#directoryRefineby h3 span.expanded:before,
+#directoryRefineby .header h3.expanded:before {
+    content: "\f107";
 }
 
 #directoryRefineby h3 span:hover {
-    background-color: #f4f4f4;
+    color: #f60;
     cursor: pointer;
 }
 
@@ -8512,9 +8573,13 @@ div#directoryRefineby .header, #directoryRefineby .header h3 {
     margin-right: 5px;
 }
 
+#directoryRefineby .header h3 {
+    padding: 0;
+}
+
 .refinebyExpanded {
     padding: 0 5px;
-    border-bottom: 1px solid #dedede;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .refinebyExpanded p {
@@ -8613,24 +8678,32 @@ li.selected label {
     font-size: 10px;
 }
 
-.treeview #refinePromotion > ul, .treeview #refineSector > ul {
-    margin-left: 1.4em;
+.treeview ul.subLevel {
+    margin-left: 1.7em;
 }
 
 .treeview .hitarea {
-    background: url(http://images.awin.com/common/icons/treeview.gif) -80px -5px no-repeat;
-    height: 15px;
-    width: 20px;
-    float: left;
-    display: inline;
-    cursor: pointer;
-    padding: 0px;
-    margin-left: -35px;
-    margin-top: 6px;
+  display: inline;
+  margin-left: -13px;
 }
 
-.treeview .expanded {
-    background: url(http://images.awin.com/common/icons/treeview.gif) -64px -25px no-repeat
+.treeview ul li .hitarea:before, .treeview ul li .expanded:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #f60;
+  margin-right: 25px;
+  width: 8px;
+}
+
+.treeview ul li .hitarea:before {
+  content: "\f105";
+}
+
+.treeview ul li .expanded:before {
+  content: "\f107";
 }
 
 /* Account icons on manage account page */
@@ -8788,22 +8861,35 @@ h3.awin-favicon, h3.zanox-favicon {
 
 /* Progress bar for datafeeds (edit/add) */
 
-.progressBarWrapper {
-  background-color: #339900;
-  border: none;
+.ui-progressbar-wrapper {
+  background-color: #fff;
+  border: 1px solid #dedede;
   padding: 20px;
   text-align: left;
-}
-#process {
-  margin: 10px 0 0;
-  font-size: 14px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 
-.progressBar div {
+.ui-progressbar {
+  height: 10px;
+  text-align: left;
+  background-color: #f1f1f1;
+  margin-bottom: 8px
+}
+
+.ui-progressbar .ui-progressbar-value {
   display: block !important; /* This ensures the transitions work from the start */
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  background-color: #339900;
+  height: 100%;
+}
+
+.ui-progressbar-wrapper p {
+  margin-bottom: 0;
+  color: #999;
 }
 
 footer#footerPush {
@@ -8838,4 +8924,112 @@ footer#footerPush {
   z-index: 666666;
   border-top: 5px solid #dedede;
   background-color: #fff;
+}
+
+/* --------------------------------------------------------------------
+Hiding rules
+-------------------------------------------------------------------- */
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+.hidden-xs-up {
+  display: none !important;
+}
+
+@media (max-width: 575px) {
+  .hidden-xs-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .hidden-sm-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-sm-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hidden-md-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .hidden-md-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .hidden-lg-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .hidden-lg-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hidden-xl-up {
+    display: none !important;
+  }
+}
+
+.hidden-xl-down {
+  display: none !important;
+}
+
+.visible-print-block {
+  display: none !important;
+}
+
+@media print {
+  .visible-print-block {
+    display: block !important;
+  }
+}
+
+.visible-print-inline {
+  display: none !important;
+}
+
+@media print {
+  .visible-print-inline {
+    display: inline !important;
+  }
+}
+
+.visible-print-inline-block {
+  display: none !important;
+}
+
+@media print {
+  .visible-print-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media print {
+  .hidden-print {
+    display: none !important;
+  }
 }
