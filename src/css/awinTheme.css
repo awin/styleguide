@@ -4889,9 +4889,6 @@ Tooltip and popover
 form .tooltip.right {
   margin-left: 98%;
 }
-form .col-lg-4 .tooltip.right {
-  margin-left: -20px;
-}
 
 .tooltip.bottom {
   padding: 5px 0;
@@ -4972,6 +4969,14 @@ form .col-lg-4 .tooltip.right {
   margin-top: -5px;
   border-width: 0 5px 5px;
   border-bottom-color: #eaeff5;
+}
+
+form .col-lg-4 .tooltip.right {
+  margin-left: -20px;
+}
+
+form .col-lg-4 .tooltip-inner {
+    min-width: auto;
 }
 
 @media (max-width: 767px) {
