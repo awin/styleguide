@@ -4855,7 +4855,7 @@ Tooltip and popover
   position: absolute;
   z-index: 30;
   display: block;
-  font-size: 10px;
+  font-size: 12px;
   font-style: normal;
   font-weight: normal;
   line-height: 1.42857143;
@@ -4890,8 +4890,9 @@ form .tooltip.right {
   margin-left: 98%;
 }
 form .col-lg-4 .tooltip.right {
-  margin-left: 0;
+  margin-left: -20px;
 }
+
 .tooltip.bottom {
   padding: 5px 0;
   margin-top: 3px;
@@ -4972,6 +4973,18 @@ form .col-lg-4 .tooltip.right {
   border-width: 0 5px 5px;
   border-bottom-color: #eaeff5;
 }
+
+@media (max-width: 767px) {
+    .tooltip {
+        margin-top: 10px;
+        position: relative;
+    }
+    form .col-lg-4 .tooltip.right {
+        padding: 0;
+        margin-left: 0;
+    }
+}
+
 .popover {
   position: absolute;
   top: 0;
