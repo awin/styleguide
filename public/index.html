@@ -285,6 +285,112 @@
 </div>
 </xmp>
 
+<h2 class="sg">Table row and alignment styles</h2>
+
+<table class="table table-striped text-right hatch">
+    <tbody>
+        <tr class="pageTotals">
+            <td class="confirmed text-left ">
+                text-left
+            </td>
+            <td class="confirmed">
+                100                
+            </td>
+            <td class="confirmed">
+                100                
+            </td>
+            <td class="confirmed">
+                10.00                
+            </td>
+            <td class="confirmed">
+                10.00                
+            </td>
+        </tr>
+        <tr class="pageTotals">
+            <td class="declined text-center">
+                text-center             
+            </td>
+            <td class="declined">
+                100                
+            </td>
+            <td class="declined">
+                100                
+            </td>
+            <td class="declined">
+                10.00                
+            </td>
+            <td class="declined">
+                10.00                
+            </td>
+        </tr>
+        <tr class="pageTotals">
+            <td class="info total text-right">
+                text-right            
+            </td>
+            <td class="info total">
+                100.00                
+            </td>
+            <td class="info total">
+                100.00                
+            </td>
+            <td class="info total">
+                10.00                
+            </td>
+            <td class="info total">
+                10.00                
+            </td>
+        </tr>
+        <tr class="pageTotals">
+            <td class="pending text-right">
+            </td>
+            <td class="pending ">
+                100                
+            </td>
+            <td class="pending ">
+                100                
+            </td>
+            <td class="pending ">
+                10.00
+            </td>
+            <td class="pending ">
+                10.00
+            </td>
+        </tr>
+        <tr class="pageTotals warning-hatch">
+            <td class="warning">                
+            </td>
+            <td class="warning">
+                10.00                
+            </td>
+            <td class="warning">
+                10.00                
+            </td>
+            <td class="warning">
+                10.00                
+            </td>
+            <td class="warning">
+                10.00                
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>Global table alignment right specially used for tables with figures.</p>
+<xmp class="prettyprint">
+<table class="table text-right"></table>
+</xmp>
+<p>For <strong>hatch</strong> style (diagonal stripes) a <strong>hatch</strong> class is needed in the table tag besides <strong>warning-hatch</strong>.</p>
+<xmp class="prettyprint">
+<table class="table hatch"></table>
+</xmp>
+
+<xmp class="prettyprint">
+<td class="confirmed"></td>
+<td class="declined"></td>
+<td class="total"></td>
+<td class="pending"></td>
+<td class="warning-hatch"></td>
+</xmp>
+
 <!-- Filters -->
 
 <div id="filters" class="sg-header">
