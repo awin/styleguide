@@ -954,7 +954,7 @@ body.bg-white {
 Typography, headings
 ---------------------------------------------------------------------------- */
 
-.page-header, .row-widget, .widget .header {
+.page-header, .row-widget .widget .header {
   border-bottom: 1px solid #dedede;
   height: 54px;
   line-height: 60px;

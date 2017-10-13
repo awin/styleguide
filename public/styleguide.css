@@ -90,6 +90,10 @@ h1.first-heading {
     margin-right: 0;
 }
 
+.boxLtGrey {
+    padding-bottom: 10px;
+}
+
 pre.prettyprint, xmp.prettyprint {
     background-color: #f5f5f5;
     border: none;
@@ -100,7 +104,7 @@ pre.prettyprint, xmp.prettyprint {
 .pln { color: #000 }
 .str { color: #080 }
 .kwd { color: #008 }
-.com { color: #800 }
+.com { color: #666 }
 .typ { color: #606 }
 .lit { color: #066 }
 .pun, .opn, .clo { color: #660 }
