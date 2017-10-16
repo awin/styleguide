@@ -514,6 +514,17 @@
 <xmp class="prettyprint">
 <table class="table text-right"></table>
 </xmp>
+
+<p>Changing colours of links on hover</p>
+<xmp class="prettyprint">
+<table class="table table-hover"></table>
+</xmp>
+
+<p>Vertical alignment in cells:</p>
+<xmp class="prettyprint">
+<td class="align-middle"></td>
+</xmp>
+
 <p>For <strong>hatch</strong> style (diagonal stripes) a <strong>hatch</strong> class is needed in the table tag besides <strong>warning-hatch</strong>.</p>
 <xmp class="prettyprint">
 <table class="table hatch"></table>
@@ -1111,19 +1122,99 @@
 
 <div id="feedback" class="sg-header">
     <h1 class="sg">Feedback</h1>
-    <h2 class="sg">Info Message</h2>
-    <p class="alert alert-info"><i class="fa fa-info-circle"></i> Info message</p>
-    <h2 class="sg">Warning Message</h2>
-    <p class="alert alert-warning"><i class="fa fa-exclamation-triangle"></i> Warning message</p>
-    <h2 class="sg">Error Message</h2>
-    <p class="alert alert-danger"><i class="fa fa-exclamation-triangle"></i> Error message</p>
-    <h2 class="sg">Success Message</h2>
-    <p class="alert alert-success"><i class="fa fa-check-circle" aria-hidden="true"></i> Success message</p>
+
+<p class="alert alert-info"><i class="fa fa-info-circle"></i> Info message</p>
+<xmp class="prettyprint">
+<p class="alert alert-info"><i class="fa fa-info-circle"></i> Info message</p>
+</xmp>
+
+<p class="alert alert-warning"><i class="fa fa-exclamation-triangle"></i> Warning message</p>
+<xmp class="prettyprint">
+<p class="alert alert-warning"><i class="fa fa-exclamation-triangle"></i> Warning message</p>
+</xmp>
+
+<p class="alert alert-danger"><i class="fa fa-exclamation-triangle"></i> Error message</p>
+<xmp class="prettyprint">
+<p class="alert alert-danger"><i class="fa fa-exclamation-triangle"></i> Error message</p>
+</xmp>
+
+<p class="alert alert-success"><i class="fa fa-check-circle" aria-hidden="true"></i> Success message</p>
+<xmp class="prettyprint">
+<p class="alert alert-success"><i class="fa fa-check-circle" aria-hidden="true"></i> Success message</p>
+</xmp>
+
 </div>
 
 <div id="lists" class="sg-header">
     <h1 class="sg">Lists</h1>
-    <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+    <h2 class="sg">List Group with Icons</h2>
+    <div class="row">
+        <div class="col-lg-4 col-md-4">
+            <div class="list-group list-group-icons">
+                <a href="#" class="list-group-item">
+                    <i class="fa fa-check-square-o"></i>
+                    <p>You have 6 commissions to validate</p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <i class="fa fa-exchange" aria-hidden="true"></i>
+                    <p class="icon">You have 2 pending transaction queries</p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <p class="icon">You have 1 publisher to approve</p>
+                </a>
+            </div>
+        </div>
+    </div>
+<xmp class="prettyprint">
+<div class="row">
+    <div class="col-lg-4 col-md-4">
+        <div class="list-group list-group-icons">
+            <a href="#" class="list-group-item">
+                <i class="fa fa-check-square-o"></i>
+                <p>You have 6 commissions to validate</p>
+            </a>
+            <a href="#" class="list-group-item">
+                <i class="fa fa-exchange" aria-hidden="true"></i>
+                <p class="icon">You have 2 pending transaction queries</p>
+            </a>
+            <a href="#" class="list-group-item">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <p class="icon">You have 1 publisher to approve</p>
+            </a>
+        </div>
+    </div>
+</div>
+</xmp>
+
+    <h2 class="sg">Progress List</h2>
+
+    <ul class="list-progress">
+        <li class="text-danger">
+            We could not retrieve this file when we tried to download it.
+        </li>
+        <li class="text-warning">
+            There are 11 products with no category mapping.
+        </li>
+        <li class="text-success">
+            There are no failed products.
+        </li>
+    </ul>
+
+<xmp class="prettyprint">
+<ul class="list-progress">
+    <li class="text-danger">
+        We could not retrieve this file when we tried to download it.
+    </li>
+    <li class="text-warning">
+        There are 11 products with no category mapping.
+    </li>
+    <li class="text-success">
+        There are no failed products.
+    </li>
+</ul>
+</xmp>
+
 </div>
 
 <div id="dialogs" class="sg-header">
