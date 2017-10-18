@@ -5,6 +5,14 @@ html, body {
     margin: 0;
 }
 
+ul li {
+    list-style: none;
+}
+
+.select2-results ul {
+    padding: 0;
+}
+
 .sg-title-header {
     background-color: #ff6600;
     color: #ffffff;
@@ -78,10 +86,6 @@ h1.first-heading {
 
 .sg-lhs .nav-sg > li > a:hover {
     background-color: rgba(255, 255, 255, .5);
-}
-
-.sg-description a, .sg-description a:visited {
-    color: #ff6600;
 }
 
 .sg-lhs pre.prettyprint {
