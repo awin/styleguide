@@ -90,8 +90,23 @@ h1.first-heading {
     margin-right: 0;
 }
 
+#icons .row .fa {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
 .boxLtGrey {
     padding-bottom: 10px;
+}
+
+#popup_container {
+    width: 45%;
+    min-width: 450px;
+    border: 15px solid #ccc;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
 }
 
 pre.prettyprint, xmp.prettyprint {
