@@ -1,29 +1,29 @@
-/* activate sidebar */
-$('.nav-sg').affix({
-  offset: {
-    top: 400
-  }
-});
 
-/* activate scrollspy menu */
-var $body   = $(document.body);
-var navHeight = $('.navbar').outerHeight(true) + 10;
+// Sidebar navigation and auto scrolling
 
-$body.scrollspy({
-  target: '.sg-rhs',
-  offset: navHeight
-});
+  var $body   = $(document.body);
 
-/* smooth scrolling sections */
-$('a[href*="#"]:not([href="#"])').click(function() {
+  $body.scrollspy({
+    target: '#aw-scrollspy'
+  });
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
+        $('html, body').animate({
+          scrollTop: target.offset().top - 20
+        }, 500);
         return false;
       }
     }
+  });
 });
+
+$('.nav li').on('activate.bs.scrollspy', function(e) {
+  var targetId = $(e.target).find('a').attr('href');
+  scrollActive(targetId);
+
+})

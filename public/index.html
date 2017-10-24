@@ -11,28 +11,30 @@
 <body data-spy="scroll" data-target="#aw-scrollspy" data-offset="15" class="scrollspy">
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-12 sg-title-header">
-            <h1>Awin UI Style guide</h1>
+
+    <div id="intro" class="sg-page-header">
+        <div class="row">
+            <div class="col-lg-12">
+                <img src="https://images.awin.com/awin-interface/AWIN-logo.png" alt="Awin Logo" title="Awin">
+            </div>
         </div>
     </div>
     <div class="row">
         <div class="sg-lhs">
 
 <!-- Grid and main containers ************************************************************************************ -->
-<div id="intro" class="sg-header">
-    <h1 class="sg first-heading">Introduction</h1>
-</div>
+
 <div class="sg-description">
-<p>This is a reference guide for standard HTML markup and styles for our interface. </p>
-<p>Few tips to consider when adding a page are as follow:</p>
-<ul>
-    <li>Keep HTML markup separate from the code. Ideal is to use templates</li>
-    <li>Use <strong>//styleguide.awin.com/dist/awin.css</strong> to include CSS. Do not create duplicate CSS file</li>
-    <li>For new page in Provider area use newUIoverride.css only</li>
-    <li>Use existing template for components where possible</li>
+<h1 class="sg first-heading">UI Style guide</h1>
+<h2 class="sg">A standard HTML markup and style reference for the Awin interface</h2>
+<p>A few tips to consider when adding a page:</p>
+<ul class="bullet">
+    <li>Keep the HTML markup separated from the logic. Idealy use templates</li>
+    <li>Use <strong>//styleguide.awin.com/dist/awin.css</strong> to include CSS. Do not create duplicated CSS files</li>
+    <li>For a new page in the Provider area use newUIoverride.css only</li>
+    <li>Use existing templates for components where possible</li>
     <li>In suggested markup there might be some extra wrappers that may not be required in certain cases. You can ignore these on need to need basis</li>
-    <li>If you need any help email  <a href="mailto:UserExperience@awin.com>">UserExperience@awin.com</a> or use slack channel #user-experience.</li>
+    <li>If you need any help email  <a href="mailto:UserExperience@awin.com>">UserExperience@awin.com</a> or use slack channel #user-experience</li>
 </ul>
 <div id="grid-system" class="sg-header">
     <h1 class="sg">Grid System</h1>
@@ -245,7 +247,9 @@
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search Advertisers">
                     <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit" title="Search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        <button class="btn btn-default" type="submit" title="Search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
                     </span>    
                 </div>
             </form>
@@ -258,23 +262,70 @@
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Search Advertisers">
             <span class="input-group-btn">
-            <button class="btn btn-default" type="submit" title="Search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <button class="btn btn-default" type="submit" title="Search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
             </span>    
         </div>
     </form>
 </div>
 </xmp>
+
 <!-- Typography ************************************************************************************ -->
 <div id="typography" class="sg-header">
     <h1 class="sg">Typography</h1>
 </div>
+
+<h2 class="sg">Headers</h2>
+<h1 class="special">h1 - Special. Awin Title</h1>
+<h1>h1. Awin Title</h1>
+<h2>h2. Awin Title</h2>
+<h3>h3. Awin Title</h3>
+<h4>h4. Awin Title</h4>
+<h5>h5. Awin Title</h5>
+<h6>h6. Awin Title</h6>
+
 <xmp class="prettyprint">
-<h1 class="special">h1 - Special. Verdana 18px bold</h1>
-<h1>h1 - Normal. Verdana 14px bold</h1>
-<h2>h2. Verdana 12px</h2>
-<h3>h3, h4 and h5. Verdana 11px </h3>
-<h6>h6. Verdana 10px</h6>
+<h1 class="special">h1 - Special. Awin Title</h1>
+<h1>h1. Awin Title</h1>
+<h2>h2. Awin Title</h2>
+<h3>h3. Awin Title</h3>
+<h4>h4. Awin Title</h4>
+<h5>h5. Awin Title</h5>
+<h6>h6. Awin Title</h6>
 </xmp>
+
+<h2 class="sg">Text Style</h2>
+<p>Paragraph</p>
+<p>Text <strong>Strong</strong></p>
+<p class="text-muted">Text muted</p>
+<p class="text-danger">Text danger</p>
+<p class="text-warning">Text warning</p>
+<p class="text-success">Text success</p>
+<p class="text-info">Text info</p>
+<p>Text <span class="badge">badge</span></p>
+
+<xmp class="prettyprint">
+<p>Paragraph</p>
+<p><strong>Strong</strong></p>
+<p class="text-muted">Text muted</p>
+<p class="text-danger">Text danger</p>
+<p class="text-warning">Text warning</p>
+<p class="text-success">Text success</p>
+<p class="text-info">Text info</p>
+<p>Text <span class="badge">badge</span></p>
+</xmp>
+
+<div class="copy-code-placeholder">
+    <p>Example copy placeholder</p>
+</div>
+
+<xmp class="prettyprint">
+<div class="copy-code-placeholder">
+    <p>Example copy placeholder</p>
+</div>
+</xmp>
+
 <!-- Header -->
 <div id="headers" class="sg-header">
     <h1 class="sg">Headers</h1>
@@ -307,7 +358,7 @@
     <i class="CSS class for icon if required" aria-hidden="true"></i> Link</a>
 </div>
 </xmp>
-<h2 class="sg">Page Header with Dropdown</h2>
+
 <!-- Navigation ************************************************************************************ -->     
 <div id="navigation" class="sg-header">
     <h1 class="sg">Navigation</h1>
@@ -364,6 +415,46 @@
     </div>
 </div>
 </xmp>
+
+<h2 class="sg">Header Tabs</h2>
+<div class="row row-widget">
+    <div class="col-lg-12 col-md-12 wrapper-widget">
+        <div class="widget padding-LR-null">
+            <div class="header header-tabs margin-bottom">
+                <h2>Title</h2>
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#">Option One</a>
+                    </li>
+                    <li>
+                        <a href="#">Option Two</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<xmp class="prettyprint">
+<div class="row row-widget">
+    <div class="col-lg-12 col-md-12 wrapper-widget">
+        <div class="widget padding-LR-null">
+            <div class="header header-tabs margin-bottom">
+                <h2>Title</h2>
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#">Option One</a>
+                    </li>
+                    <li>
+                        <a href="#">Option Two</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</xmp>
+
 <!--Table -->
 <div id="tables" class="sg-header">    
     <h1 class="sg">Tables</h1>
@@ -579,7 +670,6 @@
 </div>
 </xmp>
 
-<h2 class="sg">Table Filter with Title</h2>
 <h2 class="sg">Table Filter with Link</h2>
 
 <div class="row">
@@ -671,22 +761,33 @@
 <div id="form-elements" class="sg-header">
     <h1 class="sg">Form Elements</h1>
 </div>
-<h2 class="sg">Layout</h2>
-<xmp class="prettyprint">
-<div class="row">
-    <div class="col-md-8">
-        <div class="col-lg-8 col-sm-8">
+<h2 class="sg">Form Layout</h2>
+<p>All form elements should be generally wrapped in a <span class="text-success">column 8 div</span>, specially in vertical forms in order to limit the input fields widths.</p>
+<div class="boxLtGrey">
+    <div class="row">
+        <div class="col-md-8 col-lg-8" style="border: 1px dashed #00964b; padding-top: 15px">
             <form action="" class="form-horizontal">
                 <div class="form-group">
-                    <label for="" class="control-label col-lg-4 col-sm-4">
-                    Form Label
-                    </label>
-                    <div class="col-lg-8 col-sm-8">
-                        Space for form element
+                    <label for="" class="control-label col-lg-4 col-md-4">Form Label</label>
+                    <div class="col-lg-8 col-md-8">
+                        <input type="text" name="" class="form-control">
                     </div>
                 </div>
             </form>
         </div>
+    </div>
+</div>
+<xmp class="prettyprint">
+<div class="row">
+    <div class="col-md-8 col-lg-8"">
+        <form action="" class="form-horizontal">
+            <div class="form-group">
+                <label for="" class="control-label col-lg-4 col-md-4">Form Label</label>
+                <div class="col-lg-8 col-md-8">
+                    <input type="text" name="" class="form-control">
+                </div>
+            </div>
+        </form>
     </div>
 </div>
 </xmp>
@@ -990,6 +1091,39 @@
 </div>
 </xmp>
 
+<h2 class="sg">Select and input combination</h2>
+<div class="row">
+    <div class="col-md-8">
+        <div class="col-md-8 col-md-offset-4">
+            <div class="input-group select-input-group">
+                <div class="input-group-addon">
+                    <select>
+                        <option value="">All</option>
+                        <option value="">Option One</option>
+                        <option value="">Option Two</option>
+                    </select>
+                </div>
+                <input type="text" name="" class="form-control" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<xmp class="prettyprint">
+<div class="col-md-8 col-md-offset-4">
+    <div class="input-group select-input-group">
+        <div class="input-group-addon">
+            <select>
+                <option value="">All</option>
+                <option value="">Option One</option>
+                <option value="">Option Two</option>
+            </select>
+        </div>
+        <input type="text" name="" class="form-control" />
+    </div>
+</div>
+</xmp>
+
 <h2 class="sg">Grid selection</h2>
 
 <div class="row">
@@ -1282,7 +1416,7 @@
 <div class="row">
     <div class="col-md-8">
         <div class="form-group">
-            <label for="" class="control-label col-lg-4 col-sm-4">Form field with info message</label>
+            <label for="" class="control-label col-lg-4 col-sm-4">Form field label</label>
             <div class="col-lg-8 col-sm-8">
                 <input name="" class="form-control" type="text">
                 <p class="alert alert-warning"><i class="fa fa-exclamation-triangle"></i> This is a warning information inside form group</p>
@@ -1424,6 +1558,66 @@
 <p class="alert alert-success"><i class="fa fa-check-circle" aria-hidden="true"></i> Success message</p>
 </xmp>
 
+<h2 class="sg">Pop Up Notifications</h2>
+<div class="row">
+    <div class="col-md-12 padding-LR-null">
+        <div id="popup_container" class="error">
+            <div id="popup_title">Error Alert Box</div>
+            <div id="popup_content" class="error">
+                <div id="popup_message">Error alert message</div>
+                <div id="popup_panel"><button id="popup_ok" class="btn btn-default">OK</button></div>
+            </div>
+        </div>
+
+        <div id="popup_container" class="warning">
+            <div id="popup_title">Warning Alert Box</div>
+            <div id="popup_content" class="warning">
+                <div id="popup_message">Warning alert message</div>
+                <div id="popup_panel"><button id="popup_ok" class="btn btn-default">OK</button></div>
+            </div>
+        </div>
+
+        <div id="popup_container" class="success">
+            <div id="popup_title">Success Alert Box</div>
+            <div id="popup_content" class="success">
+                <div id="popup_message">Success alert message</div>
+                <div id="popup_panel"><button id="popup_ok" class="btn btn-default">OK</button></div>
+            </div>
+        </div>
+
+        <div id="popup_container" class="info">
+            <div id="popup_title">Info Alert Box</div>
+            <div id="popup_content" class="info">
+                <div id="popup_message">Info alert message</div>
+                <div id="popup_panel"><button id="popup_ok" class="btn btn-default">OK</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 class="sg">Progress Bar</h2>
+<p>The following example corresponds to a customised version of jQuery progressbar widget</p>
+
+<div class="row">
+    <div class="col-md-6 padding-LR-null">
+        <div class="ui-progressbar-wrapper">
+            <div id="manualUploadProgress" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="11" aria-valuemax="100" aria-valuenow="20">
+                <div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 63px;"></div>
+            </div>
+            <p>Uploading...</p>
+        </div>
+    </div>
+</div>
+
+<xmp class="prettyprint">
+<div class="ui-progressbar-wrapper">
+    <div class="ui-progressbar">
+        <div class="ui-progressbar-value"></div>
+    </div>
+    <p>Uploading...</p>
+</div>
+</xmp>
+
 </div>
 
 <div id="lists" class="sg-header">
@@ -1495,46 +1689,6 @@
     </li>
 </ul>
 </xmp>
-
-</div>
-
-<div id="dialogs" class="sg-header">
-    <h1 class="sg">Dialogs</h1>
-    <div class="row">
-        <div class="col-md-12 padding-LR-null">
-            <div id="popup_container" class="error">
-                <div id="popup_title">Error Alert Box</div>
-                <div id="popup_content" class="error">
-                    <div id="popup_message">Error alert message</div>
-                    <div id="popup_panel"><button id="popup_ok" class="btn btn-default">OK</button></div>
-                </div>
-            </div>
-
-            <div id="popup_container" class="warning">
-                <div id="popup_title">Warning Alert Box</div>
-                <div id="popup_content" class="warning">
-                    <div id="popup_message">Warning alert message</div>
-                    <div id="popup_panel"><button id="popup_ok" class="btn btn-default">OK</button></div>
-                </div>
-            </div>
-
-            <div id="popup_container" class="success">
-                <div id="popup_title">Success Alert Box</div>
-                <div id="popup_content" class="success">
-                    <div id="popup_message">Success alert message</div>
-                    <div id="popup_panel"><button id="popup_ok" class="btn btn-default">OK</button></div>
-                </div>
-            </div>
-
-            <div id="popup_container" class="info">
-                <div id="popup_title">Info Alert Box</div>
-                <div id="popup_content" class="info">
-                    <div id="popup_message">Info alert message</div>
-                    <div id="popup_panel"><button id="popup_ok" class="btn btn-default">OK</button></div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 </div>
 
@@ -1709,6 +1863,7 @@
 <div id="stats-data" class="sg-header">
   <h1 class="sg">Stats/Data</h1>
   <p>UI graph colours are used at 80% opacity RGB, for HEX format see below.</p>
+  <div id="graph-container"></div>
   <xmp class="prettyprint">
     colors: [
       'rgba(0,154,255,0.8)',    // #419bf9
@@ -1729,15 +1884,12 @@
       'rgba(155,145,55,0.8)'    // #999933
       ],
   </xmp>
-  <div id="graph-container"></div>
-</div>
-
-<div id="misc" class="sg-header">
-  <h1 class="sg">Misc</h1>
-  <p>Try to scroll this section and look at the navigation list while scrolling!</p>
 </div>
 
 <div id="helper-classes" class="sg-header">
+
+<h1 class="sg">Helper Classes</h1>
+
 <h2>Text</h2>
 
 <xmp class="prettyprint lang-css">
@@ -1815,20 +1967,18 @@
     <div class="sg-rhs">
         <nav class="affix">
             <ul class="nav nav-sg" data-spy="affix" data-offset-top="70">
-                <li> <a href="#intro">Introduction</a></li>
+                <li class="active"> <a href="#intro">Introduction</a></li>
                 <li> <a href="#grid-system">Grid System</a></li>
                 <li> <a href="#typography">Typography</a></li>
                 <li> <a href="#headers">Headers</a></li>
                 <li> <a href="#navigation">Navigation</a></li>
-                <li> <a href="#tables">Table</a></li>
+                <li> <a href="#tables">Tables</a></li>
                 <li> <a href="#filters">Filters</a></li>
                 <li> <a href="#form-elements">Form Elements</a></li>
                 <li> <a href="#feedback">Feedback</a></li>
                 <li> <a href="#lists">Lists</a></li>
-                <li> <a href="#dialogs">Dialogs</a></li>
                 <li> <a href="#icons">Icons</a></li>
                 <li> <a href="#stats-data">Stats/Data</a></li>
-                <li> <a href="#misc">Misc</a></li>
                 <li> <a href="#helper-classes">Helper Classes</a></li>
                 <hr>
                 <li><a href="darwin-theme.html">Examples</a></li>
@@ -1837,85 +1987,63 @@
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.min.js"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
-<script>
+<script src="../js/styleguide.js"></script>
+<script type="text/javascript">
 
-  var $body   = $(document.body);
-  var navHeight = $('.navbar').outerHeight(true) + 40;
+    // Highcharts setup
+    $(function () {
+      Highcharts.chart('graph-container', {
 
-  $body.scrollspy({
-    target: '#aw-scrollspy',
-    offset: navHeight
-  });
-
-
-  $(function() {
-    $('a[href*="#"]:not([href="#"])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html, body').animate({
-            scrollTop: target.offset().top - 20
-          }, 500);
-          return false;
-        }
-      }
+        chart: {
+          backgroundColor: null
+        },
+        title: {
+          text: ''
+        },
+        legend: {
+          enabled: false
+        },
+        credits: {
+          enabled: false
+        },
+        colors: [
+        'rgba(0,154,255,0.8)',    // #419bf9
+        'rgba(0,198,55,0.8)',     // #00c637
+        'rgba(68,86,213,0.8)',    // #4756d5
+        'rgba(250,180,24,0.8)',   // #fab418
+        'rgba(222,8,51,0.8)',     // #de0833
+        'rgba(255,102,0,0.8)',    // #ff6600
+        'rgba(32,174,188,0.8)',   // #20aebc
+        'rgba(68,41,147,0.8)',    // #442993
+        'rgba(0,150,75,0.8)',     // #00964b
+        'rgba(232,53,146,0.8)',   // #ea2e92
+        'rgba(100,218,255,0.8)',  // #65daff
+        'rgba(187,123,65,0.8)',   // #bb7b41
+        'rgba(155,155,155,0.8)',  // #999999
+        'rgba(0,68,139,0.8)',     // #00568b
+        'rgba(35,40,44,0.8)',     // #23282c
+        'rgba(155,145,55,0.8)'    // #999933
+        ],
+        xAxis: {
+            categories: ['#419bf9', '#00c637', '#4756d5', '#fab418', '#de0833', '#ff6600', '#20aebc', 
+                '#442993', '#00964b', 'ea2e92', '#65daff', '#bb7b41', '#999999', '#00568b', '#23282c', '#999933']
+        },
+        series: [{
+            data: [4, 3, 5, 4, 5, 3, 4, 3, 5, 4, 5, 3, 4, 5, 4, 3],
+            type: 'column',
+            colorByPoint: true,
+        }]
+      });
     });
-  });
 
-$('.js-example-basic-multiple').select2();
-
-$(function () {
-  Highcharts.chart('graph-container', {
-
-    chart: {
-      backgroundColor: null
-    },
-    title: {
-      text: ''
-    },
-    legend: {
-      enabled: false
-    },
-    credits: {
-      enabled: false
-    },
-    colors: [
-    'rgba(0,154,255,0.8)',    // #419bf9
-    'rgba(0,198,55,0.8)',     // #00c637
-    'rgba(68,86,213,0.8)',    // #4756d5
-    'rgba(250,180,24,0.8)',   // #fab418
-    'rgba(222,8,51,0.8)',     // #de0833
-    'rgba(255,102,0,0.8)',    // #ff6600
-    'rgba(32,174,188,0.8)',   // #20aebc
-    'rgba(68,41,147,0.8)',    // #442993
-    'rgba(0,150,75,0.8)',     // #00964b
-    'rgba(232,53,146,0.8)',   // #ea2e92
-    'rgba(100,218,255,0.8)',  // #65daff
-    'rgba(187,123,65,0.8)',   // #bb7b41
-    'rgba(155,155,155,0.8)',  // #999999
-    'rgba(0,68,139,0.8)',     // #00568b
-    'rgba(35,40,44,0.8)',     // #23282c
-    'rgba(155,145,55,0.8)'    // #999933
-    ],
-    xAxis: {
-        categories: ['#419bf9', '#00c637', '#4756d5', '#fab418', '#de0833', '#ff6600', '#20aebc', 
-            '#442993', '#00964b', 'ea2e92', '#65daff', '#bb7b41', '#999999', '#00568b', '#23282c', '#999933']
-    },
-    series: [{
-        data: [4, 3, 5, 4, 5, 3, 4, 3, 5, 4, 5, 3, 4, 5, 4, 3],
-        type: 'column',
-        colorByPoint: true,
-    }]
-  });
-});
+    // Select2 loader
+    $('.js-example-basic-multiple').select2();
 
 </script>
-
 </body>
 </html>
