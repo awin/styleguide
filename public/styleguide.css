@@ -5,8 +5,13 @@ html, body {
     margin: 0;
 }
 
+p {
+    font-size: 14px;
+}
+
 ul li {
     list-style: none;
+    font-size: 14px;
 }
 
 ul.bullet li {
