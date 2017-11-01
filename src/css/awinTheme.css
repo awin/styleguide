@@ -1704,100 +1704,154 @@ Flags
 ---------------------------------------------------------------------------- */
 
 .sprite_flags {
-  background: url('https://images.awin.com/awin-interface/sprite_flags.png') no-repeat;
-  width: 16px;
-  height: 14px;
+  background: url('https://images.awin.com/awin-interface/region_flags.png') no-repeat;
+  background-size: 19px;
+  width: 21px;
+  height: 17px;
   display: inline-block;
   margin-right: 3px;
   margin-left: 3px;
+  margin-bottom: -3px;
+  border: 1px solid #ececec;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 
-.flag_at {
-  background-position: 0 0;
+.flag_ar {
+  background-position-y: -1px;
 }
-
 .flag_au {
-  background-position: 0 -14px;
+  background-position-y: -17px;
 }
-
+.flag_at {
+  background-position-y: -33px;
+}
 .flag_be {
-  background-position: 0 -28px;
+  background-position-y: -49px;
 }
-
 .flag_br {
-  background-position: 0 -42px;
+  background-position-y: -65px;
 }
-
-.flag_ch {
-  background-position: 0 -56px;
+.flag_bg {
+  background-position-y: -81px;
 }
-
-.flag_de {
-  background-position: 0 -70px;
-}
-
-.flag_dk {
-  background-position: 0 -84px;
-}
-
-.flag_es {
-  background-position: 0 -98px;
-}
-
-.flag_fi {
-  background-position: 0 -112px;
-}
-
-.flag_gb {
-  background-position: 0 -126px;
-}
-
-.flag_it {
-  background-position: 0 -140px;
-}
-
-.flag_nl {
-  background-position: 0 -154px;
-}
-
-.flag_no {
-  background-position: 0 -168px;
-}
-
-.flag_pl {
-  background-position: 0 -182px;
-}
-
-.flag_se {
-  background-position: 0 -196px;
-}
-
-.flag_us {
-  background-position: 0 -210px;
-}
-
 .flag_ca {
-  background-position: 0 -224px;
+  background-position-y: -97px;
 }
-
-.flag_ie {
-  background-position: 0 -238px;
+.flag_cl {
+  background-position-y: -113px;
 }
-.flag_fr {
-  background-position: 0 -252px;
+.flag_cn {
+  background-position-y: -129px;
 }
-.flag_pt {
-  background-position: 0 -266px;
+.flag_co {
+  background-position-y: -145px;
 }
-.flag_ru {
-  background-position: 0 -280px;
-}
+.flag_hr {
+  background-position-y: -161px;
 }
 .flag_cz {
-  background-position: 0 -294px;
+  background-position-y: -177px;
+}
+.flag_dk {
+  background-position-y: -193px;
+}
+.flag_fi {
+  background-position-y: -209px;
+}
+.flag_fr {
+  background-position-y: -225px;
+}
+.flag_de {
+  background-position-y: -241px;
+}
+.flag_gr{
+  background-position-y: -257px;
 }
 .flag_hu {
-  background-position: 0 -308px;
+  background-position-y: -273px;
+}
+.flag_in {
+  background-position-y: -289px;
+}
+.flag_ie {
+  background-position-y: -305px;
+}
+.flag_it {
+  background-position-y: -321px;
+}
+.flag_jp {
+  background-position-y: -337px;
+}
+.flag_lv {
+  background-position-y: -353px;
+}
+.flag_lt {
+  background-position-y: -369px;
+}
+.flag_mx {
+  background-position-y: -385px;
+}
+.flag_nl {
+  background-position-y: -401px;
+}
+.flag_nz {
+  background-position-y: -417px;
+}
+.flag_no {
+  background-position-y: -433px;
+}
+.flag_pe {
+  background-position-y: -449px;
+}
+.flag_pl {
+  background-position-y: -465px;
+}
+.flag_pt {
+  background-position-y: -481px;
+}
+.flag_ro {
+  background-position-y: -497px;
+}
+.flag_ru {
+  background-position-y: -513px;
+}
+.flag_sg {
+  background-position-y: -529px;
+}
+.flag_sk {
+  background-position-y: -545px;
+}
+.flag_si {
+  background-position-y: -561px;
+}
+.flag_za {
+  background-position-y: -577px;
+}
+.flag_es {
+  background-position-y: -593px;
+}
+.flag_se {
+  background-position-y: -609px;
+}
+.flag_ch {
+  background-position-y: -625px;
+}
+.flag_tw {
+  background-position-y: -641px;
+}
+.flag_ua {
+  background-position-y: -657px;
+}
+.flag_ae {
+  background-position-y: -673px;
+}
+.flag_gb {
+  background-position-y: -689px;
+}
+.flag_us {
+  background-position-y: -705px;
 }
 
 /* ----------------------------------------------------------------------------

@@ -1,11 +1,11 @@
 
 // Sidebar navigation and auto scrolling
 
-  var $body   = $(document.body);
+  // var $body   = $(document.body);
 
-  $body.scrollspy({
-    target: '#aw-scrollspy'
-  });
+  // $body.scrollspy({
+  //   target: '#aw-scrollspy'
+  // });
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
