@@ -1,12 +1,6 @@
 
 // Sidebar navigation and auto scrolling
 
-  // var $body   = $(document.body);
-
-  // $body.scrollspy({
-  //   target: '#aw-scrollspy'
-  // });
-
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -24,6 +18,4 @@ $(function() {
 
 $('.nav li').on('activate.bs.scrollspy', function(e) {
   var targetId = $(e.target).find('a').attr('href');
-  scrollActive(targetId);
-
 })
