@@ -9,35 +9,33 @@ Layout
 :root {
     font-size: 10px;
 }
-
 @font-face {
-font-family: "Whitney SSm A", "Whitney SSm B";
-font-style: normal;
-font-weight: 400;
+    font-family: "Whitney SSm A", "Whitney SSm B";
+    font-style: normal;
+    font-weight: 400;
 }
 @font-face {
-font-family: "Whitney SSm A", "Whitney SSm B";
-font-style: italic;
-font-weight: 500;
+    font-family: "Whitney SSm A", "Whitney SSm B";
+    font-style: italic;
+    font-weight: 500;
 }
 @font-face {
-font-family: "Whitney SSm A", "Whitney SSm B";
-font-style: normal;
-font-weight: 500;
+    font-family: "Whitney SSm A", "Whitney SSm B";
+    font-style: normal;
+    font-weight: 500;
 }
 @font-face {
-font-family: "Whitney SSm A", "Whitney SSm B";
-font-style: normal;
-font-weight: 600;
+    font-family: "Whitney SSm A", "Whitney SSm B";
+    font-style: normal;
+    font-weight: 600;
 }
 @font-face {
-font-family: "Whitney SSm A", "Whitney SSm B";
-font-style: normal;
-font-weight: 700;
+    font-family: "Whitney SSm A", "Whitney SSm B";
+    font-style: normal;
+    font-weight: 700;
 }
-
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 * :after, :before {
     box-sizing: inherit;
@@ -45,9 +43,8 @@ html {
     padding: 0;
 }
 html, body {
-  height: 100%;
-  min-height: 100%;
-
+    height: 100%;
+    min-height: 100%;
 }
 body {
     background-color: #f1f1f1;
@@ -57,7 +54,6 @@ body {
     font-weight: 500;
     line-height: 1.47;
     -ms-text-size-adjust: 100%;
-    /*-moz-text-size-adjust: 100%;*/
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -98,7 +94,7 @@ a .fa, a:hover,
 p a:link, p a:visited,
 .brand-orange, .fa.brand-orange,
 a.text-light:hover, p a.text-light:hover {
-  color: #f60;
+    color: #f60;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1329,17 +1325,6 @@ th, td {
   margin-bottom: 20px;
 }
 
-.table-responsive {
-  display: block;
-  width: 100%;
-  overflow-x: auto;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-
-.table-responsive.table-bordered {
-  border: 0;
-}
-
 .table thead > tr > th,
 .table tbody > tr > th,
 .table tfoot > tr > th,
@@ -1719,139 +1704,139 @@ Flags
 }
 
 .flag_ar {
-  background-position-y: -1px;
+    background-position: 0 -1px;
 }
 .flag_au {
-  background-position-y: -17px;
+    background-position: 0 -17px;
 }
 .flag_at {
-  background-position-y: -33px;
+    background-position: 0 -33px;
 }
 .flag_be {
-  background-position-y: -49px;
+    background-position: 0 -49px;
 }
 .flag_br {
-  background-position-y: -65px;
+    background-position: 0 -65px;
 }
 .flag_bg {
-  background-position-y: -81px;
+    background-position: 0 -81px;
 }
 .flag_ca {
-  background-position-y: -97px;
+    background-position: 0 -97px;
 }
 .flag_cl {
-  background-position-y: -113px;
+    background-position: 0 -113px;
 }
 .flag_cn {
-  background-position-y: -129px;
+    background-position: 0 -129px;
 }
 .flag_co {
-  background-position-y: -145px;
+    background-position: 0 -145px;
 }
 .flag_hr {
-  background-position-y: -161px;
+    background-position: 0 -161px;
 }
 .flag_cz {
-  background-position-y: -177px;
+    background-position: 0 -177px;
 }
 .flag_dk {
-  background-position-y: -193px;
+    background-position: 0 -193px;
 }
 .flag_fi {
-  background-position-y: -209px;
+    background-position: 0 -209px;
 }
 .flag_fr {
-  background-position-y: -225px;
+    background-position: 0 -225px;
 }
 .flag_de {
-  background-position-y: -241px;
+    background-position: 0 -241px;
 }
 .flag_gr{
-  background-position-y: -257px;
+    background-position: 0 -257px;
 }
 .flag_hu {
-  background-position-y: -273px;
+    background-position: 0 -273px;
 }
 .flag_in {
-  background-position-y: -289px;
+    background-position: 0 -289px;
 }
 .flag_ie {
-  background-position-y: -305px;
+    background-position: 0 -305px;
 }
 .flag_it {
-  background-position-y: -321px;
+    background-position: 0 -321px;
 }
 .flag_jp {
-  background-position-y: -337px;
+    background-position: 0 -337px;
 }
 .flag_lv {
-  background-position-y: -353px;
+    background-position: 0 -353px;
 }
 .flag_lt {
-  background-position-y: -369px;
+    background-position: 0 -369px;
 }
 .flag_mx {
-  background-position-y: -385px;
+    background-position: 0 -385px;
 }
 .flag_nl {
-  background-position-y: -401px;
+    background-position: 0 -401px;
 }
 .flag_nz {
-  background-position-y: -417px;
+    background-position: 0 -417px;
 }
 .flag_no {
-  background-position-y: -433px;
+    background-position: 0 -433px;
 }
 .flag_pe {
-  background-position-y: -449px;
+    background-position: 0 -449px;
 }
 .flag_pl {
-  background-position-y: -465px;
+    background-position: 0 -465px;
 }
 .flag_pt {
-  background-position-y: -481px;
+    background-position: 0 -481px;
 }
 .flag_ro {
-  background-position-y: -497px;
+    background-position: 0 -497px;
 }
 .flag_ru {
-  background-position-y: -513px;
+    background-position: 0 -513px;
 }
 .flag_sg {
-  background-position-y: -529px;
+    background-position: 0 -529px;
 }
 .flag_sk {
-  background-position-y: -545px;
+    background-position: 0 -545px;
 }
 .flag_si {
-  background-position-y: -561px;
+    background-position: 0 -561px;
 }
 .flag_za {
-  background-position-y: -577px;
+    background-position: 0 -577px;
 }
 .flag_es {
-  background-position-y: -593px;
+    background-position: 0 -593px;
 }
 .flag_se {
-  background-position-y: -609px;
+    background-position: 0 -609px;
 }
 .flag_ch {
-  background-position-y: -625px;
+    background-position: 0 -625px;
 }
 .flag_tw {
-  background-position-y: -641px;
+    background-position: 0 -641px;
 }
 .flag_ua {
-  background-position-y: -657px;
+    background-position: 0 -657px;
 }
 .flag_ae {
-  background-position-y: -673px;
+    background-position: 0 -673px;
 }
 .flag_gb {
-  background-position-y: -689px;
+    background-position: 0 -689px;
 }
 .flag_us {
-  background-position-y: -705px;
+    background-position: 0 -705px;
 }
 
 /* ----------------------------------------------------------------------------
@@ -1987,7 +1972,17 @@ table tr.light td.total {
 table tr.dark td.total {
     background: #deebff;
 }
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow: visible;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
 
+.table-responsive.table-bordered {
+    border: 0;
+}
 /* Transaction Report old commission amount */
 
 .reportTable td.amended span.old_amount,
@@ -2042,7 +2037,7 @@ input[type="submit"] {
 }
 button[disabled],
 html input[disabled] {
-  cursor: default;
+  cursor: not-allowed;
 }
 button::-moz-focus-inner,
 input::-moz-focus-inner {
@@ -2122,7 +2117,7 @@ select option {
 
 select[disabled], select.disabled,
 select[disabled]:hover, select.disabled:hover {
-    background: #eeeeee url("https://images.awin.com/common/arrow_dropdown_disabled.png") no-repeat scroll right center;
+    background: #eeeeee url("https://images.awin.com/awin-interface/icons/arrow-down-disabled.png") no-repeat scroll right center;
     color: #999999;
     cursor: not-allowed;
 }
@@ -2297,18 +2292,25 @@ form dl dd textarea:focus {
 }
 
 .form-control::-ms-expand {
-  border: 0;
-  background-color: transparent;
-}
-.form-control[disabled],
-.form-control[readonly],
-fieldset[disabled] .form-control {
-  background-color: #eeeeee;
-  opacity: 1;
+    border: 0;
+    background-color: transparent;
 }
 .form-control[disabled],
 fieldset[disabled] .form-control {
-  cursor: not-allowed;
+    background-color: #eeeeee !important;
+    opacity: 1;
+    cursor: not-allowed;
+}
+.form-control[disabled]:hover,
+fieldset[disabled] .form-control:hover {
+    color: inherit;
+}
+.form-control[disabled]:hover .fa,
+fieldset[disabled] .form-control:hover .fa {
+    color: #999;
+}
+.form-control.hasDatepicker[disabled] {
+    filter: grayscale(100%);
 }
 textarea.form-control {
   height: auto;
@@ -2410,7 +2412,7 @@ select:-webkit-autofill:focus {
 .input-group-btn:first-child > .btn,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
-  border-radius: 0;
+  border-radius: 4px 0 0 4px;
 }
 
 .input-group-addon:first-child {
@@ -2422,9 +2424,7 @@ select:-webkit-autofill:focus {
 .input-group-btn:last-child > .btn,
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child) {
-  border-radius: 0;
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;
+    border-radius: 0 4px 4px 0;
 }
 
 .input-group .form-control:first-child {
@@ -2941,6 +2941,16 @@ fieldset[disabled] .btn-link {
   color: #f60;
   background-color: transparent;
 }
+table td button.btn-icon {
+    padding-left: 0;
+    margin-left: -2px;
+}
+
+table td .btn-icon .fa,
+table td .btn-icon-disabled .fa {
+    margin-left: 0;
+    width: 16px;
+}
 .close {
   float: right;
   font-size: 16px;
@@ -3384,7 +3394,7 @@ table .table-hover > tbody > tr:hover > td .has-disabled .fa:hover {
   border-radius: 4px;
   background-color: #e4e4e4;
   color: #444;
-  padding: 5px;
+  padding: 5px 7px;
   line-height: 1.6em;
   white-space: nowrap;
   margin-right: 5px;
@@ -3703,16 +3713,19 @@ body > .select2-container {
   vertical-align: middle;
 }
 .select2-angular-single .select2-choice {
-  display: block;
-  position: relative;
-  height: 30px;
-  border: 1px solid #dbdbdb;
-  overflow: hidden;
-  white-space: nowrap;
-  background-color: #ffffff;
-  padding: 0 0 0 10px;
-  -webkit-user-select: none;
-  line-height: 31px;
+    display: block;
+    position: relative;
+    height: 34px;
+    border: 1px solid #dbdbdb;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #ffffff;
+    padding: 0 0 0 10px;
+    -webkit-user-select: none;
+    line-height: 34px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
 .select2-angular-single .ui-select-choices-row:hover, .select2-angular-single .select2-results li.select2-highlighted {
@@ -3965,7 +3978,7 @@ Navigation, tabs
   font-size: 12px;
   font-weight: 500;
   background-color: #f9f9f9;
-  border-width: 1px 1px 0;
+  border-bottom-width: 0;
   border-radius: 0;
   padding: 11px 20px 10px;
   min-width: 100px;
@@ -4075,7 +4088,7 @@ Navigation, tabs
     float: left;
     display: inline-block;
     position: relative;
-    min-width: auto;
+    width: auto;
     font-weight: 600;
 }
 
@@ -5030,7 +5043,7 @@ form .col-lg-4 .tooltip.right {
 }
 
 form .col-lg-4 .tooltip-inner {
-    min-width: auto;
+    width: auto;
 }
 
 @media (max-width: 767px) {
@@ -5193,9 +5206,9 @@ Bootstrap 4 card component
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid #eee;
   border-radius: 0.25rem;
-  margin-bottom: -2px;
+  margin-bottom: -1px;
 }
 
 .card-block {
@@ -5521,202 +5534,323 @@ input.hasDatepicker, #directoryRefineby .hasDatepicker {
     background: #ffffff url('https://images.awin.com/awin-interface/icons/calendar.png') no-repeat center right;
 }
 
-input.hasDatepicker:hover {
-  color: #f60;
+input.hasDatepicker:hover,
+.ui-datepicker .ui-datepicker-calendar .uib-title,
+.uib-monthpicker .uib-title {
+    color: #f60;
 }
-.ui-datepicker {
-  background-color: #fff;
-  border: 1px solid #dbdbdb;
-  border-radius: 4px;
-  box-shadow: 0 0 3px rgba(32,139,195,.6);
-  display: none;
-  margin-top: 4px;
-  padding: 20px;
-  width: 260px;
+
+.uib-datepicker-popup.dropdown-menu {
+    display: block;
+}
+
+.uib-datepicker-popup.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    float: left;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    min-height: 310px;
+}
+
+.ui-datepicker,
+.uib-datepicker-popup-wrap .dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    box-shadow: 0 0 3px rgba(32,139,195,.6);
+    display: none;
+    margin-top: 4px;
+    padding: 20px;
+    width: 300px;
+    z-index: 32 !important;
+}
+
+.uib-monthpicker > table {
+    width: 100%;
+}
+
+.uib-daypicker > table tr:first-child th,
+.uib-monthpicker > table tr:first-child th {
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    line-height: 28px;
+}
+
+.uib-daypicker > table tr:nth-child(2) th,
+.uib-monthpicker > table tr:nth-child(2) th {
+    padding-top: 20px;
+    border: none;
+}
+
+.uib-datepicker > .ui-datepicker-prev:before{
+    line-height: 2.2em;
+}
+
+.table .uib-daypicker > table thead > tr > th,
+.table .uib-monthpicker > table thead > tr > th {
+    background-color: #fff;
+    font-weight: normal;
+}
+
+.table .uib-daypicker > table tr:nth-child(2) th,
+.table .uib-monthpicker > table tr:nth-child(2) th {
+    padding-left: 0;
+}
+
+.table .uib-monthpicker > table tbody > tr > td,
+.table .uib-daypicker > table tbody > tr > td,
+.uib-monthpicker > table td {
+    border: none;
+    padding: 10px;
+}
+
+.ui-datepicker *:focus {
+    outline: none;
 }
 .ui-datepicker a,
 .ui-datepicker a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 .ui-datepicker a:hover,
-.ui-datepicker td:hover a {
-  color: #fff;
-  -webkit-transition: color 0.1s ease-in-out;
-     -moz-transition: color 0.1s ease-in-out;
-       -o-transition: color 0.1s ease-in-out;
-          transition: color 0.1s ease-in-out;
+.ui-datepicker td:hover a,
+.ui-datepicker .ui-datepicker-calendar button.btn-info.active,
+.ui-datepicker .ui-datepicker-calendar td.ui-datepicker-current-day button.btn-info span.text-active,
+.ui-datepicker .ui-datepicker-calendar button:hover,
+.ui-datepicker .ui-datepicker-calendar button:hover span.text-active,
+.uib-monthpicker table td button:hover,
+.uib-monthpicker table td button:hover .text-active,
+.uib-monthpicker button.selected,
+.uib-monthpicker button.selected span.text-active {
+    color: #fff;
+    -webkit-transition: color 0.1s ease-in-out;
+    -moz-transition: color 0.1s ease-in-out;
+    -o-transition: color 0.1s ease-in-out;
+    transition: color 0.1s ease-in-out;
 }
+
 .ui-datepicker .ui-datepicker-header {
-  margin-bottom: 10px;
-  text-align: center;
-  border-bottom: 1px solid #eee;
-  padding: 0 0 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding: 0 0 10px;
 }
 .ui-datepicker .ui-datepicker-title {
-  font-weight: 600;
+    font-weight: 600;
 }
 .ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-next {
-  cursor: default;
-  font-family: fontAwesome;
-  -webkit-font-smoothing: antialiased;
-  font-style: normal;
-  font-weight: normal;
-  height: 30px;
-  margin-top: 2px;
-  width: 30px;
+    cursor: default;
+    font-family: fontAwesome;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    height: 25px;
+    margin-top: 2px;
+    width: 30px;
 }
 
 .ui-datepicker .ui-datepicker-prev:hover,
-.ui-datepicker .ui-datepicker-next:hover {
-  color: #f60;
-  cursor: pointer;
-  opacity: .7;
+.ui-datepicker .ui-datepicker-next:hover,
+.ui-datepicker .ui-datepicker-calendar .uib-title:hover,
+.uib-monthpicker .uib-title:hover {
+    color: #f60;
+    cursor: pointer;
+    opacity: .7;
 }
 
 .ui-datepicker .ui-datepicker-prev {
-  float: left;
-  text-align: left;
+    float: left;
+    text-align: left;
 }
 .ui-datepicker .ui-datepicker-next {
-  float: right;
-  text-align: right;
+    float: right;
+    text-align: right;
 }
 .ui-datepicker .ui-datepicker-prev:before {
-  content: "\f053";
-  color: #f60;
+    content: "\f053";
+    color: #f60;
 }
 .ui-datepicker .ui-datepicker-next:before {
-  content: "\f054";
-  color: #f60;
+    content: "\f054";
+    color: #f60;
 }
 .ui-datepicker-month, .ui-datepicker-year {
-    border: 1px solid #dddbdb;
     margin-right: 5px;
     border: none;
-    padding-top: 2px;
     font-size: 14px;
     color: #f60;
-    background-image: none;
     padding: 0 5px;
     font-family: "Whitney SSm A", "Whitney SSm B", Tahoma, sans-serif;
     cursor: pointer;
-    background-color: #fff;
+    background: #fff none;
 }
 .ui-datepicker-month:hover, .ui-datepicker-year:hover {
-  opacity: .7;
+    opacity: .7;
 }
 .ui-datepicker .ui-icon {
-  display: none;
+    display: none;
 }
 .ui-datepicker .ui-datepicker-calendar {
-  table-layout: fixed;
-  width: 100%;
+    table-layout: fixed;
+    width: 100%;
 }
 .ui-datepicker .ui-datepicker-calendar th,
 .ui-datepicker .ui-datepicker-calendar td {
-  text-align: center;
-  padding: 4px 0;
+    text-align: center;
+    padding: 4px 0;
 }
-.ui-datepicker .ui-datepicker-calendar td {
-  border-radius: 4px;
-  -webkit-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
-     -moz-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
-       -o-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
-          transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+
+.uib-daypicker .ui-datepicker-calendar th,
+.uib-daypicker .ui-datepicker-calendar td.uib-day {
+    padding: 0;
 }
-.ui-datepicker .ui-datepicker-calendar td:hover {
-  background-color: #f60;
-  cursor: pointer;
+
+.ui-datepicker .ui-datepicker-calendar td,
+.uib-monthpicker table td button {
+    border-radius: 4px;
+    -webkit-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    -moz-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    -o-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+.ui-datepicker .ui-datepicker-calendar td:hover,
+.uib-monthpicker table td button.selected,
+.uib-monthpicker table td button:hover {
+    background-color: #f60;
+    cursor: pointer;
 }
 .ui-datepicker .ui-datepicker-calendar td a {
-  text-decoration: none;
+    text-decoration: none;
 }
+
+.ui-datepicker .ui-datepicker-calendar button,
+.uib-monthpicker table td button {
+    background: transparent;
+    border: none;
+    color: #444;
+}
+
+.uib-day button {
+    line-height: 2.5em;
+    width: 100%;
+}
+
+.uib-monthpicker table td button {
+    padding: 5px 10px;
+}
+
 .ui-datepicker .ui-datepicker-current-day {
-  background-color: #f60;
+    background-color: #f60;
 }
 .ui-datepicker .ui-datepicker-current-day a {
-  color: #fff
+    color: #fff
 }
-.ui-datepicker .ui-datepicker-calendar .ui-datepicker-unselectable:hover {
-  background-color: #eee;
-  cursor: not-allowed;
+.ui-datepicker .ui-datepicker-calendar .ui-datepicker-unselectable:hover,
+.ui-datepicker .ui-datepicker-calendar button[disabled]:hover,
+.uib-monthpicker button[disabled]:hover {
+    background-color: #eee;
+    cursor: not-allowed;
 }
 
 td.ui-datepicker-unselectable.ui-state-disabled,
-td.ui-datepicker-unselectable.ui-state-disabled:hover {
-  background-color: #eee;
-  border-radius: 0;
-  color: rgba(0,0,0,.2);
+td.ui-datepicker-unselectable.ui-state-disabled:hover,
+.uib-monthpicker button[disabled],
+.uib-monthpicker button[disabled]:hover,
+.ui-datepicker .ui-datepicker-calendar button[disabled].btn-info.active,
+.ui-datepicker .ui-datepicker-calendar button[disabled]:hover,
+a.ui-datepicker-next.ui-corner-all.ui-state-disabled,
+a.ui-datepicker-prev.ui-corner-all.ui-state-disabled,
+a.ui-datepicker-next.ui-corner-all.ui-state-disabled:before,
+a.ui-datepicker-prev.ui-corner-all.ui-state-disabled:before {
+    background-color: #eee;
+    border-radius: 0;
+    color: #999;
+    cursor: not-allowed;
+}
+a.ui-datepicker-next.ui-corner-all.ui-state-disabled,
+a.ui-datepicker-prev.ui-corner-all.ui-state-disabled,
+a.ui-datepicker-next.ui-corner-all.ui-state-disabled:before,
+a.ui-datepicker-prev.ui-corner-all.ui-state-disabled:before {
+    background-color: #fff;
 }
 
-/* Timepicker extension / */
+.uib-button-bar {
+    width: 260px;
+    margin-top: 20px;
+}
+
+/* Timepicker extension */
 
 .ui-timepicker-div {
-  margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eeeeee;
 }
 
 .ui-timepicker-div select.ui-timepicker-select {
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  padding-right: 28px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding-right: 28px;
+    color: #444;
 }
 
 .ui-timepicker-div dl dt {
-  float: left;
-  width: 30%;
-  padding: 5px;
+    float: left;
+    width: 30%;
+    padding: 5px;
 }
 
 dl dt.ui_tpicker_time_label,
 dl dd.timezone,
 dl dd.ui_tpicker_time {
-  width: 33.333333%;
-  float: left;
-  padding: 5px;
+    width: 33.333333%;
+    float: left;
+    padding: 5px;
 }
 
 .ui-timepicker-div dd.ui_tpicker_time {
-  float: right;
-  text-align: right;
+    float: right;
+    text-align: right;
 }
 
 dt.hiddenTimeLabel, .ui_tpicker_time_label {
-  display: none;
+    display: none;
 }
 
 dt.ui_tpicker_minute_label, dt.ui_tpicker_hour_label {
-  clear: left;
+    clear: left;
 }
 
 .ui-timepicker-div dl dd {
-  margin-bottom: 10px;
-  float: left;
+    margin-bottom: 10px;
+    float: left;
 }
 
 .ui-datepicker-buttonpane {
-  clear: both;
+    clear: both;
 }
 
 .ui-datepicker-buttonpane .ui-datepicker-current,
 .ui-datepicker-buttonpane .ui-datepicker-close {
-  padding: 5px;
-  background-color: #ffffff;
-  border: 0;
-  font-weight: bold;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 0;
+    color: #f60;
 }
 
 .ui-datepicker-buttonpane .ui-datepicker-current:hover,
 .ui-datepicker-buttonpane .ui-datepicker-close:hover {
-  color: #f60;
+    opacity: .7;
 }
 
 .ui-datepicker-buttonpane .ui-datepicker-close {
-  float: right;
+    float: right;
 }
 
 /* ----------------------------------------------------------------------------
-Checkbutton grid styling
+Check button grid styling
 ---------------------------------------------------------------------------- */
 
 .check-button {
@@ -5759,7 +5893,7 @@ Validate pending
 */
 
 #validatePendingReport #declineReasonsSelector {
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #eee;
   box-shadow: 0 0 12px 0 #CCC;
   display: none;
@@ -5862,35 +5996,50 @@ td.device_name .device-target:hover .device-tooltip {
 
 /* Progress tooltip */
 
+.progress-target {
+    position: relative;
+    display: inline-block;
+    z-index: 7;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+.progress-target:hover .progress-tooltip {
+    display: block;
+}
+
+td.payment_progress .progress-target {
+    z-index: 8;
+}
+
 .progress-tooltip {
-  display: none;
-  position: absolute;
-  font-size: 12px;
-  background: #ffffff;
-  border: 1px solid #cccccc;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.2);
-  -moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 0.2);
-  box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.2);
-  min-width: 320px;
-  padding: 12px;
-  margin: 5px;
-  margin-left: 45px;
-  top: 0.3em;
-  left: 100%;
-  transform: translate(0, -50%);
-  z-index: 21;
-  text-align: left;
+    display: none;
+    position: absolute;
+    font-size: 12px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 0.2);
+    box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.2);
+    min-width: 320px;
+    padding: 12px;
+    margin: 5px 5px 5px 45px;
+    top: 0.3em;
+    left: 100%;
+    transform: translate(0, -50%);
+    z-index: 21;
+    text-align: left;
 }
 
 .progress-tooltip .table {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .progress-tooltip .table tbody > tr > td {
-  padding: 5px;
+    padding: 5px;
 }
 .progress-tooltip .table tbody > tr:first-child > td {
   border-top: none;
@@ -6292,7 +6441,7 @@ General styling
     margin-left:4px;
 }
 
-.newFeature:before, .new:before {
+.new:before {
     content: "New";
 }
 
@@ -6428,7 +6577,6 @@ Extra styling
   word-wrap: break-word;
   -ms-word-break: break-all;
   word-break: break-all;
-  word-break: break-word;
   -ms-hyphens: auto;
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
@@ -6556,7 +6704,6 @@ Helper classes
   word-wrap: break-word;
   -ms-word-break: break-all;
   word-break: break-all;
-  word-break: break-word;
   -ms-hyphens: auto;
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
@@ -6718,7 +6865,10 @@ input.view-mode {
 }
 
 .enable-resize {
-  resize: both;
+    resize: both;
+}
+.table-spacer {
+    height: 20px;
 }
 
 /* ----------------------------------------------------------------------------
@@ -7725,54 +7875,50 @@ nav.main_navigation ul li ul.children a:hover {
   background-color: #2f363c;
 }
 
-/* temp classes to fix header - markup need update */
-nav.main_navigation {
+ul#main_nav_right li.liveHelpButton {
+  min-width: 40px;
+}
+ul#main_nav_right li.liveHelpButton a#close-chat-button {
+  display: none;
+}
+ul#main_nav_right li.liveHelpButton a {
+  background: url("https://images.awin.com/newheader/chat.png") no-repeat right center transparent;
+  height: 29px;
+  line-height: 29px;
+  padding-right: 35px;
+  padding-left: 10px;
+  font-weight: normal;
+  border-right: none;
+}
 
-        ul#main_nav_right {
-            li.bell {
-            }
-            li.liveHelpButton  {
-                min-width:40px;
-                a#close-chat-button { display: none; }
-                a {
-                    background: url("https://images.awin.com/newheader/chat.png") no-repeat right center transparent;
-                    height: 29px;
-                    line-height: 29px;
-                    padding-right: 35px;
-                    padding-left: 10px;
-                    font-weight: normal;
-                    border-right: none;
+ul#main_nav_right li.liveHelpButton a:hover {
+   background: url("https://images.awin.com/newheader/chat.png") no-repeat right center @orange2;
+   cursor: pointer;
+   text-decoration: none;
+   color: #fff;
+ }
+ul#main_nav_right li.liveHelpButton span {
+  background: none;
+  padding: 0;
+}
 
-                    &:hover {
-                        background: url("https://images.awin.com/newheader/chat.png") no-repeat right center @orange2;
-                        cursor: pointer;
-                        text-decoration: none;
-                        color: #fff;
-                    }
-                    span {
-                        background: none;
-                        padding: 0;
-                    }
-                }
-            }
-        }
-    }
+.breadcrumbs {
+  font-size: 11px;
+  color: #999;
+  padding: 0 32px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  clear: both;
+}
+.breadcrumbs a:link, .breadcrumbs a:visited {
+  color: #999;
+  opacity: 1;
+}
 
-    .breadcrumbs {
-        font-size:11px;
-        color: #999;
-        padding: 0 32px;
-        line-height:30px;
-        margin-bottom: 10px;
-        clear:both;
-        a {
-            color: #999;
-            opacity: 1;
+.breadcrumbs:hover {
+  color: #ff6600;
+}
 
-            &:hover { color: #ff6600;}
-        }
-        img {padding:0 10px;}
-    }
 
 /* For modern browsers */
 .cf:before,
@@ -7790,32 +7936,30 @@ nav.main_navigation {
 }
 
 .userMessage {
-    position: relative;
-    border: 1px solid #e6e6e6;
-    border-left: none;
-    border-right: none;
-    color: #555;
-    font-size: 12px;
-    padding: 15px 10px 15px 46px;
-    margin: 0 20px;
-    margin-bottom: 20px;
+  position: relative;
+  border: 1px solid #e6e6e6;
+  border-left: none;
+  border-right: none;
+  color: #555;
+  font-size: 12px;
+  padding: 15px 10px 15px 46px;
+    margin: 0 20px 20px;
     clear: both;
+}
+.userMessage span {
+  display: block;
+  width: calc(100% - 3%);
+  margin: 0;
+}
 
-    span {
-        display: block;
-        width: calc(100% - 3%);
-        margin: 0;
-    }
-
-    .remindableClose {
-        width: 16px;
-        height: 16px;
-        position: absolute;
-        right: 10px;
-        top: 37%;
-        background: transparent url(https://images.awin.com/common/icons/16x16/cross.png) no-repeat;
-        cursor: pointer;
-    }
+.userMessage .remindableClose {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 10px;
+  top: 37%;
+  background: transparent url(https://images.awin.com/common/icons/16x16/cross.png) no-repeat;
+  cursor: pointer;
 }
 
 .userMessageWarning {
@@ -7840,9 +7984,7 @@ nav.main_navigation {
     border-left: 1px solid #fff;
     padding-left: 36px;
     padding-bottom: 9px;
-    /*background-image: url(https://images.awin.com/common/icons/16x16/folder.png);*/
-    background-position: 12px -2px;
-    background-repeat: no-repeat;
+    background: no-repeat 12px -2px;
 }
 
 /** account overview **/
@@ -8064,7 +8206,7 @@ ul.errors {
     margin-left: 33.333333%;
     padding: 2px 0;
     font-size: 14px;
-    font-weight: 500px;
+    font-weight: 500;
 }
 
 .salesRegionForm form dl.zend_form dd label input {
