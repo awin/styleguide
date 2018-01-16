@@ -1203,6 +1203,10 @@ cite {
   color: #00568b;
 }
 
+.text-active {
+  color: #f60;
+}
+
 .text-light, a.text-light, p a.text-light {
   color: #999;
 }
@@ -5610,6 +5614,11 @@ input.hasDatepicker:hover,
 .ui-datepicker *:focus {
     outline: none;
 }
+.ui-datepicker button:focus,
+.ui-datepicker .uib-daypicker:focus table td button.active,
+.ui-datepicker .uib-monthpicker:focus table td button.active {
+    box-shadow: 0 0 2px rgba(32,139,195,.6);
+}
 .ui-datepicker a,
 .ui-datepicker a:hover {
     text-decoration: none;
@@ -7915,7 +7924,7 @@ ul#main_nav_right li.liveHelpButton span {
   opacity: 1;
 }
 
-.breadcrumbs:hover {
+.breadcrumbs a:hover {
   color: #ff6600;
 }
 
@@ -8746,7 +8755,7 @@ div#directoryRefineby .header, #directoryRefineby .header h3 {
     border-bottom: 1px solid #eeeeee;
     border-top: 1px solid #fff;
     margin-bottom: 0;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 #directoryRefineby h3 span {
@@ -8756,6 +8765,12 @@ div#directoryRefineby .header, #directoryRefineby .header h3 {
     font-size: 14px;
 }
 
+#directoryRefineby .header {
+    height: auto;
+    display: block;
+    padding: 10px;
+    line-height: initial;
+}
 #directoryRefineby h3 span:before, #directoryRefineby h3 span.expanded:before,
 #directoryRefineby .header h3:before, #directoryRefineby .header h3.expanded:before {
     display: inline-block;
@@ -8814,7 +8829,7 @@ li.radio > label {
 }
 
 li.checkbox > label {
-    background: transparent url(http://images.awin.com/darwin/directory/refineby_empty.png) left 6px no-repeat;
+    background: transparent url(http://images.awin.com/darwin/directory/refineby_empty.png) left 7px no-repeat;
 }
 
 li.selected > label {
@@ -8836,7 +8851,7 @@ li.checkbox.partial label, li.checkbox.partial label:hover {
 
 .subLevel li label {
     font-weight: normal;
-    color: #444;
+    font-size: 11px;
 }
 
 .subLevel li.radio label {
@@ -8882,7 +8897,13 @@ li.selected label {
 }
 
 #directoryRefineby.widget ul li label {
-  font-weight: 500;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#directoryRefineby.widget ul li label:hover {
+    color: #ff6600;
 }
 
 #tpvExplanation, #mobileOptimisedExplanation {
@@ -8892,13 +8913,29 @@ li.selected label {
     font-size: 10px;
 }
 
+#directoryRefineby input[type = checkbox] {
+    margin-left: 5px;
+}
+
+#directoryRefineby .treeview input[type="checkbox"] {
+    margin-left: -18px;
+}
+
+#directoryRefineby .treeview .subLevel input[type = checkbox] {
+    margin-left: 0;
+}
+
 .treeview ul.subLevel {
     margin-left: 1.7em;
 }
 
+.treeview ul.subLevel label {
+    padding: 2px 5px;
+}
+
 .treeview .hitarea {
   display: inline;
-  margin-left: -13px;
+  margin-left: -10px;
 }
 
 .treeview ul li .hitarea:before, .treeview ul li .expanded:before {
@@ -9141,7 +9178,7 @@ footer#footerPush {
 }
 
 /* --------------------------------------------------------------------
-Hiding rules
+Responsive utilities
 -------------------------------------------------------------------- */
 
 .text-hide {
