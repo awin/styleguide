@@ -159,7 +159,7 @@ table a:hover {
 }
 
 #content {
-  margin: 0 20px;
+  margin: 20px;
   clear: both;
 }
 
@@ -7899,8 +7899,6 @@ ul#main_nav_right li.liveHelpButton a#close-chat-button {
 }
 ul#main_nav_right li.liveHelpButton a {
   background: url("https://images.awin.com/newheader/chat.png") no-repeat right center transparent;
-  height: 29px;
-  line-height: 29px;
   padding-right: 35px;
   padding-left: 10px;
   font-weight: normal;
@@ -7908,7 +7906,6 @@ ul#main_nav_right li.liveHelpButton a {
 }
 
 ul#main_nav_right li.liveHelpButton a:hover {
-   background: url("https://images.awin.com/newheader/chat.png") no-repeat right center @orange2;
    cursor: pointer;
    text-decoration: none;
    color: #fff;
@@ -7952,14 +7949,14 @@ ul#main_nav_right li.liveHelpButton span {
 }
 
 .userMessage {
-  position: relative;
-  border: 1px solid #e6e6e6;
-  border-left: none;
-  border-right: none;
-  color: #555;
-  font-size: 12px;
-  padding: 15px 10px 15px 46px;
-    margin: 0 20px 20px;
+    position: relative;
+    border: 1px solid #e6e6e6;
+    border-left: none;
+    border-right: none;
+    color: #555;
+    font-size: 12px;
+    padding: 15px 10px 15px 46px;
+    margin: 0 20px -1px;
     clear: both;
 }
 .userMessage span {
