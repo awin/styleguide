@@ -4957,7 +4957,7 @@ Tooltip and popover
   padding: 0 5px;
   margin-left: 3px;
 }
-form .tooltip.right {
+form .tooltip.right, .col-lg-8 > form > .form-group .col-lg-4 .tooltip.right {
   margin-left: 98%;
 }
 
