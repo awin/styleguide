@@ -1096,6 +1096,7 @@ Typography, headings
   border: none;
   margin-right: 30px;
   color: #444444;
+  font-size: 12px;
 }
 
 .table-filters p {
@@ -1119,6 +1120,26 @@ Typography, headings
 
 .table-filters .dataTables_length select.input-sm {
   height: auto;
+}
+
+.table-filters .btn-filter,
+.table-filters .btn-filter:focus {
+  border: none;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 12px;
+  color: #444;
+  outline: none;
+}
+
+.table-filters .btn-filter span {
+  padding: 0;
+}
+
+.table-filters .btn-filter .fa {
+  line-height: 1.2em;
+  position: relative;
+  margin-left: 20px;
 }
 
 hr {

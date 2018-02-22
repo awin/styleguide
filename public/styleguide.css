@@ -9,9 +9,12 @@ p {
     font-size: 14px;
 }
 
+.table-filters p {
+    font-size: 12px;
+}
+
 ul li {
     list-style: none;
-    font-size: 14px;
 }
 
 ul.bullet li {
@@ -19,6 +22,7 @@ ul.bullet li {
     padding: 0;
     background-image: none;
     margin-bottom: 5px;
+    font-size: 14px;
 }
 
 .select2-results ul {
