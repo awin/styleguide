@@ -5885,7 +5885,7 @@ a.ui-datepicker-prev.ui-corner-all.ui-state-disabled:before {
 
 .ui-timepicker-div dl dt {
     float: left;
-    width: 30%;
+    min-width: 50%;
     padding: 5px;
 }
 
@@ -5897,9 +5897,11 @@ dl dd.ui_tpicker_time {
     padding: 5px;
 }
 
-.ui-timepicker-div dd.ui_tpicker_time {
+.ui-timepicker-div dd.ui_tpicker_time,
+.ui-datepicker .ui-timepicker-div .ui_tpicker_time .ui_tpicker_time_input {
     float: right;
     text-align: right;
+    border: none;
 }
 
 dt.hiddenTimeLabel, .ui_tpicker_time_label {
@@ -5910,8 +5912,9 @@ dt.ui_tpicker_minute_label, dt.ui_tpicker_hour_label {
     clear: left;
 }
 
-.ui-timepicker-div dl dd {
-    margin-bottom: 10px;
+.ui-timepicker-div dl dd,
+.ui-datepicker .ui-timepicker-div dl dd {
+    margin: auto auto 10px auto;
     float: left;
 }
 
