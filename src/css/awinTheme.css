@@ -4649,7 +4649,6 @@ Widgets
 }
 
 .widget .header {
-  margin-bottom: 0;
   margin-left: -20px;
   margin-right: -20px;
   border-top-left-radius: 2px;
@@ -4711,10 +4710,6 @@ Widgets
 
 .widget .header img {
   margin-top: 10px;
-}
-
-.widget a.merchantPromotionLogo img {
-  margin-top: 20px;
 }
 
 .widget .header > a {
