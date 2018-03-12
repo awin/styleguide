@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "alwaysStrict": false,
+    "allowSyntheticDefaultImports": true,
+    "target": "es5",
+    "outDir": "/js/dist/",
+    "module": "commonjs",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "moduleResolution": "node",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2016",
+      "dom"
+    ]
+  }
+}

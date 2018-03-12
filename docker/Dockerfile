@@ -8,16 +8,19 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive \
 WORKDIR /application
 RUN npm --loglevel warn install --global gulp-cli
 
-# Install gulp requirements
-COPY package.json bower.json ./
-RUN npm install && \
-    ./node_modules/bower/bin/bower install --allow-root
+# Install webpack requirements
+COPY package.json ./
+COPY .npmrc ./
+RUN npm install
 
 # Copy all sources
 COPY public ./public
 COPY src ./src
-COPY gulpfile.js ./
-RUN gulp
+COPY webpack.config.js ./
+COPY tslint.json ./
+COPY tsconfig.json ./
+
+RUN npm run build
 
 # Copy over webserver configuration
 COPY docker/default.conf /etc/nginx/sites-available/default

@@ -11,7 +11,15 @@ Test your work locally with standard makefile workflow: `make` to build, `make
 start` to host, `make run` to poke in a fresh container, `make exec` to poke
 into a running one.
 
-source files are placed in `src/css` and `src/js`. Gulp copies them to `public/css` and `public/js`, then minifies them and places the final result into `public/dist`. The full URL for loading the main CSS file is `//styleguide.awin.com/dist/awin.css`
+In `src/app.ts` you will see files from `src/css`, `src/js` and a few node_modudes being imported.
+Webpack is processing the files in `src/app.ts` to generate a bundle which consists of 2 files: `awin.css` and `awin.js`
+These files are placed in `public/dist` folder. 
+The url for the main awin.css file is:
+`//styleguide.awin.com/dist/awin.js`
+
+If you need to include more js or css files into the bundle you need to import them in `src/app.ts` 
+Webpack will concatenate and minify all the css files listed in `src/app.ts` into the `awin.css` and all the js files
+ into `awin.js`
 
 This project is automatically built and deployed with Jenkins
 
