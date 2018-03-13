@@ -6090,7 +6090,8 @@ td.device_name .device-target:hover .device-tooltip {
 }
 
 .progress-target:hover .progress-tooltip {
-  display: block;
+  visibility: visible;
+  transition-delay: 0s;
 }
 
 td.payment_progress .progress-target {
@@ -6098,9 +6099,10 @@ td.payment_progress .progress-target {
 }
 
 .progress-tooltip {
-  display: none;
+  visibility: hidden;
   position: absolute;
   font-size: 12px;
+  text-align: left;
   background: #ffffff;
   border: 1px solid #cccccc;
   -webkit-border-radius: 4px;
@@ -6115,8 +6117,8 @@ td.payment_progress .progress-target {
   top: 0.3em;
   left: 100%;
   transform: translate(0, -50%);
+  transition: .2s .2s;
   z-index: 21;
-  text-align: left;
 }
 
 .progress-tooltip .table {
@@ -6439,6 +6441,8 @@ List progress
 .list-progress li.text-warning:before {
   content: "\f111";
   color: #c09853;
+  font-size: 10px;
+  padding: 0 2px;
 }
 
 .list-progress li.text-danger:before {
