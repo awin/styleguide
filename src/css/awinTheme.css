@@ -6091,7 +6091,7 @@ td.device_name .device-target:hover .device-tooltip {
 
 .progress-target:hover .progress-tooltip {
   visibility: visible;
-  transition-delay: 0s;
+  transition-delay: .1s;
 }
 
 td.payment_progress .progress-target {
@@ -6117,7 +6117,7 @@ td.payment_progress .progress-target {
   top: 0.3em;
   left: 100%;
   transform: translate(0, -50%);
-  transition: .2s .2s;
+  transition: .1s .1s;
   z-index: 21;
 }
 
