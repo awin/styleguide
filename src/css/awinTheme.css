@@ -8912,6 +8912,16 @@ li.checkbox.partial label, li.checkbox.partial label:hover {
     background: transparent url(http://images.awin.com/darwin/directory/refineby_parent.png) left 6px no-repeat;
 }
 
+.subLevel.ng-hide {
+    transform: scaleY(0);
+}
+
+.subLevel {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.2s ease;
+}
+
 .subLevel li label {
     font-weight: normal;
     font-size: 11px;
