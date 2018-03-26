@@ -8913,13 +8913,14 @@ li.checkbox.partial label, li.checkbox.partial label:hover {
 }
 
 .subLevel.ng-hide {
-    transform: scaleY(0);
+    max-height: 0;
 }
 
 .subLevel {
-    transform: scaleY(1);
+    max-height: 600px;
     transform-origin: top;
-    transition: transform 0.2s ease;
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
 }
 
 .subLevel li label {
