@@ -2301,6 +2301,7 @@ select.form-control {
 
 .form-control:focus,
 app-accordion:focus,
+.focused,
 form dl dd input:focus,
 form dl dd select:focus,
 form dl dd textarea:focus {
