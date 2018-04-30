@@ -6527,9 +6527,28 @@ General styling
   list-style: inside;
 }
 
+ul.bullet {
+    margin-top: 20px;
+}
+
 ul.bullet li {
-  background: transparent url(http://images.awin.com/common/icons/16x16/bullet_orange.png) left top no-repeat;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 40px;
+}
+
+ul.bullet li:before {
+    content: "\f111";
+    font-family: fontAwesome;
+    float: left;
+    margin-left: -20px;
+    font-size: 8px;
+    line-height: 2em;
+    color: #f60;
+}
+
+@media (max-width: 768px) {
+    ul.bullet li {
+        padding-left: 20px;
+    }
 }
 
 /* ----------------------------------------------------------------------------
@@ -6722,6 +6741,10 @@ body.login-page #container {
 /* ----------------------------------------------------------------------------
 Helper classes
 ---------------------------------------------------------------------------- */
+.align-middle {
+    margin: 0 auto;
+}
+
 .borderless {
   border: none;
 }
