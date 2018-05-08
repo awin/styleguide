@@ -4209,7 +4209,9 @@ th.sortable span.sortDescending:before {
 
 .nav-pills {
   border-bottom: 1px solid #dedede;
+  margin: 0 20px 20px;
 }
+
 .nav-pills > li {
   float: left;
   margin-bottom: -1px;
