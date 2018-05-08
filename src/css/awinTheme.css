@@ -8095,10 +8095,10 @@ table .fa {
   color: #f60;
   opacity: .8;
 }
-.fa-arrow-down {
+.fa-arrow-down, .red {
   color: rgba(222,8,51,1) !important;
 }
-.fa-arrow-up {
+.fa-arrow-up, .green {
   color: rgba(0,150,75,1) !important;
 }
 table .fa-arrows-h, .fa-arrows-h {
