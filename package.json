@@ -4,6 +4,7 @@
   "description": "Style Guide",
   "main": "false",
   "scripts": {
+    "build-bootstrap": "./node_modules/.bin/webpack --config=./webpack/bootstrap/config.js -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,7 +13,8 @@
   },
   "author": "Omar Malik <omar.malik@awin.com>",
   "contributors": [
-    "Yarek Tyshchenko <yarek.tyshchenko@awin.com>"
+    "Fabiana Faria <fabiana.faria@awin.com>",
+    "Jimmy Dixon <james.dixon@awin.com>"
   ],
   "license": "BSD-3-Clause",
   "private": true,
@@ -30,6 +32,12 @@
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
+    "bootstrap": "^3.3.7",
+    "bootstrap-validator": "^0.11.9",
     "pump": "^1.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^2.7.2",
+    "webpack": "^3.1.1"
   }
 }

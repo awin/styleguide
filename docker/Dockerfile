@@ -1,5 +1,5 @@
 FROM node
-MAINTAINER Yarek Tyshchenko <yarek.tyshchenko@awin.com>
+MAINTAINER Fabiana Faria <fabiana.faria@awin.com>
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive \
     apt-get install -yqq nginx rsync && \
@@ -15,9 +15,13 @@ RUN npm install && \
 
 # Copy all sources
 COPY public ./public
+COPY webpack ./webpack
 COPY src ./src
 COPY gulpfile.js ./
+COPY tsconfig.json ./
+
 RUN gulp
+RUN npm run build-bootstrap
 
 # Copy over webserver configuration
 COPY docker/default.conf /etc/nginx/sites-available/default
