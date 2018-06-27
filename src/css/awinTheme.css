@@ -8337,6 +8337,14 @@ ul.errors {
   margin: 20px;
 }
 
+.awinModalWindow .form-group ul.bullet {
+    margin: 10px 0 0 -20px;
+}
+
+.form-group ul.bullet li::before {
+    line-height: 2.5em;
+}
+
 .awinModalWindow .regionFilter {
   margin-left: 20px;
 }
