@@ -5139,10 +5139,8 @@ Tooltip and popover
 }
 .tooltip.right {
   padding: 0 5px;
-  margin-left: 3px;
-}
-form .tooltip.right, .col-lg-8 > form > .form-group .col-lg-4 .tooltip.right {
-  margin-left: 98%;
+  margin-left: 0;
+  left: 0;
 }
 
 .tooltip.bottom {
@@ -5224,14 +5222,6 @@ form .tooltip.right, .col-lg-8 > form > .form-group .col-lg-4 .tooltip.right {
   margin-top: -5px;
   border-width: 0 5px 5px;
   border-bottom-color: #eaeff5;
-}
-
-form .col-lg-4 .tooltip.right {
-  margin-left: -20px;
-}
-
-form .col-lg-4 .tooltip-inner {
-    width: auto;
 }
 
 @media (max-width: 767px) {
