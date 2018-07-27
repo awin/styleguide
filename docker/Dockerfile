@@ -22,9 +22,6 @@ COPY tsconfig.json ./
 
 RUN gulp
 RUN npm run build-bootstrap
-RUN npm run build-vue
-RUN npm run build-vuex
-RUN npm run build-moment
 
 # Copy over webserver configuration
 COPY docker/default.conf /etc/nginx/sites-available/default

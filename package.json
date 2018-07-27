@@ -5,9 +5,6 @@
   "main": "false",
   "scripts": {
     "build-bootstrap": "./node_modules/.bin/webpack --config=./webpack/bootstrap/config.js -p",
-    "build-vue": "./node_modules/.bin/webpack --config=./webpack/vue/config.js -p",
-    "build-vuex": "./node_modules/.bin/webpack --config=./webpack/vuex/config.js -p",
-    "build-moment": "./node_modules/.bin/webpack --config=./webpack/moment/config.js -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -37,14 +34,9 @@
     "gulp-util": "^3.0.8",
     "bootstrap": "^3.3.7",
     "bootstrap-validator": "^0.11.9",
-    "pump": "^1.0.2",
-    "vue": "2.5.16",
-    "vuex": "3.0.1",
-    "moment": "2.22.2",
-    "moment-timezone-all": "0.5.5"
+    "pump": "^1.0.2"
   },
   "devDependencies": {
-    "empty-module": "0.0.2",
     "typescript": "^2.7.2",
     "webpack": "^3.1.1"
   }
