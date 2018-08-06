@@ -31,7 +31,7 @@
 <ul class="bullet">
     <li>Avoid the use of inline styles. Its use undermines the purpose of this framework</li>
     <li>Avoid adding new custom classes, please speak to the UX team before doing so</li>
-    <li>Keep the HTML markup separated from the logic. Idealy use templates</li>
+    <li>Keep the HTML markup separated from the logic. Ideally use templates</li>
     <li>Use <strong>//styleguide.awin.com/dist/awin.css</strong> to include CSS. Do not create duplicated CSS files</li>
     <li>For a new page in the Provider area use newUIoverride.css only</li>
     <li>Use existing templates for components where possible</li>
@@ -2008,6 +2008,94 @@
   </xmp>
 </div>
 
+<div id="components" class="sg-header">
+<h1 class="sg">Components</h1>
+
+<h2 id="modal" class="sg">Modals</h2>
+
+<pre>
+<xmp class="prettyprint lang-html">
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+</xmp>
+</pre>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Tooltip-->
+<h2 id="tooltip" class="sg">Tooltip</h2>
+<pre>
+<xmp class="prettyprint lang-html">
+Under review. Will be added soon
+</xmp>
+</pre>
+
+<!--Speech bubble-->
+<h2 id="speech-bubble" class="sg">Speech Bubble</h2>
+<pre>
+<xmp class="prettyprint lang-html">
+<blockquote class="speech-bubble">
+    <span class="speech-bubble-arrow"></span>
+    <p>Message</p>
+</blockquote>
+</xmp>
+</pre>
+
+    <blockquote class="speech-bubble">
+        <span class="speech-bubble-arrow"></span>
+        <p>Hi M&amp;S team,</p>
+        <p>Please note this is part of the cyber-weekend campaign discussed onthe call yesterday.</p>
+        <p>Thanks,</p>
+        <p>Publisher Name</p>
+    </blockquote>
+</div>
+
 <div id="helper-classes" class="sg-header">
 
 <h1 class="sg">Helper Classes</h1>
@@ -2152,6 +2240,13 @@
                 <li><a href="#lists">Lists</a></li>
                 <li><a href="#icons">Icons</a></li>
                 <li><a href="#stats-data">Stats/Data</a></li>
+                <li><a href="#components">Components</a>
+                    <ul class="nav">
+                        <li><a href="#modal">Modal</a></li>
+                        <li><a href="#tooltip">Tooltip</a></li>
+                        <li><a href="#speech-bubble">Speech Bubble</a></li>
+                    </ul>
+                </li>
                 <li><a href="#helper-classes">Helper Classes</a></li>
                 <hr>
                 <li><a href="darwin-theme.html">Examples</a></li>
@@ -2216,6 +2311,9 @@
 
     // Select2 loader
     $('.js-example-basic-multiple').select2();
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    });
 
 </script>
 </body>

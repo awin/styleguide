@@ -950,13 +950,13 @@ body.bg-white {
 Typography, headings
 ---------------------------------------------------------------------------- */
 
-.page-header, .row-widget .widget .header {
+.page-header, .modal-header, .row-widget .widget .header {
   border-bottom: 1px solid #dedede;
   height: 54px;
   line-height: 60px;
 }
 
-.page-header {
+.page-header, .modal-header {
   margin-bottom: 20px;
 }
 
@@ -3452,7 +3452,10 @@ table .table-hover > tbody > tr:hover > td .has-disabled .fa:hover {
     margin: 15px 0 10px;
     padding: 10px;
     position: relative;
+}
 
+.speech-bubble p {
+    font-size: 12px;
 }
 
 .speech-bubble .speech-bubble-arrow {
@@ -4667,7 +4670,7 @@ Widgets
   color: #f60;
 }
 
-.widget .header h2, .widget .header h3 {
+.widget .header h2, .widget .header h3, h5.modal-title {
   display: inline-block;
   padding: 0 20px;
   margin: 0;
@@ -8371,7 +8374,7 @@ select#typeFilter {
   max-width: 335px;
 }
 
-.awinModalWindow img.modal_dismiss, .ui-dialog-titlebar-close {
+.awinModalWindow img.modal_dismiss, .ui-dialog-titlebar-close, .modal-header .close {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -8598,7 +8601,6 @@ button.ui-dialog-titlebar-close {
     border: 1px solid #ebebeb;
     -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-    background-clip: padding-box;
     outline: 0;
     top:100px;
 }
