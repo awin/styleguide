@@ -1090,13 +1090,102 @@ Typography, headings
   display: inline;
 }
 
-.table-filters select, .dataTables_length select.input-sm {
+.table-filters select, .dataTables_length select.input-sm, .table-filters .v-select {
   padding: 10px 30px 10px 5px;
   background: transparent url("https://images.awin.com/awin-interface/arrow-down.png") no-repeat scroll right center;
   border: none;
-  margin-right: 30px;
   color: #444444;
   font-size: 12px;
+}
+
+.form-group .v-select {
+    padding: 0;
+    background: #fff url("https://images.awin.com/awin-interface/arrow-down.png") no-repeat scroll right center;
+}
+
+.form-group .v-select input[type=search], .form-group .v-select input[type=search]:focus {
+    padding: 0 10px;
+}
+
+.form-group .v-select .dropdown-toggle {
+    border-color: #dbdbdb;
+}
+
+.table-filters .v-select {
+    text-align: left;
+    padding: 0 0 0 15px;
+    display: inline-block;
+    min-width: 400px;
+}
+
+.table-filters .v-select::before {
+    font-family: FontAwesome;
+    content: "\f002";
+    left: 0;
+    position: absolute;
+    color: #ff6600;
+}
+
+.table-filters .v-select .dropdown-toggle .clear,
+.form-group .v-select .dropdown-toggle .clear {
+    display: none;
+}
+
+.table-filters .v-select .dropdown-toggle {
+    border: none;
+}
+
+.table-filters .v-select .open-indicator,
+.table-filters .v-select.dropdown.open .open-indicator:before,
+.form-group .v-select .open-indicator,
+.form-group .v-select.dropdown.open .open-indicator:before {
+    display: none;
+}
+
+.table-filters .v-select .dropdown-menu,
+.form-group .v-select .dropdown-menu {
+    padding: 0;
+    box-shadow: none;
+    border-color: #dbdbdb;
+}
+
+.table-filters .v-select .no-options,
+.form-group .v-select .no-options {
+    text-align: left;
+    padding: 10px 0;
+}
+
+.form-group .v-select .no-options {
+    padding-left: 10px;
+}
+
+.table-filters .v-select li > a,
+.form-group .v-select li > a {
+    float: left;
+    margin: 0;
+    line-height: 34px;
+    width: 100%;
+}
+
+.table-filters .v-select .dropdown-menu > .highlight > a,
+.form-control .v-select .dropdown-menu > .highlight > a {
+    color: #444;
+    background: transparent;
+}
+
+.table-filters .v-select li > a:hover,
+.form-group  .v-select li > a:hover {
+    background-color: #e5e5e5;
+    color: #444;
+}
+
+.table-filters .v-select .spinner, .v-select .spinner:after,
+.form-group .v-select .spinner, .v-select .spinner:after{
+    display: none;
+}
+
+.table-filters .v-select.single .selected-tag {
+    margin-top: 14px;
 }
 
 .table-filters p {
