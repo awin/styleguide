@@ -1636,8 +1636,6 @@
 </div>
 </xmp>
 
-</div>
-
 <div id="feedback" class="sg-header">
     <h1 class="sg">Feedback</h1>
 
@@ -1712,6 +1710,30 @@
     </div>
 </div>
 </xmp>
+
+<h2 id="char-counter" class="sg">Character Limit Counter</h2>
+<div class="row">
+    <div class="col-md-8">
+        <div class="form-group has-counter">
+            <label class="control-label col-md-4">Label</label>
+            <div class="col-md-8">
+                <textarea id="counter-example" maxlength="25" class="form-control" placeholder="Placeholder description"></textarea>
+                <span class="character-counter"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<xmp class="prettyprint">
+<div class="form-group has-counter">
+    <label class="control-label col-md-4">Label</label>
+    <div class="col-md-8">
+        <textarea maxlength="25" class="form-control" placeholder=" Placeholder description"></textarea>
+        <span class="character-counter"></span>
+    </div>
+</div>
+</xmp>
+</div>
 
 <h2 id="pop-up-notifications" class="sg">Pop Up Notifications</h2>
 <div class="row">
@@ -2314,6 +2336,7 @@
                     <ul class="nav">
                         <li><a href="#feedback-messages">Messages</a></li>
                         <li><a href="#form-messages">Form Messages</a></li>
+                        <li><a href="#char-counter">Character Limit Counter</a></li>
                         <li><a href="#pop-up-notifications">Pop Up Notifications</a></li>
                         <li><a href="#progress-bar">Progress Bar</a></li>
                     </ul>
@@ -2396,6 +2419,16 @@
         $('#myInput').trigger('focus')
     });
 
+    // Character counter example
+    $(function(){
+        var text_max = 25;
+        $('.character-counter').html('0/' + text_max);
+        $('#counter-example').keyup(function() {
+            var text_length = $('#counter-example').val().length;
+            var text_remaining = text_max - text_length;
+            $('.character-counter').html(text_length + '/' + text_max);
+        });
+    });
 </script>
 </body>
 </html>
