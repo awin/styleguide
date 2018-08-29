@@ -2071,11 +2071,72 @@
 <!--Tooltip-->
 <h2 id="tooltip" class="sg">Tooltip</h2>
 
+<div class="row">
+    <div class="col-md-3 padding-L-null">
+        <h3>Tooltip "top-right"
+            <span class="tooltip-hover">
+                <i class="fa fa-info-circle"></i>
+                <div class="tooltip top-right">
+                    <div class="tooltip-arrow"></div>
+                    <div class="tooltip-inner">Short description with <a target="_blank" href="#"><i class="fa fa-external-link" aria-hidden="true"></i> external link</a>. Vestibulum eros leo, hendrerit non bibendum sit amet, efficitur sit amet tortor.</div>
+                </div>
+            </span>
+        </h3>
+    </div>
+    <div class="col-md-3">
+        <h3>Tooltip "top"
+            <span class="tooltip-hover">
+                <i class="fa fa-info-circle"></i>
+                <div class="tooltip top">
+                    <div class="tooltip-arrow"></div>
+                    <div class="tooltip-inner">Short description with <a target="_blank" href="#"><i class="fa fa-external-link" aria-hidden="true"></i> external link</a> Vestibulum eros leo, hendrerit non bibendum sit amet, efficitur sit amet tortor.</div>
+                </div>
+            </span>
+        </h3>
+    </div>
+    <div class="col-md-3">
+        <h3>Tooltip "bottom"
+            <span class="tooltip-hover">
+                <i class="fa fa-info-circle"></i>
+                <div class="tooltip bottom">
+                    <div class="tooltip-arrow"></div>
+                    <div class="tooltip-inner">Short description with <a target="_blank" href="#"><i class="fa fa-external-link" aria-hidden="true"></i> external link</a> Vestibulum eros leo, hendrerit non bibendum sit amet, efficitur sit amet tortor.</div>
+                </div>
+            </span>
+        </h3>
+    </div>
+    <div class="col-md-3">
+        <h3>Tooltip "bottom-left"
+            <span class="tooltip-hover">
+                <i class="fa fa-info-circle"></i>
+                <div class="tooltip bottom-left">
+                    <div class="tooltip-arrow"></div>
+                    <div class="tooltip-inner">Short description with <a target="_blank" href="#"><i class="fa fa-external-link" aria-hidden="true"></i> external link</a> Vestibulum eros leo, hendrerit non bibendum sit amet, efficitur sit amet tortor.</div>
+                </div>
+            </span>
+        </h3>
+    </div>
+</div>
+<pre>
+<xmp class="prettyprint lang-html">
+<div class="tooltip-hover">
+    <i class="fa fa-info-circle"></i>
+    <div class="tooltip top-right">
+        <div class="tooltip-arrow"></div>
+        <div class="tooltip-inner">
+            Short description with <a target="_blank" href="#"><i class="fa fa-external-link" aria-hidden="true"></i> external link</a>. 
+            Vestibulum eros leo, hendrerit non bibendum sit amet, efficitur sit amet tortor.
+        </div>
+    </div>
+</div>
+</xmp>
+</pre>
+
 <form class="form-horizontal">
     <div class="form-group">
         <label class="control-label col-md-3">Tooltip In Right</label>
         <div class="col-md-5">
-            <input name="html" id="focus-example" class="form-control" placeholder="Tooltip triggered on focus">
+            <input name="html" id="focus-example" class="form-control" placeholder="Tooltip triggered on focus ('in' class)">
         </div>
         <div class="col-md-3">
             <div id="tooltip-in" class="tooltip right">
@@ -2084,55 +2145,14 @@
             </div>
         </div>
     </div>
-    <div class="form-group">
-        <label class="col-md-3 control-label">
-            Tooltip-hover
-            <div class="tooltip-hover">
-                <i class="fa fa-info-circle"></i>
-                <div class="tooltip top-right">
-                    <div class="tooltip-arrow"></div>
-                    <div class="tooltip-inner">Short description with <a target="_blank" href="#"><i class="fa fa-external-link" aria-hidden="true"></i> external link</a>. Vestibulum eros leo, hendrerit non bibendum sit amet, efficitur sit amet tortor.</div>
-                </div>
-            </div>
-        </label>
-        <div class="col-md-5">
-            <input class="form-control" placeholder="Triggered on mouse over (i)">
-        </div>
-    </div>
 </form>
 
-<p>Tooltip on focus ("in" class)</p>
 <pre>
 <xmp class="prettyprint lang-html">
 <div class="tooltip in right">
     <div class="tooltip-arrow"></div>
-    <div class="tooltip-inner">Short description with <a target="_blank" href="#"><i class="fa fa-external-link" aria-hidden="true"></i> external link</a>. Vestibulum eros leo, hendrerit non bibendum sit amet, efficitur sit amet tortor.</div>
+    <div class="tooltip-inner">Description.</div>
 </div>
-</xmp>
-</pre>
-
-<p>Tooltip on mouse hover (i)</p>
-<pre>
-<xmp class="prettyprint lang-html">
-<div class="tooltip-hover">
-    <i class="fa fa-info-circle"></i>
-    <div class="tooltip top-right">
-        <div class="tooltip-arrow"></div>
-        <div class="tooltip-inner">
-            Short description with <a target="_blank" href="#"><i class="fa fa-external-link" aria-hidden="true"></i> external link</a>. Vestibulum eros leo, hendrerit non bibendum sit amet, efficitur sit amet tortor.
-        </div>
-    </div>
-</div>
-</xmp>
-</pre>
-
-<p>Tooltip-hover position variants</p>
-<pre>
-<xmp class="prettyprint lang-html">
-<div class="tooltip top">
-<div class="tooltip top-right">
-<div class="tooltip bottom">
-<div class="tooltip bottom-left">
 </xmp>
 </pre>
 

@@ -5174,13 +5174,13 @@ Tooltip and popover
 
 .tooltip.top {
   bottom: 30px;
-  margin-left: -115px;
+  margin-left: -119px;
   left: auto;
 }
 
 .tooltip.top .tooltip-arrow {
   transform: rotate(-90deg);
-  bottom: -3px;
+  bottom: -8px;
   left: 50%;
   margin-top: -5px;
   background: transparent url(https://images.awin.com/common/tooltip_arrow_left.png) center center no-repeat;
@@ -5196,7 +5196,7 @@ Tooltip and popover
 
 .tooltip.top-right .tooltip-arrow {
   transform: rotate(-90deg);
-  bottom: -3px;
+  bottom: -8px;
   left: 20px;
   margin-top: -5px;
   background: transparent url(https://images.awin.com/common/tooltip_arrow_left.png) center center no-repeat;
@@ -5210,16 +5210,25 @@ Tooltip and popover
   left: 0;
 }
 
+.tooltip.right .tooltip-arrow {
+  top: 20px;
+  left: -5px;
+  margin-top: -5px;
+  background: transparent url(https://images.awin.com/common/tooltip_arrow_left.png) center center no-repeat;
+  width: 13px;
+  height: 9px;
+}
+
 .tooltip.bottom {
   padding: 5px 0;
-  margin-top: 12px;
-  margin-left: -115px;
+  margin-top: 10px;
+  margin-left: -119px;
 }
 
 .tooltip.bottom .tooltip-arrow {
   transform: rotate(-90deg);
   left: 50%;
-  margin-top: -3px;
+  margin-top: -8px;
   background: transparent url(https://images.awin.com/common/tooltip_arrow_right.png) center center no-repeat;
   width: 13px;
   height: 9px;
@@ -5230,12 +5239,12 @@ Tooltip and popover
   padding: 5px 0;
   margin-top: 12px;
   right: 0;
-  margin-right: -15px;
+  margin-right: -16px;
 }
 
 .tooltip.bottom-left .tooltip-arrow {
   transform: rotate(90deg);
-  bottom: -3px;
+  top: 0;
   right: 20px;
   margin-top: -3px;
   background: transparent url(https://images.awin.com/common/tooltip_arrow_left.png) center center no-repeat;

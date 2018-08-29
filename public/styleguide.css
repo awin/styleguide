@@ -18,9 +18,6 @@ ul li {
 }
 
 ul.bullet li {
-    list-style: disc;
-    padding: 0;
-    background-image: none;
     margin-bottom: 5px;
     font-size: 14px;
 }
