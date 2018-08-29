@@ -19,3 +19,13 @@ $(function() {
 $('.nav li').on('activate.bs.scrollspy', function(e) {
   var targetId = $(e.target).find('a').attr('href');
 })
+
+// On focus tooltip example
+
+$(function(){
+    $("#focus-example").focus(function(){
+      $("#tooltip-in").addClass('in');
+    }).blur(function(){
+      $("#tooltip-in").removeClass('in');
+    });
+});

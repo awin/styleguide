@@ -5129,28 +5129,6 @@ Tooltip and popover
   line-break: auto;
 }
 
-.tooltip.in {
-  filter: alpha(opacity=100);
-  opacity: 1;
-}
-.tooltip.top {
-  padding: 5px 0;
-  margin-top: -3px;
-}
-.tooltip.right {
-  padding: 0 5px;
-  margin-left: 0;
-  left: 0;
-}
-
-.tooltip.bottom {
-  padding: 5px 0;
-  margin-top: 3px;
-}
-.tooltip.left {
-  padding: 0 5px;
-  margin-left: -3px;
-}
 .tooltip-inner {
   min-width: 250px;
   padding: 8px 10px;
@@ -5166,62 +5144,104 @@ Tooltip and popover
   height: 0;
   border: transparent solid;
 }
+
+.tooltip.in {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.tooltip-hover .fa {
+  font-size: 14px;
+  padding-left: 2px;
+}
+
+.tooltip-hover {
+  display: inline-block;
+  position: relative;
+  visibility: visible;
+}
+
+.tooltip-hover:hover .tooltip {
+  transition-delay: .1s;
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip-hover .tooltip {
+  transition: .1s .1s;
+  visibility: hidden;
+}
+
+.tooltip.top {
+  bottom: 30px;
+  margin-left: -115px;
+  left: auto;
+}
+
 .tooltip.top .tooltip-arrow {
-  bottom: 0;
+  transform: rotate(-90deg);
+  bottom: -3px;
   left: 50%;
-  margin-left: -5px;
-  border-width: 5px 5px 0;
-  border-top-color: #eaeff5;
-}
-.tooltip.top-left .tooltip-arrow {
-  right: 5px;
-  bottom: 0;
-  margin-bottom: -5px;
-  border-width: 5px 5px 0;
-  border-top-color: #eaeff5;
-}
-.tooltip.top-right .tooltip-arrow {
-  bottom: 0;
-  left: 5px;
-  margin-bottom: -5px;
-  border-width: 5px 5px 0;
-  border-top-color: #eaeff5;
-}
-.tooltip.right .tooltip-arrow {
-  top: 20px;
-  left: -5px;
   margin-top: -5px;
   background: transparent url(https://images.awin.com/common/tooltip_arrow_left.png) center center no-repeat;
   width: 13px;
   height: 9px;
+  border: none;
 }
-.tooltip.left .tooltip-arrow {
-  top: 50%;
-  right: 0;
+
+.tooltip.top-right {
+  bottom: 30px;
+  margin-left: -15px;
+}
+
+.tooltip.top-right .tooltip-arrow {
+  transform: rotate(-90deg);
+  bottom: -3px;
+  left: 20px;
   margin-top: -5px;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #eaeff5;
+  background: transparent url(https://images.awin.com/common/tooltip_arrow_left.png) center center no-repeat;
+  width: 13px;
+  height: 9px;
+  border: none;
 }
+
+.tooltip.right {
+  padding: 0 5px;
+  left: 0;
+}
+
+.tooltip.bottom {
+  padding: 5px 0;
+  margin-top: 12px;
+  margin-left: -115px;
+}
+
 .tooltip.bottom .tooltip-arrow {
-  top: 0;
+  transform: rotate(-90deg);
   left: 50%;
-  margin-left: -5px;
-  border-width: 0 5px 5px;
-  border-bottom-color: #eaeff5;
+  margin-top: -3px;
+  background: transparent url(https://images.awin.com/common/tooltip_arrow_right.png) center center no-repeat;
+  width: 13px;
+  height: 9px;
+  border: none;
 }
+
+.tooltip.bottom-left {
+  padding: 5px 0;
+  margin-top: 12px;
+  right: 0;
+  margin-right: -15px;
+}
+
 .tooltip.bottom-left .tooltip-arrow {
-  top: 0;
-  right: 5px;
-  margin-top: -5px;
-  border-width: 0 5px 5px;
-  border-bottom-color: #eaeff5;
-}
-.tooltip.bottom-right .tooltip-arrow {
-  top: 0;
-  left: 5px;
-  margin-top: -5px;
-  border-width: 0 5px 5px;
-  border-bottom-color: #eaeff5;
+  transform: rotate(90deg);
+  bottom: -3px;
+  right: 20px;
+  margin-top: -3px;
+  background: transparent url(https://images.awin.com/common/tooltip_arrow_left.png) center center no-repeat;
+  width: 13px;
+  height: 9px;
+  border: none;
 }
 
 @media (max-width: 767px) {
@@ -5233,6 +5253,24 @@ Tooltip and popover
         padding: 0;
         margin-left: 0;
     }
+}
+
+.page-header .tooltip-hover,
+.widget .tooltip-hover {
+  float: right;
+  margin-top: -3px;
+}
+
+.page-header .tooltip-hover .tooltip.bottom-left,
+.widget .tooltip-hover .tooltip.bottom-left {
+  margin-top: -9px;
+}
+
+.page-header .tooltip-hover a {
+  float: none;
+  color: #f60;
+  line-height: initial;
+  padding: 0;
 }
 
 .popover {

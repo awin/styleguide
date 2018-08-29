@@ -2033,8 +2033,8 @@
                 ...
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-default">Save changes</button>
+                <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-default">Save</button>
             </div>
         </div>
     </div>
@@ -2061,8 +2061,8 @@
                     ...
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-default">Save changes</button>
+                    <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-default">Save</button>
                 </div>
             </div>
         </div>
@@ -2070,9 +2070,69 @@
 
 <!--Tooltip-->
 <h2 id="tooltip" class="sg">Tooltip</h2>
+
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="control-label col-md-3">Tooltip In Right</label>
+        <div class="col-md-5">
+            <input name="html" id="focus-example" class="form-control" placeholder="Tooltip triggered on focus">
+        </div>
+        <div class="col-md-3">
+            <div id="tooltip-in" class="tooltip right">
+                <div class="tooltip-arrow"></div>
+                <div class="tooltip-inner">Short description with <a target="_blank" href="#"><i class="fa fa-external-link" aria-hidden="true"></i> external link</a>. Vestibulum eros leo, hendrerit non bibendum sit amet, efficitur sit amet tortor.</div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-3 control-label">
+            Tooltip-hover
+            <div class="tooltip-hover">
+                <i class="fa fa-info-circle"></i>
+                <div class="tooltip top-right">
+                    <div class="tooltip-arrow"></div>
+                    <div class="tooltip-inner">Short description with <a target="_blank" href="#"><i class="fa fa-external-link" aria-hidden="true"></i> external link</a>. Vestibulum eros leo, hendrerit non bibendum sit amet, efficitur sit amet tortor.</div>
+                </div>
+            </div>
+        </label>
+        <div class="col-md-5">
+            <input class="form-control" placeholder="Triggered on mouse over (i)">
+        </div>
+    </div>
+</form>
+
+<p>Tooltip on focus ("in" class)</p>
 <pre>
 <xmp class="prettyprint lang-html">
-Under review. Will be added soon
+<div class="tooltip in right">
+    <div class="tooltip-arrow"></div>
+    <div class="tooltip-inner">Short description with <a target="_blank" href="#"><i class="fa fa-external-link" aria-hidden="true"></i> external link</a>. Vestibulum eros leo, hendrerit non bibendum sit amet, efficitur sit amet tortor.</div>
+</div>
+</xmp>
+</pre>
+
+<p>Tooltip on mouse hover (i)</p>
+<pre>
+<xmp class="prettyprint lang-html">
+<div class="tooltip-hover">
+    <i class="fa fa-info-circle"></i>
+    <div class="tooltip top-right">
+        <div class="tooltip-arrow"></div>
+        <div class="tooltip-inner">
+            Short description with <a target="_blank" href="#"><i class="fa fa-external-link" aria-hidden="true"></i> external link</a>. Vestibulum eros leo, hendrerit non bibendum sit amet, efficitur sit amet tortor.
+        </div>
+    </div>
+</div>
+</xmp>
+</pre>
+
+<p>Tooltip-hover position variants</p>
+<pre>
+<xmp class="prettyprint lang-html">
+<div class="tooltip top">
+<div class="tooltip top-right">
+<div class="tooltip bottom">
+<div class="tooltip bottom-left">
 </xmp>
 </pre>
 
