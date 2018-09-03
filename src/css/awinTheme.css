@@ -5155,6 +5155,7 @@ Tooltip and popover
   border-radius: 4px;
   border: 1px solid #99b2cc;
 }
+
 .tooltip-arrow {
   position: absolute;
   width: 0;
@@ -5169,7 +5170,10 @@ Tooltip and popover
 
 .tooltip-hover .fa {
   font-size: 14px;
-  padding-left: 2px;
+}
+
+.tooltip-hover .fa-info-circle {
+  color: #009aff;
 }
 
 .tooltip-hover {
