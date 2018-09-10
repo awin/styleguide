@@ -5219,11 +5219,15 @@ Tooltip and popover
   border: none;
 }
 
-.page-header .tooltip-hover, .widget .tooltip-hover {
+.page-header .tooltip-hover, .widget .header .tooltip-hover {
   line-height: normal;
   float: right;
   margin-top: 21px;
   margin-left: 5px;
+}
+
+a + .tooltip-hover {
+  margin-left: 10px;
 }
 
 .page-header .tooltip-hover a {
