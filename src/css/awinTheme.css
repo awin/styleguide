@@ -272,6 +272,7 @@ body.bg-white {
   display: flex;
   clear: both;
 }
+
 @media (max-width: 480px) {
   .row-eq-height {
     display: block;
@@ -1146,10 +1147,11 @@ Headers
 ---------------------------------------------------------------------------- */
 
 .page-header, .widget .header, .modal-header {
-  border-bottom: 1px solid #dedede;
-  height: 54px;
-  line-height: 55px;
-  padding-right: 20px;
+    border-bottom: 1px solid #dedede;
+    height: 54px;
+    line-height: 55px;
+    padding-right: 20px;
+    position: relative;
 }
 
 .page-header a, .widget .header a, .table-filters a {
@@ -1179,7 +1181,7 @@ Headers
 .page-header h1, .widget .header h2, .widget .header h3, h5.modal-title {
   display: inline-block;
   line-height: 56px;
-  padding: 0 20px;
+  padding: 0 5px 0 20px;
   margin: 0;
   border-bottom: none;
   font-size: 19px;
@@ -1238,30 +1240,39 @@ Headers
   position: relative;
 }
 
-.option-menu ul {
-  display: none;
-  position: absolute;
-  right: -20px;
-  z-index: 50;
-  padding: 15px 0;
-  background-color: #23282c;
+.option-menu ul, .option-menu .dropdown {
+    display: none;
+    position: absolute;
+    right: -20px;
+    z-index: 50;
+    padding: 15px 0;
+    background-color: #23282c;
+    line-height: initial;
+    color: #fff;
 }
 
-.option-menu ul:before {
+.option-menu .dropdown {
+    right: 0;
+}
+
+.option-menu ul:before, .option-menu .dropdown:before {
   content: "\f0d7";
   font-family: FontAwesome;
-  top: -25px;
+  top: -9px;
   right: 40px;
   position: absolute;
   font-size: 1.9em;
   color: #fff;
 }
 
-.page-header .option-menu ul, .table-filters .option-menu ul {
-  top: 52px;
+.page-header .option-menu ul, .page-header .option-menu .dropdown,
+.page-header .option-menu ul span, .page-header .option-menu .dropdown span,
+.table-filters .option-menu ul, table-filters .option-menu .dropdown {
+    top: 52px;
+    margin-right: initial;
 }
 
-.option-menu:hover ul {
+.option-menu:hover ul, .option-menu:hover .dropdown {
   display: block;
 }
 
@@ -5006,22 +5017,27 @@ Badges
 
 .badge {
     display: inline-block;
-    min-width: 10px;
+    min-width: 20px;
     min-height: 20px;
     padding: 3px 7px;
     font-size: 12px;
     font-weight: 600;
-    line-height: 1;
+    line-height: 15px;
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    vertical-align: middle;
     background-color: #f60;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .disabled .badge {
   background-color: #ddd;
+}
+
+.badge.outline {
+    background: transparent;
+    border: 1px solid;
+    color: inherit;
 }
 
 /* ----------------------------------------------------------------------------
@@ -5217,6 +5233,24 @@ Tooltip and popover
   width: 13px;
   height: 9px;
   border: none;
+}
+
+.tooltip.bottom-right {
+    padding: 5px 0;
+    margin-top: 12px;
+    left: 0;
+    margin-left: -16px;
+}
+
+.tooltip.bottom-right .tooltip-arrow {
+    transform: rotate(-90deg);
+    top: 0;
+    left: 20px;
+    margin-top: -3px;
+    background: transparent url(https://images.awin.com/common/tooltip_arrow_right.png) center center no-repeat;
+    width: 13px;
+    height: 9px;
+    border: none;
 }
 
 .page-header .tooltip-hover, .widget .header .tooltip-hover {
@@ -6776,7 +6810,7 @@ Extra styling
   display: block;
   height: auto;
   color: #444;
-  min-height: 61px;
+  min-height: 40px;
   overflow-wrap: break-word;
   word-wrap: break-word;
   -ms-word-break: break-all;
@@ -6854,8 +6888,13 @@ body.login-page #container {
 /* ----------------------------------------------------------------------------
 Helper classes
 ---------------------------------------------------------------------------- */
-.align-middle {
-    margin: 0 auto;
+
+.indent-xs {
+    padding-left: 12px;
+}
+
+.indent-sm {
+    padding-left: 25px;
 }
 
 .borderless {
@@ -6892,6 +6931,10 @@ Helper classes
 
 .pull-left {
   float: left;
+}
+
+.pull-none {
+    float: none;
 }
 
 .text-left {
@@ -7066,6 +7109,10 @@ input.view-mode {
 .max-height-lg {
   height: 500px;
   overflow-y: auto;
+}
+
+.min-width-xs {
+    min-width: 400px;
 }
 
 .divider-horizontal {
