@@ -4134,17 +4134,17 @@ On off Switch
 }
 
 /* ---------------------------------------------------------------------------- 
-Input character counter
+Character counter
 ---------------------------------------------------------------------------- */
 
-input.form-control.has-counter {
-    padding-right: 50px;
+.has-counter {
+    padding-right: 40px;
 }
 
 span.character-counter {
     position: absolute;
     top: 10px;
-    right: 31px;
+    right: 30px;
     text-align: right;
     font-size: 11px;
     color: #888;
