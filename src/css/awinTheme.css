@@ -4138,7 +4138,7 @@ Character counter
 ---------------------------------------------------------------------------- */
 
 .has-counter {
-    padding-right: 40px;
+    padding-right: 55px;
 }
 
 span.character-counter {
@@ -6888,6 +6888,10 @@ body.login-page #container {
 /* ----------------------------------------------------------------------------
 Helper classes
 ---------------------------------------------------------------------------- */
+
+::-ms-clear {
+    display: none;
+}
 
 .indent-xs {
     padding-left: 12px;
