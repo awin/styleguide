@@ -9125,7 +9125,7 @@ li.checkbox.partial label, li.checkbox.partial label:hover {
 }
 
 .subLevel {
-    max-height: 1000px;
+    max-height: 1050px;
     transform-origin: top;
     transition: max-height 0.5s ease-in-out;
     overflow: hidden;
