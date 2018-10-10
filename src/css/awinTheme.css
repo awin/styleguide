@@ -1636,7 +1636,8 @@ table.text-right tbody > tr > td.text-center {
 }
 
 .table-hover > tbody > tr:hover > td a, .progress-tooltip .table-hover > tbody > tr:hover > td a,
-.merchantOfMonth:hover a, .offerOfWeek:hover a, .editorsPick:hover a, .featuredPromotion:hover a {
+.merchantOfMonth:hover a, .offerOfWeek:hover a, .editorsPick:hover a, .featuredPromotion:hover a,
+label:hover a:link, label:hover a:visited {
   color: #ff6600;
   text-decoration: none;
   position: relative;
@@ -2896,38 +2897,37 @@ select[multiple].input-lg {
 /* Buttons */
 
 .btn, form dd button, .awinModalWindow .boxFooter button, .modalMultiSelectContent .footer button {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  color: inherit;
-  cursor: pointer;
-  display: inline-block;
-  font-family: inherit;
-  font-size: 13px;
-  font-weight: 500;
-  height: auto;
-  line-height: 1.25;
-  overflow: hidden;
-  margin: 0;
-  padding: 7px 25px;
-  text-align: center;
-  text-decoration: none;
-  -webkit-transition-duration: .25s;
-  transition-duration: .25s;
-  -webkit-transition-property: background-color, border-color, box-shadow, color;
-  transition-property: background-color, border-color, box-shadow, color;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-user-select: none;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    height: auto;
+    line-height: 1.25;
+    overflow: hidden;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition-duration: .25s;
+    transition-duration: .25s;
+    -webkit-transition-property: background-color, border-color, box-shadow, color;
+    transition-property: background-color, border-color, box-shadow, color;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
 .btn:focus {
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: none;
   outline-offset: -2px;
 }
 
@@ -2958,9 +2958,14 @@ select[multiple].input-lg {
 }
 
 .btn-add, .btn-icon, .title-icon {
-  padding-left: 2px;
-  color: #f60;
-  font-size: 14px;
+    padding-left: 2px;
+    padding-bottom: 10px;
+    color: #f60;
+    font-size: 14px;
+}
+
+.text-right .btn {
+    margin-left: 20px;
 }
 
 .title-icon {
@@ -2982,7 +2987,7 @@ select[multiple].input-lg {
 
 .btn-disabled, btn-disabled:hover {
     color: rgba(0,0,0,.3);
-    padding: 7px 25px;
+    padding: 7px 12px;
     border-radius: 3px;
     box-shadow: 0 1px 0 0 #d0d0d0 inset;
     cursor: not-allowed;
@@ -3037,25 +3042,27 @@ select[multiple].input-lg {
 }
 
 .btn.btn-caret {
-  position: relative;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: -2px;
 }
 
 .btn-caret:before, .btn-caret:after {
-  content: "\f0d8";
-  font-family: Fontawesome;
-  font-size: 27px;
-  right: 50%;
-  position: absolute;
+    content: "\f0d8";
+    font-family: Fontawesome;
+    font-size: 27px;
+    right: 50%;
+    position: absolute;
 }
 
 .btn-caret:before {
-  bottom: -11px;
-  color: #dedede;
+    bottom: -12px;
+    color: #dedede;
 }
 
 .btn-caret:after {
-  bottom: -12px;
-  color: #f9f9f9;
+    bottom: -13px;
+    color: #f9f9f9;
 }
 
 .btn-xs {
