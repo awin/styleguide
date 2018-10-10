@@ -5260,6 +5260,11 @@ Tooltip and popover
   margin-left: 5px;
 }
 
+.page-header .tooltip-hover {
+    float: none;
+    margin-left: 0;
+}
+
 a + .tooltip-hover {
   margin-left: 10px;
 }
