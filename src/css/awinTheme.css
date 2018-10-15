@@ -7140,6 +7140,22 @@ input.view-mode {
     height: 20px;
 }
 
+.resize-both {
+    resize: both;
+}
+
+.resize-x {
+    resize: horizontal;
+}
+
+.resize-y {
+    resize: vertical;
+}
+
+.resize-none {
+    resize: none;
+}
+
 /* ----------------------------------------------------------------------------
 Temporary classes used to support darwin existing markup
 ---------------------------------------------------------------------------- */
