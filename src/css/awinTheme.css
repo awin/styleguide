@@ -5263,7 +5263,7 @@ h2 .tooltip-hover, h4 .tooltip-hover {
     margin-left: 4px;
 }
 
-.page-header .tooltip-hover a {
+.page-header .tooltip-hover a, .widget .header .tooltip-hover a {
   float: none;
   color: #f60;
   line-height: initial;
