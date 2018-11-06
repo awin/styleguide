@@ -1735,38 +1735,163 @@
 </xmp>
 </div>
 
-<h2 id="pop-up-notifications" class="sg">Pop Up Notifications</h2>
+
 <div class="row">
     <div class="col-md-12 padding-LR-null">
-        <div id="popup_container" class="error">
-            <div id="popup_title">Error Alert Box</div>
-            <div id="popup_content" class="error">
-                <div id="popup_message">Error alert message</div>
-                <div id="popup_panel"><button id="popup_ok" class="btn btn-default">OK</button></div>
+        <h2 id="pop-up-notifications" class="sg">Pop Up Notifications</h2>
+        <h3 class="sg">Error Alert</h3>
+<xmp class="prettyprint">
+    <div class="modal modal-alert fade" tabindex="-1" role="dialog" aria-labelledby="exampleErrorPopup" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content alert-danger">
+                <div class="modal-header">
+                    <h5 class="modal-title">Error alert</h5>
+                </div>
+                <div class="modal-body col-xs-12">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</xmp>
+
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#alert-danger">
+                Example Error Alert
+            </button>
+
+            <div class="modal modal-alert fade" id="alert-danger" tabindex="-1" role="dialog" aria-labelledby="exampleErrorPopup" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content alert-danger">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Error alert</h5>
+                        </div>
+                        <div class="modal-body col-xs-12">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <h3 class="sg">Info Alert</h3>
+<xmp class="prettyprint">
+    <div class="modal modal-alert fade" id="alert-info" tabindex="-1" role="dialog" aria-labelledby="exampleAlertPopup" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content alert-info">
+                <div class="modal-header">
+                    <h5 class="modal-title">Info alert title</h5>
+                </div>
+                <div class="modal-body col-xs-12">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</xmp>
+
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#alert-info">
+            Example Info Alert
+        </button>
+
+            <div class="modal modal-alert fade" id="alert-info" tabindex="-1" role="dialog" aria-labelledby="exampleAlertPopup" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content alert-info">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Alert warning</h5>
+                        </div>
+                        <div class="modal-body col-xs-12">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <h3 class="sg">Success Alert</h3>
+<xmp class="prettyprint">
+    <div class="modal modal-alert fade" id="alert-success" tabindex="-1" role="dialog" aria-labelledby="exampleAlertPopup" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content alert-info">
+                <div class="modal-header">
+                    <h5 class="modal-title">Warning pop up</h5>
+                </div>
+                <div class="modal-body col-xs-12">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</xmp>
+
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#alert-success">
+            Example Success Alert
+        </button>
+
+        <div class="modal modal-alert fade" id="alert-success" tabindex="-1" role="dialog" aria-labelledby="exampleAlertPopup" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content alert-success">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Alert success</h5>
+                    </div>
+                    <div class="modal-body col-xs-12">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div id="popup_container" class="warning">
-            <div id="popup_title">Warning Alert Box</div>
-            <div id="popup_content" class="warning">
-                <div id="popup_message">Warning alert message</div>
-                <div id="popup_panel"><button id="popup_ok" class="btn btn-default">OK</button></div>
+    <h3 class="sg">Warning Alert</h3>
+<xmp class="prettyprint">
+    <div class="modal modal-alert fade" id="alert-warning" tabindex="-1" role="dialog" aria-labelledby="exampleAlertPopup" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content alert-warning">
+                <div class="modal-header">
+                    <h5 class="modal-title">Warning alert title</h5>
+                </div>
+                <div class="modal-body col-xs-12">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
             </div>
         </div>
+    </div>
+</xmp>
 
-        <div id="popup_container" class="success">
-            <div id="popup_title">Success Alert Box</div>
-            <div id="popup_content" class="success">
-                <div id="popup_message">Success alert message</div>
-                <div id="popup_panel"><button id="popup_ok" class="btn btn-default">OK</button></div>
-            </div>
-        </div>
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#alert-warning">
+            Example Warning Alert
+        </button>
 
-        <div id="popup_container" class="info">
-            <div id="popup_title">Info Alert Box</div>
-            <div id="popup_content" class="info">
-                <div id="popup_message">Info alert message</div>
-                <div id="popup_panel"><button id="popup_ok" class="btn btn-default">OK</button></div>
+        <div class="modal modal-alert fade" id="alert-warning" tabindex="-1" role="dialog" aria-labelledby="exampleAlertPopup" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content alert-warning">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Alert warning</h5>
+                    </div>
+                    <div class="modal-body col-xs-12">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -2064,31 +2189,33 @@
 </xmp>
 </pre>
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModal">
-        Launch demo modal
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="fa fa-times" aria-hidden="true"></i>
-                    </button>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+</button>
+-
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-sm-12">
+                    Content
                 </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-default">Save</button>
-                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-default">Save</button>
             </div>
         </div>
     </div>
+</div>
 
 <!--Tooltip-->
 <h2 id="tooltip" class="sg">Tooltip</h2>

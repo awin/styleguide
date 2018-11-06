@@ -3505,6 +3505,77 @@ table .table-hover > tbody > tr:hover > td .has-disabled .fa:hover {
   color: inherit;
 }
 
+.modal-alert .modal-header h5 {
+    margin-left: 25px;
+}
+
+.modal-alert .alert-danger {
+    background-color: #fcefee;
+    color: #cc3333;
+}
+
+.modal-alert .alert-info {
+    background-color: #eaeff5;
+    color: #00568b;
+}
+
+.modal-alert .alert-success {
+    background-color: #eff8ec;
+    color: #99d5b7;
+}
+
+.modal-alert .alert-warning {
+    background-color: #fdf7e0;
+    color: #8a6d3b;
+}
+
+.modal-alert .modal-header:before {
+    font-family: fontAwesome;
+    font-size: 19px;
+    position: absolute;
+    left: 20px;
+    top: 1px;
+}
+
+.modal-alert .alert-danger .modal-header:before,
+.modal-alert .alert-warning .modal-header:before {
+    content: "\f071";
+}
+
+.modal-alert .alert-info .modal-header:before {
+    content: "\f05a";
+}
+
+.modal-alert .alert-success .modal-header:before {
+    content: "\f058";
+}
+
+.modal-alert .alert-danger .modal-header {
+    color: #a72a39;
+    background-color: #e6b8bf;
+}
+
+.modal-alert .alert-info .modal-header {
+    background-color: #d1e7f1;
+    color: #00568b;
+}
+
+.modal-alert .alert-success .modal-header {
+    color: #00964b;
+    background: #99d5b7;
+}
+
+.modal-alert .alert-warning .modal-header {
+    color: #8a6d3b;
+    background-color: #f3ebb2;
+}
+
+.modal-alert .modal-footer {
+    background: transparent;
+    border-top: none;
+    padding: 0 20px 20px 0;
+}
+
 .alert-success {
   background-color: #eff8ec;
   border-color: #6caf47;
@@ -8775,6 +8846,8 @@ button.ui-dialog-titlebar-close {
     position: relative;
     width: auto;
     margin: 10px;
+    width: 700px;
+    margin: 30px auto;
 }
 .modal-content {
     position: relative;
@@ -8784,6 +8857,10 @@ button.ui-dialog-titlebar-close {
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
     outline: 0;
     top:100px;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius:3px;
+    border-radius: 3px;
 }
 .modal-backdrop {
     position: fixed;
@@ -8800,6 +8877,11 @@ button.ui-dialog-titlebar-close {
 .modal-backdrop.in {
     opacity: 0.5;
     filter: alpha(opacity=50);
+}
+
+.modal-header {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
 }
 
 .modal-body {
@@ -8830,11 +8912,6 @@ button.ui-dialog-titlebar-close {
     width: 50px;
     height: 50px;
     overflow: scroll;
-}
-
-.modal-dialog {
-    width: 700px;
-    margin: 30px auto;
 }
 
 .modal-sm {
