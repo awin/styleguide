@@ -9140,15 +9140,15 @@ li.checkbox.partial label, li.checkbox.partial label:hover {
     background: transparent url(http://images.awin.com/darwin/directory/refineby_parent.png) left 6px no-repeat;
 }
 
-.subLevel.ng-hide {
-    max-height: 0;
+.collapsible {
+    transform-origin: top;
+    transform: scaleY(1);
+    transition: all linear 0.35s;
 }
 
-.subLevel {
-    max-height: 1050px;
-    transform-origin: top;
-    transition: max-height 0.5s ease-in-out;
-    overflow: hidden;
+.collapsible.ng-hide {
+    transform: scaleY(0);
+    transition: all linear 0.35s;
 }
 
 .subLevel li label {
