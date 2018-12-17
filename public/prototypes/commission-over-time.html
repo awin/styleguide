@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>Commissions Over Time</title>
+        <link href="http://styleguide.awin.com/dist/awin.css" rel="stylesheet" type="text/css" />
+        <style>
+            .nav-tabs > li > a, .nav-tabs > li > a:hover {
+            font-weight: 800;
+            font-size: 14px;
+            padding: 15px 20px 15px;
+            color: #999;
+            }
+            .nav-tabs > li > a > .fa {
+            color: #999;
+            margin-right: 5px;
+            }
+            .nav-tabs > li.selected > a, .nav-tabs > li.selected > a:hover {
+            font-weight: 800;
+            }
+            .nav-tabs > li.selected > a > .fa {
+            color: #ff6600;
+            }
+            .nav-tabs > li.selected > a > .fa {
+            color: #ff6600;
+            }
+            .align-self-end {
+            align-self: flex-end!important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="boxLtgrey">
+            <ul class="nav nav-tabs">
+                <li><a href="commission-groups.html"><i class="fa fa-pie-chart"></i> Programme Standard Rates</a></li>
+                <li><a href="publisher-commission.html"><i class="fa fa-users"></i> Publisher Commission Rates</a></li>
+                <li class="selected"><a href="commission-over-time.html"><i class="fa fa-clock-o"></i> Commission Over Time</a></li>
+            </ul>
+            <div class="container-fluid widget padding-LR-null">
+
+                <div class="form-horizontal margin-top margin-bottom">
+                    <div class="row row-eq-height">
+                        <div class="col-md-6">
+                            <label class="control-label">Filter by</label>
+                            <div class="input-group select-input-group">
+                                <div class="input-group-addon">
+                                    <select>
+                                        <option value="">Publisher Commission Rates</option>
+                                        <option value="">Publisher</option>
+                                    </select>
+                                </div>
+                                <input type="text" name="" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-2 align-self-end padding-L-null">
+                            <div class="form-group margin-bottom-zero">
+                                <button class="btn btn-default">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12"></div>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Publisher Commission Rates</th>
+                                <th>Rates</th>
+                                <th>Publishers</th>
+                                <th>Schedule Description</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Last Modified</th>
+                                <th>User</th>
+                                <th>Status</th>
+                                <th class="col-md-1"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HDR</td>
+                                <td><a href="">See Rates</a></td>
+                                <td><a href="">1 Publisher</a></td>
+                                <td>Week 1</td>
+                                <td>13/08/2018</td>
+                                <td>13/10/2018</td>
+                                <td>13/18/2018</td>
+                                <td>Frank Schneider</td>
+                                <td>Archived</td>
+                                <td class="text-right">
+                                    <a href=""><i class="fa fa-trash-o"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>HDR</td>
+                                <td><a href="">See Rates</a></td>
+                                <td><a href="">1 Publisher</a></td>
+                                <td>Week 2</td>
+                                <td>13/08/2018</td>
+                                <td>13/10/2018</td>
+                                <td>13/18/2018</td>
+                                <td>Frank Schneider</td>
+                                <td>Active</td>
+                                <td class="text-right">
+                                    <a href=""><i class="fa fa-trash-o"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>HDR</td>
+                                <td><a href="">See Rates</a></td>
+                                <td><a href="">1 Publisher</a></td>
+                                <td>Week 3</td>
+                                <td>13/08/2018</td>
+                                <td>13/10/2018</td>
+                                <td>13/18/2018</td>
+                                <td>Frank Schneider</td>
+                                <td>Scheduled</td>
+                                <td class="text-right">
+                                    <a href="" disabled><i class="fa fa-trash-o"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
