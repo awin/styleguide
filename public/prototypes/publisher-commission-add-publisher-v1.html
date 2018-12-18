@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>Commission Manager - Release 2</title>
+        <link href="https://styleguide.awin.com/dist/awin.css" rel="stylesheet" type="text/css" />
+
+<style>
+
+.nav-tabs > li > a, .nav-tabs > li > a:hover {
+    font-weight: 800;
+    font-size: 14px;
+    padding: 15px 20px 15px;
+    color: #999;
+}
+
+.nav-tabs > li > a > .fa {
+    color: #999;
+    margin-right: 5px;
+}
+
+.nav-tabs > li.selected > a, .nav-tabs > li.selected > a:hover {
+    font-weight: 800;
+}
+
+.nav-tabs > li.selected > a > .fa {
+    color: #ff6600;
+}
+
+.nav-tabs > li.selected > a > .fa {
+    color: #ff6600;
+}
+
+.table-fixed-header thead {
+  display: table;
+  width: 100%;
+}
+
+.table-fixed-header tbody {
+  display: block;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.table-fixed-header thead > tr,
+.table-fixed-header tbody > tr  {
+  display: table;
+  width: 100%;
+}
+
+.table-fixed-header th, .table-fixed-header td {
+  width: 15%;
+}
+
+.widget.padding-LR-null table.table-fixed-header tbody > tr > td:last-child,
+.widget.padding-LR-null table.table-fixed-header thead > tr > th:last-child {
+  padding-right: 0;
+}
+
+.widget.padding-LR-null table.table-fixed-header tbody > tr > td:last-child .form-control {
+    border-right: 0;
+}
+
+.table-form th {
+    color: #777;
+}
+
+.table-form tbody tr td {
+    padding: 0;
+}
+
+.table-form tbody tr td .form-control {
+    font-size: 12px;
+    border: none;
+    border-right: 1px solid #eeeeee;
+    border-radius: 0;
+    padding: 12px 10px;
+}
+
+</style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="special text-right text-muted">Commission Manager - Release 2<br/><small>V.1.0</small></h1>
+            </div>
+        </div>
+        <div class="boxLtgrey">
+            <ul class="nav nav-tabs">
+                <li><a href="commission-groups-v1.html"><i class="fa fa-pie-chart"></i> Manage Commission Groups</a></li>
+                <li class="selected"><a href="publisher-commission-v1.html"><i class="fa fa-users"></i> Manage Publisher Commissions</a></li>
+                <li><a href="commission-over-time-v1.html"><i class="fa fa-clock-o"></i> See Commission Over Time</a></li>
+            </ul>
+            <div class="container-fluid widget padding-LR-null">
+                <div class="row">
+                    <div class="col-lg-12 margin-top-md">
+                        <a href="publisher-commission-v1.html" class="btn btn-icon"><i class="fa fa-plus"></i> Add New Publisher Commission</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12"></div>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Publisher Commission Rates</th>
+                                <th>Publishers</th>
+                                <th>Current Commission Rates</th>
+                                <th>Current Schedule Description</th>
+                                <th>Scheduled Changes</th>
+                                <th>Last Modified</th>
+                                <th class="col-md-1"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Programme Standard</td>
+                                <td><a href="">1850 Publishers</a></td>
+                                <td><a href="">13/12/2018 - Ongoing</a></td>
+                                <td>Standard Rates</td>
+                                <td>None</td>
+                                <td>13/08/2018 - Frank Schneider</td>
+                                <td class="text-right">
+                                    <a href=""><i class="fa fa-user"></i></a>
+                                    <a href=""><i class="fa fa-trash-o"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="7" class="bg-edit">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <button type="button" onClick="parent.location='publisher-commission-v1.html'" class="close" aria-label="Close" >
+                                                <i class="fa fa-times" title="Close" aria-hidden=""></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="col-md-8">
+                                            <form action="" class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-4">Publisher Commission Rates</label>
+                                                    <div class="col-md-8">
+                                                        <input type="text" name="" class="form-control" disabled="disabled">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-4">Add Publisher</label>
+                                                    <div class="col-md-8">
+                                                        <button type="button" class="selectorButton btn-filter form-control">
+                                                            <span class="txt">Select Here</span>
+                                                            <i class="fa fa-list selectorNb"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-4">From:</label>
+                                                    <div class="col-md-3">
+                                                        <input type="text" name="" class="form-control hasDatepicker">
+                                                    </div>
+                                                    <label class="control-label col-md-2 padding-LR-null">To:</label>
+                                                    <div class="col-md-3">
+                                                        <input type="text" name="" class="form-control hasDatepicker">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-4">Schedule Description</label>
+                                                    <div class="col-md-8">
+                                                        <input type="text" name="" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-4">Once ended, move to</label>
+                                                    <div class="col-md-8">
+                                                        <select class="form-control">
+                                                            <option value="">Programme Standard</option>
+                                                            <option value="">Cashback</option>
+                                                            <option value="">HDR</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group text-right margin-top">
+                                                    <div class="col-md-12">
+                                                        <button onClick="parent.location='publisher-commission-v1.html'" type="button" class="btn btn-link">Cancel</button>
+                                                        <button onClick="parent.location='publisher-commission-v1.html'" type="submit" id="" class="btn btn-default" form="">Save</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div> <!-- row expanded -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>HDR</td>
+                                <td>1 Publisher</td>
+                                <td><a href="">01/03/2018 - 11/13/2018</a></td>
+                                <td>HDR 2% Increase</td>
+                                <td><a href="">2 Scheduled</a></td>
+                                <td>15/02/2018 - Peter Hull</td>
+                                <td class="text-right">
+                                    <a href=""><i class="fa fa-user"></i></a>
+                                    <a href=""><i class="fa fa-trash-o"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
