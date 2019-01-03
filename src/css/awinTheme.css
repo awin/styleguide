@@ -1314,11 +1314,14 @@ Headers
 }
 
 .form-group .v-select input[type=search], .form-group .v-select input[type=search]:focus {
-    padding: 0 10px;
+    height: auto;
+    padding: 0;
 }
 
 .form-group .v-select .dropdown-toggle {
     border-color: #dbdbdb;
+    background-color: #fff;
+    padding: 8px 40px 8px 10px;
 }
 
 .table-filters .v-select {
@@ -3801,7 +3804,8 @@ body > .select2-container {
   outline: none;
 }
 
-.select2-angular .btn-default {
+.select2-angular .btn-default,
+.form-group .v-select .selected-tag {
   border: none;
   box-shadow: none;
   font-size: 10px;
@@ -3810,13 +3814,14 @@ body > .select2-container {
   background-color: #e4e4e4;
   color: #444;
   padding: 5px;
-  margin: 0 0 3px 2px;
+  margin: 0 3px 3px 2px;
   height: auto;
   line-height: 1em;
   opacity: 100;
 }
 
-.select2-angular .close, .tag .close {
+.select2-angular .close, .tag .close,
+.form-group .v-select .selected-tag .close {
   font-size: 14px;
   line-height: inherit;
   font-weight: normal;
