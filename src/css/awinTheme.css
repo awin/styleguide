@@ -1149,7 +1149,7 @@ Headers
 .page-header, .widget .header, .modal-header {
     border-bottom: 1px solid #dedede;
     height: 54px;
-    line-height: 55px;
+    line-height: 60px;
     padding-right: 20px;
     position: relative;
 }
@@ -1180,8 +1180,7 @@ Headers
 
 .page-header h1, .widget .header h2, .widget .header h3, h5.modal-title {
   display: inline-block;
-  line-height: 56px;
-  padding: 0 5px 0 20px;
+  padding: 5px 5px 0 20px;
   margin: 0;
   border-bottom: none;
   font-size: 19px;
@@ -4366,7 +4365,7 @@ Navigation, tabs
 .header-tabs h1, .header-tabs .nav-tabs,
 .header-tabs h2 {
   float: left;
-  line-height: 56px;
+  line-height: 48px;
 }
 .header-tabs .nav-tabs ul li {
     font-weight: normal;
