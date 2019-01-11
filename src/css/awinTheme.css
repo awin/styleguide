@@ -2262,6 +2262,10 @@ select[disabled]:hover, select.disabled:hover {
     cursor: not-allowed;
 }
 
+select option[disabled] {
+    color: #999999;
+}
+
 select::-ms-expand {
     display: none;
 }
