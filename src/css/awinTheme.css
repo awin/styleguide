@@ -1785,6 +1785,10 @@ table [class*='col'] {
   position: static;
 }
 
+table .form-horizontal [class*='col'] {
+  position: relative;
+}
+
 .table-scroll {
   max-height: 400px;
   overflow-y: auto;
