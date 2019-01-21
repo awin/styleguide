@@ -5192,12 +5192,14 @@ Tooltip and popover
 
 .tooltip-inner {
   min-width: 250px;
+  max-width: 300px;
   padding: 8px 10px;
   color: #369;
   text-align: left;
   background-color: #eaeff5;
   border-radius: 4px;
   border: 1px solid #99b2cc;
+  word-wrap: break-word;
 }
 
 .tooltip-arrow {
@@ -7039,21 +7041,21 @@ Helper classes
 .text-center {
   text-align: center;
 }
+
 .text-normal {
   font-weight: normal;
 }
+
 .text-nowrap {
   white-space: nowrap;
 }
+
 .text-wrap {
+  white-space: normal;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  -ms-word-break: break-all;
-  word-break: break-all;
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
+  word-break: break-word;
+  -ms-word-break: break-word;
 }
 
 .text-truncate {
