@@ -4291,15 +4291,29 @@ Navigation, tabs
 .nav-tabs > li > a {
   line-height: 1.42857143;
   border: 1px solid #ddd;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 600;
   background-color: #f9f9f9;
   border-bottom-width: 0;
   border-radius: 0;
-  padding: 11px 20px 10px;
+  padding: 15px 20px 15px;
   min-width: 100px;
   text-align: center;
   margin-right: -1px;
+  color: #999;
+}
+
+.nav-tabs > li > a:hover {
+  color: #f66000;
+}
+
+.nav-tabs > li > a > .fa {
+    color: #999999;
+    margin-right: 5px;
+}
+
+.nav-tabs > li.selected > a > .fa {
+    color: #ff6600;
 }
 
 .nav-tabs > li:first-child  > a{
@@ -4310,9 +4324,6 @@ Navigation, tabs
   border-top-right-radius: 4px;
 }
 
-.nav-tabs > li > a:hover {
-  color: #f60;
-}
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus,
@@ -4320,8 +4331,8 @@ Navigation, tabs
 .nav-tabs > li.selected > a:hover,
 .nav-tabs > li.selected > a:focus {
   background-color: #fff;
-  color: #f60;
-  font-weight: 500;
+  color: #ff6600;
+  font-weight: 600;
   border: solid #e6e6e6;
   border-width: 1px 1px 0;
   margin-bottom: -5px;
