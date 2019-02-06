@@ -1808,6 +1808,37 @@ table .form-horizontal [class*='col'] {
   padding-right: 20px;
 }
 
+/* Table form */
+
+.table-form th {
+    color: #777;
+}
+
+.table-form tbody tr td {
+    padding: 0;
+}
+
+.table-form tbody tr td .form-control {
+    font-size: 12px;
+    border: none;
+    border-right: 1px solid #eeeeee;
+    border-radius: 0;
+    padding: 12px 10px;
+}
+
+.widget.padding-LR-null table.table-form tbody > tr > td:last-child,
+.widget.padding-LR-null table.table-form thead > tr > th:last-child {
+  padding-right: 0;
+}
+
+.widget.padding-LR-null table.table-form tbody > tr > td:last-child .form-control {
+    border-right: 0;
+}
+
+.widget table.table-form thead th {
+    padding: 15px 0;
+}
+
 /* Table sorting */
 
 th.sortable span.sortAscending:after, th.sortable span.sortDescending:after {
@@ -4304,7 +4335,7 @@ Navigation, tabs
 }
 
 .nav-tabs > li > a:hover {
-  color: #f66000;
+  color: #999999;
 }
 
 .nav-tabs > li > a > .fa {
