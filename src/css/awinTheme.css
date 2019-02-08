@@ -2945,7 +2945,7 @@ select[multiple].input-lg {
     height: auto;
     line-height: 1.25;
     overflow: hidden;
-    padding: 7px 12px;
+    padding: 8px 12px;
     text-align: center;
     text-decoration: none;
     -webkit-transition-duration: .25s;
@@ -3021,7 +3021,7 @@ select[multiple].input-lg {
 
 .btn-disabled, btn-disabled:hover {
     color: rgba(0,0,0,.3);
-    padding: 7px 12px;
+    padding: 8px 12px;
     border-radius: 3px;
     box-shadow: 0 1px 0 0 #d0d0d0 inset;
     cursor: not-allowed;
