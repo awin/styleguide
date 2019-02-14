@@ -93,7 +93,8 @@ a .fa, a:hover,
 #availableLanguages li.active,
 p a:link, p a:visited,
 .brand-orange, .fa.brand-orange,
-a.text-light:hover, p a.text-light:hover {
+a.text-light:hover, p a.text-light:hover,
+a.active {
     color: #f60;
 }
 
@@ -3011,7 +3012,8 @@ select[multiple].input-lg {
 }
 
 .btn-add .fa, .btn-icon .fa, .btn-link .fa {
-  color: #f60;
+    color: #f60;
+    padding-right: 5px;
 }
 
 .btn-icon-disabled, .btn-icon-disabled:hover {
@@ -6207,6 +6209,121 @@ dt.ui_tpicker_minute_label, dt.ui_tpicker_hour_label {
 .ui-datepicker-buttonpane .ui-datepicker-close {
     float: right;
 }
+
+/* VUE.js datepicker styling */
+
+.vdp-datepicker .vdp-datepicker__calendar {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    box-shadow: 0 0 3px rgba(32,139,195,.6);
+    margin-top: 4px;
+    padding: 20px;
+    width: 300px;
+}
+.vdp-datepicker .vdp-datepicker__calendar header {
+    margin-bottom: 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding: 0 0 10px;
+    line-height: initial;
+    overflow: auto;
+}
+
+.vdp-datepicker .vdp-datepicker__calendar header .prev,
+.vdp-datepicker .vdp-datepicker__calendar header .next {
+    cursor: default;
+    font-family: fontAwesome;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 400;
+    height: 15px;
+    margin-top: 2px;
+    width: 30px;
+    color: transparent;
+    text-indent: initial;
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    .vdp-datepicker .vdp-datepicker__calendar header .prev,
+    .vdp-datepicker .vdp-datepicker__calendar header .next {
+        text-indent: inherit;
+    }
+}
+
+.vdp-datepicker .vdp-datepicker__calendar header .prev {
+    float: left;
+    text-align: left;
+}
+.vdp-datepicker .vdp-datepicker__calendar header .next {
+    float: right;
+    text-align: right;
+}
+.vdp-datepicker .vdp-datepicker__calendar header span.up {
+    font-weight: 800;
+    float: none;
+}
+.vdp-datepicker .vdp-datepicker__calendar .cell.day-header {
+    font-size: 11px;
+}
+.vdp-datepicker .vdp-datepicker__calendar header .prev:hover:before,
+.vdp-datepicker .vdp-datepicker__calendar header .next:hover:before,
+.vdp-datepicker .vdp-datepicker__calendar header .up:not(.disabled) {
+    color: #f60;
+}
+.vdp-datepicker .vdp-datepicker__calendar header .prev:hover:before,
+.vdp-datepicker .vdp-datepicker__calendar header .next:hover:before {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.vdp-datepicker .vdp-datepicker__calendar header .prev:after,
+.vdp-datepicker .vdp-datepicker__calendar header .next:after {
+    display: none;
+}
+.vdp-datepicker .vdp-datepicker__calendar header .prev:before {
+    content: "\f053";
+    color: #f60;
+}
+.vdp-datepicker .vdp-datepicker__calendar header .next:before {
+    content: "\f054";
+    color: #f60;
+}
+.vdp-datepicker .vdp-datepicker__calendar .cell {
+    height: auto;
+    line-height: 2.5em;
+    border: none;
+}
+.vdp-datepicker .vdp-datepicker__calendar .cell.month,
+.vdp-datepicker .vdp-datepicker__calendar .cell.year {
+    margin: 10px 0;
+}
+.vdp-datepicker .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover,
+.vdp-datepicker .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover,
+.vdp-datepicker .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover,
+.vdp-datepicker .vdp-datepicker__calendar .cell.selected {
+    border: none;
+    color: #ffffff;
+    background-color: #ff6600;
+    border-radius: 4px;
+}
+.vdp-datepicker .vdp-datepicker__calendar header .prev.disabled:before,
+.vdp-datepicker .vdp-datepicker__calendar .disabled {
+    background-color: #eee;
+    border-radius: 0;
+    color: #999;
+    cursor: not-allowed;
+    opacity: 1;
+}
+.vdp-datepicker .vdp-datepicker__calendar header .prev:not(.disabled):hover,
+.vdp-datepicker .vdp-datepicker__calendar header .next:not(.disabled):hover,
+.vdp-datepicker .vdp-datepicker__calendar header .up:not(.disabled):hover,
+.vdp-datepicker .vdp-datepicker__calendar header .prev.disabled,
+.vdp-datepicker .vdp-datepicker__calendar header .next.disabled,
+.vdp-datepicker .vdp-datepicker__calendar header .prev.disabled:before {
+    background-color: transparent;
+}
+
 
 /* ----------------------------------------------------------------------------
 Check button grid styling
