@@ -88,13 +88,15 @@ a, table p a {
     transition-duration: .2s;
 }
 
-a .fa, a:hover,
-.tooltip a, .userMessage a,
+a:hover, a .fa,
+.tooltip a, .tooltip a:visited,
+.userMessage a, .userMessage a:visited,
 #availableLanguages li.active,
 p a:link, p a:visited,
+table p > a, table p > a:visited,
 .brand-orange, .fa.brand-orange,
 a.text-light:hover, p a.text-light:hover,
-a.active {
+a.active, a.active:visited {
     color: #f60;
 }
 
