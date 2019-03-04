@@ -93,7 +93,7 @@ a:hover, a .fa,
 .userMessage a, .userMessage a:visited,
 #availableLanguages li.active,
 p a:link, p a:visited,
-table p > a, table p > a:visited,
+table tbody tr td p a:link, table tbody tr td p a:visited,
 .brand-orange, .fa.brand-orange,
 a.text-light:hover, p a.text-light:hover,
 a.active, a.active:visited {
