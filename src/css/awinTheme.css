@@ -5257,7 +5257,6 @@ Tooltip and popover
 
 .tooltip.in {
   opacity: 1;
-  position: relative;
   filter: alpha(opacity=100);
 }
 
