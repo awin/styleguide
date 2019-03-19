@@ -26,7 +26,7 @@ push:
 	docker push registry.zanox.com/styleguide:$(version)
 
 clean:
-	-rm -r bower_components node_modules public/dist public/fonts public/css public/js
+	-rm -r node_modules public/dist public/fonts public/css public/js
 
 rsync:
 	@rsync -e "docker exec -i" --blocking-io -avz --delete \
@@ -37,7 +37,6 @@ rsync:
 		--no-times \
 		--itemize-changes \
 		public/ styleguide:/application/public
-	@docker exec styleguide gulp
 
 
 .PHONY: all build run start stop push clean exec rsync logs
