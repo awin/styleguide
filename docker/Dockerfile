@@ -6,7 +6,6 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive \
     apt-get clean && rm -r /var/lib/apt/lists/*
 
 WORKDIR /application
-RUN npm --loglevel warn install --global gulp-cli
 
 # Install webpack requirements
 COPY package.json ./
