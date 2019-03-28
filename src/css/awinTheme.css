@@ -9120,19 +9120,6 @@ button.ui-dialog-titlebar-close {
     border-color: #3c763d;
 }
 
-.email-form .bottomSection input {
-    margin: 0 0 10px;
-    display: block;
-    float: right;
-    width: 85%;
-}
-
-.email-form .bottomSection label {
-    margin: 0 0 10px;
-    display: block;
-    float: left;
-}
-
 .modal-content .topSection {
     border-bottom: 1px solid #eee;
     padding-bottom: 5px;
@@ -9185,18 +9172,8 @@ button.ui-dialog-titlebar-close {
 }
 
 .modal-content .bottomSection {
-    padding:20px;
+    padding-top:20px;
     overflow: hidden;
-}
-
-.bottomSection > textarea {
-    height: 85px;
-    box-sizing: border-box;
-    resize: vertical;
-}
-
-.bottomSection #message {
-    margin : 0 0 5px;
 }
 
 .oppBox.ng-enter-stagger {
@@ -9216,15 +9193,6 @@ button.ui-dialog-titlebar-close {
 
 .oppBox.ng-enter.ng-enter-active {
   opacity:1;
-}
-
-.replyStatus {
-    color: #999;
-    font-size: 11px;
-    text-align: left;
-    background: url('http://images.awin.com/common/icons/16x16/tick.png') no-repeat top left;
-    padding: 2px 0 0 20px;
-    float: right;
 }
 
 .conditions {
