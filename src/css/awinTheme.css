@@ -1237,6 +1237,10 @@ Headers
   margin-top: 10px;
 }
 
+.widget .page-header select {
+  background-color: #ffffff;
+}
+
 .option-menu {
   float: right;
   position: relative;
@@ -3106,7 +3110,7 @@ select[multiple].input-lg {
 .btn-xs {
   font-size: 11px;
   cursor: pointer;
-  padding: 8px 4px;
+  padding: 6px;
 }
 
 .input-file {
@@ -5041,7 +5045,7 @@ Widgets
   bottom: 0;
   width: 100%;
   padding: 10px;
-  line-height: 1.3em;
+  line-height: 1.2em;
 }
 
 .widget .row-widget .gallery-widget p {
