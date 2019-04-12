@@ -5388,6 +5388,24 @@ Tooltip and popover
     border: none;
 }
 
+@media (max-width: 782px) {
+    .tooltip.right.in {
+        margin-top: 12px;
+        padding: 0;
+        position: relative;
+    }
+    .tooltip.right.in .tooltip-inner {
+        max-width: 100%;
+    }
+    .tooltip.right.in .tooltip-arrow {
+        transform: rotate(90deg);
+        top: 0;
+        right: 20px;
+        left: initial;
+        margin-top: -8px;
+    }
+}
+
 .page-header .tooltip-hover, .widget .header .tooltip-hover {
   line-height: normal;
   margin-top: 21px;
@@ -7238,6 +7256,10 @@ Helper classes
   vertical-align: middle !important;
 }
 
+.margin-zero {
+    margin: 0;
+}
+
 .margin-top-neg {
   margin-top: -10px;
 }
@@ -7279,6 +7301,11 @@ Helper classes
 
 .margin-bottom-zero {
   margin-bottom: 0;
+}
+
+.margin-LR-zero {
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .list-group-item .margin-bottom, .margin-bottom {
