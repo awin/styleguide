@@ -2557,13 +2557,27 @@ select:-webkit-autofill:focus {
 }
 
 .input-group-btn .btn-default {
-  height: 38px;
+  height: 36px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
 .input-group-btn .btn-default .fa-search {
   color: #ffffff;
+}
+
+.btn-disabled:hover {
+    background-color:#e9e9e9;
+    color: rgba(0, 0, 0, .3);
+}
+
+.input-group-btn .btn-default.btn-success {
+    background-color: green;
+    color: #fff;
+}
+
+.input-group-btn .btn-default.btn-success .fa {
+    color: #fff;
 }
 
 .input-group-addon {
