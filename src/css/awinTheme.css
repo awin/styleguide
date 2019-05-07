@@ -88,7 +88,7 @@ a, table p a {
     transition-duration: .2s;
 }
 
-a:hover, a .fa,
+a:hover, a .fa, a .far,
 .tooltip a, .tooltip a:visited,
 .userMessage a, .userMessage a:visited,
 #availableLanguages li.active,
@@ -97,7 +97,7 @@ table tbody tr td p a:link, table tbody tr td p a:visited,
 .brand-orange, .fa.brand-orange,
 a.text-light:hover, p a.text-light:hover,
 a.active, a.active:visited {
-    color: #f60;
+    color: #ff6600;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1174,7 +1174,8 @@ Headers
   color: #ff6600;
 }
 
-.page-header a .fa, .widget .header a .fa, .table-filters a .fa {
+.page-header a .fa, .widget .header a .fa, .table-filters a .fa,
+.page-header a .far, .widget .header a .far, .table-filters a .far {
   color: #ff6600;
   font-size: 14px;
   margin-right: 2px;  
@@ -1440,7 +1441,8 @@ Headers
   padding: 0;
 }
 
-.table-filters .btn-filter .fa {
+.table-filters .btn-filter .fa,
+.table-filters .btn-filter .far {
   line-height: 1.2em;
   position: relative;
   margin-left: 20px;
@@ -1626,11 +1628,13 @@ table.text-right tbody > tr > td.text-center {
   text-align: right;
 }
 
-.table-hover > tbody > tr:hover > td .fa {
+.table-hover > tbody > tr:hover > td .fa,
+.table-hover > tbody > tr:hover > td .far {
   opacity: 1;
 }
 
-.table-hover > tbody > tr:hover > td .fa:hover {
+.table-hover > tbody > tr:hover > td .fa:hover,
+.table-hover > tbody > tr:hover > td .far:hover {
   opacity: .7;
 }
 
@@ -2572,7 +2576,7 @@ select:-webkit-autofill:focus {
 }
 
 .input-group-btn .btn-default.btn-success {
-    background-color: green;
+    background-color: #468847;
     color: #fff;
 }
 
@@ -3031,7 +3035,8 @@ select[multiple].input-lg {
   opacity: .8;
 }
 
-.btn-add .fa, .btn-icon .fa, .btn-link .fa {
+.btn-add .fa, .btn-icon .fa, .btn-link .fa,
+.btn-add .far, .btn-icon .far, .btn-link .far {
     color: #f60;
     padding-right: 5px;
 }
@@ -3088,7 +3093,8 @@ select[multiple].input-lg {
   color: #f60;
 }
 
-.btn-filter .fa, .table .btn-filter .fa {
+.btn-filter .fa, .table .btn-filter .fa,
+.btn-filter .far, .table .btn-filter .far {
   line-height: 1.6em;
   font-size: 14px;
   color: #f60;
@@ -3163,9 +3169,8 @@ table td button.btn-icon, table td button.title-icon {
     margin-left: -2px;
 }
 
-table td .btn-icon .fa,
-table td .btn-icon-disabled .fa,
-table td .title-icon .fa {
+table td .btn-icon .fa, table td .btn-icon-disabled .fa, table td .title-icon .fa,
+table td .btn-icon .far, table td .btn-icon-disabled .far, table td .title-icon .far {
     margin-left: 0;
     width: 16px;
 }
@@ -3305,16 +3310,18 @@ fieldset[disabled] .btn-link:focus {
   font-size: 15px;
 }
 
-.fa {
+.fa, .far {
   font-size: 1.2em;
   color: #f60;
 }
 
-.fa[disabled], table .fa[disabled], span.disabled .fa, .btn-icon-disabled .fa  {
+.fa[disabled], table .fa[disabled], span.disabled .fa, .btn-icon-disabled .fa,
+.far[disabled], table .far[disabled], span.disabled .far, .btn-icon-disabled .far  {
   color: #ccc;
 }
 
-.fa[disabled]:hover, table .fa[disabled]:hover, .disabled, span.disabled .fa:hover, a.disabled .fa, a.disabled:hover .fa {
+.fa[disabled]:hover, table .fa[disabled]:hover, .disabled, span.disabled .fa:hover, a.disabled .fa, a.disabled:hover .fa,
+.far[disabled]:hover, table .far[disabled]:hover, .disabled, span.disabled .far:hover, a.disabled .far, a.disabled:hover .far {
   opacity: 1;
   cursor: not-allowed;
 }
@@ -3344,7 +3351,7 @@ fieldset[disabled] .btn-link:focus {
   border-radius: 3px;
 }
 
-.creative-icon .fa {
+.creative-icon .fa, .creative-icon .far {
   position: absolute;
   font-size: 20px;
   right: 1px;
@@ -3362,7 +3369,7 @@ fieldset[disabled] .btn-link:focus {
   color: #ff6600;
 }
 
-a:hover .fa {
+a:hover .fa, a:hover .far {
   opacity: .7;
 }
 
@@ -3502,7 +3509,7 @@ ul.errors, .errorMessage {
   color: #999999;
 }
 
-.has-disabled .btn-filter .fa {
+.has-disabled .btn-filter .fa, .has-disabled .btn-filter .far {
   color: #999999;
 }
 
@@ -4360,12 +4367,12 @@ Navigation, tabs
   color: #999999;
 }
 
-.nav-tabs > li > a > .fa {
+.nav-tabs > li > a > .fa, .nav-tabs > li > a > .far {
     color: #999999;
     margin-right: 5px;
 }
 
-.nav-tabs > li.selected > a > .fa {
+.nav-tabs > li.selected > a > .fa, .nav-tabs > li.selected > a > .far {
     color: #ff6600;
 }
 
@@ -4528,11 +4535,11 @@ th.sortable span.sortDescending:before {
   color: #444;
 }
 
-.nav-pills>li>a .fa {
+.nav-pills>li>a .fa, .nav-pills>li>a .far {
   color: #444;
 }
 
-.nav-pills>li.active>a .fa{
+.nav-pills>li.active>a .fa, .nav-pills>li.active>a .far{
   color: #f60;
 }
 
@@ -4674,7 +4681,8 @@ th.sortable span.sortDescending:before {
   color: #fff;
 }
 
-.navbar-fixed-top .fa, .navbar-fixed-top a .fa, #top_navigation .fa, #top_navigation a .fa, .main_navigation .fa, .main_navigation a .fa {
+.navbar-fixed-top .fa, .navbar-fixed-top a .fa, #top_navigation .fa, #top_navigation a .fa, .main_navigation .fa, .main_navigation a .fa,
+.navbar-fixed-top .far, .navbar-fixed-top a .far, #top_navigation .far, #top_navigation a .far, .main_navigation .far, .main_navigation a .far  {
   font-size: 16px;
   color: #fff;
 }
@@ -4702,7 +4710,7 @@ th.sortable span.sortDescending:before {
   padding-left: 5px;
   font-weight: 500;
 }
-.navbar-fixed-top form .btn .fa {
+.navbar-fixed-top form .btn .fa, .navbar-fixed-top form .btn .far {
   font-size: 12px;
 }
 #providerToolbar .navbar-fixed-top ul li form {
@@ -4776,7 +4784,7 @@ th.sortable span.sortDescending:before {
   margin: 0;
 }
 
-.list-group-item .fa {
+.list-group-item .fa, .list-group-item .far {
   text-align: center;
   vertical-align: middle;
   line-height: 1.4em;
@@ -4786,8 +4794,8 @@ th.sortable span.sortDescending:before {
   font-size: 1.2em;
 }
 
-.list-group-item .btn-filter .fa,
-.list-group-item small .fa {
+.list-group-item .btn-filter .fa, .list-group-item small .fa,
+.list-group-item .btn-filter .far, .list-group-item small .far {
   width: auto;
 }
 
@@ -4796,7 +4804,7 @@ th.sortable span.sortDescending:before {
   margin-bottom: 0;
 }
 
-.list-group-item h3 .fa {
+.list-group-item h3 .fa, .list-group-item h3 .far {
     margin-right: 0;
     vertical-align: middle;
     line-height: 1;
@@ -4811,7 +4819,7 @@ th.sortable span.sortDescending:before {
   border-bottom: none;
 }
 
-.list-group-item .btn .fa {
+.list-group-item .btn .fa, .list-group-item .btn .far {
   font-size: 16px;
 }
 
@@ -4902,11 +4910,11 @@ a.list-group-item.active .list-group-item-text {
     background: transparent url(https://images.awin.com/darwin/user/activity_message.png) top left no-repeat;
 }
 
-a.list-group-item .fa {
+a.list-group-item .fa, a.list-group-item .far {
   color: #f60;
 }
 
-a.list-group-item:hover .fa {
+a.list-group-item:hover .fa, a.list-group-item:hover .far {
   opacity: .8;
 }
 
@@ -5121,7 +5129,7 @@ Widgets
   z-index: -1;
 }
 
-.arrow-box ul li .fa {
+.arrow-box ul li .fa, .arrow-box ul li .far {
   margin-right: 20px;
   font-size: 16px;
 }
@@ -5278,7 +5286,7 @@ Tooltip and popover
   filter: alpha(opacity=100);
 }
 
-.tooltip-hover .fa {
+.tooltip-hover .fa, .tooltip-hover .far {
   font-size: 14px;
 }
 
@@ -5655,7 +5663,7 @@ Bootstrap 4 card component
     opacity: 1;
 }
 
-.card-header .fa {
+.card-header .fa, .card-header .far {
     font-size: 1em;
     line-height: inherit;
 }
@@ -6471,7 +6479,7 @@ td.device_name {
     margin: 0;
 }
 
-.device-icon .fa {
+.device-icon .fa, .device-icon .far {
   color: #aaa;
   z-index: 1;
 }
@@ -8214,7 +8222,7 @@ header  #header ul li {
   margin: 0 0 0 20px;
 }
 
-header  #header ul li .fa {
+header  #header ul li .fa, header  #header ul li .far {
   font-size: 9px;
   margin-left: 5px;
 }
@@ -8447,7 +8455,7 @@ nav.main_navigation ul li ul.children a:hover {
   color: #f60;
 }
 
-.bell .fa {
+.bell .fa, .bell .far {
   font-size: 15px;
 }
 
@@ -8579,7 +8587,7 @@ td.paymentStatus {
   position: relative;
 }
 
-table .fa {
+table .fa, table .far {
   font-size: 14px;
   margin-left: 5px;
   color: #f60;
