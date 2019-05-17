@@ -2681,6 +2681,12 @@ select:-webkit-autofill:focus {
   font-size: 13px;
 }
 
+@-moz-document url-prefix() {
+    .select-input-group .input-group-addon:first-child select {
+        height: 37px;
+    }
+}
+
 .select-input-group .select2-container--default .select2-selection--multiple {
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
