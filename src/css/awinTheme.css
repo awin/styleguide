@@ -8878,6 +8878,7 @@ select#typeFilter {
   top: 20px;
   right: 20px;
   background: transparent;
+  z-index: 12;
 }
 .awinModalWindow img.modal_dismiss:hover, .ui-dialog-titlebar-close:hover {
   opacity: .6;
