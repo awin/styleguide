@@ -4401,7 +4401,6 @@ Navigation, tabs
   font-weight: 600;
   border: solid #e6e6e6;
   border-width: 1px 1px 0;
-  margin-bottom: -5px;
   cursor: default;
   z-index: 10;
 }
