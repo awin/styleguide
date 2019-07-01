@@ -3085,6 +3085,15 @@ select[multiple].input-lg {
   opacity: 1;
 }
 
+.btn-spinner, .btn-spinner:hover {
+  color: #fff;
+  background-color: #23282c;
+  opacity: .7;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+
 .btn-filter, .btn-filter:focus {
   display: inline-block;
   text-align: left;
