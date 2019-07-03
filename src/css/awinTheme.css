@@ -1850,6 +1850,16 @@ table .form-horizontal [class*='col'] {
     padding: 15px 0;
 }
 
+.table-form tbody tr .has-error input {
+  background-color: #fcefee;
+  color: #c33;
+}
+
+.table-form tbody tr .has-warning input {
+  background-color: #fdf7e0;
+  color: #444;
+}
+
 /* Table sorting */
 
 th.sortable span.sortAscending:after, th.sortable span.sortDescending:after {
