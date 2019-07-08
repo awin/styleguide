@@ -5,6 +5,28 @@
         <title>Commission Manager - Release 2</title>
         <link href="https://styleguide.awin.com/dist/awin.css" rel="stylesheet" type="text/css" />
     </head>
+    <style type="text/css">
+        .modal-backdrop.in {
+            z-index: 11;
+        }
+        .modal-filters {
+            background-color: #f4f4f4;
+            border-bottom: 1px solid #eeeeee;
+            padding-top: 15px;
+            padding-left: 10px;
+        }
+
+        .modal-filters .form-inline .btn {
+            margin: 0
+        }
+
+        .table-container {
+            max-height: 550px;
+            overflow-y: scroll;
+            float: left;
+            width: 100%;
+        }
+    </style>
     <body>
         <div class="row">
             <div class="col-md-12">
@@ -30,16 +52,16 @@
                             <tr>
                                 <th>Name</th>
                                 <th>Current Publishers</th>
-                                <th>Current Rates</th>
+                                <th>Active Schedule<br>(Europe/Berlin)</th>
                                 <th>Scheduled Changes</th>
                                 <th class="col-md-1"></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="bg-highlight">
-                                <td><strong>Programme Standard</strong></td>
+                                <td><a href=""><strong>Programme Standard</strong></a></td>
                                 <td><a href="">1850 Publishers</a></td>
-                                <td><a href="">13/12/2018 - Ongoing</a></td>
+                                <td>13/12/2018 00:00<br>Ongoing</td>
                                 <td>None</td>
                                 
                                 <td class="text-right">
@@ -62,7 +84,7 @@
                                                 <div class="form-group">
                                                     <label class="control-label col-md-4">Publishers</label>
                                                     <div class="col-md-8">
-                                                        <button type="button" class="selectorButton btn-filter form-control">
+                                                        <button type="button" class="btn-filter form-control" data-toggle="modal" data-target="#publishersModal">
                                                             <span class="txt">2 Selected</span>
                                                             <i class="fa fa-list selectorNb"></i>
                                                         </button>
@@ -106,9 +128,9 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>HDR</td>
+                                <td><a href="">HDR</a></td>
                                 <td>1 Publisher</td>
-                                <td><a href="">01/03/2018 - Ongoing</a></td>
+                                <td>01/03/2018 00:00<br>Ongoing</td>
                                 <td><a href="">2 Scheduled</a></td>
                                 <td class="text-right">
                                     <a href=""><i class="fa fa-user"></i></a>
@@ -120,5 +142,117 @@
                 </div>
             </div>
         </div>
+
+        <!-- Publishers Modal -->
+        <div class="modal fade" id="publishersModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header margin-bottom-zero">
+                        <h5 class="modal-title" id="exampleModalLabel">Publishers on Programme Standard Rates</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="modal-filters">
+                        <div class="form-inline">
+                            <div class="form-group">
+                                 <label>Search</label>
+                            </div>
+                            <div class="form-group col-sm-4 padding-L-null">
+                                <input type="text" id="keywordFilter" class="form-control" placeholder="Publisher Name or ID"> 
+                            </div>
+                            <div class="form-group col-sm-5 padding-L-null">
+                                <select id="typeFilter" class="form-control">
+                                    <option value="0">Publisher Tags &amp; Promotional Types</option>
+                                    <option data-type="tag" value="22180">&nbsp;&nbsp;cashback</option>
+                                    <option data-type="tag" value="22178">&nbsp;&nbsp;content</option>
+                                    <option data-type="tag" value="77089">&nbsp;&nbsp;Fashion</option>
+                                    <option data-type="tag" value="22184">&nbsp;&nbsp;fashion blogs</option>
+                                    <option data-type="tag" value="35403">&nbsp;&nbsp;Gold</option>
+                                </select>
+                            </div>
+                            <div class="form-group text-right">
+                                <span class="btn btn-link">All</span>
+                                <span class="btn btn-link">None</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                        <thead><tr><th>ID</th>
+                        <th>Publisher</th>
+                        <th class="col-sm-1 text-center">Select</th>    
+                        </tr></thead>
+                        <tbody><tr>
+                        <td align="right">93628</td>
+                        <td>24.7 Online Conversions</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">80472</td>
+                        <td>ACJ Retailing Ltd</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">328297</td>
+                        <td>ad4mat - advanced store GmbH</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">101248</td>
+                        <td>adgoal GmbH - Content</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">46388</td>
+                        <td>affiliate 46388</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">106396</td>
+                        <td>Affiliate Window</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">92681</td>
+                        <td>Affiliate Window</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">35386</td>
+                        <td>Affiliate Window Ltd</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">466297</td>
+                        <td>Affiliform</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">426623</td>
+                        <td>affilinet Publisher Test PM MUC</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">526359</td>
+                        <td>affilinet TRAC Testpublisher FS</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">77947</td>
+                        <td>Afro Media</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        </tbody></table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-default">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>      
     </body>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </html>
