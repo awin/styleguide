@@ -7302,51 +7302,92 @@ Helper classes
   vertical-align: middle !important;
 }
 
-.margin-zero {
+.margin-top-neg, .mt-neg {
+    margin-top: -10px;
+}
+
+.margin-top-neg-lg, .mt-neg-lg {
+    margin-top: -40px;
+}
+
+.margin-right-neg, .mr-neg {
+    margin-right: -20px;
+}
+
+.margin-zero, .m-0 {
     margin: 0;
 }
 
-.margin-top-neg {
-  margin-top: -10px;
+.margin-top-zero, .mt-0 {
+    margin-top: 0;
 }
 
-.margin-top-neg-lg {
-  margin-top: -40px;
-}
-.margin-right-neg {
-  margin-right: -20px;
-}
-
-.margin-top-zero {
-  margin-top: 0;
-}
-
-.margin-top-xxs {
+.margin-top-xxs, .mt-xxs {
     margin-top: 5px;
 }
 
-.margin-top-xs {
+.margin-top-xs, .mt-xs {
   margin-top: 10px;
 }
 
-.margin-top-sm {
+.margin-top-sm, .mt-sm {
   margin-top: 15px;
 }
 
+.margin-top-md, .mt-md {
+    margin-top: 25px;
+}
+
+.margin-top-lg, .mt-lg {
+    margin-top: 40px;
+}
+
+.margin-R-null, .mr-0 {
+    margin-right: 0 !important;
+}
+
+.margin-right-xs, .mr-xs {
+    margin-right: 5px;
+}
+
+.margin-right-md, .mr-md {
+    margin-right: 25px;
+}
+
+.margin-bottom-zero, mb-0 {
+    margin-bottom: 0;
+}
+.mb-xs {
+    margin-bottom: 5px;
+}
+
+.mb-sm {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-md, .mb-md {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-lg, .mb-lg {
+    margin-bottom: 40px;
+}
+
+.ml-0 {
+    margin-left: 0;
+}
+
+.margin-left-xs, .ml-xs {
+    margin-left: 5px;
+}
+
+.margin-left-md, .ml-md {
+    margin-left: 25px;
+}
+
+
 .list-group-item .margin-top, .margin-top {
   margin-top: 20px;
-}
-
-.margin-top-md {
-  margin-top: 25px;
-}
-
-.margin-top-lg {
-  margin-top: 40px;
-}
-
-.margin-bottom-zero {
-  margin-bottom: 0;
 }
 
 .margin-LR-zero {
@@ -7358,43 +7399,23 @@ Helper classes
   margin-bottom: 20px;
 }
 
-.margin-bottom-md {
-  margin-bottom: 20px;
-}
-
-.margin-bottom-lg {
-  margin-bottom: 40px;
-}
-
-.margin-left-xs {
-  margin-left: 5px;
-}
-
-.margin-right-xs {
-  margin-right: 5px;
-}
-
-.margin-right-md {
-    margin-right: 25px;
-}
-
 table.margin-zero td input {
   margin: 0;
 }
 
-.margin-left-md {
-  margin-left: 25px;
+.pt-0 {
+    padding-top: 0;
 }
 
-.margin-R-null {
-  margin-right: 0 !important;
-}
-
-.padding-R-null {
+.padding-R-null, .pr-0 {
   padding-right: 0;
 }
 
-.padding-L-null {
+.pb-0 {
+    padding-bottom: 0;
+}
+
+.padding-L-null, .pl-0 {
   padding-left: 0;
 }
 
