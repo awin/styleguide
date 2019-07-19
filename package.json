@@ -27,7 +27,6 @@
   },
   "homepage": "https://github.com/zanox/styleGuide#readme",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.7.2",
     "@fortawesome/fontawesome-pro": "^5.7.2",
     "font-awesome": "^4.7.0",
     "bootstrap": "^3.3.7",
