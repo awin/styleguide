@@ -9184,8 +9184,18 @@ button.ui-dialog-titlebar-close {
 
 .modal-body {
     position: relative;
+    background-color: #f1f1f1;
+    text-align: center;
     max-height: 550px;
     overflow-y: scroll;
+}
+
+.modal .modal-body .fa-spinner {
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    color: #999999;
+    opacity: .5;
 }
 
 .modal-footer {
