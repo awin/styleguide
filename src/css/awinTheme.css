@@ -7361,7 +7361,7 @@ Helper classes
     margin-right: 25px !important;
 }
 
-.margin-bottom-zero, mb-0 {
+.margin-bottom-zero, .mb-0 {
     margin-bottom: 0 !important;
 }
 .mb-xs {
