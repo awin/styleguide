@@ -1804,16 +1804,18 @@ table .form-horizontal [class*='col'] {
   max-height: 400px;
   overflow-y: auto;
   margin-bottom: 20px;
-  border: 1px solid #eee;
+  border: 1px solid #eee !important;
 }
 
 .table-scroll .table {
   margin-bottom: 0;
 }
+
 .table thead > tr > th:first-child,
 .table tbody > tr > td:first-child {
   padding-left: 20px;
 }
+
 .table thead > tr > th:last-child,
 .table tbody > tr > td:last-child {
   padding-right: 20px;
@@ -1825,39 +1827,32 @@ table .form-horizontal [class*='col'] {
     color: #777;
 }
 
-.table-form tbody tr td {
+.widget .table-form tbody > tr > td,
+.widget .table-form tbody > tr > td:last-child
+.widget .table-form thead > tr > th:last-child {
     padding: 0;
+}
+
+.table-form thead > tr > th {
+    padding: 15px 0;
 }
 
 .table-form tbody tr td .form-control {
     font-size: 12px;
     border: none;
-    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
     border-radius: 0;
     padding: 12px 10px;
 }
 
-.widget.padding-LR-null table.table-form tbody > tr > td:last-child,
-.widget.padding-LR-null table.table-form thead > tr > th:last-child {
-  padding-right: 0;
-}
-
-.widget.padding-LR-null table.table-form tbody > tr > td:last-child .form-control {
-    border-right: 0;
-}
-
-.widget table.table-form thead th {
-    padding: 15px 0;
-}
-
 .table-form tbody tr .has-error input {
-  background-color: #fcefee;
-  color: #c33;
+    background-color: #fcefee;
+    color: #c33;
 }
 
 .table-form tbody tr .has-warning input {
-  background-color: #fdf7e0;
-  color: #444;
+    background-color: #fdf7e0;
+    color: #444;
 }
 
 /* Table sorting */
@@ -4313,7 +4308,7 @@ Character counter
 ---------------------------------------------------------------------------- */
 
 .has-counter {
-    padding-right: 50px;
+    padding-right: 70px;
 }
 
 span.character-counter {
@@ -5046,12 +5041,16 @@ Widgets
 }
 
 .widget.padding-LR-null .table thead > tr > th:first-child,
-.widget.padding-LR-null .table tbody > tr > td:first-child {
+.widget.padding-LR-null .table tbody > tr > td:first-child,
+.widget.pl-0 .table thead > tr > th:first-child,
+.widget.pl-0 .table tbody > tr > td:first-child {
   padding-left: 20px;
 }
 
 .widget.padding-LR-null .table thead > tr > th:last-child,
-.widget.padding-LR-null .table tbody > tr > td:last-child {
+.widget.padding-LR-null .table tbody > tr > td:last-child,
+.widget.pr-0 .table thead > tr > th:last-child,
+.widget.pr-0 .table tbody > tr > td:last-child {
   padding-right: 20px;
 }
 
