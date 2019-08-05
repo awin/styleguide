@@ -1,0 +1,714 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>Commission Manager - Release 3</title>
+        <link href="https://styleguide.awin.com/dist/awin.css" rel="stylesheet" type="text/css" />
+    </head>
+    <style type="text/css">
+        .modal-backdrop.in {
+            z-index: 11;
+        }
+        .modal-filters {
+            background-color: #f4f4f4;
+            border-bottom: 1px solid #eeeeee;
+            padding-top: 15px;
+            padding-left: 10px;
+        }
+
+        .modal-filters .form-inline .btn {
+            margin: 0
+        }
+
+        .modal-body {
+/*            max-height: 550px;
+            overflow-y: scroll;*/
+            margin-bottom: 0;
+        }
+        
+    </style>
+    <body>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="special text-right text-muted">Commission Manager - Release 2</h1>
+            </div>
+        </div>
+        <div class="boxLtgrey">
+            <ul class="nav nav-tabs">
+                <li><a href="commission-groups-v3.html"><i class="fa fa-pie-chart"></i> Commission Groups</a></li>
+                <li class="selected"><a href="publisher-commission-v3.html"><i class="fa fa-users"></i> Publisher Commission Rates</a></li>
+                <li><a href="commission-over-time-v3.html"><i class="fa fa-clock-o"></i> Scheduled Changes</a></li>
+            </ul>
+            <div class="container-fluid widget padding-LR-null">
+                <div class="row">
+                    <div class="col-lg-12 margin-top-md">
+                        <a href="publisher-commission-v3.html" class="btn btn-icon"><i class="fa fa-plus"></i> Add Commission Rates</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12"></div>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Current Publishers</th>
+                                <th>Active Rates 
+                                    <div class="tooltip-hover">
+                                        <i class="fa fa-info-circle"></i>
+                                        <div class="tooltip top-right">
+                                            <div class="tooltip-arrow"></div>
+                                            <div class="tooltip-inner"> Timezone: Europe/Berlin
+                                            </div>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th>Scheduled Changes</th>
+                                <th class="col-md-1"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-highlight">
+                                <td><a href=""><strong>Programme Standard</strong></a></td>
+                                <td><a href="">1850 Publishers</a></td>
+                                <td>13/12/2018 00:00<br>Ongoing</td>
+                                <td>None</td>
+                                
+                                <td class="text-right">
+                                    <a href=""><i class="fa fa-calendar-plus"></i></a>
+                                    <a href=""><i class="fa fa-user"></i></a>
+                                    <a href="" class="has-disabled"><i class="fa fa-trash-o" disabled></i></a>
+                                </td>
+                            </tr>
+                            <tr class="bg-edit">
+                                <td colspan="6">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <button type="button" onClick="parent.location='publisher-commission-v3.html'" class="close" aria-label="Close" >
+                                                <i class="fa fa-times" title="Close" aria-hidden=""></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <form action="" class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-4">Commission Group Name</label>
+                                                    <div class="col-md-8">
+                                                        <input type="text" name="" class="form-control" disabled="disabled">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-4">From</label>
+                                                    <div class="col-md-3">
+                                                        <input type="text" name="" placeholder="Now" class="form-control hasDatepicker">
+                                                    </div>
+                                                    <label class="control-label col-md-2 padding-LR-null">To</label>
+                                                    <div class="col-md-3">
+                                                        <input type="text" name=""  placeholder="Ongoing" class="form-control hasDatepicker">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-4">Schedule Description</label>
+                                                    <div class="col-md-8">
+                                                        <input type="text" name="" placeholder="E.g. Publisher added" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-4">Once ended, move publishers to</label>
+                                                    <div class="col-md-8">
+                                                        <select class="form-control">
+                                                            <option value="">Programme Standard</option>
+                                                            <option value="">Cashback</option>
+                                                            <option value="">HDR</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <div class="col-md-10 margin-top">
+                                            <div class="table-responsive table-scroll margin-bottom-zero">
+                                                <table id="table-form-rates" class="table table-hover table-form align-middle">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Commission Group</th>
+                                                            <th>Description</th>
+                                                            <th>Transaction Type</th>
+                                                            <th>Commission Type</th>
+                                                            <th>Publisher Commission</th>
+                                                            <th>Advertiser Cost</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="edited">
+                                                            <td>Default Sale Commission</td>
+                                                            <td>Default Sale</td>
+                                                            <td>Sale</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control" value="3.00%"></td>
+                                                            <td><input type="text" name="" class="form-control" value="1.00%"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Cameras</td>
+                                                            <td>Cameras</td>
+                                                            <td>Sale</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Binoculars</td>
+                                                            <td>Binoculars</td>
+                                                            <td>Sale</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Calculators</td>
+                                                            <td>Calculatros</td>
+                                                            <td>Sale</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bags</td>
+                                                            <td>Bags</td>
+                                                            <td>Sale</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Accessories</td>
+                                                            <td>Accessories</td>
+                                                            <td>Sale</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lenses</td>
+                                                            <td>Lenses</td>
+                                                            <td>Sale</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Cannon</td>
+                                                            <td>Cannon</td>
+                                                            <td>Sale</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Sony</td>
+                                                            <td>Sony</td>
+                                                            <td>Sale</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Fuji</td>
+                                                            <td>Fuji</td>
+                                                            <td>Sale</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>
+                                                                <select class="form-control">
+                                                                    <option value="">Fixed</option>
+                                                                    <option value="">Percentage</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                            <td><input type="text" name="" class="form-control"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="form-group text-right margin-top">
+                                                <button onClick="parent.location='publisher-commission-v3.html'" type="button" class="btn btn-link">Cancel</button>
+                                                <button onClick="parent.location='publisher-commission-v3.html'" type="submit" id="" class="btn btn-default" form="">Save</button>
+                                            </div>
+                                        </div>
+
+                                    </div> <!-- row expanded -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="">HDR</a></td>
+                                <td>1 Publisher</td>
+                                <td>01/03/2018 00:00<br>Ongoing</td>
+                                <td><a href="">2 Scheduled</a></td>
+                                <td class="text-right">
+                                    <a href=""><i class="fa fa-calendar-plus"></i></a>
+                                    <a href=""><i class="fa fa-user"></i></a>
+                                    <a href=""><i class="fa fa-trash-o"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Publishers Modal -->
+        <div class="modal fade" id="publishersModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header margin-bottom-zero">
+                        <h5 class="modal-title" id="exampleModalLabel">Publishers on Programme Standard Rates</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="modal-filters">
+                        <div class="form-inline">
+                            <div class="form-group">
+                                 <label>Search</label>
+                            </div>
+                            <div class="form-group col-sm-4 padding-L-null">
+                                <input type="text" id="keywordFilter" class="form-control" placeholder="Publisher Name or ID"> 
+                            </div>
+                            <div class="form-group col-sm-5 padding-L-null">
+                                <select id="typeFilter" class="form-control">
+                                    <option value="0">Publisher Tags &amp; Promotional Types</option>
+                                    <option data-type="tag" value="22180">&nbsp;&nbsp;cashback</option>
+                                    <option data-type="tag" value="22178">&nbsp;&nbsp;content</option>
+                                    <option data-type="tag" value="77089">&nbsp;&nbsp;Fashion</option>
+                                    <option data-type="tag" value="22184">&nbsp;&nbsp;fashion blogs</option>
+                                    <option data-type="tag" value="35403">&nbsp;&nbsp;Gold</option>
+                                </select>
+                            </div>
+                            <div class="form-group text-right">
+                                <span class="btn btn-link">All</span>
+                                <span class="btn btn-link">None</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                        <thead><tr><th>ID</th>
+                        <th>Publisher</th>
+                        <th class="col-sm-1 text-center">Select</th>    
+                        </tr></thead>
+                        <tbody><tr>
+                        <td align="right">93628</td>
+                        <td>24.7 Online Conversions</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">80472</td>
+                        <td>ACJ Retailing Ltd</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">328297</td>
+                        <td>ad4mat - advanced store GmbH</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">101248</td>
+                        <td>adgoal GmbH - Content</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">46388</td>
+                        <td>affiliate 46388</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">106396</td>
+                        <td>Affiliate Window</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">92681</td>
+                        <td>Affiliate Window</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">35386</td>
+                        <td>Affiliate Window Ltd</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">466297</td>
+                        <td>Affiliform</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">426623</td>
+                        <td>affilinet Publisher Test PM MUC</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">526359</td>
+                        <td>affilinet TRAC Testpublisher FS</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                        <td align="right">77947</td>
+                        <td>Afro Media</td>
+                        <td class="text-center"><input data-publisher-id="100" type="checkbox"></td>
+                        </tr>
+                        </tbody></table>
+                    </div>
+                    <div class="modal-footer">
+                        <p id="affiliateCounter" class="pull-left">Publishers selected: 0</p>
+                        <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-default">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </body>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</html>
