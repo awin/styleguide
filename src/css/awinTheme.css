@@ -2254,6 +2254,11 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
 input[type="search"] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
@@ -2578,7 +2583,7 @@ select:-webkit-autofill:focus {
   color: #ffffff;
 }
 
-.input-single-digit {
+.input-single-digit, .form-inline .input-single-digit {
     min-width: 30px;
     width: 30px;
     margin-right: 7px;
