@@ -3617,6 +3617,10 @@ table .table-hover > tbody > tr:hover > td .has-disabled .fa:hover {
     margin-left: 25px;
 }
 
+.modal-alert .modal-body {
+    padding-bottom: 20px;
+}
+
 .modal-alert .alert-danger {
     background-color: #fcefee;
     color: #cc3333;
@@ -9198,9 +9202,8 @@ button.ui-dialog-titlebar-close {
 
 .modal-body {
     position: relative;
-    background-color: #f1f1f1;
     max-height: 550px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .modal .modal-body .fa-spinner {
