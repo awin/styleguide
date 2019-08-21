@@ -2583,10 +2583,11 @@ select:-webkit-autofill:focus {
   color: #ffffff;
 }
 
-.input-single-digit, .form-inline .input-single-digit {
+.input-single-digit, .form-inline .input-group.input-single-digit {
     min-width: 30px;
     width: 30px;
-    margin-right: 7px;
+    height: 30px;
+    margin-right: 5px;
     text-align: center;
 }
 
@@ -3638,6 +3639,10 @@ table .table-hover > tbody > tr:hover > td .has-disabled .fa:hover {
 
 .modal-alert .alert-warning {
     background-color: #fdf7e0;
+    color: #8a6d3b;
+}
+
+.alert-warning, .alert-warning label {
     color: #8a6d3b;
 }
 
@@ -7302,6 +7307,10 @@ Helper classes
   word-wrap: break-word;
   word-break: break-word;
   -ms-word-break: break-word;
+}
+
+.text-wrap-hyphenless {
+    hyphens: none;
 }
 
 .text-break {
