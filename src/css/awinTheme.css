@@ -9883,6 +9883,9 @@ Responsive utilities
   .hidden-xs-down {
     display: none !important;
   }
+    .text-center-xs {
+        text-align: center;
+    }
 }
 
 @media (min-width: 576px) {
