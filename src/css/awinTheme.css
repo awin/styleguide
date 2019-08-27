@@ -1845,6 +1845,11 @@ table .form-horizontal [class*='col'] {
     padding: 12px 10px;
 }
 
+.table-form .form-control[disabled] {
+    background-color: #fff !important;
+    color: #888;
+}
+
 .table-form tbody tr .has-error input {
     background-color: #fcefee;
     color: #c33;
@@ -8269,6 +8274,7 @@ header  #header aside img {
 
 header  #header ul {
   margin: 0;
+  list-style-type: none;
 }
 
 header  #header ul li a,
@@ -8387,6 +8393,7 @@ nav.main_navigation {
 
 nav.main_navigation ul {
   margin: 0;
+  list-style-type: none;
 }
 
 nav.main_navigation ul li {
