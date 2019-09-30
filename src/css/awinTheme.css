@@ -92,7 +92,7 @@ a:hover, a .fa, a .far,
 .tooltip a, .tooltip a:visited,
 .userMessage a, .userMessage a:visited,
 #availableLanguages li.active,
-p a:link, p a:visited,
+p a:link, p a:visited, .checkbox a,
 table tbody tr td p a:link, table tbody tr td p a:visited,
 .brand-orange, .fa.brand-orange,
 a.text-light:hover, p a.text-light:hover,
@@ -209,6 +209,31 @@ body.bg-white {
 }
 
 /* Background colors */
+
+.bg-highlight {
+  background-color: #fff7f0;
+}
+
+.bg-primary {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+.bg-info {
+  background-color: #eaeff5;
+}
+
+.bg-success {
+  background-color: #eff8ec;
+}
+
+.bg-warning {
+  background-color: #fdf7e0;
+}
+
+.bg-danger {
+  background-color: #fcefee;
+}
 
 .bg-edit, .table thead > tr.bg-edit > td, .table tbody > tr.bg-edit > td, .table tfoot > tr.bg-edit > td, .table-body-striped > tbody tr.bg-edit > td {
   background-color: #f9f9f9 !important; /* Same as row-dark */
@@ -1082,9 +1107,7 @@ a.text-info:hover,
 a.text-info:focus {
   color: #245269;
 }
-.text-warning {
-  color: #8a6d3b;
-}
+
 a.text-warning:hover,
 a.text-warning:focus {
   color: #66512c;
@@ -1095,14 +1118,6 @@ a.text-danger:focus {
   color: #843534;
 }
 
-.bg-highlight {
-    background-color: #fff7f0;
-}
-
-.bg-primary {
-  color: #fff;
-  background-color: #337ab7;
-}
 a.bg-primary:hover,
 a.bg-primary:focus {
   background-color: #286090;
@@ -1112,9 +1127,7 @@ a.bg-success:hover,
 a.bg-success:focus {
   background-color: #c1e2b3;
 }
-.bg-info {
-  background-color: #d9edf7;
-}
+
 a.bg-info:hover,
 a.bg-info:focus {
   background-color: #afd9ee;
