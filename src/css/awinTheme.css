@@ -7211,7 +7211,8 @@ body.login-page #container {
   margin: 0;
 }
 .logo-login {
-  margin-top: 40px;
+    margin-top: 40px;
+    height: 100vh;
 }
 
 .logo-login img {
