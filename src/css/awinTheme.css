@@ -4338,6 +4338,12 @@ On off Switch
     right: 0;
 }
 
+.onoffswitch-label.disabled {
+    opacity: .5;
+    border: 1px solid #9c9c9c;
+    cursor: not-allowed;
+}
+
 /* ---------------------------------------------------------------------------- 
 Character counter
 ---------------------------------------------------------------------------- */
