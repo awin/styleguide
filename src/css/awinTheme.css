@@ -5519,6 +5519,38 @@ h2 .tooltip-hover, h4 .tooltip-hover {
   padding: 0;
 }
 
+/* Tooltip for charts */
+
+.chart-tooltip {
+    font-size: 12px;
+    text-align: left;
+    background: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    min-width: 280px;
+    padding: 10px 10px 5px;
+}
+
+.chart-tooltip p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.chart-tooltip hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    clear: both;
+}
+
+.table-hover>tbody>tr:hover>td .chart-tooltip a {
+    color: #444;
+}
+
+.table-hover>tbody>tr:hover>td .chart-tooltip a:hover {
+    color: #f60;
+}
+
 .popover {
   position: absolute;
   top: 0;
