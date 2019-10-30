@@ -5284,7 +5284,7 @@ Transitions
   display: none;
 }
 
-.collapse.show {
+.collapse.show, .collapse.in {
   display: block;
 }
 
