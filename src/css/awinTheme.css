@@ -3436,6 +3436,14 @@ a:hover .fa, a:hover .far {
   font-size: 14px;
 }
 
+.fa-spinner {
+  color: #999999;
+}
+
+.btn-default .fa-spinner {
+  color: #ffffff;
+}
+
 /* Feedback */
 
 .has-warning .help-block,
