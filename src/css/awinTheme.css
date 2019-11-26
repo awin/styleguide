@@ -7054,17 +7054,21 @@ ol.progress-list.uncompletedPage {
 General styling
 ---------------------------------------------------------------------------- */
 
-.newFeature, .new {
+.newFeature, .new, .beta {
     background-color: #f60;
     border-radius: 3px;
     color: #fff;
     font-size: 9px;
-    padding: 0 2px 1px;
+    padding: 1px 3px 2px 3px;
     margin-left:4px;
 }
 
 .new:before {
     content: "New";
+}
+
+.beta:before {
+    content: "Beta";
 }
 
 /* Restore normal bullet point for <li> tags within WYSIWYG areas */
