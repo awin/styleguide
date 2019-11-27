@@ -1566,6 +1566,10 @@ table.text-right tbody > tr > td.text-center {
   background-color: #ffffff;
 }
 
+.table .table-form {
+  background-color: transparent;
+}
+
 .table-condensed thead > tr > th,
 .table-condensed tbody > tr > th,
 .table-condensed tfoot > tr > th,
@@ -2256,6 +2260,12 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
+
+button:focus, button .fa:focus {
+  outline-color: #f60;
+  outline-width: thin;
+}
+
 input {
   line-height: normal;
 }
@@ -5532,12 +5542,13 @@ h2 .tooltip-hover, h4 .tooltip-hover {
 .chart-tooltip {
     font-size: 12px;
     text-align: left;
-    background: #fff;
+    background: transparent;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
     min-width: 280px;
     padding: 10px 10px 5px;
+    overflow: hidden;
 }
 
 .chart-tooltip p {
