@@ -1,5 +1,6 @@
 FROM node
 MAINTAINER Fabiana Faria <fabiana.faria@awin.com>
+LABEL "com.awin.app.owner"="userexperience@awin.com"
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive \
     apt-get install -yqq nginx rsync && \
