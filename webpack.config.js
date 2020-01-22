@@ -2,11 +2,16 @@ var path = require('path');
 var webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-module.exports = {
-  entry: './src/app.ts',
+const themes = ['awin', 'nike'];
+
+module.exports = themes.map(theme => ({
+  name: theme,
+  entry: {
+    [theme]: './src/app.ts',
+  },
   output: {
     path: path.resolve(__dirname, './public/dist/'),
-    filename: 'awin.js',
+    filename: '[name].js',
     publicPath: './public/dist',
   },
   devtool: 'source-map',
@@ -23,10 +28,23 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
+        test: /\.s[ac]ss$/i,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader?sourceMap',
-          use: 'css-loader?sourceMap',
+          use: [
+            'css-loader',
+            'sass-loader',
+            {
+              loader: '@epegzz/sass-vars-loader',
+              options: {
+                syntax: 'scss',
+                options: {},
+                files: [
+                  path.resolve(__dirname, `src/css/themes/${theme}.json`),
+                ],
+              },
+            },
+          ],
         }),
       },
       {
@@ -52,5 +70,6 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
-  plugins: [new ExtractTextPlugin('awin.css')],
-};
+  plugins: [new ExtractTextPlugin('[name].css')],
+}));
+

@@ -8,7 +8,8 @@
     "build-vue": "./node_modules/.bin/webpack --config=./webpack/vue/config.js -p",
     "build-vuex": "./node_modules/.bin/webpack --config=./webpack/vuex/config.js -p",
     "build-moment": "./node_modules/.bin/webpack --config=./webpack/moment/config.js -p",
-    "build": "./node_modules/.bin/webpack -p",
+    "build": "./node_modules/.bin/webpack --config-name=awin -p",
+    "build:nike": "./node_modules/.bin/webpack --config-name=nike -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -35,11 +36,14 @@
     "moment": "2.22.2",
     "moment-timezone-all": "0.5.5",
     "pump": "^1.0.2",
+    "sass": "^1.24.1",
+    "sass-loader": "^7.3.1",
     "vue": "2.5.16",
     "vuex": "3.0.1"
   },
   "devDependencies": {
-    "css-loader": "^0.28.10",
+    "@epegzz/sass-vars-loader": "^5.1.0",
+    "css-loader": "^0.28.11",
     "empty-module": "0.0.2",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",

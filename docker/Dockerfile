@@ -26,6 +26,7 @@ COPY tslint.json ./
 COPY tsconfig.json ./
 
 RUN npm run build
+RUN npm run build:nike
 
 # Copy over webserver configuration
 COPY docker/default.conf /etc/nginx/sites-available/default
