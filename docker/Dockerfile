@@ -28,6 +28,7 @@ COPY tsconfig.json ./
 
 RUN npm run build
 RUN npm run build:nike
+RUN npm run build:pntest
 
 # Copy over webserver configuration
 COPY docker/default.conf /etc/nginx/sites-available/default

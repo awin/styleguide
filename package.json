@@ -10,6 +10,7 @@
     "build-moment": "./node_modules/.bin/webpack --config=./webpack/moment/config.js -p",
     "build": "./node_modules/.bin/webpack --config-name=awin -p",
     "build:nike": "./node_modules/.bin/webpack --config-name=nike -p",
+    "build:pntest": "./node_modules/.bin/webpack --config-name=pntest -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
