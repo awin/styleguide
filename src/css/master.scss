@@ -9,28 +9,29 @@ Layout
 :root {
   font-size: 10px;
 }
+
 @font-face {
-  font-family: "Whitney SSm A", "Whitney SSm B";
+  font-family: $brand-font;
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
-  font-family: "Whitney SSm A", "Whitney SSm B";
+  font-family: $brand-font;
   font-style: italic;
   font-weight: 500;
 }
 @font-face {
-  font-family: "Whitney SSm A", "Whitney SSm B";
+  font-family: $brand-font;
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
-  font-family: "Whitney SSm A", "Whitney SSm B";
+  font-family: $brand-font;
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
-  font-family: "Whitney SSm A", "Whitney SSm B";
+  font-family: $brand-font;
   font-style: normal;
   font-weight: 700;
 }
@@ -42,15 +43,16 @@ html {
   margin: 0;
   padding: 0;
 }
+
 html, body {
   height: 100%;
   min-height: 100%;
 }
 body {
-  background-color: #f1f1f1;
-  color: #444;
+  background-color: $bg-default;
+  color: $text-default;
   font-size: 12px;
-  font-family: "Whitney SSm A", "Whitney SSm B", Tahoma, sans-serif;
+  font-family: $font-family;
   font-weight: 500;
   line-height: 1.47;
   -ms-text-size-adjust: 100%;
@@ -77,7 +79,7 @@ img {
   max-width: 100%;
 }
 a, table p a {
-  color: #444;
+  color: $text-default;
   cursor: pointer;
   text-decoration: none;
   -moz-transition-property: color;
@@ -143,11 +145,11 @@ table a, table a:visited {
 }
 
 table a:hover {
-  color: $brand-primary;
+  color: $link-default-hover;
 }
 
 .table .alert a, .alert a {
-  color: $brand-primary;
+  color: $link-active;
 }
 
 .alert a:hover, .table .alert a:hover {
@@ -168,11 +170,11 @@ table a:hover {
 
 .container-bg {
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: $bg-default;
 }
 
 .bg-white {
-  background-color: #fff;
+  background-color: $bg-white;
 }
 
 body.bg-white {
@@ -181,8 +183,8 @@ body.bg-white {
 
 .boxLtGrey {
   border-radius: 2px;
-  border: 1px solid #ddd;
-  background-color: #ffffff;
+  border: 1px solid $border-color;
+  background-color: $bg-white;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
@@ -199,13 +201,13 @@ body.bg-white {
   max-width: 220px;
   max-height: 220px;
   padding: 5px;
-  border: 1px solid #ddd;
+  border: 1px solid $border-color;
 }
 
 .box-white {
-  border: 1px solid #ddd;
+  border: 1px solid $border-color;
   padding: 10px;
-  background-color: #ffffff;
+  background-color: $bg-white;
 }
 
 /* Background colors */
@@ -236,7 +238,7 @@ body.bg-white {
 }
 
 .bg-edit, .table thead > tr.bg-edit > td, .table tbody > tr.bg-edit > td, .table tfoot > tr.bg-edit > td, .table-body-striped > tbody tr.bg-edit > td {
-  background-color: #f9f9f9 !important; /* Same as row-dark */
+  background-color: $bg-dark !important; /* Same as row-dark */
   padding: 10px 0;
 }
 
@@ -270,10 +272,10 @@ body.bg-white {
 }
 
 .row-dark {
-  background-color: #f9f9f9;
+  background-color: $bg-dark;
   padding: 15px 0 35px;
-  border-top: 1px solid #dedede;
-  border-bottom: 1px solid #dedede;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
 }
 
 .row:before,
@@ -1163,7 +1165,7 @@ Headers
 ---------------------------------------------------------------------------- */
 
 .page-header, .widget .header, .modal-header {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid $border-color;
   height: 54px;
   line-height: 60px;
   padding-right: 20px;
@@ -1175,7 +1177,7 @@ Headers
   margin-right: -20px;
   padding: 0 20px;
   cursor: pointer;
-  color: #444444;
+  color: $text-default;
 }
 
 .widget .header a {
@@ -1214,7 +1216,7 @@ Headers
 
 .page-header select {
   border: none;
-  background-color: #f1f1f1;
+  background-color: $bg-default;
 }
 
 .page-header .col-lg-4 h1, .page-header .col-lg-8 a {
@@ -1238,7 +1240,7 @@ Headers
 }
 
 .widget.padding-LR-null .table-filters {
-  background-color: #fff;
+  background-color: $bg-white;
   margin-top: -1px;
 }
 
@@ -1252,7 +1254,7 @@ Headers
 }
 
 .widget .page-header select {
-  background-color: #ffffff;
+  background-color: $bg-white;
 }
 
 .option-menu {
@@ -1266,9 +1268,9 @@ Headers
   right: -20px;
   z-index: 50;
   padding: 15px 0;
-  background-color: #23282c;
+  background-color: $bg-dropdown;
   line-height: initial;
-  color: #fff;
+  color: $bg-white;
 }
 
 .option-menu .dropdown {
@@ -1282,7 +1284,7 @@ Headers
   right: 40px;
   position: absolute;
   font-size: 1.9em;
-  color: #fff;
+  color: $bg-white;
 }
 
 .page-header .option-menu ul, .page-header .option-menu .dropdown,
@@ -1301,7 +1303,7 @@ Headers
   white-space: nowrap;
   text-align: left;
   margin: 0;
-  color: #fff;
+  color: $bg-white;
   line-height: 34px;
 }
 
@@ -1310,9 +1312,9 @@ Headers
 }
 
 .table-filters {
-  background-color: #f4f4f4;
-  border-top: 1px solid #dedede;
-  border-bottom: 1px solid #dedede;
+  background-color: $bg-table-header;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
   height: 55px;
   line-height: 54px;
 }
@@ -1325,13 +1327,13 @@ Headers
   padding: 10px 30px 10px 5px;
   background: transparent url("https://images.awin.com/awin-interface/arrow-down.png") no-repeat scroll right center;
   border: none;
-  color: #444444;
+  color: $text-default;
   font-size: 12px;
 }
 
 .form-group .v-select {
   padding: 0;
-  background: #fff url("https://images.awin.com/awin-interface/arrow-down.png") no-repeat scroll right center;
+  background: $bg-white url("https://images.awin.com/awin-interface/arrow-down.png") no-repeat scroll right center;
 }
 
 .form-group .v-select input[type=search], .form-group .v-select input[type=search]:focus {
@@ -1340,8 +1342,8 @@ Headers
 }
 
 .form-group .v-select .dropdown-toggle {
-  border-color: #dbdbdb;
-  background-color: #fff;
+  border-color: $border-form-element;
+  background-color: $bg-white;
   padding: 8px 40px 8px 10px;
 }
 
@@ -1350,7 +1352,7 @@ Headers
   display: inline-block;
   padding: 0;
   min-width: 400px;
-  background: #ffffff;
+  background-color: $bg-white;
   line-height: 34px;
 }
 
@@ -1370,7 +1372,7 @@ Headers
 .form-group .v-select .dropdown-menu {
   padding: 0;
   box-shadow: none;
-  border-color: #dbdbdb;
+  border-color: $border-form-element;
 }
 
 .table-filters .v-select .no-options,
@@ -1393,14 +1395,14 @@ Headers
 
 .table-filters .v-select .dropdown-menu > .highlight > a,
 .form-control .v-select .dropdown-menu > .highlight > a {
-  color: #444;
+  color: $text-default;
   background: transparent;
 }
 
 .table-filters .v-select li > a:hover,
 .form-group  .v-select li > a:hover {
   background-color: #e5e5e5;
-  color: #444;
+  color: $text-default;
 }
 
 .table-filters .v-select .spinner, .v-select .spinner:after,
@@ -1446,7 +1448,7 @@ Headers
   background-color: transparent;
   font-weight: 400;
   font-size: 12px;
-  color: #444;
+  color: $text-default;
   outline: none;
 }
 
@@ -1502,8 +1504,8 @@ th, td {
 }
 
 .table thead > tr.bg-white > th {
-  background-color: #fff;
-  border-bottom: 1px solid #eee;
+  background-color: $bg-white;
+  border-bottom: 1px solid $border-row;
 }
 
 table.align-middle thead > tr > th,
@@ -1546,7 +1548,7 @@ table.text-right tbody > tr > td.text-center {
 .table thead > tr > th {
   vertical-align: middle;
   font-weight: 600;
-  background-color: #f4f4f4;
+  background-color: $bg-table-header;
 }
 
 .table caption + thead tr:first-child th,
@@ -1559,11 +1561,11 @@ table.text-right tbody > tr > td.text-center {
 }
 
 .table tbody + tbody {
-  border-top: 2px solid #dddddd;
+  border-top: 2px solid $border-color;
 }
 
 .table .table {
-  background-color: #ffffff;
+  background-color: $bg-white;
 }
 
 .table .table-form {
@@ -1580,7 +1582,7 @@ table.text-right tbody > tr > td.text-center {
 }
 
 .table-bordered {
-  border: 1px solid #eee;
+  border: 1px solid $border-row;
 }
 
 .table-bordered > thead > tr > th,
@@ -1589,7 +1591,7 @@ table.text-right tbody > tr > td.text-center {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #eee;
+  border: 1px solid $border-row;
 }
 
 .table-borderless > tbody > tr,
@@ -1621,7 +1623,7 @@ table.text-right tbody > tr > td.text-center {
 .table-striped > tbody > tr:nth-child(odd) > th,
 .table-body-striped > tbody:nth-child(even) > tr > td,
 .table-body-striped > tbody:nth-child(even) > tr > th {
-  background-color: #ffffff;
+  background-color: $bg-white;
 }
 
 .table-body-striped > tbody > tr > td {
@@ -1658,7 +1660,7 @@ table.text-right tbody > tr > td.text-center {
 .table-hover > tbody > tr:hover > td a, .progress-tooltip .table-hover > tbody > tr:hover > td a,
 .merchantOfMonth:hover a, .offerOfWeek:hover a, .editorsPick:hover a, .featuredPromotion:hover a,
 label:hover a:link, label:hover a:visited {
-  color: $brand-primary;
+  color: $link-default;
   text-decoration: none;
   position: relative;
 }
@@ -1797,7 +1799,7 @@ table.hatch > tbody > tr.warning-hatch > td.success {
 }
 
 table.table-bg-white tr td {
-  background-color: #fff;
+  background-color: $bg-white;
 }
 
 table h1,
@@ -2489,9 +2491,9 @@ output {
   border: 1px solid #dbdbdb;
   border-radius: 4px;
   line-height: 1.375em;
-  font-family: "Whitney SSm A", "Whitney SSm B", Tahoma, sans-serif;
+  font-family: $font-family;
   font-size: 13px;
-  background-color: #ffffff;
+  background-color: $bg-white;
   color: #444;
   display: block;
   -webkit-transition-duration: .25s;
@@ -2757,7 +2759,7 @@ select:-webkit-autofill:focus {
 }
 .form-select-loader {
   position: relative;
-  background-color: #ffffff;
+  background-color: $bg-white;
   opacity: .7;
   text-align: center;
   box-sizing: border-box;
@@ -3292,7 +3294,7 @@ fieldset[disabled] .btn-link:focus {
 }
 
 .btn-group .btn-default {
-  background-color: #ffffff;
+  background-color: $bg-white;
   color: #23282c;
   border: 1px solid #dbdbdb;
 }
@@ -3894,7 +3896,7 @@ body > .select2-container {
 }
 .select2-angular .ui-select-container > div {
   border: 1px solid #dbdbdb;
-  background-color: #ffffff;
+  background-color: $bg-white;
   padding: 10px;
   border-radius: 4px;
 }
@@ -3982,7 +3984,7 @@ body > .select2-container {
 .select2-dropdown {
   border-radius: 0 !important;
   border: 1px solid #dbdbdb !important;
-  background-color: #ffffff;
+  background-color: $bg-white;
   position: absolute;
   display: block;
   overflow-y: auto;
@@ -4028,7 +4030,7 @@ body > .select2-container {
 .select2-angular ul.ui-select-choices {
   z-index: 2;
   position: absolute;
-  background-color: #ffffff;
+  background-color: $bg-white;
   border: 1px solid #dbdbdb;
   padding: 10px 0;
   width: 100%;
@@ -4076,7 +4078,7 @@ body > .select2-container {
   border-radius: 4px !important;
   border: 1px solid #dbdbdb !important;
   padding: 5px !important;
-  background-color: #ffffff;
+  background-color: $bg-white;
   display: block;
 }
 
@@ -4091,7 +4093,7 @@ body > .select2-container {
   white-space: nowrap;
 }
 .select2-container--default.select2-container--focus .select2-selection--multiple {
-  background-color: #fff;
+  background-color: $bg-white;
   border: 1px solid #dbdbdb;
   outline: 0;
   display: block;
@@ -4158,7 +4160,7 @@ body > .select2-container {
   border: 1px solid #dbdbdb;
   overflow: hidden;
   white-space: nowrap;
-  background-color: #ffffff;
+  background-color: $bg-white;
   padding: 0 0 0 10px;
   -webkit-user-select: none;
   line-height: 34px;
@@ -4252,7 +4254,7 @@ body > .select2-container {
 .select2-angular-single .select2-angular ul.ui-select-choices {
   z-index: 2;
   position: relative;
-  background-color: #ffffff;
+  background-color: $bg-white;
   border: 1px solid #dbdbdb;
   padding: 10px;
 }
@@ -4320,7 +4322,7 @@ On off Switch
   padding: 0; line-height: 20px;
   font-size: 11px;
   color: #fff;
-  font-family: "Whitney SSm A", "Whitney SSm B", Tahoma, sans-serif;
+  font-family: $font-family;
   font-weight: 600;
   box-sizing: border-box;
 }
@@ -4476,7 +4478,7 @@ Navigation, tabs
 .nav-tabs > li.selected > a,
 .nav-tabs > li.selected > a:hover,
 .nav-tabs > li.selected > a:focus {
-  background-color: #fff;
+  background-color: $bg-white;
   color: $brand-primary;
   font-weight: 600;
   border: solid #e6e6e6;
@@ -4676,7 +4678,7 @@ th.sortable span.sortDescending:before {
   background: #fff;
 }
 .nav-stats > li > a:hover {
-  background-color: #fff;
+  background-color: $bg-white;
   border-right: 1px solid #ebebeb;
 }
 .nav-stats > li > a {
@@ -4769,7 +4771,7 @@ th.sortable span.sortDescending:before {
 .navbar-fixed-top .fa, .navbar-fixed-top a .fa, #top_navigation .fa, #top_navigation a .fa, .main_navigation .fa, .main_navigation a .fa,
 .navbar-fixed-top .far, .navbar-fixed-top a .far, #top_navigation .far, #top_navigation a .far, .main_navigation .far, .main_navigation a .far  {
   font-size: 16px;
-  color: #fff;
+  color: $link-nav;
 }
 .navbar-fixed-top ul, .navbar-fixed-top ul li  {
   padding: 0;
@@ -4783,7 +4785,7 @@ th.sortable span.sortDescending:before {
   margin-left: 5px;
 }
 .navbar-fixed-top ul li a, .navbar-fixed-top ul li a:visited {
-  color: #fff;
+  color: $link-nav;
   margin-left: 20px;
   margin-right: 20px;
   line-height: 3em;
@@ -4791,7 +4793,7 @@ th.sortable span.sortDescending:before {
 .navbar-fixed-top form input.form-control {
   background-color: rgba(35,40,44,.4);
   border: none;
-  color: #fff;
+  color: $text-nav;
   padding-left: 5px;
   font-weight: 500;
 }
@@ -4834,7 +4836,7 @@ th.sortable span.sortDescending:before {
 }
 
 .list-group li {
-  border-top: 1px solid #eee;
+  border-top: 1px solid $border-row;
 }
 
 .list-group .list-inline li {
@@ -4853,12 +4855,12 @@ th.sortable span.sortDescending:before {
   display: block;
   padding: 10px 1px;
   margin-bottom: -1px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-top: 1px solid $border-row;
+  border-bottom: 1px solid $border-row;
 }
 
 .list-group-item:hover a {
-  color: #f60;
+  color: $link-active;
 }
 
 .list-group-item:hover a:hover {
@@ -4953,7 +4955,7 @@ a.list-group-item.active .list-group-item-text {
 
 .list-group-item.disabled, .list-group-item.disabled:focus,
 .list-group-item.disabled:hover {
-  color: #444;
+  color: $text-default;
   cursor: not-allowed;
   background-color: #eceeef;
 }
@@ -4965,7 +4967,7 @@ a.list-group-item.active .list-group-item-text {
 
 .list-group-striped > li:nth-child(2n),
 .list-group-striped > a:nth-child(2n):not(.active):not(.disabled) {
-  background-color: #fff;
+  background-color: $bg-white;
 }
 
 .list-group-item blockquote {
@@ -5034,7 +5036,7 @@ Widgets
 }
 
 .widget {
-  background-color: #ffffff;
+  background-color: $bg-white;
   border: 1px solid #dedede;
   margin-bottom: 20px;
   display: inline-block;
@@ -5114,7 +5116,7 @@ Widgets
 }
 
 .row-widget .gallery-widget {
-  background-color: #fff;
+  background-color: $bg-white;
   border: 1px solid #d6d6d6;
   position: relative;
   min-height: 260px;
@@ -5182,7 +5184,7 @@ Widgets
 
 .arrow-box {
   padding: 10px 0;
-  background-color: #f1f1f1;
+  background-color: $bg-default;
   overflow: hidden;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
@@ -5214,7 +5216,7 @@ Widgets
   left: 0;
   width: 35%;
   height: 100%;
-  background-color: #fff;
+  background-color: $bg-white;
   z-index: -1;
 }
 
@@ -5578,7 +5580,7 @@ h2 .tooltip-hover, h4 .tooltip-hover {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Whitney SSm A", "Whitney SSm B", Tahoma, sans-serif;
+  font-family: $font-family;
   font-size: 14px;
   font-style: normal;
   font-weight: normal;
@@ -5593,7 +5595,7 @@ h2 .tooltip-hover, h4 .tooltip-hover {
   word-spacing: normal;
   word-wrap: normal;
   white-space: normal;
-  background-color: #fff;
+  background-color: $bg-white;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, .2);
@@ -5711,7 +5713,7 @@ Bootstrap 4 card component
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 0 10px;
-  background-color: #ffffff;
+  background-color: $bg-white;
 }
 
 .card {
@@ -5725,7 +5727,7 @@ Bootstrap 4 card component
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: #fff;
+  background-color: $bg-white;
   border-radius: 4px;
 }
 
@@ -5761,7 +5763,7 @@ Bootstrap 4 card component
 .card-header {
   padding: .75rem;
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: $bg-white;
   border-top: 1px solid #e6e6e6;
 }
 
@@ -6077,7 +6079,7 @@ input.hasDatepicker:hover,
 
 .ui-datepicker,
 .uib-datepicker-popup-wrap .dropdown-menu {
-  background-color: #fff;
+  background-color: $bg-white;
   border: 1px solid #dbdbdb;
   border-radius: 4px;
   box-shadow: 0 0 3px rgba(32,139,195,.6);
@@ -6111,7 +6113,7 @@ input.hasDatepicker:hover,
 
 .table .uib-daypicker > table thead > tr > th,
 .table .uib-monthpicker > table thead > tr > th {
-  background-color: #fff;
+  background-color: $bg-white;
   font-weight: normal;
 }
 
@@ -6208,7 +6210,7 @@ input.hasDatepicker:hover,
   font-size: 14px;
   color: #f60;
   padding: 0 5px;
-  font-family: "Whitney SSm A", "Whitney SSm B", Tahoma, sans-serif;
+  font-family: $font-family;
   cursor: pointer;
   background: #fff none;
 }
@@ -6299,7 +6301,7 @@ a.ui-datepicker-next.ui-corner-all.ui-state-disabled,
 a.ui-datepicker-prev.ui-corner-all.ui-state-disabled,
 a.ui-datepicker-next.ui-corner-all.ui-state-disabled:before,
 a.ui-datepicker-prev.ui-corner-all.ui-state-disabled:before {
-  background-color: #fff;
+  background-color: $bg-white;
 }
 
 .uib-button-bar {
@@ -6363,7 +6365,7 @@ dt.ui_tpicker_minute_label, dt.ui_tpicker_hour_label {
 .ui-datepicker-buttonpane .ui-datepicker-current,
 .ui-datepicker-buttonpane .ui-datepicker-close {
   padding: 5px;
-  background-color: #ffffff;
+  background-color: $bg-white;
   border: 0;
   color: #f60;
 }
@@ -6380,7 +6382,7 @@ dt.ui_tpicker_minute_label, dt.ui_tpicker_hour_label {
 /* VUE.js datepicker styling */
 
 .vdp-datepicker .vdp-datepicker__calendar {
-  background-color: #fff;
+  background-color: $bg-white;
   border: 1px solid #dbdbdb;
   border-radius: 4px;
   box-shadow: 0 0 3px rgba(32,139,195,.6);
@@ -6536,7 +6538,7 @@ Validate pending
 */
 
 #validatePendingReport #declineReasonsSelector {
-  background-color: #fff;
+  background-color: $bg-white;
   border: 1px solid #eee;
   box-shadow: 0 0 12px 0 #CCC;
   display: none;
@@ -7118,7 +7120,7 @@ Autocomplete styles
 ---------------------------------------------------------------------------- */
 .ac_results {
   border: 1px solid #d6d6d6;
-  background-color: #ffffff;
+  background-color: $bg-white;
   overflow: hidden;
   z-index: 99999;
 }
@@ -7219,7 +7221,7 @@ Extra styling
 }
 
 .copy-code-placeholder, .copy-code-placeholder:focus {
-  background-color: #ffffff;
+  background-color: $bg-white;
   border-top: 1px dashed #e6e6e6;
   border-bottom: 1px dashed #eee;
   font-weight: normal;
@@ -7301,7 +7303,7 @@ body.login-page #container {
 
 .login-page #footer {
   text-align: center;
-  background-color: #fff;
+  background-color: $bg-white;
   border-color: #f1f1f1;
 }
 /* ----------------------------------------------------------------------------
@@ -7721,14 +7723,14 @@ img.ui-datepicker-trigger {
 
 .pagination .goToPage span#currentPage, .pagination li.active,
 .pagination .goToPage span#currentPage a, .pagination li.active a, .pagination li.disabled a {
-  background-color: #fff;
+  background-color: $bg-white;
   color: #f60;
   cursor: default;
 }
 
 .pagination .goToPage span#currentPage, .pagination li.active,
 .pagination .goToPage span#currentPage a, .pagination li.active a, .pagination li.disabled a {
-  background-color: #fff;
+  background-color: $bg-white;
   color: #f60;
   cursor: default;
 }
@@ -8148,7 +8150,7 @@ img.inlineSave, img.inlineCancel {
 #assistChartModal {
   z-index: 999;
   box-shadow: 0px 0px 11px 0px #888;
-  background-color: #fff;
+  background-color: $bg-white;
   display: block;
   position: absolute;
   overflow: hidden;
@@ -8338,9 +8340,11 @@ table.chart-legend-tab td {
 /* Header styles */
 
 header #header, nav.main_navigation {
-  background-color: #23282c;
+  background-color: $bg-nav;
   padding: 0 20px;
-  border-bottom: 1px solid rgba(255,255,255,.1);
+  -webkit-box-shadow: $border-nav;
+  -moz-box-shadow: $border-nav;
+  box-shadow: $border-nav;
 }
 header #header aside {
   margin-left: -10px;
@@ -8357,7 +8361,7 @@ header  #header ul {
 
 header  #header ul li a,
 header  #header ul li a:visited {
-  color: #fff;
+  color: $link-nav;
   padding: 0 20px;
   line-height: 60px;
   display: inline-block;
@@ -8366,7 +8370,7 @@ header  #header ul li a:visited {
 }
 
 header  #header ul li:hover > a {
-  color: #f60;
+  color: $link-nav-hover;
 }
 
 header  #header ul li {
@@ -8384,7 +8388,7 @@ header  #header ul li .fa, header  #header ul li .far {
 }
 
 header  #header ul li ul, nav.main_navigation ul li ul.children {
-  background-color: #2f363c;
+  background-color: $bg-dropdown;
   z-index: 200;
   position: absolute;
   left: auto;
@@ -8394,9 +8398,6 @@ header  #header ul li ul, nav.main_navigation ul li ul.children {
   border-radius: 4px;
 }
 
-header #header ul li:hover ul, nav.main_navigation ul li:hover ul.children {
-  visibility: visible;
-}
 header #header ul li ul:before,
 nav.main_navigation ul li ul.children:before {
   content: "\f0d7";
@@ -8405,7 +8406,8 @@ nav.main_navigation ul li ul.children:before {
   right: 20px;
   position: absolute;
   font-size: 2.5em;
-  color: #23282c;
+  color: $bg-nav;
+  display: $display-nav-arrow;
 }
 header #header ul li ul li {
   margin: 0;
@@ -8414,7 +8416,7 @@ header #header ul li ul li {
 }
 header  #header ul li ul li a,
 header  #header ul li ul li a:visited {
-  color: #fff;
+  color: $link-nav;
   font-size: 12px;
   line-height: 28px;
   white-space:nowrap;
@@ -8424,7 +8426,7 @@ header  #header ul li ul li a:visited {
   padding: 0 20px;
 }
 header  #header ul li ul li a:hover {
-  color: #f60;
+  color: $link-nav-hover;
 }
 
 ul li.switcher ul {
@@ -8462,11 +8464,10 @@ header #header ul li.switcher ul li.dashboard a:before {
 }
 
 nav.main_navigation {
-  border: none;
-  line-height: 0;
   position: relative;
   float: left;
   width: 100%;
+  line-height: initial;
 }
 
 nav.main_navigation ul {
@@ -8479,13 +8480,17 @@ nav.main_navigation ul li {
 }
 
 nav.main_navigation a, nav.main_navigation a:visited {
-  color: #fff;
-  line-height: 38px;
+  color: $link-nav;
+  line-height: $line-height-nav;
   font-weight: 600;
   display: block;
   z-index: 200;
   font-size: 15px;
   padding: 0 13px;
+}
+
+nav.main_navigation a:hover {
+  color: $link-nav-hover;
 }
 nav.main_navigation a:first-child {
   padding-left: 12px;
@@ -8498,12 +8503,13 @@ nav.main_navigation ul li ul.children {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
   font-weight: 400;
+  border: $border-dropdown;
 }
 
 nav.main_navigation ul li ul.children h4,
 nav.main_navigation ul li ul.children a,
 nav.main_navigation ul li ul.children a:visited {
-  color: #fff;
+  color: $link-nav;
   padding: 0 15px;
   margin: 0;
 }
@@ -8524,7 +8530,7 @@ nav.main_navigation ul li ul.children a {
 }
 
 nav.main_navigation ul li ul.children:before {
-  top: 0;
+  top: -11px;
   left: 10px;
 }
 
@@ -8606,10 +8612,26 @@ nav.main_navigation ul li ul.children li.information {
   margin-top: 20px;
 }
 
-nav.main_navigation ul li:hover a,
-nav.main_navigation a.selected,
-nav.main_navigation ul li ul.children a:hover {
-  color: #f60;
+nav.main_navigation ul li:hover,
+nav.main_navigation ul li a.selected {
+  color: $link-active;
+  -webkit-box-shadow: $border-nav-hover;
+  -moz-box-shadow: $border-nav-hover;
+  box-shadow: $border-nav-hover;
+}
+
+header #header ul li:hover ul, nav.main_navigation ul li:hover ul.children {
+  visibility: visible;
+  border: $border-dropdown;
+}
+
+nav.main_navigation ul li:hover ul.children li,
+nav.main_navigation ul li ul.children a:hover,
+nav.main_navigation ul li ul.children a.selected{
+  color: $link-active;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 .bell .fa, .bell .far {
@@ -8893,14 +8915,14 @@ form dl dd button {
 
 form dl dd input, form dl dd select, form dd select, form dl dd textarea {
   font-size: 14px;
-  font-family: "Whitney SSm A", "Whitney SSm B", Tahoma, sans-serif;
+  font-family: $font-family;
   width: 66.66666667%;
   padding: 8px 10px;
   border: 1px solid #dbdbdb;
   border-radius: 4px;
   line-height: 1.375em;
   font-size: 13px;
-  background-color: #ffffff;
+  background-color: $bg-white;
   color: #23282c;
   display: block;
   -webkit-transition-duration: .25s;
@@ -9250,7 +9272,7 @@ button.ui-dialog-titlebar-close {
 }
 .modal-content {
   position: relative;
-  background-color: #ffffff;
+  background-color: $bg-white;
   border: 1px solid #ebebeb;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
@@ -9759,7 +9781,7 @@ h3.awin-favicon, h3.zanox-favicon {
 #popup_container {
   min-width: 650px; /* Dialog will be no smaller than this */
   max-width: 650px; /* Dialog will wrap after this width */
-  background-color: #fff;
+  background-color: $bg-white;
 }
 
 #popup_title {
@@ -9773,7 +9795,7 @@ h3.awin-favicon, h3.zanox-favicon {
 #popup_content {
   padding: 20px;
   margin: 0;
-  background-color: #f1f1f1;
+  background-color: $bg-default;
   color: inherit;
 }
 
@@ -9880,7 +9902,7 @@ h3.awin-favicon, h3.zanox-favicon {
 /* Progress bar for datafeeds (edit/add) */
 
 .ui-progressbar-wrapper {
-  background-color: #fff;
+  background-color: $bg-white;
   border: 1px solid #dedede;
   padding: 20px;
   text-align: left;
@@ -9892,7 +9914,7 @@ h3.awin-favicon, h3.zanox-favicon {
 .ui-progressbar {
   height: 10px;
   text-align: left;
-  background-color: #f1f1f1;
+  background-color: $bg-default;
   margin-bottom: 8px
 }
 
@@ -9941,7 +9963,7 @@ footer#footerPush {
   bottom: 0;
   z-index: 666666;
   border-top: 5px solid #dedede;
-  background-color: #fff;
+  background-color: $bg-white;
 }
 
 /* --------------------------------------------------------------------
