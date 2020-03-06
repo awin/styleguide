@@ -27,8 +27,10 @@ COPY tslint.json ./
 COPY tsconfig.json ./
 
 RUN npm run build
-RUN npm run build:nike
+#RUN npm run build:nike
 RUN npm run build:pntest
+
+COPY src/theme-fonts/. public/theme-fonts
 
 # Copy over webserver configuration
 COPY docker/default.conf /etc/nginx/sites-available/default
