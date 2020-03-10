@@ -34,6 +34,7 @@ Layout
   font-family: $brand-font;
   font-style: normal;
   font-weight: 700;
+  src: url($brand-font-url);
 }
 html {
   box-sizing: border-box;
@@ -7310,6 +7311,10 @@ body.login-page #container {
 Helper classes
 ---------------------------------------------------------------------------- */
 
+.fa-fw {
+  width: 1.8em;
+}
+
 ::-ms-clear {
   display: none;
 }
@@ -7509,6 +7514,22 @@ Helper classes
 
 table.margin-zero td input {
   margin: 0;
+}
+
+.pt-xs {
+  padding-top: 5px;
+}
+
+.pr-xs {
+  padding-right: 5px;
+}
+
+.pb-xs {
+  padding-bottom: 5px;
+}
+
+.pl-xs {
+  padding-left: 5px;
 }
 
 .pt-0 {
@@ -8628,7 +8649,7 @@ header #header ul li:hover ul, nav.main_navigation ul li:hover ul.children {
 nav.main_navigation ul li:hover ul.children li,
 nav.main_navigation ul li ul.children a:hover,
 nav.main_navigation ul li ul.children a.selected{
-  color: $link-active;
+  color: $link-nav-hover;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -8688,7 +8709,7 @@ ul#main_nav_right li.liveHelpButton span {
   opacity: 1;
 }
 
-.breadcrumbs a:hover {
+.breadcrumbs a:hover, .bell a:hover .fa {
   color: $brand-primary;
 }
 

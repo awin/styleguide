@@ -1,11 +1,12 @@
 {
-  "brand-font": "Open sans,Helvetica,Arial,sans-serif",
+  "brand-font": "\"Whitney SSm A\", \"Whitney SSm B\"",
   "brand-primary": "#ff6600",
   "brand-secondary": "#23282c",
+  "brand-font-url": "''",
 
-  "font-family": "Open sans,Helvetica,Arial,sans-serif",
+  "font-family": "\"Whitney SSm A\", \"Whitney SSm B\", Tahoma, sans-serif",
 
-  "text-default": "#111111",
+  "text-default": "#444444",
   "text-error": "#cc3333",
   "text-success": "#3c6f1f",
   "text-info": "#336699",
@@ -17,15 +18,15 @@
   "text-nav": "#ffffff",
   "text-dropdown": "#ffffff",
 
-  "link-default": "#111111",
+  "link-default": "#444444",
   "link-default-hover": "ff6600",
-  "link-active": "#111111",
+  "link-active": "#ff6600",
   "link-default-hover": "#ff6600",
   "link-active-hover": "#ff956a",
-  "link-nav": "#111111",
-  "link-nav-hover": "#555555",
+  "link-nav": "#ffffff",
+  "link-nav-hover": "#ff6600",
 
-  "bg-default": "#f5f5f5",
+  "bg-default": "#f1f1f1",
   "bg-dark": "#f9f9f9",
   "bg-error": "#eaeff5",
   "bg-info": "#eaeff5",
@@ -34,9 +35,9 @@
   "bg-disabled": "#eeeeee",
   "bg-white": "#ffffff",
   "bg-speech-bubble": "#fafafa",
-  "bg-site-header": "#ffffff",
-  "bg-nav": "#ffffff",
-  "bg-dropdown": "#ffffff",
+  "bg-site-header": "#23282c",
+  "bg-nav": "#23282c",
+  "bg-dropdown": "#2f363c",
   "bg-hover": "#f9f9f9",
   "bg-input": "#ffffff",
   "bg-input-error": "#fcefee",
@@ -53,11 +54,11 @@
   "border-info": "#99b2cc",
   "border-table-header": "#dbdbdb",
   "border-row": "#eeeeee",
-  "border-dropdown": "1px solid #e5e5e5",
-  "border-nav": "inset 0 -1px 0 0 #e5e5e5",
-  "border-nav-hover": "inset 0 -2px 0 0 #111111",
+  "border-dropdown": "none",
+  "border-nav": "inset 0 -1px 0 0 #444444",
+  "border-nav-hover": "none",
 
-  "display-nav-arrow": "none",
+  "display-nav-arrow": "block",
 
-  "line-height-nav": "55px"
+  "line-height-nav": "38px"
 }

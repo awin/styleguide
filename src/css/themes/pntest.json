@@ -1,16 +1,17 @@
 {
-  "brand-font": "Open sans,Helvetica,Arial,sans-serif",
-  "brand-primary": "#ff6600",
+  "brand-font": "futura, Helvetica Neue, Arial,sans-serif",
+  "brand-primary": "#555555",
   "brand-secondary": "#23282c",
+  "brand-font-url": "'https://styleguide.awin.com/theme-fonts/nike/FuturaStd-CondensedBold.otf'",
 
-  "font-family": "Open sans,Helvetica,Arial,sans-serif",
+  "font-family": "futura",
 
   "text-default": "#111111",
   "text-error": "#cc3333",
   "text-success": "#3c6f1f",
   "text-info": "#336699",
   "text-warning": "#84660c",
-  "text-active": "#ff6600",
+  "text-active": "#fa5400",
   "text-light": "#999999",
   "text-muted": "#999999",
   "text-disabled": "#999999",
@@ -18,9 +19,9 @@
   "text-dropdown": "#ffffff",
 
   "link-default": "#111111",
-  "link-default-hover": "ff6600",
+  "link-default-hover": "fa5400",
   "link-active": "#111111",
-  "link-default-hover": "#ff6600",
+  "link-default-hover": "#fa5400",
   "link-active-hover": "#ff956a",
   "link-nav": "#111111",
   "link-nav-hover": "#555555",
@@ -59,5 +60,5 @@
 
   "display-nav-arrow": "none",
 
-  "line-height-nav": "55px"
+  "line-height-nav": "65px"
 }
