@@ -10,31 +10,37 @@ Layout
   font-size: 10px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 @font-face {
   font-family: $brand-font;
   font-style: normal;
   font-weight: 400;
+
 }
 @font-face {
   font-family: $brand-font;
   font-style: italic;
   font-weight: 500;
+
 }
 @font-face {
   font-family: $brand-font;
   font-style: normal;
   font-weight: 500;
+
 }
 @font-face {
   font-family: $brand-font;
   font-style: normal;
   font-weight: 600;
+
 }
 @font-face {
   font-family: $brand-font;
   font-style: normal;
   font-weight: 700;
-  src: url($brand-font-url);
+
 }
 html {
   box-sizing: border-box;
@@ -184,7 +190,7 @@ body.bg-white {
 
 .boxLtGrey {
   border-radius: 2px;
-  border: 1px solid $border-color;
+  border: 1px solid $border-color-default;
   background-color: $bg-white;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -202,11 +208,11 @@ body.bg-white {
   max-width: 220px;
   max-height: 220px;
   padding: 5px;
-  border: 1px solid $border-color;
+  border: 1px solid $border-color-default;
 }
 
 .box-white {
-  border: 1px solid $border-color;
+  border: 1px solid $border-color-default;
   padding: 10px;
   background-color: $bg-white;
 }
@@ -275,8 +281,8 @@ body.bg-white {
 .row-dark {
   background-color: $bg-dark;
   padding: 15px 0 35px;
-  border-top: 1px solid $border-color;
-  border-bottom: 1px solid $border-color;
+  border-top: 1px solid $border-color-default;
+  border-bottom: 1px solid $border-color-default;
 }
 
 .row:before,
@@ -1166,7 +1172,7 @@ Headers
 ---------------------------------------------------------------------------- */
 
 .page-header, .widget .header, .modal-header {
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $border-color-default;
   height: 54px;
   line-height: 60px;
   padding-right: 20px;
@@ -1314,8 +1320,8 @@ Headers
 
 .table-filters {
   background-color: $bg-table-header;
-  border-top: 1px solid $border-color;
-  border-bottom: 1px solid $border-color;
+  border-top: 1px solid $border-color-default;
+  border-bottom: 1px solid $border-color-default;
   height: 55px;
   line-height: 54px;
 }
@@ -1562,7 +1568,7 @@ table.text-right tbody > tr > td.text-center {
 }
 
 .table tbody + tbody {
-  border-top: 2px solid $border-color;
+  border-top: 2px solid $border-color-default;
 }
 
 .table .table {
@@ -2333,7 +2339,7 @@ select {
 }
 
 select:hover, select.form-control:hover {
-  color: #f60;
+  color: $brand-primary;
   cursor: pointer;
 }
 
@@ -2489,7 +2495,7 @@ output {
   width: 100%;
   min-width: 60px;
   padding: 8px 10px;
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color-default;
   border-radius: 4px;
   line-height: 1.375em;
   font-family: $font-family;
@@ -2515,7 +2521,7 @@ form dl dd input:focus,
 form dl dd select:focus,
 form dl dd textarea:focus {
   background-color: #fffaf2;
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color-default;
   border-radius: 5px;
   outline: 0;
   display: inherit;
@@ -2642,7 +2648,7 @@ select:-webkit-autofill:focus {
   font-weight: normal;
   line-height: 1;
   text-align: center;
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color-default;
   border-radius: 0;
   color: #777;
   -webkit-box-sizing: border-box;
@@ -2729,7 +2735,7 @@ select:-webkit-autofill:focus {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   z-index: 1;
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color-default;
   font-size: 13px;
 }
 
@@ -3157,14 +3163,14 @@ select[multiple].input-lg {
 }
 
 .btn-filter:hover {
-  color: #f60;
+  color: $brand-primary;
 }
 
 .btn-filter .fa, .table .btn-filter .fa,
 .btn-filter .far, .table .btn-filter .far {
   line-height: 1.6em;
   font-size: 14px;
-  color: #f60;
+  color: $brand-secondary;
   position: absolute;
   right: 10px;
   margin: 0;
@@ -3297,7 +3303,7 @@ fieldset[disabled] .btn-link:focus {
 .btn-group .btn-default {
   background-color: $bg-white;
   color: #23282c;
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color-default;
 }
 
 .btn-group .btn-default.active,
@@ -3603,7 +3609,7 @@ ul.errors, .errorMessage {
 .has-disabled .form-control, .has-disabled .select2-angular-single .select2-choice {
   padding-right: 32px;
   background-color: #eeeeee !important;
-  border-color: #dbdbdb;
+  border-color: $border-color-default;
   cursor: not-allowed;
 }
 
@@ -3896,7 +3902,7 @@ body > .select2-container {
   z-index: 2;
 }
 .select2-angular .ui-select-container > div {
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color-default;
   background-color: $bg-white;
   padding: 10px;
   border-radius: 4px;
@@ -3984,7 +3990,7 @@ body > .select2-container {
 
 .select2-dropdown {
   border-radius: 0 !important;
-  border: 1px solid #dbdbdb !important;
+  border: 1px solid $border-color-default !important;
   background-color: $bg-white;
   position: absolute;
   display: block;
@@ -4032,7 +4038,7 @@ body > .select2-container {
   z-index: 2;
   position: absolute;
   background-color: $bg-white;
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color-default;
   padding: 10px 0;
   width: 100%;
   max-height: 200px;
@@ -4077,7 +4083,7 @@ body > .select2-container {
 }
 .select2-container--default .select2-selection--multiple {
   border-radius: 4px !important;
-  border: 1px solid #dbdbdb !important;
+  border: 1px solid $border-color-default !important;
   padding: 5px !important;
   background-color: $bg-white;
   display: block;
@@ -4095,7 +4101,7 @@ body > .select2-container {
 }
 .select2-container--default.select2-container--focus .select2-selection--multiple {
   background-color: $bg-white;
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color-default;
   outline: 0;
   display: block;
   overflow: auto;
@@ -4103,7 +4109,7 @@ body > .select2-container {
 }
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
   padding: 4px 2px 4px 5px !important;
-  border-color: #dbdbdb !important;
+  border-color: $border-color-default !important;
   font-size: 10px !important;
 }
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
@@ -4158,7 +4164,7 @@ body > .select2-container {
   display: block;
   position: relative;
   height: 34px;
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color-default;
   overflow: hidden;
   white-space: nowrap;
   background-color: $bg-white;
@@ -4206,7 +4212,7 @@ body > .select2-container {
   z-index: 999;
   top: 100%;
   background: #fff;
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color-default;
   color: #444;
   padding: 5px 0;
   -webkit-box-sizing: border-box;
@@ -4249,14 +4255,14 @@ body > .select2-container {
   margin: 0;
   outline: 0;
   font-size: 12px;
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color-default;
 }
 
 .select2-angular-single .select2-angular ul.ui-select-choices {
   z-index: 2;
   position: relative;
   background-color: $bg-white;
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color-default;
   padding: 10px;
 }
 
@@ -4765,7 +4771,7 @@ th.sortable span.sortDescending:before {
 .navbar-fixed-top {
   padding: 0;
   overflow: hidden;
-  background-color: rgba(35,40,44,.6);
+  background-color: $bg-provider-bar;
   color: #fff;
 }
 
@@ -4999,7 +5005,7 @@ a.list-group-item.active .list-group-item-text {
 }
 
 a.list-group-item .fa, a.list-group-item .far {
-  color: #f60;
+  color: $brand-primary;
 }
 
 a.list-group-item:hover .fa, a.list-group-item:hover .far {
@@ -6060,7 +6066,7 @@ input.hasDatepicker, #directoryRefineby .hasDatepicker {
 input.hasDatepicker:hover,
 .ui-datepicker .ui-datepicker-calendar .uib-title,
 .uib-monthpicker .uib-title {
-  color: #f60;
+  color: $brand-primary;
 }
 
 .uib-datepicker-popup.dropdown-menu {
@@ -6081,7 +6087,7 @@ input.hasDatepicker:hover,
 .ui-datepicker,
 .uib-datepicker-popup-wrap .dropdown-menu {
   background-color: $bg-white;
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color-default;
   border-radius: 4px;
   box-shadow: 0 0 3px rgba(32,139,195,.6);
   display: none;
@@ -6136,7 +6142,7 @@ input.hasDatepicker:hover,
 .ui-datepicker button:focus,
 .ui-datepicker .uib-daypicker:focus table td button.active,
 .ui-datepicker .uib-monthpicker:focus table td button.active {
-  box-shadow: 0 0 2px rgba(32,139,195,.6);
+  box-shadow: $focused-shadow;
 }
 .ui-datepicker a,
 .ui-datepicker a:hover {
@@ -6384,7 +6390,7 @@ dt.ui_tpicker_minute_label, dt.ui_tpicker_hour_label {
 
 .vdp-datepicker .vdp-datepicker__calendar {
   background-color: $bg-white;
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color-default;
   border-radius: 4px;
   box-shadow: 0 0 3px rgba(32,139,195,.6);
   margin-top: 4px;
@@ -7532,6 +7538,38 @@ table.margin-zero td input {
   padding-left: 5px;
 }
 
+.pl-md {
+  padding-left: 10px;
+}
+
+.pt-md {
+  padding-top: 10px;
+}
+
+.pr-md {
+  padding-right: 10px;
+}
+
+.pb-md {
+  padding-bottom: 10px;
+}
+
+.pl-lg {
+  padding-left: 20px;
+}
+
+.pt-lg {
+  padding-top: 20px;
+}
+
+.pr-lg {
+  padding-right: 20px;
+}
+
+.pb-lg {
+  padding-bottom: 20px;
+}
+
 .pt-0 {
   padding-top: 0 !important;
 }
@@ -8503,6 +8541,7 @@ nav.main_navigation ul li {
 nav.main_navigation a, nav.main_navigation a:visited {
   color: $link-nav;
   line-height: $line-height-nav;
+  text-transform: $nav-text-transform;
   font-weight: 600;
   display: block;
   z-index: 200;
@@ -8659,43 +8698,6 @@ nav.main_navigation ul li ul.children a.selected{
   font-size: 15px;
 }
 
-.bell a span {
-  background-color: #f60;
-  top: -6px;
-  padding: 1px 3px;
-  position: relative;
-  font-weight: 500;
-  font-size: 11px;
-  border-radius: 4px;
-}
-.bell a:hover span {
-  background-color: #2f363c;
-}
-
-ul#main_nav_right li.liveHelpButton {
-  min-width: 40px;
-}
-ul#main_nav_right li.liveHelpButton a#close-chat-button {
-  display: none;
-}
-ul#main_nav_right li.liveHelpButton a {
-  background: url("https://images.awin.com/newheader/chat.png") no-repeat right center transparent;
-  padding-right: 35px;
-  padding-left: 10px;
-  font-weight: normal;
-  border-right: none;
-}
-
-ul#main_nav_right li.liveHelpButton a:hover {
-  cursor: pointer;
-  text-decoration: none;
-  color: #fff;
-}
-ul#main_nav_right li.liveHelpButton span {
-  background: none;
-  padding: 0;
-}
-
 .breadcrumbs {
   font-size: 11px;
   color: #999;
@@ -8790,7 +8792,7 @@ td.paymentStatus {
 table .fa, table .far {
   font-size: 14px;
   margin-left: 5px;
-  color: #f60;
+  color: $brand-primary;
   opacity: .8;
 }
 .fa-arrow-down {
@@ -8939,7 +8941,7 @@ form dl dd input, form dl dd select, form dd select, form dl dd textarea {
   font-family: $font-family;
   width: 66.66666667%;
   padding: 8px 10px;
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color-default;
   border-radius: 4px;
   line-height: 1.375em;
   font-size: 13px;
@@ -9019,7 +9021,7 @@ ul.errors {
 
 .awinModalWindow, .modal-multi-select {
   background: #fff;
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color-default;
   position: absolute;
   max-width: 900px;
   min-width: 700px;
@@ -9534,7 +9536,7 @@ a.suspendAffiliate {
 }
 
 #directoryRefineby #refine_date dl dd input {
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border-color-default;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -9593,7 +9595,7 @@ div#directoryRefineby .header, #directoryRefineby .header h3 {
 }
 
 #directoryRefineby h3 span:hover {
-  color: #f60;
+  color: $brand-primary;
   cursor: pointer;
 }
 
@@ -9607,7 +9609,7 @@ div#directoryRefineby .header, #directoryRefineby .header h3 {
 
 .refinebyExpanded {
   padding: 0 5px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid $border-color-default;
 }
 
 .refinebyExpanded p {

@@ -1,10 +1,9 @@
 {
-  "brand-font": "futura, Helvetica Neue, Arial,sans-serif",
-  "brand-primary": "#555555",
-  "brand-secondary": "#23282c",
-  "brand-font-url": "'https://styleguide.awin.com/theme-fonts/nike/FuturaStd-CondensedBold.otf'",
+  "brand-font": "\"Roboto\",\"Helvetica Neue\",Helvetica,Arial sans-serif",
+  "brand-primary": "#111111",
+  "brand-secondary": "#555555",
 
-  "font-family": "futura",
+  "font-family": "\"Roboto\",\"Helvetica Neue\",Helvetica,Arial sans-serif",
 
   "text-default": "#111111",
   "text-error": "#cc3333",
@@ -45,9 +44,10 @@
   "bg-input-header": "#f1f1f1",
   "bg-edit": "#f9f9f9",
   "bg-table-header": "#f4f4f4",
+  "bg-provider-bar": "#5e5e5e",
 
-  "border-color": "#dedede",
-  "border-form-element": "#dbdbdb",
+  "border-color-default": "#cccccc",
+  "border-form-element": "#cccccc",
   "border-error": "#cc3333",
   "border-success": "#6caf47",
   "border-warning": "#cc9900",
@@ -59,6 +59,11 @@
   "border-nav-hover": "inset 0 -2px 0 0 #111111",
 
   "display-nav-arrow": "none",
+  "mt-nav-dropdown": "0px",
 
-  "line-height-nav": "65px"
+  "line-height-nav": "65px",
+
+  "focused-shadow": "none",
+
+  "nav-text-transform": "uppercase"
 }

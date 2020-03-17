@@ -2,7 +2,6 @@
   "brand-font": "\"Whitney SSm A\", \"Whitney SSm B\"",
   "brand-primary": "#ff6600",
   "brand-secondary": "#23282c",
-  "brand-font-url": "''",
 
   "font-family": "\"Whitney SSm A\", \"Whitney SSm B\", Tahoma, sans-serif",
 
@@ -28,7 +27,7 @@
 
   "bg-default": "#f1f1f1",
   "bg-dark": "#f9f9f9",
-  "bg-error": "#eaeff5",
+  "bg-error": "#fcefee",
   "bg-info": "#eaeff5",
   "bg-success": "#eff8ec",
   "bg-warning": "#fdf7e0",
@@ -45,8 +44,9 @@
   "bg-input-header": "#f1f1f1",
   "bg-edit": "#f9f9f9",
   "bg-table-header": "#f4f4f4",
+  "bg-provider-bar": "#5e5e5e",
 
-  "border-color": "#dedede",
+  "border-color-default": "#dedede",
   "border-form-element": "#dbdbdb",
   "border-error": "#cc3333",
   "border-success": "#6caf47",
@@ -59,6 +59,11 @@
   "border-nav-hover": "none",
 
   "display-nav-arrow": "block",
+  "mt-nav-dropdown": "0px",
 
-  "line-height-nav": "38px"
+  "line-height-nav": "38px",
+
+  "focused-shadow": "0 0 2px rgba(32,139,195,.6)",
+
+  "nav-text-transform": "initial"
 }
