@@ -54,7 +54,10 @@ html {
 html, body {
   height: 100%;
   min-height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
 body {
   background-color: $bg-default;
   color: $text-default;
@@ -3388,6 +3391,10 @@ fieldset[disabled] .btn-link:focus {
   color: $brand-primary;
 }
 
+.fa-3x, .fa.fa-3x {
+  font-size: 3em;
+}
+
 .fa[disabled], table .fa[disabled], span.disabled .fa, .btn-icon-disabled .fa,
 .far[disabled], table .far[disabled], span.disabled .far, .btn-icon-disabled .far  {
   color: #ccc;
@@ -4792,7 +4799,7 @@ th.sortable span.sortDescending:before {
   margin-left: 5px;
 }
 .navbar-fixed-top ul li a, .navbar-fixed-top ul li a:visited {
-  color: $link-nav;
+  color: #ffffff;
   margin-left: 20px;
   margin-right: 20px;
   line-height: 3em;
@@ -8536,6 +8543,7 @@ nav.main_navigation ul {
 
 nav.main_navigation ul li {
   float: left;
+  display: inline-block;
 }
 
 nav.main_navigation a, nav.main_navigation a:visited {
@@ -8581,12 +8589,14 @@ nav.main_navigation ul li ul.children h4 {
   font-size: 14px;
   float: left;
   clear: both;
+  text-transform: $nav-text-transform;
 }
 
 nav.main_navigation ul li ul.children a {
   font-size: 12px;
   line-height: 22px;
   font-weight: 400;
+  text-transform: initial;
 }
 
 nav.main_navigation ul li ul.children:before {
@@ -8644,6 +8654,7 @@ nav.main_navigation ul li.merchantreports ul.children a,
 nav.main_navigation ul li.userreports ul.children a,
 nav.main_navigation ul li.userreportsPublisher ul.children a {
   padding: 0 5px;
+  text-transform: initial;
 }
 
 nav.main_navigation ul li.affiliatereports ul.children h4,
@@ -8654,6 +8665,7 @@ nav.main_navigation ul li.userreportsPublisher ul.children h4 {
   clear: both;
   padding: 20px 50px 0 5px;
   margin-top: 0;
+  text-transform: $nav-text-transform;
 }
 
 nav.main_navigation ul li.affiliatereports ul.children ul li,
