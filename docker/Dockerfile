@@ -29,6 +29,7 @@ COPY tsconfig.json ./
 RUN npm run build
 RUN npm run build:nike
 RUN npm run build:pntest
+RUN npm run build:kerstintest
 
 
 COPY src/theme-fonts/. public/theme-fonts

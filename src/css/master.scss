@@ -4566,7 +4566,7 @@ Navigation, tabs
 }
 
 .header-tabs > .nav-tabs > li > a, .header-tabs .nav-tabs > li > a:visited {
-  color: #23282c;
+  color: $link-default;
   border: none;
   line-height: 60px;
   padding: 0;
@@ -4581,7 +4581,7 @@ Navigation, tabs
 }
 
 .header-tabs > .nav-tabs > li.active > a, .header-tabs > .nav-tabs > li:hover > a {
-  color: $brand-primary;
+  color: $link-active;
   border: none;
   background-color: transparent;
   font-weight: 600;
@@ -4641,11 +4641,11 @@ th.sortable span.sortDescending:before {
 }
 
 .nav-pills>li.active>a .fa, .nav-pills>li.active>a .far{
-  color: #f60;
+  color: $link-active;
 }
 
 .nav-pills > li > a:hover {
-  background-color: #f9f9f9;
+  background-color: $link-default-hover;
 }
 .nav-pills > li + li {
   margin-left: 2px;
