@@ -65,5 +65,9 @@
 
   "focused-shadow": "none",
 
-  "nav-text-transform": "uppercase"
+  "nav-text-transform": "uppercase",
+
+  "arrow-down-image": "url(\"https://images.awin.com/awin-interface/arrow-down.png\")",
+  "calendar-image": "url(\"https://images.awin.com/awin-interface/icons/calendar-nike.png\")"
+
 }

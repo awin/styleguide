@@ -109,7 +109,7 @@ table tbody tr td p a:link, table tbody tr td p a:visited,
 .brand-orange, .fa.brand-orange,
 a.text-light:hover, p a.text-light:hover,
 a.active, a.active:visited {
-  color: $brand-primary;
+  color: $link-default;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1196,12 +1196,12 @@ Headers
 }
 
 .page-header a:hover, .widget .header a:hover, .table-filters a:hover {
-  color: $brand-primary;
+  color: $link-default-hover;
 }
 
 .page-header a .fa, .widget .header a .fa, .table-filters a .fa,
 .page-header a .far, .widget .header a .far, .table-filters a .far {
-  color: $brand-primary;
+  color: $link-default;
   font-size: 14px;
   margin-right: 2px;
   vertical-align: middle;
@@ -1335,7 +1335,7 @@ Headers
 
 .table-filters select, .dataTables_length select.input-sm, .table-filters .v-select {
   padding: 10px 30px 10px 5px;
-  background: transparent url("https://images.awin.com/awin-interface/arrow-down.png") no-repeat scroll right center;
+  background: transparent $arrow-down-image no-repeat scroll right center;
   border: none;
   color: $text-default;
   font-size: 12px;
@@ -1343,7 +1343,7 @@ Headers
 
 .form-group .v-select {
   padding: 0;
-  background: $bg-white url("https://images.awin.com/awin-interface/arrow-down.png") no-repeat scroll right center;
+  background: $bg-white $arrow-down-image no-repeat scroll right center;
 }
 
 .form-group .v-select input[type=search], .form-group .v-select input[type=search]:focus {
@@ -2338,7 +2338,7 @@ select {
   -webkit-border-radius:0;
   position: relative;
   padding: 4px 25px 5px 10px;
-  background: #ffffff url("https://images.awin.com/awin-interface/arrow-down.png") no-repeat scroll right center;
+  background: #ffffff $arrow-down-image no-repeat scroll right center;
 }
 
 select:hover, select.form-control:hover {
@@ -4201,7 +4201,7 @@ body > .select2-container {
   position: absolute;
   right: 0;
   top: 0;
-  background: #fff url("https://images.awin.com/awin-interface/arrow-down.png") no-repeat scroll right center;
+  background: #fff $arrow-down-image no-repeat scroll right center;
 }
 
 .select2-angular-single .select2-display-none {
@@ -6067,7 +6067,7 @@ Bootstrap 4 card component
 Datepicker, date and timepicker
 ---------------------------------------------------------------------------- */
 input.hasDatepicker, #directoryRefineby .hasDatepicker {
-  background: #ffffff url('https://images.awin.com/awin-interface/icons/calendar.png') no-repeat center right;
+  background: #ffffff $calendar-image no-repeat center right;
 }
 
 input.hasDatepicker:hover,
@@ -7769,12 +7769,12 @@ img.ui-datepicker-trigger {
   margin: 0 3px;
   min-width: 26px;
   display: inline-block;
-  border: 1px solid #ebebeb;
+  border: 1px solid $border-nav;
 }
 
 .paginationButton:hover, .pagination li:hover {
-  color: #f60;
-  border: 1px solid #f60;
+  color: $link-default-hover;
+  border: 1px solid $border-nav-hover;
 }
 
 .pagination #nextPage, .pagination-next {
@@ -7790,14 +7790,14 @@ img.ui-datepicker-trigger {
 .pagination .goToPage span#currentPage, .pagination li.active,
 .pagination .goToPage span#currentPage a, .pagination li.active a, .pagination li.disabled a {
   background-color: $bg-white;
-  color: #f60;
+  color: $link-active;
   cursor: default;
 }
 
 .pagination .goToPage span#currentPage, .pagination li.active,
 .pagination .goToPage span#currentPage a, .pagination li.active a, .pagination li.disabled a {
   background-color: $bg-white;
-  color: #f60;
+  color: $link-active;
   cursor: default;
 }
 

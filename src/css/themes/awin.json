@@ -65,5 +65,9 @@
 
   "focused-shadow": "0 0 2px rgba(32,139,195,.6)",
 
-  "nav-text-transform": "initial"
+  "nav-text-transform": "initial",
+
+  "arrow-down-image": "url(\"https://images.awin.com/awin-interface/arrow-down.png\")",
+  "calendar-image": "url(\"https://images.awin.com/awin-interface/icons/calendar.png\")"
+
 }
