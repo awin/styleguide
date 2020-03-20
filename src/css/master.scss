@@ -109,7 +109,7 @@ table tbody tr td p a:link, table tbody tr td p a:visited,
 .brand-orange, .fa.brand-orange,
 a.text-light:hover, p a.text-light:hover,
 a.active, a.active:visited {
-  color: $link-default;
+  color: $link-default-hover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1670,7 +1670,7 @@ table.text-right tbody > tr > td.text-center {
 .table-hover > tbody > tr:hover > td a, .progress-tooltip .table-hover > tbody > tr:hover > td a,
 .merchantOfMonth:hover a, .offerOfWeek:hover a, .editorsPick:hover a, .featuredPromotion:hover a,
 label:hover a:link, label:hover a:visited {
-  color: $link-default;
+  color: $link-default-hover;
   text-decoration: none;
   position: relative;
 }
@@ -1894,7 +1894,7 @@ table .form-horizontal [class*='col'] {
 th.sortable span.sortAscending:after, th.sortable span.sortDescending:after {
   font-family: FontAwesome;
   font-size: 12px;
-  color: #f60;
+  color: $link-active;
   margin-left: 5px;
 }
 
@@ -2118,8 +2118,7 @@ table tr.dark td.pending {
 
 table tbody tr td a, table tbody tr td a:hover,
 .progress-tooltip .table-hover > tbody > tr > td a {
-  color: #444;
-  /*padding-right: 10px;*/
+  color: $link-active;
 }
 
 table tbody tr:hover td a {
@@ -2127,7 +2126,7 @@ table tbody tr:hover td a {
 }
 
 table tr td.bonus a, table tr:hover td.bonus a {
-  color: #444;
+  color: $link-active;
 }
 
 table tr.pageTotals td {
@@ -2274,7 +2273,7 @@ input::-moz-focus-inner {
 }
 
 button:focus, button .fa:focus {
-  outline-color: #f60;
+  outline-color: $link-default;
   outline-width: thin;
 }
 
@@ -3068,9 +3067,8 @@ select[multiple].input-lg {
 }
 
 .btn-default, .btn-browse, form dd button, .awinModalWindow .boxFooter button.modal_save {
-  color: #fff;
-  background-color: #23282c;
-  opacity: .7;
+  color: $text-button;
+  background-color: $bg-button;
   font-weight: 600;
   border: 1px solid transparent;
 }
@@ -3086,7 +3084,7 @@ select[multiple].input-lg {
 .btn-add, .btn-icon, .title-icon {
   padding-left: 2px;
   padding-bottom: 10px;
-  color: #f60;
+  color: $link-active;
   font-size: 14px;
 }
 
@@ -3104,7 +3102,7 @@ select[multiple].input-lg {
 
 .btn-add .fa, .btn-icon .fa, .btn-link .fa,
 .btn-add .far, .btn-icon .far, .btn-link .far {
-  color: #f60;
+  color: $link-active;
   padding-right: 5px;
 }
 
@@ -3141,15 +3139,14 @@ select[multiple].input-lg {
 }
 
 .btn-default:hover, .btn-browse:hover, form dd button:hover, .awinModalWindow .boxFooter button.modal_save:hover {
-  background-color: #f60;
-  color: #ffffff;
+  background-color: $bg-button-hover;
+  color: $text-button-hover;
   opacity: 1;
 }
 
 .btn-spinner, .btn-spinner:hover {
   color: #fff;
-  background-color: #23282c;
-  opacity: .7;
+  background-color: $bg-button;
   font-weight: 600;
   border: 1px solid transparent;
   cursor: not-allowed;
@@ -3158,7 +3155,7 @@ select[multiple].input-lg {
 .btn-filter, .btn-filter:focus {
   display: inline-block;
   text-align: left;
-  background: #ffffff;
+  background: $text-button;
   cursor: pointer;
   position: relative;
   border-radius: 4px;
@@ -3237,7 +3234,7 @@ fieldset[disabled] .btn-link {
 .btn-link:hover,
 .btn-link:focus,
 .awinModalWindow .boxFooter button.modal_cancel:hover {
-  color: #f60;
+  color: $link-default-hover;
   background-color: transparent;
 }
 table td button.btn-icon, table td button.title-icon {
@@ -4633,7 +4630,7 @@ th.sortable span.sortDescending:before {
   line-height: 1.42857143;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
-  color: #444;
+  color: $link-default;
 }
 
 .nav-pills>li>a .fa, .nav-pills>li>a .far {
@@ -4645,7 +4642,7 @@ th.sortable span.sortDescending:before {
 }
 
 .nav-pills > li > a:hover {
-  background-color: $link-default-hover;
+  background-color: #f9f9f9;
 }
 .nav-pills > li + li {
   margin-left: 2px;
@@ -4653,8 +4650,8 @@ th.sortable span.sortDescending:before {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: #f60;
-  border-bottom: 2px solid #f60;
+  color: $link-active;
+  border-bottom: 2px solid $border-active;
   cursor: default;
   font-weight: 500;
   background: none;
@@ -7120,7 +7117,7 @@ ul.bullet li:before {
   margin-left: -20px;
   font-size: 8px;
   line-height: 2em;
-  color: #f60;
+  color: $link-active;
 }
 
 @media (max-width: 768px) {
@@ -8085,7 +8082,7 @@ table.text-right th .reportTooltipText {
   right: 0;
   text-align: center;
   background-color: #f4f4f4;
-  color: #f60;
+  color: $link-active;
   font-size: 15px;
 }
 

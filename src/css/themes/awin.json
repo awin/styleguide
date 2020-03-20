@@ -16,6 +16,8 @@
   "text-disabled": "#999999",
   "text-nav": "#ffffff",
   "text-dropdown": "#ffffff",
+  "text-button": "#ffffff",
+  "text-button-hover": "#ffffff",
 
   "link-default": "#444444",
   "link-default-hover": "ff6600",
@@ -45,6 +47,8 @@
   "bg-edit": "#f9f9f9",
   "bg-table-header": "#f4f4f4",
   "bg-provider-bar": "#5e5e5e",
+  "bg-button": "#66696c",
+  "bg-button-hover": "#ff6600",
 
   "border-color-default": "#dedede",
   "border-form-element": "#dbdbdb",
@@ -57,6 +61,7 @@
   "border-dropdown": "none",
   "border-nav": "inset 0 -1px 0 0 #444444",
   "border-nav-hover": "none",
+  "border-active": "#ff6600",
 
   "display-nav-arrow": "block",
   "mt-nav-dropdown": "0px",
