@@ -19,11 +19,11 @@
   "text-button": "#ffffff",
   "text-button-hover": "#ffffff",
 
-  "link-default": "#111111",
+  "link-default": "#555555",
   "link-default-hover": "fa5400",
   "link-active": "#555555",
-  "link-default-hover": "#fa5400",
-  "link-active-hover": "#ff956a",
+  "link-default-hover": "#555555",
+  "link-active-hover": "#555555",
   "link-nav": "#111111",
   "link-nav-hover": "#555555",
 

@@ -151,7 +151,7 @@ p {
   margin-bottom: 10px;
 }
 table a, table a:visited {
-  color: #444;
+  color: $link-default;
 }
 
 table a:hover {
@@ -1313,12 +1313,12 @@ Headers
   white-space: nowrap;
   text-align: left;
   margin: 0;
-  color: $bg-white;
+  color: $link-nav;
   line-height: 34px;
 }
 
 .option-menu ul li > a:hover {
-  color: $brand-primary;
+  color: $link-nav-hover;
 }
 
 .table-filters {
@@ -2071,13 +2071,6 @@ Flags
 Report Tables
 ---------------------------------------------------------------------------- */
 
-/*.table tbody tr:hover td a:after {
-  content:'';
-  padding: 5px;
-  background: url(https://images.awin.com/common/icons/16x16/external_link.png) no-repeat scroll 50% 50% transparent;
-  margin-right: -14px;
-  margin-left: 4px;
-}*/
 
 table.reportTable tr.expanded {
   display:none;
@@ -2116,17 +2109,15 @@ table tr.dark td.pending {
   background: #f6f0d7;
 }
 
-table tbody tr td a, table tbody tr td a:hover,
-.progress-tooltip .table-hover > tbody > tr > td a {
-  color: $link-active;
+table tbody tr td a,
+table tr td.bonus a{
+  color: $link-default;
 }
 
-table tbody tr:hover td a {
-  /*color: #f90;*/
-}
-
-table tr td.bonus a, table tr:hover td.bonus a {
-  color: $link-active;
+table tbody tr td a:hover,
+.progress-tooltip .table-hover > tbody > tr > td a,
+table tr:hover td.bonus a{
+  color: $link-default-hover;
 }
 
 table tr.pageTotals td {
@@ -4779,11 +4770,17 @@ th.sortable span.sortDescending:before {
   color: #fff;
 }
 
-.navbar-fixed-top .fa, .navbar-fixed-top a .fa, #top_navigation .fa, #top_navigation a .fa, .main_navigation .fa, .main_navigation a .fa,
-.navbar-fixed-top .far, .navbar-fixed-top a .far, #top_navigation .far, #top_navigation a .far, .main_navigation .far, .main_navigation a .far  {
+#top_navigation .fa, #top_navigation a .fa, .main_navigation .fa, .main_navigation a .fa,
+#top_navigation .far, #top_navigation a .far, .main_navigation .far, .main_navigation a .far  {
   font-size: 16px;
   color: $link-nav;
 }
+
+.navbar-fixed-top .fa, .navbar-fixed-top a .fa,
+.navbar-fixed-top .far, .navbar-fixed-top a .far {
+  color: #ffffff;
+}
+
 .navbar-fixed-top ul, .navbar-fixed-top ul li  {
   padding: 0;
   margin: 0;
@@ -7799,7 +7796,7 @@ img.ui-datepicker-trigger {
 }
 
 .pagination .goToPage span#currentPage, .pagination li.active {
-  border: 1px solid #f60;
+  border: 1px solid $link-active;
 }
 
 .pagination span#pagLastPage, .pagination span#pagNextPage, .pagination span#pagPreviousPage, .pagination span#pagFirstPage {
@@ -9588,7 +9585,7 @@ div#directoryRefineby .header, #directoryRefineby .header h3 {
   text-align: center;
   font-size: 1.2em;
   font-weight: 400;
-  color: #f60;
+  color: $link-active;
   margin-right: 8px;
   width: 8px;
 }
@@ -9604,7 +9601,7 @@ div#directoryRefineby .header, #directoryRefineby .header h3 {
 }
 
 #directoryRefineby h3 span:hover {
-  color: $brand-primary;
+  color: $link-default-hover;
   cursor: pointer;
 }
 
@@ -9702,7 +9699,7 @@ li.checkbox label:hover, li.checkbox.selected label {
 }
 
 li.selected label {
-  color: #f60;
+  color: $link-active;
 }
 
 .subLevel li.radio label:hover, .subLevel li.radio.selected label {
@@ -9714,7 +9711,7 @@ li.selected label {
 }*/
 
 .subLevel li.selected label {
-  color: #f60;
+  color: $link-active;
 }
 
 #directoryRefineby.widget ul li label {
@@ -9724,7 +9721,7 @@ li.selected label {
 }
 
 #directoryRefineby.widget ul li label:hover {
-  color: $brand-primary;
+  color: $link-default-hover;
 }
 
 #tpvExplanation, #mobileOptimisedExplanation {
@@ -9765,7 +9762,7 @@ li.selected label {
   text-align: center;
   font-size: 1.2em;
   font-weight: 400;
-  color: #f60;
+  color: $link-active;
   margin-right: 25px;
   width: 8px;
 }
