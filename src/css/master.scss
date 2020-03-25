@@ -1187,7 +1187,7 @@ Headers
   margin-right: -20px;
   padding: 0 20px;
   cursor: pointer;
-  color: $text-default;
+  color: $link-active;
 }
 
 .widget .header a {
@@ -1196,12 +1196,12 @@ Headers
 }
 
 .page-header a:hover, .widget .header a:hover, .table-filters a:hover {
-  color: $link-default-hover;
+  color: $link-active-hover;
 }
 
 .page-header a .fa, .widget .header a .fa, .table-filters a .fa,
 .page-header a .far, .widget .header a .far, .table-filters a .far {
-  color: $link-default;
+  color: $link-active;
   font-size: 14px;
   margin-right: 2px;
   vertical-align: middle;
@@ -3170,7 +3170,7 @@ select[multiple].input-lg {
 .btn-filter .far, .table .btn-filter .far {
   line-height: 1.6em;
   font-size: 14px;
-  color: $brand-secondary;
+  color: $link-active;
   position: absolute;
   right: 10px;
   margin: 0;
@@ -5009,7 +5009,7 @@ a.list-group-item.active .list-group-item-text {
 }
 
 a.list-group-item .fa, a.list-group-item .far {
-  color: $brand-primary;
+  color: $link-active;
 }
 
 a.list-group-item:hover .fa, a.list-group-item:hover .far {
@@ -5283,7 +5283,7 @@ Badges
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #f60;
+  background-color: $bg-badge;
   border-radius: 20px;
 }
 
