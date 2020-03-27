@@ -1074,7 +1074,7 @@ cite {
 }
 
 .text-active {
-  color: #f60;
+  color: $link-active;
 }
 
 .text-light, a.text-light, p a.text-light {
@@ -1906,6 +1906,18 @@ th.sortable span.sortDescending:after {
   content: "\f0d7";
 }
 
+.sortable > span:after {
+  font-family: FontAwesome;
+  font-size: 12px;
+  color: $link-active;
+  margin-left: 5px;
+  content: "\F0DC";
+}
+
+.sortable:hover {
+  color: $link-default-hover;
+}
+
 /* ----------------------------------------------------------------------------
 Flags
 ---------------------------------------------------------------------------- */
@@ -2081,7 +2093,7 @@ table th.toggleAll a.toggle:before, .table thead th.toggleAll a.expanded:before 
   text-align: center;
   font-size: 13px;
   font-weight: 400;
-  color: #f60;
+  color: $link-active;
 }
 
 table th.toggleAll a.toggle:before {
@@ -3442,7 +3454,7 @@ a:hover .fa, a:hover .far {
 }
 
 .fa-pencil, .fa-times, .fa-shield {
-  color: #f60;
+  color: $link-active;
 }
 
 .fa-info-circle {
@@ -4673,7 +4685,7 @@ th.sortable span.sortDescending:before {
 .nav-stats > li.active > a:hover,
 .nav-stats > li.active > a:focus {
   color: #444;
-  border-bottom: 1px solid #f60;
+  border-bottom: 1px solid $link-active;
   border-right: 1px solid #f6f6f6;
   cursor: default;
   font-weight: 500;
@@ -6191,7 +6203,7 @@ input.hasDatepicker:hover,
 .ui-datepicker .ui-datepicker-next:hover,
 .ui-datepicker .ui-datepicker-calendar .uib-title:hover,
 .uib-monthpicker .uib-title:hover {
-  color: #f60;
+  color: $link-active;
   cursor: pointer;
   opacity: .7;
 }
@@ -6206,17 +6218,17 @@ input.hasDatepicker:hover,
 }
 .ui-datepicker .ui-datepicker-prev:before {
   content: "\f053";
-  color: #f60;
+  color: $link-active;
 }
 .ui-datepicker .ui-datepicker-next:before {
   content: "\f054";
-  color: #f60;
+  color: $link-active;
 }
 .ui-datepicker-month, .ui-datepicker-year {
   margin-right: 5px;
   border: none;
   font-size: 14px;
-  color: #f60;
+  color: $link-active;
   padding: 0 5px;
   font-family: $font-family;
   cursor: pointer;
@@ -6254,7 +6266,7 @@ input.hasDatepicker:hover,
 .ui-datepicker .ui-datepicker-calendar td:hover,
 .uib-monthpicker table td button.selected,
 .uib-monthpicker table td button:hover {
-  background-color: #f60;
+  background-color: $link-active;
   cursor: pointer;
 }
 .ui-datepicker .ui-datepicker-calendar td a {
@@ -6265,7 +6277,7 @@ input.hasDatepicker:hover,
 .uib-monthpicker table td button {
   background: transparent;
   border: none;
-  color: #444;
+  color: $text-default;
 }
 
 .uib-day button {
@@ -6278,7 +6290,7 @@ input.hasDatepicker:hover,
 }
 
 .ui-datepicker .ui-datepicker-current-day {
-  background-color: #f60;
+  background-color: $link-active;
 }
 .ui-datepicker .ui-datepicker-current-day a {
   color: #fff
@@ -6328,7 +6340,7 @@ a.ui-datepicker-prev.ui-corner-all.ui-state-disabled:before {
   border: 1px solid #cccccc;
   border-radius: 4px;
   padding-right: 28px;
-  color: #444;
+  color: $text-default;
 }
 
 .ui-timepicker-div dl dt {
@@ -6375,7 +6387,7 @@ dt.ui_tpicker_minute_label, dt.ui_tpicker_hour_label {
   padding: 5px;
   background-color: $bg-white;
   border: 0;
-  color: #f60;
+  color: $link-active;
 }
 
 .ui-datepicker-buttonpane .ui-datepicker-current:hover,
@@ -6446,7 +6458,7 @@ dt.ui_tpicker_minute_label, dt.ui_tpicker_hour_label {
 .vdp-datepicker .vdp-datepicker__calendar header .prev:hover:before,
 .vdp-datepicker .vdp-datepicker__calendar header .next:hover:before,
 .vdp-datepicker .vdp-datepicker__calendar header .up:not(.disabled) {
-  color: #f60;
+  color: $link-active;
 }
 .vdp-datepicker .vdp-datepicker__calendar header .prev:hover:before,
 .vdp-datepicker .vdp-datepicker__calendar header .next:hover:before {
@@ -6460,11 +6472,11 @@ dt.ui_tpicker_minute_label, dt.ui_tpicker_hour_label {
 }
 .vdp-datepicker .vdp-datepicker__calendar header .prev:before {
   content: "\f053";
-  color: #f60;
+  color: $link-active;
 }
 .vdp-datepicker .vdp-datepicker__calendar header .next:before {
   content: "\f054";
-  color: #f60;
+  color: $link-active;
 }
 .vdp-datepicker .vdp-datepicker__calendar .cell {
   height: auto;
@@ -6481,7 +6493,7 @@ dt.ui_tpicker_minute_label, dt.ui_tpicker_hour_label {
 .vdp-datepicker .vdp-datepicker__calendar .cell.selected {
   border: none;
   color: #ffffff;
-  background-color: $brand-primary;
+  background-color: $link-active;
   border-radius: 4px;
 }
 .vdp-datepicker .vdp-datepicker__calendar header .prev.disabled:before,
@@ -8698,6 +8710,10 @@ nav.main_navigation ul li ul.children a.selected{
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+
+ul#main_nav_right li.liveHelpButton a#close-chat-button {
+  display: none;
 }
 
 .bell .fa, .bell .far {
