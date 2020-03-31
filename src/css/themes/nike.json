@@ -22,8 +22,8 @@
   "link-default": "#555555",
   "link-default-hover": "fa5400",
   "link-active": "#555555",
-  "link-default-hover": "#555555",
-  "link-active-hover": "#555555",
+  "link-default-hover": "#111111",
+  "link-active-hover": "#111111",
   "link-nav": "#111111",
   "link-nav-hover": "#555555",
 
@@ -73,6 +73,16 @@
 
   "nav-text-transform": "uppercase",
 
-  "arrow-down-image": "url(\"https://images.awin.com/awin-interface/theme/arrow-down-nike.png\")",
-  "calendar-image": "url(\"https://images.awin.com/awin-interface/icons/calendar-nike.png\")"
+  "arrow-down-image": "url(\"https://images.awin.com/awin-interface/theme/nike/arrow-down-nike.png\")",
+  "calendar-image": "url(\"https://images.awin.com/awin-interface/theme/nike/calendar-nike.png\")",
+
+  "checkbox": "url(\"http://images.awin.com/awin-interface/theme/nike/checkbox.png\")",
+  "checkbox-unchecked": "url(\"http://images.awin.com/awin-interface/theme/nike/checkbox-unchecked.png\")",
+  "checkbox-checked": "url(\"http://images.awin.com/awin-interface/theme/nike/checkbox-checked.png\")",
+  "checkbox-partial": "url(\"http://images.awin.com/awin-interface/theme/nike/checkbox-partial.png\")",
+
+  "radio": "url(\"http://images.awin.com/awin-interface/theme/nike/radio.png\")",
+  "radio-selected": "url(\"http://images.awin.com/awin-interface/theme/nike/radio-selected.png\")",
+  "radio-partial": "url(\"http://images.awin.com/awin-interface/theme/nike/radio-partial.png\")",
+  "icon-list": "url(\"https://images.awin.com/awin-interface/theme/nike/list.png\")"
 }

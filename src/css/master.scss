@@ -103,13 +103,13 @@ a, table p a {
 a:hover, a .fa, a .far,
 .tooltip a, .tooltip a:visited,
 .userMessage a, .userMessage a:visited,
-#availableLanguages li.active,
 p a:link, p a:visited, .checkbox a,
 table tbody tr td p a:link, table tbody tr td p a:visited,
+#availableLanguages li.active,
 .brand-orange, .fa.brand-orange,
 a.text-light:hover, p a.text-light:hover,
 a.active, a.active:visited {
-  color: $link-default-hover;
+  color: $link-active;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1909,13 +1909,13 @@ th.sortable span.sortDescending:after {
 .sortable > span:after {
   font-family: FontAwesome;
   font-size: 12px;
-  color: $link-active;
+  color: $text-light;
   margin-left: 5px;
   content: "\F0DC";
 }
 
 .sortable:hover {
-  color: $link-default-hover;
+  color: $link-active-hover;
 }
 
 /* ----------------------------------------------------------------------------
@@ -2173,7 +2173,7 @@ table tr.pageTotals td.bonus, th.bonus {
   content: '\f200';
   float: right;
   font-size: 12px;
-  color: #f60;
+  color: $link-default-hover;
   margin-right: -15px;
 }
 
@@ -4640,7 +4640,7 @@ th.sortable span.sortDescending:before {
   color: #444;
 }
 
-.nav-pills>li.active>a .fa, .nav-pills>li.active>a .far{
+.nav-pills>li.active>a .fa, .nav-pills>li.active>a .far {
   color: $link-active;
 }
 
@@ -5014,7 +5014,7 @@ a.list-group-item.active .list-group-item-text {
   width: 9px;
   top: -9px;
   left: 15px;
-  background: transparent url(https://images.awin.com/darwin/user/activity_message.png) top left no-repeat;
+  background: transparent url("https://images.awin.com/darwin/user/activity_message.png") top left no-repeat;
 }
 
 a.list-group-item .fa, a.list-group-item .far {
@@ -5433,7 +5433,7 @@ Tooltip and popover
   bottom: -8px;
   left: 50%;
   margin-top: -5px;
-  background: transparent url(https://images.awin.com/common/tooltip_arrow_left.png) center center no-repeat;
+  background: transparent url("https://images.awin.com/common/tooltip_arrow_left.png") center center no-repeat;
   width: 13px;
   height: 9px;
   border: none;
@@ -5449,7 +5449,7 @@ Tooltip and popover
   bottom: -8px;
   left: 20px;
   margin-top: -5px;
-  background: transparent url(https://images.awin.com/common/tooltip_arrow_left.png) center center no-repeat;
+  background: transparent url("https://images.awin.com/common/tooltip_arrow_left.png") center center no-repeat;
   width: 13px;
   height: 9px;
   border: none;
@@ -5464,7 +5464,7 @@ Tooltip and popover
   top: 20px;
   left: -5px;
   margin-top: -5px;
-  background: transparent url(https://images.awin.com/common/tooltip_arrow_left.png) center center no-repeat;
+  background: transparent url("https://images.awin.com/common/tooltip_arrow_left.png") center center no-repeat;
   width: 13px;
   height: 9px;
 }
@@ -5479,7 +5479,7 @@ Tooltip and popover
   transform: rotate(-90deg);
   left: 50%;
   margin-top: -8px;
-  background: transparent url(https://images.awin.com/common/tooltip_arrow_right.png) center center no-repeat;
+  background: transparent url("https://images.awin.com/common/tooltip_arrow_right.png") center center no-repeat;
   width: 13px;
   height: 9px;
   border: none;
@@ -5497,7 +5497,7 @@ Tooltip and popover
   top: 0;
   right: 20px;
   margin-top: -3px;
-  background: transparent url(https://images.awin.com/common/tooltip_arrow_left.png) center center no-repeat;
+  background: transparent url("https://images.awin.com/common/tooltip_arrow_left.png") center center no-repeat;
   width: 13px;
   height: 9px;
   border: none;
@@ -5515,7 +5515,7 @@ Tooltip and popover
   top: 0;
   left: 20px;
   margin-top: -3px;
-  background: transparent url(https://images.awin.com/common/tooltip_arrow_right.png) center center no-repeat;
+  background: transparent url("https://images.awin.com/common/tooltip_arrow_right.png") center center no-repeat;
   width: 13px;
   height: 9px;
   border: none;
@@ -7169,7 +7169,7 @@ Autocomplete styles
   font: 12px Tahoma, Arial, Helvetica, sans-serif;
   text-decoration: none;
   outline: none;
-  background: transparent url(http://images.awin.com/common/fakeRadioSprite.png) left -30px no-repeat;
+  background: transparent url("http://images.awin.com/common/fakeRadioSprite.png") left -30px no-repeat;
   height: 14px;
   width: 16px;
   display: block;
@@ -7180,16 +7180,16 @@ Autocomplete styles
 }
 
 #termsContent a.fakechecked {
-  background: transparent url(http://images.awin.com/common/fakeRadioSprite.png) left 0px no-repeat;
+  background: transparent url("http://images.awin.com/common/fakeRadioSprite.png") left 0px no-repeat;
 }
 
 #termsContent .disabled a.fakeradio {
-  background: transparent url(http://images.awin.com/common/fakeRadioSprite.png) left -30px no-repeat;
+  background: transparent url("http://images.awin.com/common/fakeRadioSprite.png") left -30px no-repeat;
   cursor: default;
 }
 
 #termsContent .disabled a.fakechecked {
-  background: transparent url(http://images.awin.com/common/fakeRadioSprite.png) left -15px no-repeat;
+  background: transparent url("http://images.awin.com/common/fakeRadioSprite.png") left -15px no-repeat;
   cursor: default;
 }
 
@@ -7860,10 +7860,23 @@ img.ui-datepicker-trigger {
   position: absolute;
   top: 9px;
   left: -10px;
-  background: transparent url(http://images.awin.com/common/tooltip_arrow_left.png) center center no-repeat;
+  background: transparent url("http://images.awin.com/common/tooltip_arrow_left.png") center center no-repeat;
 }
 
-/* General darwin tooltips */
+#promotionalForm .header p,
+#promotionalForm legend {
+  color: $link-active;
+}
+
+#promotionalForm .header p:hover,
+#promotionalForm legend:hover {
+  color: $link-active-hover;
+}
+
+.selectorButtonIcon {
+  background: $icon-list right center no-repeat;
+}
+  /* General darwin tooltips */
 
 div.tooltipLeft:hover, div.tooltipCenter:hover, div.tooltipRight:hover {
   z-index: 30;
@@ -9648,11 +9661,11 @@ div#directoryRefineby .header, #directoryRefineby .header h3 {
 }
 
 li.radio > label {
-  background: transparent url(http://images.awin.com/darwin/directory/refineby_radio_empty.png) left 6px no-repeat;
+  background: transparent $radio left 6px no-repeat;
 }
 
 li.checkbox > label {
-  background: transparent url(http://images.awin.com/darwin/directory/refineby_empty.png) left 7px no-repeat;
+  background: transparent $checkbox left 7px no-repeat;
 }
 
 li.selected > label {
@@ -9661,15 +9674,15 @@ li.selected > label {
 
 li.checkbox.selected label:hover {
   color: #c33;
-  background: transparent url(http://images.awin.com/darwin/directory/refineby_delete.png) left 6px no-repeat;
+  background: transparent $checkbox-unchecked left 6px no-repeat;
 }
 
 li.radio.partial label, li.radio.partial label:hover {
-  background: transparent url(http://images.awin.com/darwin/directory/refineby_radio_parent.png) left 6px no-repeat;
+  background: transparent $radio-partial left 6px no-repeat;
 }
 
 li.checkbox.partial label, li.checkbox.partial label:hover {
-  background: transparent url(http://images.awin.com/darwin/directory/refineby_parent.png) left 6px no-repeat;
+  background: transparent $checkbox-partial left 6px no-repeat;
 }
 
 .collapsible {
@@ -9689,16 +9702,16 @@ li.checkbox.partial label, li.checkbox.partial label:hover {
 }
 
 .subLevel li.radio label {
-  background: transparent url(http://images.awin.com/darwin/directory/refineby_radio_empty.png) left 6px no-repeat;
+  background: transparent $radio left 6px no-repeat;
 }
 
 .subLevel li.checkbox label {
-  background: transparent url(http://images.awin.com/darwin/directory/refineby_empty.png) left 6px no-repeat;
+  background: transparent $checkbox left 6px no-repeat;
 }
 
 .subLevel li.checkbox.selected label:hover {
   color: #c33;
-  background: transparent url(http://images.awin.com/darwin/directory/refineby_delete.png) left 6px no-repeat;
+  background: transparent $checkbox-unchecked left 6px no-repeat;
 }
 
 #directoryRefineby li.checkbox>label, #directoryRefineby li.radio>label {
@@ -9707,11 +9720,11 @@ li.checkbox.partial label, li.checkbox.partial label:hover {
 }
 
 li.radio label:hover, li.radio.selected label {
-  background: transparent url(http://images.awin.com/darwin/directory/refineby_radio_affiliate.png) left 6px no-repeat;
+  background: transparent $radio-selected left 6px no-repeat;
 }
 
 li.checkbox label:hover, li.checkbox.selected label {
-  background: transparent url(http://images.awin.com/darwin/directory/refineby_tick_affiliate.png) left 6px no-repeat;
+  background: transparent $checkbox-checked left 6px no-repeat;
 }
 
 li.selected label {
@@ -9719,12 +9732,8 @@ li.selected label {
 }
 
 .subLevel li.radio label:hover, .subLevel li.radio.selected label {
-  background: transparent url(http://images.awin.com/darwin/directory/refineby_radio_affiliate.png) left 6px no-repeat;
+  background: transparent $radio-selected left 6px no-repeat;
 }
-
-/*.subLevel li.checkbox label:hover, .subLevel li.checkbox.selected label {
-    background: transparent url(http://images.awin.com/darwin/directory/refineby_tick_affiliate.png) left 6px no-repeat;
-}*/
 
 .subLevel li.selected label {
   color: $link-active;
