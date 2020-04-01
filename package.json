@@ -9,7 +9,7 @@
     "build-vuex": "./node_modules/.bin/webpack --config=./webpack/vuex/config.js -p",
     "build-moment": "./node_modules/.bin/webpack --config=./webpack/moment/config.js -p",
     "build": "./node_modules/.bin/webpack --config-name=awin -p",
-    "build:nike": "./node_modules/.bin/webpack --config-name=nike -p",
+    "build:nikepartners": "./node_modules/.bin/webpack --config-name=nikepartners -p",
     "build:pntest": "./node_modules/.bin/webpack --config-name=pntest -p",
     "build:kerstintest": "./node_modules/.bin/webpack --config-name=kerstintest -p",
     "test": "echo \"Error: no test specified\" && exit 1"

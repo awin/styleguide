@@ -27,7 +27,7 @@ COPY tslint.json ./
 COPY tsconfig.json ./
 
 RUN npm run build
-RUN npm run build:nike
+RUN npm run build:nikepartners
 RUN npm run build:pntest
 RUN npm run build:kerstintest
 
