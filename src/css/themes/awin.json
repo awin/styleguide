@@ -76,14 +76,14 @@
   "arrow-down-image": "url(\"https://images.awin.com/awin-interface/arrow-down.png\")",
   "calendar-image": "url(\"https://images.awin.com/awin-interface/icons/calendar.png\")",
 
-  "checkbox": "url(\"http://images.awin.com/awin-interface/icons/checkbox.png\")",
-  "checkbox-unchecked": "url(\"http://images.awin.com/awin-interface/icons/checkbox-unchecked.png\")",
-  "checkbox-checked": "url(\"http://images.awin.com/awin-interface/icons/checkbox-checked.png\")",
-  "checkbox-partial": "url(\"http://images.awin.com/awin-interface/icons/checkbox-partial.png\")",
+  "checkbox": "url(\"https://images.awin.com/awin-interface/icons/checkbox.png\")",
+  "checkbox-unchecked": "url(\"https://images.awin.com/awin-interface/icons/checkbox-unchecked.png\")",
+  "checkbox-checked": "url(\"https://images.awin.com/awin-interface/icons/checkbox-checked.png\")",
+  "checkbox-partial": "url(\"https://images.awin.com/awin-interface/icons/checkbox-partial.png\")",
 
-  "radio": "url(\"http://images.awin.com/awin-interface/icons/radio.png\")",
-  "radio-selected": "url(\"http://images.awin.com/awin-interface/icons/radio-selected.png\")",
-  "radio-partial": "url(\"http://images.awin.com/awin-interface/icons/radio-partial.png\")",
+  "radio": "url(\"https://images.awin.com/awin-interface/icons/radio.png\")",
+  "radio-selected": "url(\"https://images.awin.com/awin-interface/icons/radio-selected.png\")",
+  "radio-partial": "url(\"https://images.awin.com/awin-interface/icons/radio-partial.png\")",
 
   "icon-list": "url(\"https://images.awin.com/awin-interface/icons/list.png\")"
 }
