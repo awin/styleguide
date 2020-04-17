@@ -21,6 +21,7 @@ RUN npm run build-bootstrap
 RUN npm run build-vue
 RUN npm run build-vuex
 RUN npm run build-moment
+RUN npm run build-select2
 
 COPY webpack.config.js ./
 COPY tslint.json ./
