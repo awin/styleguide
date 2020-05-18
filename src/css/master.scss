@@ -228,7 +228,7 @@ body.bg-white {
 
 .bg-primary {
   color: #fff;
-  background-color: #337ab7;
+  background-color: $brand-primary !important;
 }
 
 .bg-info {
@@ -3069,7 +3069,8 @@ select[multiple].input-lg {
   outline: 0;
 }
 
-.btn-default, .btn-browse, form dd button, .awinModalWindow .boxFooter button.modal_save {
+.btn-default, .btn-browse, form dd button,
+.awinModalWindow .boxFooter button.modal_save {
   color: $text-button;
   background-color: $bg-button;
   font-weight: 600;
@@ -3078,6 +3079,26 @@ select[multiple].input-lg {
 
 .btn-default:active, form dd button:active, .awinModalWindow .boxFooter button.modal_save:active {
   transform: translateY(1px);
+}
+
+.btn-primary, .btn-secondary {
+  background-color: transparent;
+  color: $link-active;
+  font-weight: 500;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  background-color: transparent;
+  opacity: .9;
+}
+
+.btn-primary.btn-selected {
+  background-color: $brand-primary;
+  color: $text-button;
+}
+
+.btn-primary.btn-selected:hover {
+  opacity: .9;
 }
 
 .input-group .btn-default:active {
@@ -3141,7 +3162,7 @@ select[multiple].input-lg {
   cursor: pointer;
 }
 
-.btn-default:hover, .btn-browse:hover, form dd button:hover, .awinModalWindow .boxFooter button.modal_save:hover {
+.btn-default:hover, .btn-browse:hover, form dd button:hover, .awinModalWindow .boxFooter button.modal_save:hover, .btn-selected {
   background-color: $bg-button-hover;
   color: $text-button-hover;
   opacity: 1;
@@ -6072,7 +6093,7 @@ Bootstrap 4 card component
 /* ----------------------------------------------------------------------------
 Datepicker, date and timepicker
 ---------------------------------------------------------------------------- */
-input.hasDatepicker, #directoryRefineby .hasDatepicker {
+input.hasDatepicker, #directoryRefineby .hasDatepicker, button.hasDatepicker {
   background: #ffffff $calendar-image no-repeat center right;
 }
 
@@ -6170,7 +6191,8 @@ input.hasDatepicker:hover,
 .uib-monthpicker table td button:hover,
 .uib-monthpicker table td button:hover .text-active,
 .uib-monthpicker button.selected,
-.uib-monthpicker button.selected span.text-active {
+.uib-monthpicker button.selected span.text-active,
+.ngb-dp-day:hover .btn-light {
   color: #fff;
   -webkit-transition: color 0.1s ease-in-out;
   -moz-transition: color 0.1s ease-in-out;
@@ -6224,10 +6246,11 @@ input.hasDatepicker:hover,
   content: "\f054";
   color: $link-active;
 }
-.ui-datepicker-month, .ui-datepicker-year {
+.ui-datepicker-month, .ui-datepicker-year,
+.ngb-dp-navigation-select .custom-select {
   margin-right: 5px;
   border: none;
-  font-size: 14px;
+  font-size: 14px !important;
   color: $link-active;
   padding: 0 5px;
   font-family: $font-family;
@@ -6265,7 +6288,8 @@ input.hasDatepicker:hover,
 }
 .ui-datepicker .ui-datepicker-calendar td:hover,
 .uib-monthpicker table td button.selected,
-.uib-monthpicker table td button:hover {
+.uib-monthpicker table td button:hover,
+.ngb-dp-day:hover .btn-light {
   background-color: $link-active;
   cursor: pointer;
 }
@@ -6311,7 +6335,8 @@ td.ui-datepicker-unselectable.ui-state-disabled:hover,
 a.ui-datepicker-next.ui-corner-all.ui-state-disabled,
 a.ui-datepicker-prev.ui-corner-all.ui-state-disabled,
 a.ui-datepicker-next.ui-corner-all.ui-state-disabled:before,
-a.ui-datepicker-prev.ui-corner-all.ui-state-disabled:before {
+a.ui-datepicker-prev.ui-corner-all.ui-state-disabled:before,
+.ngb-dp-day.disabled:hover .btn-light {
   background-color: #eee;
   border-radius: 0;
   color: #999;
@@ -6457,11 +6482,13 @@ dt.ui_tpicker_minute_label, dt.ui_tpicker_hour_label {
 }
 .vdp-datepicker .vdp-datepicker__calendar header .prev:hover:before,
 .vdp-datepicker .vdp-datepicker__calendar header .next:hover:before,
-.vdp-datepicker .vdp-datepicker__calendar header .up:not(.disabled) {
+.vdp-datepicker .vdp-datepicker__calendar header .up:not(.disabled),
+.ngb-dp-navigation-chevron {
   color: $link-active;
 }
 .vdp-datepicker .vdp-datepicker__calendar header .prev:hover:before,
-.vdp-datepicker .vdp-datepicker__calendar header .next:hover:before {
+.vdp-datepicker .vdp-datepicker__calendar header .next:hover:before,
+.ngb-dp-navigation-chevron:hover {
   cursor: pointer;
   opacity: .7;
 }
@@ -6497,7 +6524,8 @@ dt.ui_tpicker_minute_label, dt.ui_tpicker_hour_label {
   border-radius: 4px;
 }
 .vdp-datepicker .vdp-datepicker__calendar header .prev.disabled:before,
-.vdp-datepicker .vdp-datepicker__calendar .disabled {
+.vdp-datepicker .vdp-datepicker__calendar .disabled,
+.ngb-dp-arrow-btn[disabled] .ngb-dp-navigation-chevron {
   background-color: #eee;
   border-radius: 0;
   color: #999;
@@ -6509,7 +6537,8 @@ dt.ui_tpicker_minute_label, dt.ui_tpicker_hour_label {
 .vdp-datepicker .vdp-datepicker__calendar header .up:not(.disabled):hover,
 .vdp-datepicker .vdp-datepicker__calendar header .prev.disabled,
 .vdp-datepicker .vdp-datepicker__calendar header .next.disabled,
-.vdp-datepicker .vdp-datepicker__calendar header .prev.disabled:before {
+.vdp-datepicker .vdp-datepicker__calendar header .prev.disabled:before,
+.ngb-dp-arrow-btn[disabled] .ngb-dp-navigation-chevron {
   background-color: transparent;
 }
 
@@ -7330,6 +7359,18 @@ body.login-page #container {
 Helper classes
 ---------------------------------------------------------------------------- */
 
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-sticky {
+  position: sticky;
+}
+
+.pos-relative {
+  position: relative;
+}
+
 .fa-fw {
   width: 1.8em;
 }
@@ -7511,6 +7552,10 @@ Helper classes
 
 .margin-left-xs, .ml-xs {
   margin-left: 5px !important;
+}
+
+.ml-sm {
+  margin-left: 10px;
 }
 
 .margin-left-md, .ml-md {
