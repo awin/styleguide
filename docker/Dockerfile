@@ -11,26 +11,26 @@ WORKDIR /application
 # Install webpack requirements
 COPY package.json ./
 COPY .npmrc ./
-RUN npm install
+RUN yarn
 
 # Copy all sources
 COPY public ./public
 COPY webpack ./webpack
 COPY src ./src
-RUN npm run build-bootstrap
-RUN npm run build-vue
-RUN npm run build-vuex
-RUN npm run build-moment
-RUN npm run build-select2
+RUN yarn run build-bootstrap
+RUN yarn run build-vue
+RUN yarn run build-vuex
+RUN yarn run build-moment
+RUN yarn run build-select2
 
 COPY webpack.config.js ./
 COPY tslint.json ./
 COPY tsconfig.json ./
 
-RUN npm run build
-RUN npm run build:nikepartners
-RUN npm run build:pntest
-RUN npm run build:kerstintest
+RUN yarn run build
+RUN yarn run build:nikepartners
+RUN yarn run build:pntest
+RUN yarn run build:kerstintest
 
 
 COPY src/theme-fonts/. public/theme-fonts
