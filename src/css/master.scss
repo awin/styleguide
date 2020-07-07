@@ -2633,11 +2633,6 @@ select:-webkit-autofill:focus {
   text-align: center;
 }
 
-.btn-disabled:hover {
-  background-color:#e9e9e9;
-  color: rgba(0, 0, 0, .3);
-}
-
 .input-group-btn .btn-default.btn-success {
   background-color: #468847;
   color: #fff;
@@ -3360,6 +3355,90 @@ fieldset[disabled] .btn-link:focus {
   clip: rect(0,0,0,0);
   pointer-events: none;
 }
+
+.btn-progress {
+  position: relative;
+  width: 100%;
+}
+
+.btn-progress .content {
+  position: relative;
+  display: block;
+}
+
+.btn-progress .content::before,
+.btn-progress .content::after  {
+  position: absolute;
+  right: 20px;
+  color: #fff;
+  font-family: "Font Awesome\ 5 Pro";
+  opacity: 0;
+  -webkit-transition: opacity 0.3s 0.3s;
+  transition: opacity 0.3s 0.3s;
+}
+
+.btn-progress .content::before {
+  content: "\f00c"; /* Checkmark for success */
+}
+
+.btn-progress.state-success .content::before,
+.btn-progress.state-error .content::after {
+  opacity: 1;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.btn-progress .progress-inner {
+  position: absolute;
+  left: 0;
+  background: $bg-button-hover;
+}
+
+.btn-progress[data-horizontal] .progress-inner {
+  top: 0;
+  width: 0;
+  height: 100%;
+  -webkit-transition: width 0.3s, opacity 0.3s;
+  transition: width 0.3s, opacity 0.3s;
+}
+
+
+/* Fill horizontal */
+/* ====================== */
+
+
+.btn-progress[data-style="fill"][data-horizontal] .content {
+  z-index: 10;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.btn-progress[data-style="fill"][data-horizontal] .content::before,
+.btn-progress[data-style="fill"][data-horizontal] .content::after {
+  top: 150%;
+  right: auto;
+  left: 50%;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: $bg-button-hover;
+}
+
+.btn-progress[data-style="fill"][data-horizontal].state-success .content,
+.btn-progress[data-style="fill"][data-horizontal].state-error .content {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-150%);
+}
+
+.btn-disabled:hover .btn.btn-disabled:hover {
+  background-color: $bg-disabled;
+  color: $text-disabled;
+}
+
 
 /* Icons */
 
