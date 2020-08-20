@@ -4050,7 +4050,8 @@ body > .select2-container {
 .select2-angular .ui-select-match {
   display: inline;
 }
-.select2-container .select2-selection--multiple {
+.select2-container .select2-selection--multiple,
+.select2-container--default .select2-selection--single {
   box-sizing: border-box;
   display: block;
   min-height: 34px;
@@ -4174,21 +4175,26 @@ body > .select2-container {
 
 .select2-container .select2-search--inline .select2-search__field,
 .select2-search.select2-search--inline,
-.select2-container--default .select2-search--inline .select2-search__field {
+.select2-container--default .select2-search--inline .select2-search__field,
+.select2-container--default input.select2-search__field {
   width: 100% !important;
   font-size: 13px;
 }
 
-.select2-container .select2-search--inline .select2-search__field {
+.select2-container .select2-search--inline .select2-search__field,
+.select2-container--default input.select2-search__field {
   margin-top: 5px;
 }
 
-.select2-container--default .select2-search--inline .select2-search__field {
+.select2-container--default .select2-search--inline .select2-search__field,
+.select2-container--default input.select2-search__field {
   background: transparent;
   border: 0;
   outline: 0;
 }
-.select2-container--default .select2-selection--multiple {
+
+.select2-container--default .select2-selection--multiple,
+.select2-container--default .select2-selection--single  {
   border-radius: 4px !important;
   border: 1px solid $border-color-default !important;
   padding: 5px !important;
@@ -4206,7 +4212,8 @@ body > .select2-container {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.select2-container--default.select2-container--focus .select2-selection--multiple {
+.select2-container--default.select2-container--focus .select2-selection--multiple,
+.select2-container--default.select2-container--focus .select2-selection--single {
   background-color: $bg-white;
   border: 1px solid $border-color-default;
   outline: 0;
@@ -4214,12 +4221,14 @@ body > .select2-container {
   overflow: auto;
   overflow-x: hidden;
 }
-.select2-container--default .select2-selection--multiple .select2-selection__choice {
+.select2-container--default .select2-selection--multiple .select2-selection__choice,
+.select2-container--default .select2-selection--single .select2-selection__rendered {
   padding: 4px 2px 4px 5px !important;
   border-color: $border-color-default !important;
   font-size: 10px !important;
 }
-.select2-container--default .select2-selection--multiple .select2-selection__choice {
+.select2-container--default .select2-selection--multiple .select2-selection__choice,
+.select2-container--default .select2-selection--single .select2-selection__rendered {
   background-color: #e4e4e4;
   border: 1px solid #aaa;
   border-radius: 4px;
@@ -4236,9 +4245,20 @@ body > .select2-container {
   margin-right: 0;
 }
 
-/*.input-group .select2-container {
-  display: inline;
-}*/
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  margin-top: 1px;
+}
+​
+.select2-container--default .select2-search__field {
+  background: transparent;
+  border: 0;
+  padding: 6px;
+  width: 100%;
+}
+​
+.select2-container--default .select2-search__field:focus {
+  outline: none;
+}
 
 .input-group .select {
   margin-left: -10px;
