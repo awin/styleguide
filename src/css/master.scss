@@ -1077,6 +1077,10 @@ cite {
   color: $link-active;
 }
 
+.text-gold {
+  color: #c90;
+}
+
 .text-light, a.text-light, p a.text-light {
   color: #999;
 }
@@ -1168,6 +1172,32 @@ a.bg-danger:focus {
 .badge.bg-danger  {
   color: #fff;
   background-color: #a94442;
+}
+
+.ribbon::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 0 45px 45px 0;
+  border-color: transparent #f1f1f1 transparent transparent;
+}
+
+.ribbon.ribbon-gold::before {
+  border-color: transparent #fdf7e0 transparent transparent;
+}
+
+.ribbon-inner {
+  padding: 5px 0px 0 15px;
+  width: 15px;
+  float: right;
+}
+
+.ribbon-inner i {
+  font-size: 14px;
 }
 
 /* ----------------------------------------------------------------------------
