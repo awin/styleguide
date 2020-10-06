@@ -3649,6 +3649,23 @@ ul.errors, .errorMessage {
   clear: left;
 }
 
+.help-block p {
+  margin: 0 0 10px;
+}
+
+.has-error .help-block ul.bullet {
+  margin: 0;
+  padding-left: 25px;
+}
+
+.has-error .help-block ul.bullet li {
+  padding: 0px;
+}
+
+.has-error .help-block ul.bullet li:before {
+  color: #c33;
+}
+
 .has-error .select-input-group .input-group-addon:first-child select {
   padding-right: 32px;
   border-color: #b94a48;
