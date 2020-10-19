@@ -13,6 +13,8 @@
     "build:nikepartners": "./node_modules/.bin/webpack --config-name=nikepartners -p",
     "build:pntest": "./node_modules/.bin/webpack --config-name=pntest -p",
     "build:kerstintest": "./node_modules/.bin/webpack --config-name=kerstintest -p",
+    "build:etsypn": "./node_modules/.bin/webpack --config-name=etsypn -p",
+    "build:noreportingtest": "./node_modules/.bin/webpack --config-name=noreportingtest -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

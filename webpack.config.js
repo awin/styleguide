@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const themes = ['awin', 'nikepartners','pntest','kerstintest'];
+const themes = ['awin', 'nikepartners','pntest','kerstintest','etsypn','noreportingtest'];
 
 module.exports = themes.map(theme => ({
   name: theme,
