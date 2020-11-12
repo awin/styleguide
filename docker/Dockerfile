@@ -28,10 +28,11 @@ COPY tslint.json ./
 COPY tsconfig.json ./
 
 RUN yarn run build
+RUN yarn run build:etsypn
 RUN yarn run build:nikepartners
+RUN yarn run build:nikevip
 RUN yarn run build:pntest
 RUN yarn run build:kerstintest
-RUN yarn run build:etsypn
 RUN yarn run build:noreportingtest
 
 

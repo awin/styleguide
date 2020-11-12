@@ -10,10 +10,11 @@
     "build-vuex": "./node_modules/.bin/webpack --config=./webpack/vuex/config.js -p",
     "build-moment": "./node_modules/.bin/webpack --config=./webpack/moment/config.js -p",
     "build": "./node_modules/.bin/webpack --config-name=awin -p",
+    "build:etsypn": "./node_modules/.bin/webpack --config-name=etsypn -p",
     "build:nikepartners": "./node_modules/.bin/webpack --config-name=nikepartners -p",
+    "build:nikevip": "./node_modules/.bin/webpack --config-name=nikevip -p",
     "build:pntest": "./node_modules/.bin/webpack --config-name=pntest -p",
     "build:kerstintest": "./node_modules/.bin/webpack --config-name=kerstintest -p",
-    "build:etsypn": "./node_modules/.bin/webpack --config-name=etsypn -p",
     "build:noreportingtest": "./node_modules/.bin/webpack --config-name=noreportingtest -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
