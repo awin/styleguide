@@ -26,7 +26,7 @@
   "link-nav": "#222222",
   "link-nav-hover": "#CF4018",
 
-  "bg-default": "#F8EBE6",
+  "bg-default": "#fffbf9",
   "bg-dark": "#f9f9f9",
   "bg-error": "#eaeff5",
   "bg-info": "#eaeff5",
@@ -70,7 +70,7 @@
 
   "focused-shadow": "none",
 
-  "nav-text-transform": "uppercase",
+  "nav-text-transform": "normal",
 
   "arrow-down-image": "url(\"https://images.awin.com/awin-interface/theme/nike/arrow-down-nike.png\")",
   "calendar-image": "url(\"https://images.awin.com/awin-interface/theme/nike/calendar-nike.png\")",
