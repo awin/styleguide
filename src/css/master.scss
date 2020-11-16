@@ -3204,7 +3204,7 @@ select[multiple].input-lg {
 .btn-filter, .btn-filter:focus {
   display: inline-block;
   text-align: left;
-  background: $text-button;
+  background-color: $bg-button-filter;
   cursor: pointer;
   position: relative;
   border-radius: 4px;

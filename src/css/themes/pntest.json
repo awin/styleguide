@@ -47,6 +47,7 @@
   "bg-provider-bar": "#232347",
   "bg-button": "transparent",
   "bg-button-hover": "#000000",
+  "bg-button-filter": "#ffffff",
   "bg-badge": "#555555",
 
   "border-color-default": "#E1E3DF",
