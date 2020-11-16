@@ -8760,7 +8760,7 @@ nav.main_navigation a, nav.main_navigation a:visited {
   color: $link-nav;
   line-height: $line-height-nav;
   text-transform: $nav-text-transform;
-  font-weight: 600;
+  font-weight: $nav-font-weight;
   display: block;
   z-index: 200;
   font-size: 15px;

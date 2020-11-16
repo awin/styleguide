@@ -1,9 +1,8 @@
 {
-  "brand-font": "\"Graphik Web\",\"Helvetica Neue\",Helvetica,Arial sans-serif",
+  "brand-font": "\"Graphik Web\",Roboto,\"Segoe UI\",Helvetica,Arial sans-serif",
   "brand-primary": "#CF4018",
   "brand-secondary": "#555555",
-
-  "font-family": "\"Graphik Web\",\"Helvetica Neue\",Helvetica,Arial sans-serif",
+  "font-family": "\"Graphik Web\",Roboto,\"Segoe UI\",Helvetica,Arial sans-serif",
 
   "text-default": "#222222",
   "text-error": "#cc3333",
@@ -26,7 +25,7 @@
   "link-nav": "#222222",
   "link-nav-hover": "#CF4018",
 
-  "bg-default": "#fffbf9",
+  "bg-default": "#f8f8f4",
   "bg-dark": "#f9f9f9",
   "bg-error": "#eaeff5",
   "bg-info": "#eaeff5",
@@ -44,33 +43,34 @@
   "bg-input-warning": "#fdf7e0",
   "bg-input-header": "#f1f1f1",
   "bg-edit": "#FDEBD2",
-  "bg-table-header": "#FAA077",
+  "bg-table-header": "#f4f4f4",
   "bg-provider-bar": "#232347",
-  "bg-button": "#555555",
-  "bg-button-hover": "#CF4018",
+  "bg-button": "#000000",
+  "bg-button-hover": "#000000",
   "bg-badge": "#555555",
 
-  "border-color-default": "#cccccc",
-  "border-form-element": "#cccccc",
+  "border-color-default": "#E1E3DF",
+  "border-form-element": "#E1E3DF",
   "border-error": "#cc3333",
   "border-success": "#6caf47",
   "border-warning": "#cc9900",
   "border-info": "#99b2cc",
-  "border-table-header": "#dbdbdb",
-  "border-row": "#eeeeee",
-  "border-dropdown": "1px solid #e5e5e5",
-  "border-nav": "inset 0 -1px 0 0 #e5e5e5",
-  "border-nav-hover": "inset 0 -2px 0 0 #CF4018",
-  "border-active": "#555555",
+  "border-table-header": "#E1E3DF",
+  "border-row": "#E1E3DF",
+  "border-dropdown": "1px solid #E1E3DF",
+  "border-nav": "inset 0 -1px 0 0 #E1E3DF",
+  "border-nav-hover": "inset 0 -2px 0 0 #E1E3DF",
+  "border-active": "#E1E3DF",
 
   "display-nav-arrow": "none",
   "mt-nav-dropdown": "0px",
 
-  "line-height-nav": "65px",
+  "line-height-nav": "45px",
 
   "focused-shadow": "none",
 
   "nav-text-transform": "normal",
+  "nav-font-weight": "400",
 
   "arrow-down-image": "url(\"https://images.awin.com/awin-interface/theme/nike/arrow-down-nike.png\")",
   "calendar-image": "url(\"https://images.awin.com/awin-interface/theme/nike/calendar-nike.png\")",
