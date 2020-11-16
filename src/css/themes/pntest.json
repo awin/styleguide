@@ -1,6 +1,6 @@
 {
   "brand-font": "\"Graphik Web\",Roboto,\"Segoe UI\",Helvetica,Arial sans-serif",
-  "brand-primary": "#CF4018",
+  "brand-primary": "#F1641E",
   "brand-secondary": "#555555",
   "font-family": "\"Graphik Web\",Roboto,\"Segoe UI\",Helvetica,Arial sans-serif",
 
@@ -15,7 +15,7 @@
   "text-disabled": "#999999",
   "text-nav": "#ffffff",
   "text-dropdown": "#ffffff",
-  "text-button": "#FFFFFF",
+  "text-button": "#000000",
   "text-button-hover": "#ffffff",
 
   "link-default": "#CF4018",
@@ -25,7 +25,7 @@
   "link-nav": "#222222",
   "link-nav-hover": "#CF4018",
 
-  "bg-default": "#f8f8f4",
+  "bg-default": "#f8f7f3",
   "bg-dark": "#f9f9f9",
   "bg-error": "#eaeff5",
   "bg-info": "#eaeff5",
@@ -45,7 +45,7 @@
   "bg-edit": "#FDEBD2",
   "bg-table-header": "#f4f4f4",
   "bg-provider-bar": "#232347",
-  "bg-button": "#000000",
+  "bg-button": "transparent",
   "bg-button-hover": "#000000",
   "bg-badge": "#555555",
 
@@ -59,8 +59,11 @@
   "border-row": "#E1E3DF",
   "border-dropdown": "1px solid #E1E3DF",
   "border-nav": "inset 0 -1px 0 0 #E1E3DF",
-  "border-nav-hover": "inset 0 -2px 0 0 #000000",
+  "border-nav-hover": "0 1px 0 0 #000000",
   "border-active": "#E1E3DF",
+  "border-button-colour": "#000000",
+
+  "border-radius-btn": "24px",
 
   "display-nav-arrow": "none",
   "mt-nav-dropdown": "0px",
