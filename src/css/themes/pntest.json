@@ -15,7 +15,7 @@
   "text-disabled": "#999999",
   "text-nav": "#ffffff",
   "text-dropdown": "#ffffff",
-  "text-button": "#CF4018",
+  "text-button": "#FFFFFF",
   "text-button-hover": "#ffffff",
 
   "link-default": "#CF4018",
@@ -59,7 +59,7 @@
   "border-row": "#E1E3DF",
   "border-dropdown": "1px solid #E1E3DF",
   "border-nav": "inset 0 -1px 0 0 #E1E3DF",
-  "border-nav-hover": "inset 0 -2px 0 0 #E1E3DF",
+  "border-nav-hover": "inset 0 -2px 0 0 #000000",
   "border-active": "#E1E3DF",
 
   "display-nav-arrow": "none",
