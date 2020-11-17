@@ -3210,7 +3210,7 @@ select[multiple].input-lg {
   background-color: $bg-button-filter;
   cursor: pointer;
   position: relative;
-  border-radius: 4px;
+  border-radius: $border-radius-input;
   font-weight: 500;
 }
 
@@ -4062,7 +4062,7 @@ body > .select2-container {
   border: 1px solid $border-color-default;
   background-color: $bg-white;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: $border-radius-input;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -4128,7 +4128,7 @@ body > .select2-container {
   box-shadow: none;
   font-size: 10px;
   font-weight: normal;
-  border-radius: 4px;
+  border-radius: $border-radius-input;
   background-color: #e4e4e4;
   color: #444;
   padding: 5px;
@@ -4319,7 +4319,7 @@ body > .select2-container {
 .select2-angular-single  {
   width: 100%;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: $border-radius-input;
 }
 
 .select2-angular-single a {
@@ -4348,9 +4348,9 @@ body > .select2-container {
   padding: 0 0 0 10px;
   -webkit-user-select: none;
   line-height: 34px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: $border-radius-input;
+  -moz-border-radius: $border-radius-input;
+  border-radius: $border-radius-input;
 }
 
 .select2-angular-single .ui-select-choices-row:hover, .select2-angular-single .select2-results li.select2-highlighted {
@@ -6512,7 +6512,7 @@ a.ui-datepicker-prev.ui-corner-all.ui-state-disabled:before {
 
 .ui-timepicker-div select.ui-timepicker-select {
   border: 1px solid #cccccc;
-  border-radius: 4px;
+  border-radius: $border-radius-input;
   padding-right: 28px;
   color: $text-default;
 }
@@ -6578,7 +6578,7 @@ dt.ui_tpicker_minute_label, dt.ui_tpicker_hour_label {
 .vdp-datepicker .vdp-datepicker__calendar {
   background-color: $bg-white;
   border: 1px solid $border-color-default;
-  border-radius: 4px;
+  border-radius: $border-radius-input;
   box-shadow: 0 0 3px rgba(32,139,195,.6);
   margin-top: 4px;
   padding: 20px;
@@ -9766,9 +9766,9 @@ a.suspendAffiliate {
 
 #directoryRefineby #refine_date dl dd input {
   border: 1px solid $border-color-default;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: $border-radius-input;
+  -moz-border-radius: $border-radius-input;
+  border-radius: $border-radius-input;
 }
 
 #directoryRefineby li.merchant_sector {
