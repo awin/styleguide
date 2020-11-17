@@ -27,6 +27,7 @@
   "link-nav-hover": "#ff6600",
 
   "bg-default": "#f1f1f1",
+  "bg-secondary": "#f5f5f5",
   "bg-dark": "#f9f9f9",
   "bg-error": "#fcefee",
   "bg-info": "#eaeff5",
@@ -66,6 +67,7 @@
   "border-button-colour": "transparent",
 
   "border-radius-btn": "4px",
+  "border-radius-input": "4px",
 
   "display-nav-arrow": "block",
   "mt-nav-dropdown": "0px",

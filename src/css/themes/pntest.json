@@ -9,7 +9,7 @@
   "text-success": "#3c6f1f",
   "text-info": "#336699",
   "text-warning": "#84660c",
-  "text-active": "#CF4018",
+  "text-active": "#F1641E",
   "text-light": "#999999",
   "text-muted": "#999999",
   "text-disabled": "#999999",
@@ -18,14 +18,15 @@
   "text-button": "#000000",
   "text-button-hover": "#ffffff",
 
-  "link-default": "#CF4018",
+  "link-default": "#F1641E",
   "link-default-hover": "F1641E",
-  "link-active": "#CF4018",
-  "link-active-hover": "#CF4018",
+  "link-active": "#F1641E",
+  "link-active-hover": "#F1641E",
   "link-nav": "#222222",
-  "link-nav-hover": "#CF4018",
+  "link-nav-hover": "#F1641E",
 
   "bg-default": "#f8f7f3",
+  "bg-secondary": "#f9e7e1",
   "bg-dark": "#f9f9f9",
   "bg-error": "#eaeff5",
   "bg-info": "#eaeff5",
@@ -65,6 +66,7 @@
   "border-button-colour": "#000000",
 
   "border-radius-btn": "24px",
+  "border-radius-input": "24px",
 
   "display-nav-arrow": "none",
   "mt-nav-dropdown": "0px",

@@ -2531,7 +2531,7 @@ output {
   min-width: 60px;
   padding: 8px 10px;
   border: 1px solid $border-color-default;
-  border-radius: 4px;
+  border-radius: $border-radius-input;
   line-height: 1.375em;
   font-family: $font-family;
   font-size: 13px;
@@ -2652,7 +2652,7 @@ select:-webkit-autofill:focus {
 }
 
 .input-group-btn .btn-default .fa-search {
-  color: #ffffff;
+  color: $text-button;
 }
 
 .input-single-digit, .form-inline .input-group.input-single-digit {
@@ -2708,7 +2708,7 @@ select:-webkit-autofill:focus {
 .input-group-btn:first-child > .btn,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
-  border-radius: 4px 0 0 4px;
+  border-radius: $border-radius-input 0 0 $border-radius-input;
 }
 
 .input-group-addon:first-child {
@@ -2720,12 +2720,13 @@ select:-webkit-autofill:focus {
 .input-group-btn:last-child > .btn,
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child) {
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 $border-radius-input $border-radius-input 0;
+  border-color: $border-form-element;
 }
 
 .input-group .form-control:first-child {
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
+  border-bottom-left-radius: $border-radius-input;
+  border-top-left-radius: $border-radius-input;
 }
 
 .input-group-addon:last-child {
@@ -2762,8 +2763,8 @@ select:-webkit-autofill:focus {
 .select-input-group .input-group-addon:first-child select {
   height: 35px;
   margin-right: -1px;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-top-left-radius: $border-radius-input;
+  border-bottom-left-radius: $border-radius-input;
   z-index: 1;
   border: 1px solid $border-color-default;
   font-size: 13px;
@@ -3160,7 +3161,9 @@ select[multiple].input-lg {
   cursor: not-allowed;
 }
 
-.btn-disabled, btn-disabled:hover {
+.btn-disabled, btn-disabled:hover,
+.btn-default.btn-disabled,
+.btn-default.btn-disabled:hover {
   color: rgba(0,0,0,.3);
   padding: 8px 12px;
   border-radius: 3px;
@@ -4242,7 +4245,7 @@ body > .select2-container {
 
 .select2-container--default .select2-selection--multiple,
 .select2-container--default .select2-selection--single  {
-  border-radius: 4px !important;
+  border-radius: $border-radius-input !important;
   border: 1px solid $border-color-default !important;
   padding: 5px !important;
   background-color: $bg-white;
@@ -5211,8 +5214,8 @@ Widgets
 }
 
 .search-widget .input-group .form-control:first-child {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-top-left-radius: $border-radius-input;
+  border-bottom-left-radius: $border-radius-input;
   border-color: #dedede;
 }
 
@@ -5371,7 +5374,7 @@ Widgets
 
 .arrow-box {
   padding: 10px 0;
-  background-color: $bg-default;
+  background-color: $bg-secondary;
   overflow: hidden;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
@@ -9168,7 +9171,7 @@ form dl dd input, form dl dd select, form dd select, form dl dd textarea {
   width: 66.66666667%;
   padding: 8px 10px;
   border: 1px solid $border-color-default;
-  border-radius: 4px;
+  border-radius: $border-radius-input;
   line-height: 1.375em;
   font-size: 13px;
   background-color: $bg-white;
