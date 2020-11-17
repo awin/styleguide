@@ -4981,12 +4981,16 @@ th.sortable span.sortDescending:before {
   line-height: 3em;
 }
 .navbar-fixed-top form input.form-control {
-  background-color: rgba(35,40,44,.4);
-  border: none;
+  background-color: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.1);
   color: $text-nav;
   padding-left: 5px;
   font-weight: 500;
 }
+.navbar-fixed-top form .input-group-btn:last-child >.btn {
+  border-color: rgba(255,255,255,0.1);
+}
+
 .navbar-fixed-top form .btn .fa, .navbar-fixed-top form .btn .far {
   font-size: 12px;
 }

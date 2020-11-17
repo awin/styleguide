@@ -61,7 +61,7 @@
   "border-row": "#E1E3DF",
   "border-dropdown": "1px solid #E1E3DF",
   "border-nav": "inset 0 -1px 0 0 #E1E3DF",
-  "border-nav-hover": "0 1px 0 0 #000000",
+  "border-nav-hover": "0 -2px 0 0 #000000",
   "border-active": "#E1E3DF",
   "border-button-colour": "#000000",
 
@@ -78,16 +78,17 @@
   "nav-text-transform": "normal",
   "nav-font-weight": "400",
 
-  "arrow-down-image": "url(\"https://images.awin.com/awin-interface/theme/nike/arrow-down-nike.png\")",
-  "calendar-image": "url(\"https://images.awin.com/awin-interface/theme/nike/calendar-nike.png\")",
+  "arrow-down-image": "url(\"https://images.awin.com/awin-interface/arrow-down.png\")",
+  "calendar-image": "url(\"https://images.awin.com/awin-interface/icons/calendar.png\")",
 
-  "checkbox": "url(\"https://images.awin.com/awin-interface/theme/nike/checkbox.png\")",
-  "checkbox-unchecked": "url(\"https://images.awin.com/awin-interface/theme/nike/checkbox-unchecked.png\")",
-  "checkbox-checked": "url(\"https://images.awin.com/awin-interface/theme/nike/checkbox-checked.png\")",
-  "checkbox-partial": "url(\"https://images.awin.com/awin-interface/theme/nike/checkbox-partial.png\")",
+  "checkbox": "url(\"https://images.awin.com/awin-interface/icons/checkbox.png\")",
+  "checkbox-unchecked": "url(\"https://images.awin.com/awin-interface/icons/checkbox-unchecked.png\")",
+  "checkbox-checked": "url(\"https://images.awin.com/awin-interface/icons/checkbox-checked.png\")",
+  "checkbox-partial": "url(\"https://images.awin.com/awin-interface/icons/checkbox-partial.png\")",
 
-  "radio": "url(\"https://images.awin.com/awin-interface/theme/nike/radio.png\")",
-  "radio-selected": "url(\"https://images.awin.com/awin-interface/theme/nike/radio-selected.png\")",
-  "radio-partial": "url(\"https://images.awin.com/awin-interface/theme/nike/radio-partial.png\")",
-  "icon-list": "url(\"https://images.awin.com/awin-interface/theme/nike/list.png\")"
+  "radio": "url(\"https://images.awin.com/awin-interface/icons/radio.png\")",
+  "radio-selected": "url(\"https://images.awin.com/awin-interface/icons/radio-selected.png\")",
+  "radio-partial": "url(\"https://images.awin.com/awin-interface/icons/radio-partial.png\")",
+
+  "icon-list": "url(\"https://images.awin.com/awin-interface/icons/list.png\")"
 }
