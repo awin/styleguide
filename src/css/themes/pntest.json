@@ -61,7 +61,8 @@
   "border-row": "#E1E3DF",
   "border-dropdown": "1px solid #E1E3DF",
   "border-nav": "inset 0 -1px 0 0 #E1E3DF",
-  "border-nav-hover": "0 -2px 0 0 #000000",
+  "border-nav-hover": "inset 0 -2px 0 0 #000000",
+  "border-bottom-nav": "1px solid #E1E3DF",
   "border-active": "#E1E3DF",
   "border-button-colour": "#000000",
 

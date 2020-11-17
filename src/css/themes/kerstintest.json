@@ -63,6 +63,7 @@
   "border-dropdown": "1px solid #e5e5e5",
   "border-nav": "inset 0 -1px 0 0 #e5e5e5",
   "border-nav-hover": "inset 0 -2px 0 0 #111111",
+  "border-bottom-nav": "none",
   "border-active": "#555555",
   "border-button-colour": "transparent",
 
