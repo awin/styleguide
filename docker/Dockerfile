@@ -40,6 +40,7 @@ COPY src/theme-fonts/. public/theme-fonts
 
 # Copy over webserver configuration
 COPY docker/default.conf /etc/nginx/sites-available/default
+COPY docker/mime.types /etc/nginx/
 COPY docker/healthcheck.conf /etc/nginx/sites-enabled/healthcheck
 
 # Test nginx config
