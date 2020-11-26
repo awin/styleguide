@@ -42,6 +42,7 @@ Layout
   font-weight: 700;
 
 }
+
 html {
   box-sizing: border-box;
 }
@@ -4986,6 +4987,13 @@ th.sortable span.sortDescending:before {
   padding-left: 5px;
   font-weight: 500;
 }
+
+.navbar-fixed-top form input.form-control::-moz-placeholder,
+.navbar-fixed-top form input.form-control::-webkit-input-placeholder,
+.navbar-fixed-top form input.form-control::placeholder {
+  color: #ffffff;
+}
+
 .navbar-fixed-top form .input-group-btn:last-child >.btn {
   border-color: rgba(255,255,255,0.1);
 }
