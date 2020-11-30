@@ -2655,6 +2655,10 @@ select:-webkit-autofill:focus {
   color: $text-button;
 }
 
+.input-group-btn .btn-default:hover .fa-search {
+  color: $text-button-hover;
+}
+
 .input-single-digit, .form-inline .input-group.input-single-digit {
   min-width: 30px;
   width: 30px;
@@ -4988,8 +4992,8 @@ th.sortable span.sortDescending:before {
   font-weight: 500;
 }
 
-.navbar-fixed-top form input.form-control::-moz-placeholder,
 .navbar-fixed-top form input.form-control::-webkit-input-placeholder,
+.navbar-fixed-top form input.form-control::-moz-placeholder,
 .navbar-fixed-top form input.form-control::placeholder {
   color: #ffffff;
 }
