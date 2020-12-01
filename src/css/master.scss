@@ -101,13 +101,6 @@ a, table p a {
   transition-duration: .2s;
 }
 
-a:hover,
-a:hover, table p a:hover,
-a.text-light:hover, p a.text-light:hover,
-a:hover .fa, a:hover .far {
-  text-decoration: $link-decoration;
-}
-
 a .fa, a .far,
 .tooltip a, .tooltip a:visited,
 .userMessage a, .userMessage a:visited,
@@ -118,6 +111,13 @@ table tbody tr td p a:link, table tbody tr td p a:visited,
 a.active, a.active:visited {
   color: $link-default-hover;
   text-decoration: none;
+}
+
+a:hover,
+a:hover, table p a:hover,
+a.text-light:hover, p a.text-light:hover,
+a:hover .fa, a:hover .far {
+  text-decoration: $link-decoration;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -9053,6 +9053,7 @@ nav.main_navigation a, nav.main_navigation a:visited {
 
 nav.main_navigation a:hover {
   color: $link-nav-hover;
+  text-decoration: none;
 }
 nav.main_navigation a:first-child {
   padding-left: 12px;
@@ -9192,13 +9193,17 @@ header #header ul li:hover ul, nav.main_navigation ul li:hover ul.children {
 }
 
 nav.main_navigation ul li:hover ul.children li,
-nav.main_navigation ul li ul.children a:hover,
 nav.main_navigation ul li ul.children a.selected{
   color: $link-nav-hover;
   text-decoration: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+
+
+nav.main_navigation ul li ul.children a:hover {
+  text-decoration: $link-decoration;
 }
 
 ul#main_nav_right li.liveHelpButton a#close-chat-button {
