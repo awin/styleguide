@@ -25,6 +25,7 @@
   "link-active-hover": "#ff956a",
   "link-nav": "#ffffff",
   "link-nav-hover": "#ff6600",
+  "link-decoration": "none",
 
   "bg-default": "#f1f1f1",
   "bg-secondary": "#f5f5f5",

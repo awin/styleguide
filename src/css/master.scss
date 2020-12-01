@@ -111,6 +111,7 @@ table tbody tr td p a:link, table tbody tr td p a:visited,
 a.text-light:hover, p a.text-light:hover,
 a.active, a.active:visited {
   color: $link-default-hover;
+  text-decoration: $link-decoration;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -157,6 +158,7 @@ table a, table a:visited {
 
 table a:hover {
   color: $link-default-hover;
+  text-decoration: $link-decoration;
 }
 
 .table .alert a, .alert a {
@@ -1227,6 +1229,7 @@ Headers
 
 .page-header a:hover, .widget .header a:hover, .table-filters a:hover {
   color: $link-active-hover;
+  text-decoration: $link-decoration;
 }
 
 .page-header a .fa, .widget .header a .fa, .table-filters a .fa,
@@ -1349,6 +1352,7 @@ Headers
 
 .option-menu ul li > a:hover {
   color: $link-nav-hover;
+  text-decoration: $link-decoration;
 }
 
 .table-filters {
@@ -1443,6 +1447,7 @@ Headers
 .form-group  .v-select li > a:hover {
   background-color: #e5e5e5;
   color: $text-default;
+  text-decoration: $link-decoration;
 }
 
 .table-filters .v-select .spinner, .v-select .spinner:after,
@@ -1695,6 +1700,7 @@ table.text-right tbody > tr > td.text-center {
 .table-hover > tbody > tr:hover > td .fa:hover,
 .table-hover > tbody > tr:hover > td .far:hover {
   opacity: .7;
+  text-decoration: $link-decoration;
 }
 
 .table-hover > tbody > tr:hover > td a, .progress-tooltip .table-hover > tbody > tr:hover > td a,
@@ -2160,6 +2166,7 @@ table tbody tr td a:hover,
 .progress-tooltip .table-hover > tbody > tr > td a,
 table tr:hover td.bonus a{
   color: $link-default-hover;
+  text-decoration: $link-decoration;
 }
 
 table tr.pageTotals td {
@@ -2319,6 +2326,10 @@ input[type="radio"] {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
+}
+
+.mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
+  background: $link-active;
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -3530,6 +3541,7 @@ fieldset[disabled] .btn-link:focus {
 .fa, .far {
   font-size: 1.2em;
   color: $brand-primary;
+  text-decoration: none !important;
 }
 
 .fa-3x, .fa.fa-3x {
@@ -4610,6 +4622,7 @@ Navigation, tabs
 .nav .open > a:focus {
   background-color: #eeeeee;
   border-color: #337ab7;
+  text-decoration: $link-decoration;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4818,8 +4831,13 @@ th.sortable span.sortDescending:before {
   color: #444;
 }
 
-.nav-pills>li.active>a .fa, .nav-pills>li.active>a .far {
+.nav-pills>li.active>a .fa, .nav-pills>li.active>a .far,
+.mat-tab-label.mat-tab-label-active {
   color: $link-active;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: $link-active;
 }
 
 .nav-pills > li > a:hover {
@@ -4830,7 +4848,8 @@ th.sortable span.sortDescending:before {
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus {
+.nav-pills > li.active > a:focus,
+.mat-tab-label.mat-tab-label-active {
   color: $link-active;
   border-bottom: 2px solid $border-active;
   cursor: default;
@@ -5144,7 +5163,7 @@ a.list-group-item .list-group-item-text {
 
 a.list-group-item:hover,
 a.list-group-item:focus {
-  text-decoration: none;
+  text-decoration: $link-decoration;
 }
 
 a.list-group-item.active {
@@ -6216,6 +6235,7 @@ Bootstrap 4 card component
 .list-group-item:hover .card a:hover {
   color: $brand-primary;
   opacity: 1;
+  text-decoration: $link-decoration;
 }
 
 .card-header .fa, .card-header .far {
@@ -7745,6 +7765,19 @@ body.login-page #container {
   background-color: $bg-white;
   border-color: #f1f1f1;
 }
+
+/* ----------------------------------------------------------------------------
+Material components
+---------------------------------------------------------------------------- */
+.mat-radio-button.mat-accent .mat-radio-inner-circle,
+.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,
+.mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+    background-color: $link-active;
+}
+
+
+
 /* ----------------------------------------------------------------------------
 Helper classes
 ---------------------------------------------------------------------------- */
@@ -9156,6 +9189,7 @@ nav.main_navigation ul li:hover ul.children li,
 nav.main_navigation ul li ul.children a:hover,
 nav.main_navigation ul li ul.children a.selected{
   color: $link-nav-hover;
+  text-decoration: $link-decoration;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -9184,6 +9218,7 @@ ul#main_nav_right li.liveHelpButton a#close-chat-button {
 
 .breadcrumbs a:hover, .bell a:hover .fa {
   color: $brand-primary;
+  text-decoration: $link-decoration;
 }
 
 

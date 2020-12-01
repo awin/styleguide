@@ -19,11 +19,12 @@
   "text-button-hover": "#444444",
 
   "link-default": "#222222",
-  "link-default-hover": "444444",
+  "link-default-hover": "#444444",
   "link-active": "#000000",
   "link-active-hover": "#444444",
   "link-nav": "#222222",
   "link-nav-hover": "#444444",
+  "link-decoration": "underline",
 
   "bg-default": "#f8f7f3",
   "bg-secondary": "#f9e7e1",
