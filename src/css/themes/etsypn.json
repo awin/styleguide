@@ -64,7 +64,7 @@
   "border-nav-hover": "inset 0 -2px 0 0 #000000",
   "border-bottom-nav": "1px solid #E1E3DF",
   "border-active": "#E1E3DF",
-  "border-button-colour": "#000000",
+  "border-button": "2px solid #222222",
 
   "border-radius-btn": "24px",
   "border-radius-input": "24px",
@@ -74,7 +74,7 @@
 
   "line-height-nav": "45px",
 
-  "focused-shadow": "none",
+  "focused-shadow": "0 0 5px rgba(32,139,195,.9)",
 
   "nav-text-transform": "normal",
   "nav-font-weight": "400",

@@ -16,14 +16,14 @@
   "text-nav": "#ffffff",
   "text-dropdown": "#ffffff",
   "text-button": "#000000",
-  "text-button-hover": "#ffffff",
+  "text-button-hover": "#444444",
 
   "link-default": "#222222",
-  "link-default-hover": "000000",
+  "link-default-hover": "444444",
   "link-active": "#000000",
-  "link-active-hover": "#222222",
+  "link-active-hover": "#444444",
   "link-nav": "#222222",
-  "link-nav-hover": "#000000",
+  "link-nav-hover": "#444444",
 
   "bg-default": "#f8f7f3",
   "bg-secondary": "#f9e7e1",
@@ -47,7 +47,7 @@
   "bg-table-header": "#f4f4f4",
   "bg-provider-bar": "#232347",
   "bg-button": "transparent",
-  "bg-button-hover": "#000000",
+  "bg-button-hover": "transparent",
   "bg-button-filter": "#ffffff",
   "bg-badge": "#555555",
 
@@ -63,8 +63,8 @@
   "border-nav": "inset 0 -1px 0 0 #E1E3DF",
   "border-nav-hover": "inset 0 -2px 0 0 #000000",
   "border-bottom-nav": "1px solid #E1E3DF",
-  "border-active": "#E1E3DF",
-  "border-button-colour": "#000000",
+  "border-active": "#222222",
+  "border-button": "2px solid #222222",
 
   "border-radius-btn": "24px",
   "border-radius-input": "24px",
@@ -74,7 +74,7 @@
 
   "line-height-nav": "45px",
 
-  "focused-shadow": "none",
+  "focused-shadow": "0 0 5px rgba(0,0,0,.6)",
 
   "nav-text-transform": "normal",
   "nav-font-weight": "400",

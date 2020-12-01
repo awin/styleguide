@@ -65,7 +65,7 @@
   "border-nav-hover": "inset 0 -2px 0 0 #111111",
   "border-bottom-nav": "none",
   "border-active": "#555555",
-  "border-button-colour": "transparent",
+  "border-button": "1px solid transparent",
 
   "border-radius-btn": "4px",
   "border-radius-input": "4px",

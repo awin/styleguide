@@ -20,7 +20,7 @@
   "text-button-hover": "#ffffff",
 
   "link-default": "#444444",
-  "link-default-hover": "ff6600",
+  "link-default-hover": "#ff6600",
   "link-active": "#ff6600",
   "link-active-hover": "#ff956a",
   "link-nav": "#ffffff",
@@ -65,7 +65,7 @@
   "border-nav-hover": "none",
   "border-bottom-nav": "none",
   "border-active": "#ff6600",
-  "border-button-colour": "transparent",
+  "border-button": "1px solid transparent",
 
   "border-radius-btn": "4px",
   "border-radius-input": "4px",
@@ -75,7 +75,7 @@
 
   "line-height-nav": "38px",
 
-  "focused-shadow": "0 0 2px rgba(32,139,195,.6)",
+  "focused-shadow": "0 0 5px rgba(32,139,195,.6)",
 
   "nav-text-transform": "initial",
   "nav-font-weight": "600",
