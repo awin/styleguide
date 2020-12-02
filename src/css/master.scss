@@ -1713,7 +1713,7 @@ table.text-right tbody > tr > td.text-center {
 .merchantOfMonth:hover a, .offerOfWeek:hover a, .editorsPick:hover a, .featuredPromotion:hover a,
 label:hover a:link, label:hover a:visited {
   color: $link-default-hover;
-  text-decoration: none;
+  text-decoration: $link-decoration;
   position: relative;
 }
 
@@ -1890,6 +1890,11 @@ table .form-horizontal [class*='col'] {
 .table thead > tr > th:last-child,
 .table tbody > tr > td:last-child {
   padding-right: 20px;
+}
+
+.table tbody > tr > td:last-child a,
+.table tbody > tr > td:last-child a:hover {
+  text-decoration: none;
 }
 
 /* Table form */
