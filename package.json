@@ -10,6 +10,7 @@
     "build-vuex": "./node_modules/.bin/webpack --config=./webpack/vuex/config.js -p",
     "build-moment": "./node_modules/.bin/webpack --config=./webpack/moment/config.js -p",
     "build": "./node_modules/.bin/webpack --config-name=awin -p",
+    "build:afiliados": "./node_modules/.bin/webpack --config-name=afiliados -p",
     "build:etsypn": "./node_modules/.bin/webpack --config-name=etsypn -p",
     "build:nikepartners": "./node_modules/.bin/webpack --config-name=nikepartners -p",
     "build:nikevip": "./node_modules/.bin/webpack --config-name=nikevip -p",
