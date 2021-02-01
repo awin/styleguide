@@ -2573,6 +2573,7 @@ select.form-control {
   padding-left: 8px;
 }
 
+select:focus,
 .form-control:focus,
 app-accordion:focus,
 .focused,
@@ -5177,6 +5178,7 @@ a.list-group-item .list-group-item-text {
 a.list-group-item:hover,
 a.list-group-item:focus {
   text-decoration: $link-decoration;
+  color: $link-default-hover;
 }
 
 a.list-group-item.active {
@@ -9211,6 +9213,7 @@ nav.main_navigation ul li ul.children a.selected{
 
 nav.main_navigation ul li ul.children a:hover {
   text-decoration: $link-decoration;
+  color: $link-nav-hover;
 }
 
 ul#main_nav_right li.liveHelpButton a#close-chat-button {
