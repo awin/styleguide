@@ -1383,7 +1383,7 @@ Headers
 
 .form-group .v-select {
   padding: 0;
-  background: $bg-white $arrow-down-image no-repeat scroll right center;
+  background: $bg-white;
 }
 
 .form-group .v-select input[type=search], .form-group .v-select input[type=search]:focus {
@@ -1463,6 +1463,47 @@ Headers
 
 .table-filters .v-select.single .selected-tag {
   margin-top: 14px;
+}
+
+/* VUE.js selector new classes */
+
+.table-filters .vs__clear {
+  margin-right: 10px;
+  font-size: 11px;
+}
+
+.table-filters .vs__open-indicator {
+  fill: rgb(255,102,0,0.8);
+  transform: scale(0.6);
+}
+
+.table-filters .vs--open .vs__open-indicator {
+  transform: rotate(180deg) scale(0.6);
+}
+
+.table-filters .vs__spinner {
+  border-top: 0.6em solid rgba(100,100,100,0.1);
+  border-right: 0.6em solid rgba(100,100,100,0.1);
+  border-bottom: 0.6em solid rgba(100,100,100,0.1);
+  border-left: 0.6em solid rgba(100,100,100,0.1);
+}
+
+.table-filters .vs__spinner, .vs__spinner:after {
+  width: 3em;
+  height: 3em;
+}
+
+.table-filters .vs__dropdown-menu li {
+  text-align: left;
+}
+
+.table-filters .vs__dropdown-menu li em {
+  margin-left: 3px;
+}
+
+.table-filters .vs__dropdown-menu .vs__dropdown-option:hover {
+  color: #333;
+  background-color: #e5e5e5;
 }
 
 .table-filters h1 {
