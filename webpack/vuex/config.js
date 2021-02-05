@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  entry: path.resolve(__dirname, '../../node_modules/vuex/dist/vuex.js'),
+  entry: path.resolve(__dirname, '../../node_modules/vuex/dist/vuex.min.js'),
   output: {
     path: path.resolve(__dirname, '../../public/dist/'),
     filename: 'vuex.js',
