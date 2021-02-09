@@ -38,7 +38,7 @@
   "bg-speech-bubble": "#fafafa",
   "bg-site-header": "#1b293c",
   "bg-nav": "#1b293c",
-  "bg-dropdown": "#ffffff",
+  "bg-dropdown": "#1b293c",
   "bg-hover": "#f9f9f9",
   "bg-input": "#ffffff",
   "bg-input-error": "#fcefee",
