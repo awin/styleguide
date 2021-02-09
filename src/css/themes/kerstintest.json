@@ -76,6 +76,7 @@
 
   "line-height-nav": "65px",
 
+  "focused-form-element": "#fffaf2",
   "focused-shadow": "none",
 
   "nav-text-transform": "uppercase",

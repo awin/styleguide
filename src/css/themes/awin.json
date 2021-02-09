@@ -76,6 +76,7 @@
 
   "line-height-nav": "38px",
 
+  "focused-form-element": "#fffaf2",
   "focused-shadow": "0 0 5px rgba(32,139,195,.6)",
 
   "nav-text-transform": "initial",

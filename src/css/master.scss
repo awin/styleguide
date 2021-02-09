@@ -2580,7 +2580,7 @@ app-accordion:focus,
 form dl dd input:focus,
 form dl dd select:focus,
 form dl dd textarea:focus {
-  background-color: #fffaf2;
+  background-color: $focused-form-element;
   border: 1px solid $border-color-default;
   border-radius: 5px;
   outline: 0;
@@ -2632,7 +2632,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0px 1000px #fffaf2 inset;
+  -webkit-box-shadow: 0 0 0px 1000px $focused-form-element inset;
 }
 
 .input-group {
@@ -8592,7 +8592,7 @@ table.text-right th .reportTooltipText {
 }
 
 .editable:hover {
-  background-color: #fffaf2;
+  background-color: $focused-form-element;
   border: 1px solid #ebebeb;
   outline: 0;
   box-shadow: 0 0 2px rgba(32,139,195,.6);
@@ -8610,7 +8610,7 @@ table.text-right th .reportTooltipText {
 .activeInlineEdit:focus {
   outline: none;
   border: 1px solid #aaa;
-  background-color: #fffaf2;
+  background-color: $focused-form-element;
 }
 
 img.inlineSave, img.inlineCancel {
@@ -9754,7 +9754,7 @@ button.ui-dialog-titlebar-close {
 }
 
 .awinModalWindow table tr.orangeDark {
-  background-color: #fffaf2;
+  background-color: $focused-form-element;
 }
 
 #sectorsModal .box-white {
