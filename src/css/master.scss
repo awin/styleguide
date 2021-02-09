@@ -5029,8 +5029,15 @@ th.sortable span.sortDescending:before {
   font-weight: 500;
 }
 
-.navbar-fixed-top input.form-control::-webkit-input-placeholder,
-.navbar-fixed-top input.form-control::-moz-placeholder,
+.navbar-fixed-top input.form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.navbar-fixed-top input.form-control::-moz-placeholder {
+  color: #ffffff;
+}
+.navbar-fixed-top input.form-control:-ms-placeholder {
+  color: #ffffff;
+}
 .navbar-fixed-top input.form-control::placeholder {
   color: #ffffff;
 }
