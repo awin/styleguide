@@ -1373,7 +1373,7 @@ Headers
   display: inline;
 }
 
-.table-filters select, .dataTables_length select.input-sm, .table-filters .v-select {
+.table-filters select, .dataTables_length select.input-sm {
   padding: 10px 30px 10px 5px;
   background: transparent $arrow-down-image no-repeat scroll right center;
   border: none;
@@ -1381,9 +1381,18 @@ Headers
   font-size: 12px;
 }
 
-.form-group .v-select {
+.table-filters .v-select {
+  padding: 10px 30px 10px 5px;
+  text-align: left;
+  display: inline-block;
+  border: none;
+  color: $text-default;
+  font-size: 12px;
   padding: 0;
-  background: $bg-white;
+  min-width: 400px;
+  background-image: none;
+  background-color: $bg-white;
+  line-height: 34px;
 }
 
 .form-group .v-select input[type=search], .form-group .v-select input[type=search]:focus {
@@ -1397,14 +1406,7 @@ Headers
   padding: 8px 40px 8px 10px;
 }
 
-.table-filters .v-select {
-  text-align: left;
-  display: inline-block;
-  padding: 0;
-  min-width: 400px;
-  background-color: $bg-white;
-  line-height: 34px;
-}
+
 
 .table-filters .v-select .dropdown-toggle .clear,
 .form-group .v-select .dropdown-toggle .clear {
@@ -1467,6 +1469,14 @@ Headers
 
 /* VUE.js selector new classes */
 
+.table-filters .vs__search {
+  color: $text-light;
+}
+
+.table-filters .vs__search:focus {
+  color: $text-default;
+}
+
 .table-filters .vs__clear {
   margin-right: 10px;
   font-size: 11px;
@@ -1497,7 +1507,8 @@ Headers
   text-align: left;
 }
 
-.table-filters .vs__dropdown-menu li em {
+.table-filters .vs__dropdown-menu .vs__no-options {
+  color: $text-default;
   margin-left: 3px;
 }
 
