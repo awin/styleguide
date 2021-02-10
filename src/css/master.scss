@@ -1492,10 +1492,10 @@ Headers
 }
 
 .table-filters .vs__spinner {
-  border-top: 0.6em solid rgba(100,100,100,0.1);
-  border-right: 0.6em solid rgba(100,100,100,0.1);
-  border-bottom: 0.6em solid rgba(100,100,100,0.1);
-  border-left: 0.6em solid rgba(100,100,100,0.1);
+  border-top: 0.5em solid rgba(100,100,100,0);
+  border-right: 0.5em solid rgba(100,100,100,0.5);
+  border-bottom: 0.5em solid rgba(100,100,100,0);
+  border-left: 0.5em solid rgba(100,100,100,0.5);
 }
 
 .table-filters .vs__spinner, .vs__spinner:after {
@@ -1503,13 +1503,14 @@ Headers
   height: 3em;
 }
 
-.table-filters .vs__dropdown-menu li {
+.table-filters .vs__dropdown-menu .vs__no-options {
+  color: $text-default;
+  padding-left: 5px;
   text-align: left;
 }
 
-.table-filters .vs__dropdown-menu .vs__no-options {
-  color: $text-default;
-  margin-left: 3px;
+.table-filters .vs__dropdown-menu .vs__dropdown-option {
+  padding-left: 10px;
 }
 
 .table-filters .vs__dropdown-menu .vs__dropdown-option--highlight {
