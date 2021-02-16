@@ -2821,6 +2821,20 @@ select:-webkit-autofill:focus {
   padding: 0 5px;
 }
 
+.input-group-transparent .input-group-addon {
+  background-color: #fff;
+  border-left: 0;
+  padding: 0 4px;
+}
+
+.input-group-transparent .form-control {
+  border-right: 0;
+}
+
+.input-group-transparent .input-group-addon .text-muted {
+  color: #999;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
