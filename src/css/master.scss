@@ -2588,6 +2588,11 @@ form dl dd textarea:focus {
   box-shadow: 0 0 2px rgba(32,139,195,.6);
 }
 
+.table-filters select:focus {
+  display: inline-block;
+  border: none;
+}
+
 .form-control::-moz-placeholder,
 .form-control:-moz-placeholder,
 .form-control:-ms-input-placeholder,
