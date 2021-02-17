@@ -2832,6 +2832,14 @@ select:-webkit-autofill:focus {
   padding: 0 4px;
 }
 
+.input-group-transparent .input-group-addon.disabled {
+  background-color: #eee;
+}
+
+.input-group-transparent .input-group-addon.disabled a {
+  display: none;
+}
+
 .input-group-transparent .form-control {
   border-right: 0;
 }
