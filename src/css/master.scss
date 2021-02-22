@@ -1401,6 +1401,10 @@ Headers
   padding: 0;
 }
 
+.form-group .vs__search, .vs__search:focus {
+  line-height: 22px;
+}
+
 .v-select .vs__selected {
   border: none;
   box-shadow: none;
