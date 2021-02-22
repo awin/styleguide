@@ -1381,95 +1381,14 @@ Headers
   font-size: 12px;
 }
 
-/* To be deleted 
+/* VUE.js selector new classes - multi and single)  */
 
 .table-filters .v-select {
-  padding: 10px 30px 10px 5px;
   text-align: left;
   display: inline-block;
-  border: none;
-  color: $text-default;
-  font-size: 12px;
-  padding: 0;
   min-width: 400px;
-  background-image: none;
-  background-color: $bg-white;
   line-height: 34px;
 }
-
-.form-group .v-select input[type=search], .form-group .v-select input[type=search]:focus {
-  height: auto;
-  padding: 0;
-}
-
-.form-group .v-select .dropdown-toggle {
-  border-color: $border-form-element;
-  background-color: $bg-white;
-  padding: 8px 40px 8px 10px;
-}
-
-.table-filters .v-select .dropdown-toggle .clear,
-.form-group .v-select .dropdown-toggle .clear {
-  display: none;
-}
-
-.table-filters .v-select .open-indicator,
-.table-filters .v-select.dropdown.open .open-indicator:before,
-.form-group .v-select .open-indicator,
-.form-group .v-select.dropdown.open .open-indicator:before {
-  display: none;
-}
-
-.table-filters .v-select .dropdown-menu,
-.form-group .v-select .dropdown-menu {
-  padding: 0;
-  box-shadow: none;
-  border-color: $border-form-element;
-}
-
-.table-filters .v-select .no-options,
-.form-group .v-select .no-options {
-  text-align: left;
-  padding: 10px 0;
-}
-
-.form-group .v-select .no-options {
-  padding-left: 10px;
-}
-
-.table-filters .v-select li > a,
-.form-group .v-select li > a {
-  float: left;
-  margin: 0;
-  line-height: 34px;
-  width: 100%;
-}
-
-.table-filters .v-select .dropdown-menu > .highlight > a,
-.form-control .v-select .dropdown-menu > .highlight > a {
-  color: $text-default;
-  background: transparent;
-}
-
-.table-filters .v-select li > a:hover,
-.form-group  .v-select li > a:hover {
-  background-color: #e5e5e5;
-  color: $text-default;
-  text-decoration: $link-decoration;
-}
-
-.table-filters .v-select .spinner, .v-select .spinner:after,
-.form-group .v-select .spinner, .v-select .spinner:after{
-  display: none;
-}
-
-.table-filters .v-select.single .selected-tag {
-  margin-top: 14px;
-}
-
-*/
-
-/* VUE.js selector new classes - multi and single)  */
 
 .v-select .vs__dropdown-toggle {
   border: 1px solid $border-form-element;
@@ -1513,7 +1432,7 @@ Headers
   transform: scale(0.6);
 }
 
-.v-select .vs--open .vs__open-indicator {
+.vs--open .vs__open-indicator {
   transform: rotate(180deg) scale(0.6);
 }
 
