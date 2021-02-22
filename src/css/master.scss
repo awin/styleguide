@@ -1381,6 +1381,8 @@ Headers
   font-size: 12px;
 }
 
+/* To be deleted 
+
 .table-filters .v-select {
   padding: 10px 30px 10px 5px;
   text-align: left;
@@ -1405,8 +1407,6 @@ Headers
   background-color: $bg-white;
   padding: 8px 40px 8px 10px;
 }
-
-
 
 .table-filters .v-select .dropdown-toggle .clear,
 .form-group .v-select .dropdown-toggle .clear {
@@ -1467,56 +1467,84 @@ Headers
   margin-top: 14px;
 }
 
-/* VUE.js selector new classes */
+*/
 
-.table-filters .vs__search {
+/* VUE.js selector new classes - multi and single)  */
+
+.v-select .vs__dropdown-toggle {
+  border: 1px solid $border-form-element;
+  background-color: $bg-white;
+}
+
+.v-select .vs__search, .v-select .vs__search:focus {
   color: $text-light;
+  margin-left: 4px;
+  padding: 0;
 }
 
-.table-filters .vs__search:focus {
-  color: $text-default;
-}
-
-.table-filters .vs__clear {
-  margin-right: 10px;
+.v-select .vs__selected {
+  border: none;
+  box-shadow: none;
+  font-size: 10px;
+  font-weight: normal;
+  border-radius: 4px;
+  background-color: #e4e4e4;
+  color: #444;
+  padding: 5px;
+  margin: 4px 3px 0px 2px;
+  height: auto;
+  line-height: 1em;
+  opacity: 100;
   font-size: 11px;
 }
 
-.table-filters .vs__open-indicator {
+.v-select .vs__deselect {
+  text-shadow: none;
+}
+
+.v-select .vs__deselect .fa-times, .v-select .vs__clear .fa-times {
+  color: #444;
+  opacity: .5;
+  font-size: 13px;
+ }
+
+.v-select .vs__open-indicator {
   fill: rgb(255,102,0,0.8);
   transform: scale(0.6);
 }
 
-.table-filters .vs--open .vs__open-indicator {
+.v-select .vs--open .vs__open-indicator {
   transform: rotate(180deg) scale(0.6);
 }
 
-.table-filters .vs__spinner {
+.v-select .vs__spinner {
   border-top: 0.5em solid rgba(100,100,100,0);
   border-right: 0.5em solid rgba(100,100,100,0.5);
   border-bottom: 0.5em solid rgba(100,100,100,0);
   border-left: 0.5em solid rgba(100,100,100,0.5);
 }
 
-.table-filters .vs__spinner, .vs__spinner:after {
+.v-select .vs__spinner, .v-select .vs__spinner:after {
   width: 3em;
   height: 3em;
 }
 
-.table-filters .vs__dropdown-menu .vs__no-options {
+.v-select .vs__dropdown-menu .vs__no-options {
   color: $text-default;
   padding-left: 5px;
   text-align: left;
 }
 
-.table-filters .vs__dropdown-menu .vs__dropdown-option {
+.v-select .vs__dropdown-menu .vs__dropdown-option {
   padding-left: 10px;
 }
 
-.table-filters .vs__dropdown-menu .vs__dropdown-option--highlight {
+.v-select .vs__dropdown-menu .vs__dropdown-option--highlight {
   color: #333;
   background-color: #e5e5e5;
 }
+
+/* --------------------------------------------------------------------------- */
 
 .table-filters h1 {
   line-height: 54px;
@@ -4236,8 +4264,7 @@ body > .select2-container {
   outline: none;
 }
 
-.select2-angular .btn-default,
-.form-group .v-select .selected-tag {
+.select2-angular .btn-default {
   border: none;
   box-shadow: none;
   font-size: 10px;
@@ -4252,8 +4279,7 @@ body > .select2-container {
   opacity: 100;
 }
 
-.select2-angular .close, .tag .close,
-.form-group .v-select .selected-tag .close {
+.select2-angular .close, .tag .close {
   font-size: 14px;
   line-height: inherit;
   font-weight: normal;
@@ -4677,6 +4703,17 @@ span.character-counter {
   text-align: right;
   font-size: 11px;
   color: #888;
+}
+
+.character-counter-outside {
+  position: relative;
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  color: #888;
+  background-color: transparent;
+  text-align: right;
+  border-radius: 5px;
 }
 
 /* ----------------------------------------------------------------------------
