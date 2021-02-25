@@ -1431,13 +1431,13 @@ Headers
   font-size: 13px;
  }
 
-.v-select .vs__open-indicator {
-  fill: rgb(255,102,0,0.8);
-  transform: scale(0.6);
+.vs__actions .vs__open-indicator {
+    fill: rgba(255,102,0,.8);
+    transform: scale(.6);
 }
 
 .vs--open .vs__open-indicator {
-  transform: rotate(180deg) scale(0.6);
+    transform: scale(.6) rotate(180deg);
 }
 
 .v-select .vs__spinner {
@@ -10363,6 +10363,7 @@ h3.awin-favicon, h3.zanox-favicon {
 
 #switcherModal ul li {
   padding: 11px;
+  list-style: none;
 }
 
 #switcherModal ul li a {
