@@ -2586,7 +2586,7 @@ form dl dd select:focus,
 form dl dd textarea:focus {
   background-color: $focused-form-element;
   border: 1px solid $border-color-default;
-  border-radius: 5px;
+  border-radius: $border-radius-input;
   outline: 0;
   display: inherit;
   box-shadow: 0 0 2px rgba(32,139,195,.6);

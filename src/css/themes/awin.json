@@ -55,6 +55,7 @@
 
   "border-color-default": "#dedede",
   "border-form-element": "#dbdbdb",
+  "border-focused": "#dedede",
   "border-error": "#cc3333",
   "border-success": "#6caf47",
   "border-warning": "#cc9900",
