@@ -8134,6 +8134,10 @@ table.margin-zero td input {
   padding-right: 0px;
 }
 
+.p-0 {
+  padding: 0 !important;
+}
+
 .pagging-LR-gallery .pagination {
   margin-top: 0;
 }
@@ -8156,7 +8160,7 @@ input.view-mode {
 }
 
 .cursor-pointer, .pointer,
-.has-disabled .fa.cursor-pointer {
+.pointer, .clickable, .sortable {
   cursor: pointer;
 }
 
@@ -8170,6 +8174,10 @@ input.view-mode {
 
 .hidden-normal {
   display: none;
+}
+
+.clear {
+  clear: both;
 }
 
 .max-height, .form-control.max-height {
@@ -10541,11 +10549,11 @@ footer#footerPush {
   height: 40px;
   margin: 0 auto;
   font-size: 10px;
-  background-color: #ebebeb;
+  background-color: $bg-secondary;
   color: #888;
   padding-right: 20px;
   line-height: 40px;
-  border-top: 1px solid #dedede;
+  border-top: $border-color-default;
 }
 
 #footer a {
