@@ -10,7 +10,7 @@
   "text-success": "#3c6f1f",
   "text-info": "#336699",
   "text-warning": "#84660c",
-  "text-active": "#9d899e",
+  "text-active": "#7c9fc4",
   "text-light": "#999999",
   "text-muted": "#b3b3b3",
   "text-disabled": "#b3b3b3",
@@ -19,7 +19,7 @@
   "text-button": "#ffffff",
   "text-button-hover": "#ffffff",
 
-  "link-default": "#9d899e",
+  "link-default": "#7c9fc4",
   "link-default-hover": "#cf9cd2",
   "link-active": "#7c9fc4",
   "link-active-hover": "#716171",
@@ -86,10 +86,10 @@
   "arrow-down-image": "url(\"https://images.awin.com/awin-interface/theme/bboutique/arrow-down.png\")",
   "calendar-image": "url(\"https://images.awin.com/awin-interface/theme/bboutique/icons/calendar.png\")",
 
-  "checkbox": "url(\"https://images.awin.com/awin-interface/theme/bboutique/icons/checkbox.png\")",
-  "checkbox-unchecked": "url(\"https://images.awin.com/awin-interface/theme/bboutique/icons/checkbox-unchecked.png\")",
-  "checkbox-checked": "url(\"https://images.awin.com/awin-interface/theme/bboutique/icons/checkbox-checked.png\")",
-  "checkbox-partial": "url(\"https://images.awin.com/awin-interface/theme/bboutique/icons/checkbox-partial.png\")",
+  "checkbox": "url(\"https://images.awin.com/awin-interface/theme/bboutique/checkbox.png\")",
+  "checkbox-unchecked": "url(\"https://images.awin.com/awin-interface/theme/bboutique/checkbox-unchecked.png\")",
+  "checkbox-checked": "url(\"https://images.awin.com/awin-interface/theme/bboutique/checkbox-checked.png\")",
+  "checkbox-partial": "url(\"https://images.awin.com/awin-interface/theme/bboutique/checkbox-partial.png\")",
 
   "radio": "url(\"https://images.awin.com/awin-interface/theme/bboutique/icons/radio.png\")",
   "radio-selected": "url(\"https://images.awin.com/awin-interface/theme/bboutique/icons/radio-selected.png\")",
