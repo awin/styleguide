@@ -1,9 +1,9 @@
 {
-  "brand-font": "Apercu,Arial sans-serif",
+  "brand-font": "Apercu,Arial, sans-serif",
   "brand-primary": "#7c9fc4",
   "brand-secondary": "#23282c",
 
-  "font-family": "Apercu,Arial sans-serif",
+  "font-family": "Apercu,Arial, sans-serif",
 
   "text-default": "#333333",
   "text-error": "#cc3333",
