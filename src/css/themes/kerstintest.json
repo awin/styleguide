@@ -1,9 +1,9 @@
 {
-  "brand-font": "\"Roboto\",\"Helvetica Neue\",Helvetica,Arial sans-serif",
+  "brand-font": "Apercu,Arial sans-serif",
   "brand-primary": "#7c9fc4",
   "brand-secondary": "#23282c",
 
-  "font-family": "\"Roboto\",\"Helvetica Neue\",Helvetica,Arial sans-serif",
+  "font-family": "Apercu,Arial sans-serif",
 
   "text-default": "#333333",
   "text-error": "#cc3333",
@@ -14,7 +14,7 @@
   "text-light": "#999999",
   "text-muted": "#b3b3b3",
   "text-disabled": "#b3b3b3",
-  "text-nav": "#757575",
+  "text-nav": "#ffffff",
   "text-dropdown": "#757575",
   "text-button": "#ffffff",
   "text-button-hover": "#ffffff",
@@ -22,7 +22,7 @@
   "link-default": "#7c9fc4",
   "link-default-hover": "#cf9cd2",
   "link-active": "#7c9fc4",
-  "link-active-hover": "#716171",
+  "link-active-hover": "#cf9cd2",
   "link-nav": "#757575",
   "link-nav-hover": "#333333",
   "link-decoration": "none",
@@ -51,7 +51,7 @@
   "bg-button": "#7c9fc4",
   "bg-button-hover": "#8daccc",
   "bg-button-filter": "#ffffff",
-  "bg-badge": "#ff6600",
+  "bg-badge": "#7c9fc4",
 
   "border-color-default": "#dddddd",
   "border-form-element": "#bdbdbd",
@@ -84,7 +84,7 @@
   "nav-font-weight": "600",
 
   "arrow-down-image": "url(\"https://images.awin.com/awin-interface/theme/bboutique/arrow-down.png\")",
-  "calendar-image": "url(\"https://images.awin.com/awin-interface/theme/bboutique/icons/calendar.png\")",
+  "calendar-image": "url(\"https://images.awin.com/awin-interface/theme/bboutique/calendar.png\")",
 
   "checkbox": "url(\"https://images.awin.com/awin-interface/theme/bboutique/checkbox.png\")",
   "checkbox-unchecked": "url(\"https://images.awin.com/awin-interface/theme/bboutique/checkbox-unchecked.png\")",
@@ -92,8 +92,8 @@
   "checkbox-partial": "url(\"https://images.awin.com/awin-interface/theme/bboutique/checkbox-partial.png\")",
 
   "radio": "url(\"https://images.awin.com/awin-interface/theme/bboutique/icons/radio.png\")",
-  "radio-selected": "url(\"https://images.awin.com/awin-interface/theme/bboutique/icons/radio-selected.png\")",
-  "radio-partial": "url(\"https://images.awin.com/awin-interface/theme/bboutique/icons/radio-partial.png\")",
+  "radio-selected": "url(\"https://images.awin.com/awin-interface/theme/bboutique/radio-selected.png\")",
+  "radio-partial": "url(\"https://images.awin.com/awin-interface/theme/bboutique/radio-partial.png\")",
 
-  "icon-list": "url(\"https://images.awin.com/awin-interface/theme/bboutique/icons/list.png\")"
+  "icon-list": "url(\"https://images.awin.com/awin-interface/theme/bboutique/list.png\")"
 }

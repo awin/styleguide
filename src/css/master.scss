@@ -3649,6 +3649,7 @@ fieldset[disabled] .btn-link:focus {
 
 a:hover .fa, a:hover .far {
   opacity: .7;
+  color: $link-default-hover;
 }
 
 .fa-pencil, .fa-times, .fa-shield {
