@@ -80,7 +80,7 @@
   "focused-form-element": "#ffffff",
   "focused-shadow": "none",
 
-  "nav-text-transform": "initial",
+  "nav-text-transform": "uppercase",
   "nav-font-weight": "600",
 
   "arrow-down-image": "url(\"https://images.awin.com/awin-interface/theme/bboutique/arrow-down.png\")",
