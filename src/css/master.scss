@@ -10576,6 +10576,141 @@ footer#footerPush {
 }
 
 /* --------------------------------------------------------------------
+Salesforce Chat
+-------------------------------------------------------------------- */
+
+/* Start Chat Button */
+.embeddedServiceHelpButton .helpButton .helpButtonEnabled {
+  background-color: #23282C !important;
+}
+.embeddedServiceHelpButton .helpButton .helpButtonDisabled {
+  background-color: #9999 !important;
+}
+.embeddedServiceHelpButton .uiButton .helpButtonLabel .message,
+.embeddedServiceSidebarMinimizedDefaultUI .minimizedText>.message {
+  margin: 0;
+  background-color: transparent;
+  border: 0;
+  font-size: 12px !important;
+  color: #ffff;
+}
+.embeddedServiceIcon {
+  color: #ff6600 !important;
+}
+.helpButton .embeddedServiceIcon {
+  margin: 0;
+}
+/* Pre Chat Form */
+#Privacy_policy_consent_Chat__c, label[for=Privacy_policy_consent_Chat__c] {
+  display: none;
+}
+button.minimizeButton, button.closeButton,
+button.minimizeButton:focus, button.closeButton:focus {
+  outline: 0 !important;
+}
+.chatMessage, .offlineMessage {
+  font-size: 15px;
+  text-align: left;
+}
+.prechatUI .formContent .chatMessageContainer, .offlineMessage {
+  margin: 10px 24px;
+}
+.embeddedServiceSidebarFormField .uiInput {
+  margin-bottom: 10px;
+}
+.embeddedServiceSidebarFormField .uiInput .uiLabel-left {
+  font-weight: 600 !important;
+  padding: 7px 0 3px !important;
+  margin-left: 2px !important;
+}
+.embeddedServiceSidebarFormField .slds-style-inputtext {
+  border: 1px solid #dedede !important;
+  height: 35px !important;
+}
+.embeddedServiceSidebarFormField .slds-style-inputtext:focus {
+  background: #fffaf2 !important;
+  border: 0;
+  box-shadow: none !important;
+}
+.embeddedServiceSidebarButton {
+  background: #ff6600 !important;
+  height: 35px !important;
+  text-decoration: none !important;
+}
+.embeddedServiceSidebarButton:hover, .embeddedServiceSidebarButton:focus {
+  opacity: 0.9 !important;
+  background: #ff6600 !important;
+}
+.embeddedServiceSidebarButton .label {
+  color: #ffff !important;
+}
+.embeddedServiceSidebarButton.uiButton--inverse,
+.embeddedServiceSidebarButton.uiButton--inverse:hover, .embeddedServiceSidebarButton.uiButton--inverse:focus {
+  background: transparent !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+.embeddedServiceSidebarButton.uiButton--inverse:hover .label, .embeddedServiceSidebarButton.uiButton--inverse .label {
+  color: #ff6600 !important;
+}
+.gdprCheckBox {
+  margin-left: 0;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #dedede !important;
+}
+.gdprContainer a {
+  color: #ff6600;
+  font-weight: 100;
+}
+.gdprContainer a:hover {
+  color: #444444;
+}
+.gdprContainer p {
+  font-weight: 100;
+}
+/* Chat Queue / Dialog State */
+.embeddedServiceLiveAgentQueuePosition .embeddedServiceIcon>svg {
+  opacity: 0.3;
+  fill: #ff6600 !important;
+}
+.embeddedServiceLiveAgentStateWaiting .embeddedServiceLoadingBalls .loadingBall {
+  background-color: #ffff !important;
+}
+.embeddedServiceSidebarDialogState .dialogIcon circle {
+  fill: #00c637 !important;
+  opacity: 0.5;
+}
+/* Chat Window Acive  */
+.embeddedServiceLiveAgentStateChatItem .isLightningOutContext .avatar.iconAvatar {
+  background-color: #de0833;
+}
+/* Minimised Window */
+.embeddedServiceSidebarMinimizedDefaultUI {
+  background: none;
+  border-color: #d4d4d4;
+  min-width: 147px !important;
+  width: 147px !important;
+}
+.embeddedServiceSidebarMinimizedDefaultUI .content {
+  padding: 0 !important;
+}
+.embeddedServiceHelpButton .helpButton .uiButton {
+  background-color: #23282C !important;
+}
+.embeddedServiceHelpButton .uiButton .helpButtonLabel {
+  text-decoration: none !important;
+}
+.embeddedServiceIcon::before {
+  font-size: 1.5em !important;
+  line-height: 0.6em !important;
+}
+/* End / Cancel Chat Buttons  */
+.embeddedServiceLiveAgentStateChat .endChatContainer .endChatButton {
+  margin-top: 10px;
+}
+
+/* --------------------------------------------------------------------
 Responsive utilities
 -------------------------------------------------------------------- */
 
