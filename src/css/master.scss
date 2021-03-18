@@ -4119,7 +4119,7 @@ pre.prettyprint {
 }
 
 .select2-container--default.select2-container--focus .select2-selection--multiple .select2-selection__rendered {
-  padding-left: 8px;
+  padding-left: 4px;
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__rendered,
@@ -4145,7 +4145,6 @@ pre.prettyprint {
   cursor: default;
   float: left;
   margin-right: 5px;
-  margin-top: 2px;
   font-size: 10px;
   padding: 4px 6px;
   white-space: normal;
@@ -4180,11 +4179,6 @@ span.select2-selection__clear,
   font-size: 13px;
 }
 
-.select2-container .select2-search--inline .select2-search__field,
-.select2-container--default input.select2-search__field {
-  margin-top: 4px;
-}
-
 .select2-container--default .select2-search--inline .select2-search__field,
 .select2-container--default input.select2-search__field {
   background: transparent;
@@ -4195,7 +4189,7 @@ span.select2-selection__clear,
 .select2-container--default .select2-search__field {
   background: transparent;
   border: 0;
-  padding: 6px;
+  padding: 4px 0;
   width: 100%;
 }
 
