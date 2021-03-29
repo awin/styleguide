@@ -4,7 +4,7 @@ Style Guide
 Official Style guide for all Awin projects. Serves as a reference for
 Development by providing a markup pattern library for common UI elements.
 
-Developmnet Lifecycle
+Development Lifecycle
 =====================
 
 Test your work locally with standard makefile workflow: `make` to build, `make
