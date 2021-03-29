@@ -7883,20 +7883,20 @@ Helper classes
   padding-left: 25px;
 }
 
-.borderless {
+.borderless, .bdr-0 {
   border: none;
 }
 .border-top-null, .table tr td.border-top-null {
   border-top: none;
 }
 
-.border-bottom {
+.border-bottom, .bdr-b {
   border-bottom: 1px solid #dedede;
   padding-bottom: 5px;
   margin-bottom: 20px;
 }
 
-.border-top {
+.border-top, .bdr-t {
   border-top: 1px solid #dedede;
   padding-top: 10px;
   margin-top: 5px;
