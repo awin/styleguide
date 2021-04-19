@@ -2767,6 +2767,7 @@ select:-webkit-autofill:focus {
 .input-group .form-control:first-child {
   border-bottom-left-radius: $border-radius-input;
   border-top-left-radius: $border-radius-input;
+  margin: 0;
 }
 
 .input-group .select {
