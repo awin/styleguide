@@ -8163,6 +8163,18 @@ table.margin-zero td input {
   margin-right: -10px;
 }
 
+.border-top {
+  border-top: 1px solid $border-color-default;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $border-color-default;
+}
+
+.alert-danger .border-top {
+  border-top: 1px solid #cc33333d;
+}
+
 /*For tables with editable rows and input fields */
 input.view-mode {
   border: none;
@@ -8195,10 +8207,17 @@ input.view-mode {
   height: 200px;
   overflow-y: auto;
 }
+
+.max-height-sm {
+  height: 90px;
+  overflow-y: auto;
+}
+
 .max-height-md {
   height: 300px;
   overflow-y: auto;
 }
+
 .max-height-lg {
   height: 500px;
   overflow-y: auto;
