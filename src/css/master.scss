@@ -3243,7 +3243,13 @@ select[multiple].input-lg {
 
 .btn-link, .awinModalWindow .boxFooter button.modal_cancel {
   color: #23282c;
+  overflow: visible;
   opacity: .8;
+}
+
+.btn-link[disabled], .btn-link[disabled]:hover {
+  color: #999;
+  opacity: 1;
 }
 
 .btn-link small {
