@@ -7624,21 +7624,25 @@ General styling
 }
 
 /* Restore normal bullet point for <li> tags within WYSIWYG areas */
-#descriptionLongContent ul li {
+#descriptionLongContent ul li,
+#termsFreeTextContent ul li {
   list-style-type: inherit;
   list-style: inside;
 }
 
-ul.bullet {
+ul.bullet,
+#termsFreeTextContent ul {
   margin-top: 20px;
 }
 
-ul.bullet li {
+ul.bullet li,
+#termsFreeTextContent ul li {
   padding: 0 0 0 20px;
   list-style: none;
 }
 
-ul.bullet li:before {
+ul.bullet li:before,
+#termsFreeTextContent ul li:before {
   content: "\f111";
   font-family: fontAwesome;
   float: left;
