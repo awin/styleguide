@@ -7878,6 +7878,16 @@ Helper classes
   position: relative;
 }
 
+.btn-sticky {
+  position: sticky;
+  top: 100;
+}
+
+table.table thead tr.sticky th {
+  position: sticky;
+  top: 0;
+}
+
 .fa-fw {
   width: 1.8em;
 }
@@ -8174,12 +8184,20 @@ table.margin-zero td input {
   margin-right: -10px;
 }
 
-.border-top {
+.bdr {
+  border: 1px solid #dedede;
+}
+
+.border-top, .bdr-t {
   border-top: 1px solid $border-color-default;
 }
 
 .border-bottom {
   border-bottom: 1px solid $border-color-default;
+}
+
+.bdr-l {
+    border-left: 1px solid #dedede;
 }
 
 .alert-danger .border-top {
