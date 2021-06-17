@@ -3429,15 +3429,17 @@ fieldset[disabled] .btn-link:focus {
 }
 
 .btn-group .btn-default {
-  background-color: $bg-white;
-  color: #23282c;
-  border: 1px solid $border-color-default;
+  background-color: $bg-button;
+  color: $text-button;
+  border: 1px solid $border-button;
 }
 
 .btn-group .btn-default.active,
 .btn-group .btn-default.active:hover {
-  background-color: #e9e9e9;
-  opacity: .7;
+  background-color: $bg-button-hover;
+  color: $text-button-hover;
+  box-shadow: $focused-shadow;
+  opacity: 1;
 }
 
 .btn-group > .btn:last-child:not(:first-child) {
@@ -7880,7 +7882,7 @@ Helper classes
 
 .btn-sticky {
   position: sticky;
-  top: 100;
+  top: 100px;
 }
 
 table.table thead tr.sticky th {
