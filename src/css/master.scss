@@ -3442,6 +3442,19 @@ fieldset[disabled] .btn-link:focus {
   opacity: 1;
 }
 
+.btn-group .btn-default.bg-light {
+  background-color: $bg-white;
+  border: 1px solid $border-color-default;
+}
+
+.btn-group .btn-default.bg-light.active,
+.btn-group .btn-default.bg-light.active:hover {
+  background-color: $bg-white;
+  color: $text-button-hover;
+  box-shadow: $focused-shadow;
+  opacity: 1;
+}
+
 .btn-group > .btn:last-child:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
