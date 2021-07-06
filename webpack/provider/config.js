@@ -2,10 +2,10 @@ var path = require('path');
 var webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
-  entry: path.resolve(__dirname, '../../src/css/providerTheme.scss'),
+  entry: path.resolve(__dirname, './imports.ts'),
   output: {
     path: path.resolve(__dirname, '../../public/dist/'),
-    filename: 'providerTheme.scss',
+    filename: 'provider.js',
     publicPath: '../../public/dist',
     library: 'provider',
     libraryTarget: 'window'
