@@ -17,7 +17,9 @@ RUN yarn
 COPY public ./public
 COPY webpack ./webpack
 COPY src ./src
+COPY tslint.json .
 RUN yarn run build-bootstrap
+RUN yarn run build-provider-css
 RUN yarn run build-vue
 RUN yarn run build-vuex
 RUN yarn run build-moment

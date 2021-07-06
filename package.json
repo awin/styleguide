@@ -4,6 +4,7 @@
   "description": "Style Guide",
   "main": "false",
   "scripts": {
+    "build-provider-css": "./node_modules/.bin/webpack --config=./webpack/provider/config.js -p",
     "build-bootstrap": "./node_modules/.bin/webpack --config=./webpack/bootstrap/config.js -p",
     "build-select2": "./node_modules/.bin/webpack --config=./webpack/select2/config.js -p",
     "build-vue": "./node_modules/.bin/webpack --config=./webpack/vue/config.js -p",
