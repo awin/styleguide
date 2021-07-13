@@ -52,6 +52,10 @@ table a:hover {
 
 .table .alert a { color: #ff9900; }
 
+li {
+  list-style: none;
+}
+
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
   padding-left: 10px;
   padding-right: 10px;
@@ -5555,23 +5559,6 @@ Widgets
 }
 
 /* ----------------------------------------------------------------------------
-General styling
----------------------------------------------------------------------------- */
-#providerContainer {
-  background-color: #ffffff;
-  margin: 0 auto;
-}
-#providerFooterPush {
-  height: auto;
-}
-#providerContainer #mainNav ul li a.mainNav:hover, #providerContainer #mainNav ul li a.mainNav {
-  height: 29px;
-}
-#providerToolbar ul li a {
-  height:34px;
-}
-
-/* ----------------------------------------------------------------------------
 Tags styling
 ---------------------------------------------------------------------------- */
 
@@ -6669,8 +6656,18 @@ img.inlineSave, img.inlineCancel {
 }
 
 .modal-header {
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
+    border-bottom: 1px solid #dedede;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 15px;
+    position: relative;
+    background: #fff;
+    background: -moz-linear-gradient(top,#fff 0%,#e6e5e5 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#ffffff),color-stop(100%,#e6e5e5));
+    background: -webkit-linear-gradient(top,#fff 0%,#e6e5e5 100%);
+    background: -o-linear-gradient(top,#fff 0%,#e6e5e5 100%);
+    background: -ms-linear-gradient(top,#fff 0%,#e6e5e5 100%);
+    background: linear-gradient(top,#fff 0%,#e6e5e5 100%);
 }
 
 .modal-title {
@@ -6751,22 +6748,6 @@ img.inlineSave, img.inlineCancel {
 .clearfix:after,
 .modal-footer:after {
     clear: both;
-}
-
-@media (min-width: 768px) {
-  .modal-dialog {
-    width: 600px;
-    margin: 30px auto;
-  }
-  .modal-alert .modal-dialog {
-    width: 500px;
-    margin: 30px auto;
-  }
-}
-@media (min-width: 992px) {
-  .modal-lg {
-    width: 900px;
-  }
 }
 
 /* Pop up Notifications (modal-alert) */
@@ -7460,12 +7441,14 @@ outline: 0;
 
 /* Provider Footer */
 
-li {
-  list-style: none;
+#providerFooterPush {
+  height: auto;
+  clear: both;
+  padding-top: 21px;
 }
 
-#providerFooterPush {
-  clear: both;
+#providerToolbar ul li a {
+  height:34px;
 }
 
 #providerFooter {
@@ -7524,11 +7507,6 @@ li {
 .providerFooterLinks ul li a:hover {
   background: transparent url(http://images.awin.com/common/arrow.gif) center left no-repeat;
   color: #444;
-}
-
-
-#providerFooterPush, #providerFooter {
-  height: 180px;
 }
 
 #footer a:link, #footer a:visited {
