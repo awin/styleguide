@@ -1,7 +1,12 @@
 /* ****************************************************************************
-New Interface Override CSS
+Global Provider CSS 
 **************************************************************************** */
 
+/* Note: This stylesheet doesn't contain legacy styles such as site2 and other
+current provider pages that sit on awin.darwin repository. 
+
+Please use these styles for new projects with up-to-date markup following our
+Awin Styleguide guidelines. */
 
 /* ----------------------------------------------------------------------------
 Reset
@@ -19,7 +24,7 @@ html,
 body {
   font: normal 11px Verdana, Arial, Helvetica, sans-serif;
   color: #444;
-  background-color: #f1f1f1;
+  background-color: #fff;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -72,6 +77,14 @@ table a:hover {
     background-color: #f1f1f1;
     border: 1px solid #d6d6d6;
     min-height: 150px;
+}
+
+#providerContainer {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -180px;
+  padding: 0;
 }
 
 /* Boxes */
@@ -5761,55 +5774,47 @@ Helper classes
   vertical-align: middle !important;
 }
 
-.margin-top-zero {
+.margin-top-zero, .mt-0 {
   margin-bottom: 0;
 }
 
-.margin-top-xs {
+.margin-top-xs, .mt-xs {
+  margin-top: 5px;
+}
+
+.margin-top, .mt-sm {
   margin-top: 10px;
 }
 
-.margin-top {
-  margin-top: 10px;
-}
-
-.margin-top-xs {
-  margin-top: 8px !important;
-}
-
-.margin-top-sm {
-  margin-top: 10px;
-}
-
-.margin-top-md {
+.margin-top-md, .mt-md {
   margin-top: 20px;
 }
 
-.margin-top-lg {
+.margin-top-lg, .mt-lg {
   margin-top: 40px;
 }
 
-.margin-bottom-zero {
+.margin-bottom-zero, .mb-0 {
   margin-bottom: 0;
 }
 
-.margin-bottom {
+.margin-bottom, .mb-sm {
   margin-bottom: 10px !important;
 }
 
-.margin-bottom-md {
+.margin-bottom-md, .mb-md {
   margin-bottom: 20px;
 }
 
-.margin-bottom-lg {
+.margin-bottom-lg, .mb-lg {
   margin-bottom: 40px;
 }
 
-.margin-left-xs {
+.margin-left-xs, .ml-xs {
   margin-left: 5px;
 }
 
-.margin-left-md {
+.margin-left-md, .ml-md {
   margin-left: 20px !important;
 }
 
@@ -5817,13 +5822,33 @@ table.margin-zero td input {
   margin: 0;
 }
 
-.margin-left-md {
+.margin-left-md, .ml-md {
   margin-left: 25px;
 }
 
 .no-gutter > [class*='col-'], .padding-LR-null {
   padding-right: 0;
   padding-left: 0;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
 }
 
 /*For tables with editable rows and input fields */
@@ -7169,4 +7194,343 @@ form dl.zend_form .input-file {
   position:relative;
   top:-50px;
   display:block
+}
+
+/* Provider Toolbar */
+
+#providerToolbar * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#providerToolbarSpacer {
+  height: 16px;
+}
+
+#providerToolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 34px;
+  width: 100%;
+  min-width: 900px;
+  background-color: #f6b066;
+  border-bottom: 1px solid #da7000;
+  color: #fff;
+  font-size: 10px;
+  z-index: 999999;
+  overflow: hidden;
+}
+
+#providerToolbar a, #providerToolbar label {
+  color: #fff;
+  font-size: 10px;
+}
+
+#providerToolbar a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#providerToolbar ul li {
+  float: left;
+  height: 33px;
+  border-right: 1px solid #f49f45;
+}
+
+#providerToolbar ul li a {
+  display: block;
+  height: 34px;
+  padding: 0 15px;
+  line-height: 34px;
+}
+
+#providerToolbar ul li form {
+  padding: 4px 12px;
+  width: 122px;
+}
+
+#providerToolbar ul li label {
+  float: left;
+  margin: 0 10px 0 0;
+  line-height: 20px;
+}
+
+#providerToolbar ul li#providerHome, #providerToolbar ul li#providerUser {
+  background: transparent url(http://images.awin.com/darwin/provider/toolbar_button_bg.gif) top left repeat-x;
+}
+
+#providerToolbar ul li#providerHome a {
+  background: transparent url(http://images.awin.com/darwin/provider/provider_home.png) 10px center no-repeat;
+  padding-left: 43px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#providerToolbar ul li#providerHome a:hover {
+  background-color: #f6b066;
+  text-decoration: none;
+}
+
+#providerToolbar ul li#providerUser a {
+  background: transparent url(http://images.awin.com/common/user_home.png) center center no-repeat;
+}
+
+#providerToolbar ul li#providerUser a:hover {
+  background-color: #f6b066;
+}
+
+#providerToolbar ul li#providerMerchants input#merchant, #providerToolbar ul li#providerAffiliates input#affiliate {
+  width: 70px;
+  color: #888;
+}
+
+#providerToolbar .list-inline p {
+  line-height: 34px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+#providerToolbar ul li#providerMerchants input#merchant, #providerToolbar ul li#providerAffiliates input#affiliate {
+  width: 70px;
+  color: #888;
+}
+
+#providerToolbar ul.list-inline li {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#providerToolbar .col-lg-8, #providerToolbar .col-lg-4 {
+  width: 66.66666667%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#providerToolbar .col-lg-4 {
+  width: 33.33333333%;
+}
+
+#providerToolbar .col-lg-4 ul {
+  float: right;
+}
+
+#providerToolbar .input-group-sm .form-control {
+height: 24px;
+font-size: 10px;
+padding: 2px;
+}
+
+#providerToolbar .input-group-sm .input-group-btn .btn-default {
+height: 24px;
+width: 24px;
+padding: 2px 2px;
+}
+#providerMerchants .input-group-sm .input-group-btn .btn-default {
+background: url(https://images.awin.com/common/icons/16x16/folder_go.png) no-repeat center;
+}
+#providerAffiliates .input-group-sm .input-group-btn .btn-default {
+background: url(https://images.awin.com/common/icons/16x16/folder_go_orange.png) no-repeat center;
+}
+#providerToolbar .btn {
+display: inline-block;
+padding: 8px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: 500;
+line-height: 1.428571429;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+
+#providerToolbar .btn:focus {
+outline: 5px auto -webkit-focus-ring-color;
+outline-offset: -2px;
+}
+
+#providerToolbar .btn:hover,
+#providerToolbar .btn:focus {
+text-decoration: none;
+}
+
+#providerToolbar .btn:active,
+#providerToolbar .btn.active {
+outline: 0;
+}
+#providerToolbar .btn-default {
+  color: #fff;
+  padding: 5px 10px;
+  height: 28px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  background: none;
+}
+.pull-right {
+  float: right;
+}
+#providerToolbar .fa {
+  display: none;
+}
+
+#providerToolbar span#providerDetails {
+  float: none !important;
+  margin: 0 !important;
+}
+
+#providerToolbar .input-group-sm {
+  width: 83px;
+}
+
+/* Provider Header Navigation */
+
+#mainNav {
+  background: #c9c9c9;
+  background: -moz-linear-gradient(top,#c9c9c9 0%,#9d9d9d 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#c9c9c9),color-stop(100%,#9d9d9d));
+  background: -webkit-linear-gradient(top,#c9c9c9 0%,#9d9d9d 100%);
+  background: -o-linear-gradient(top,#c9c9c9 0%,#9d9d9d 100%);
+  background: -ms-linear-gradient(top,#c9c9c9 0%,#9d9d9d 100%);
+  background: linear-gradient(top,#c9c9c9 0%,#9d9d9d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#c9c9c9,endColorstr=#9d9d9d);
+  height: 29px;
+  border-top: 1px solid #b5b5b5;
+  border-bottom: 1px solid #8e8e8e;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+#mainNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#mainNav ul li.topNav {
+  float: left;
+  border-right: 1px solid #9d9d9d;
+  position: relative;
+  z-index: 9999;
+}
+
+#mainNav ul li a.mainNav[href] {
+  cursor: pointer;
+}
+#mainNav ul li a.mainNav {
+  float: left;
+  display: block;
+  padding: 0 10px;
+  border-left: 1px solid #c9c9c9;
+  border-right: 1px solid #c9c9c9;
+  cursor: default;
+  line-height: 29px;
+}
+#mainNav a, #mainNav a:link, #mainNav a:hover, #mainNav a:visited {
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#mainNav ul li .orange:hover, #mainNav ul li ul li a.orangeSelect:hover {
+  background-color: #f6a650;
+  background: #ef993d;
+  background: -moz-linear-gradient(top,#ef993d 0%,#ef993d 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#ef993d),color-stop(100%,#ef993d));
+  background: -webkit-linear-gradient(top,#ef993d 0%,#ef993d 100%);
+  background: -o-linear-gradient(top,#ef993d 0%,#ef993d 100%);
+  background: -ms-linear-gradient(top,#ef993d 0%,#ef993d 100%);
+  background: linear-gradient(top,#ef993d 0%,#ef993d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ef993d,endColorstr=#ef993d);
+  border-left: 1px solid #f6a650;
+  border-right: 1px solid #f6a650;
+}
+
+/* Provider Footer */
+
+li {
+  list-style: none;
+}
+
+#providerFooterPush {
+  clear: both;
+}
+
+#providerFooter {
+  background-color: #e5e5e5;
+}
+
+#providerFooter p#btt {
+  padding: 10px;
+  margin: 0;
+  text-align: right;
+  border-bottom: 1px solid #d6d6d6;
+  background-color: #fff;
+}
+
+#providerFooter p#btt a {
+  background: transparent url(http://images.awin.com/common/icons/16x16/bullet_arrow_top.png) top left no-repeat;
+  padding: 0 0 0 20px;
+}
+
+#providerFooter div#footer {
+  clear: left;
+  padding: 0 10px;
+  font: normal 9px Verdana, Arial, Helvetica, sans-serif;
+  color: #888;
+  text-align: right;
+  width: auto;
+}
+
+#providerFooter p#privacy a, #providerFooter p#privacy a:visited {
+  color: #888;
+}
+
+#providerFooter p#privacy a:hover {
+  color: #444;
+}
+
+.providerFooterLinks {
+  padding: 20px;
+  float: left;
+}
+
+.providerFooterLinks h3 {
+  margin: 0 0 10px 0;
+}
+
+.providerFooterLinks ul li {
+  margin: 0 0 5px 2px;
+}
+
+.providerFooterLinks ul li a {
+  color: #888;
+  background: transparent url(http://images.awin.com/common/arrow_grey.gif) center left no-repeat;
+  padding: 0 0 3px 8px;
+}
+
+.providerFooterLinks ul li a:hover {
+  background: transparent url(http://images.awin.com/common/arrow.gif) center left no-repeat;
+  color: #444;
+}
+
+
+#providerFooterPush, #providerFooter {
+  height: 180px;
+}
+
+#footer a:link, #footer a:visited {
+  color: #888;
 }
